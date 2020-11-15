@@ -1,0 +1,22 @@
+syntax = "proto3";
+
+package config;
+message DictionaryEntryA{
+  string from=1;
+  string to=2;
+  string p=3;
+  string p1=4;
+  string p2=5;
+  string p3=6;
+}
+message DictionaryEntryB{
+  string from=1;
+  string to=2;
+  uint32 index=3;
+}
+
+message Dictionary{
+  repeated DictionaryEntryB before=2;
+  repeated DictionaryEntryA entrys=1;
+  repeated DictionaryEntryB after=3;
+}

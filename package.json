@@ -1,0 +1,13 @@
+{
+  "name": "protp-bot-core-managemenet",
+  "version": "1.0.0",
+  "license": "MIT",
+  "scripts": {
+    "generate": "scripts/generate-ts"
+  },
+  "devDependencies": {
+    "grpc-tools": "^1.9.0",
+    "grpc_tools_node_protoc_ts": "^5.0.1",
+    "protoc": "^1.0.4"
+  }
+}

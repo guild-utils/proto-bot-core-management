@@ -1,0 +1,228 @@
+syntax = "proto3";
+import "config.proto";
+
+message Target {
+  string guild=1;
+  string user=2;
+}
+message UpdateResultError{
+  string message=1;
+}
+message UpdateString{
+  Target target=1;
+  oneof value_optional{
+    string value=2;
+  }
+}
+message UpdateResultStringOk{
+  oneof before_optional{
+    string before=1;
+  }
+  oneof after_optional{
+    string after=2;
+  }
+}
+message UpdateResultStringSame{
+  oneof value_optional{
+    string value=1;
+  }
+}
+message UpdateResultString{
+  oneof updateResult{
+    UpdateResultStringOk resultOk=1;
+    UpdateResultStringSame resultSame=2;
+    UpdateResultError error=3;
+  }
+}
+message UpdateFloat{
+  Target target=1;
+  oneof value_optional{
+    float value=2;
+  }
+}
+message UpdateResultFloatOk{
+  oneof before_optional{
+    float before=1;
+  }
+  oneof after_optional{
+    float after=2;
+  }
+}
+message UpdateResultFloatSame{
+  oneof value_optional{
+    float value=1;
+  }}
+message UpdateResultFloat{
+  oneof updateResult{
+    UpdateResultFloatOk resultOk=1;
+    UpdateResultFloatSame resultSame=2;
+    UpdateResultError error=3;
+  }
+}
+message UpdateReadName{
+  Target target=1;
+  oneof value_optional{
+    string value_string=2;
+    bool value_bool=3;
+  }
+}
+message UpdateReadNameOk{
+  oneof before_optional{
+    string before_string=1;
+    bool before_bool=2;
+  }
+  oneof after_optional{
+    string after_string=3;
+    bool after_bool=4;
+  }
+}
+message UpdateResultReadNameSame{
+  oneof value_optional{
+    string value_string=1;
+    bool value_bool=2;
+  }}
+message UpdateResultReadName{
+  oneof updateResult{
+    UpdateReadNameOk resultOk=1;
+    UpdateResultReadNameSame resultSame=2;
+    UpdateResultError error=3;
+  }
+}
+message UpdateUint32{
+  Target target=1;
+  oneof value_optional{
+    uint32 value=2;
+  }
+}
+message UpdateResultUint32Ok{
+  oneof before_optional{
+    uint32 before=1;
+  }
+  oneof after_optional{
+    uint32 after=2;
+  }
+}
+message UpdateResultUint32Same{
+  oneof value_optional{
+    uint32 value=1;
+  }
+}
+message UpdateResultUint32{
+  oneof updateResult{
+    UpdateResultUint32Ok resultOk=1;
+    UpdateResultUint32Same resultSame=2;
+    UpdateResultError error=3;
+  }
+}
+message RemoveFromMainDictionary{
+  string guild=1;
+  string key=2;
+}
+message UpdateResultDictionaryEntryAOk{
+  oneof before_optional{
+    config.DictionaryEntryA before=1;
+  }
+  oneof after_optional{
+    config.DictionaryEntryA after=2;
+  }
+}
+message UpdateResultDictionaryEntryASame{
+  oneof value_optional{
+    config.DictionaryEntryA value=1;
+  }
+}
+message UpdateResultDictionaryEntryA{
+  oneof updateResult{
+    UpdateResultDictionaryEntryAOk resultOk=1;
+    UpdateResultDictionaryEntryASame resultSame=2;
+    UpdateResultError error=3;
+  }
+}
+message UpdateOrInsertMainDictionary{
+  string guild=1;
+  config.DictionaryEntryA value=2;
+}
+
+message SimpleDictionaryUpdateTargetGuild{
+  string guild=1;
+}
+message SimpleDictionaryUpdateTargetSharedDictionary{
+  string id=1;
+}
+message SimpleDictionaryUpdateTarget{
+  oneof target{
+    SimpleDictionaryUpdateTargetGuild before=1;
+    SimpleDictionaryUpdateTargetGuild after=2;
+    SimpleDictionaryUpdateTargetSharedDictionary shared=3;
+  }
+}
+message UpdateSimpleDictionary{
+  SimpleDictionaryUpdateTarget target=1;
+  config.DictionaryEntryB value=2;
+}
+message InsertSimpleDictionary{
+  SimpleDictionaryUpdateTarget target=1;
+  config.DictionaryEntryB value=2;
+}
+message AddSimpleDictionary{
+  SimpleDictionaryUpdateTarget target=1;
+  string from=2;
+  string to=3;
+}
+message RemoveSimpleDictionary{
+  SimpleDictionaryUpdateTarget target=1;
+  uint32 index=2;
+}
+message UpdateResultDictionaryEntryBOk{
+  oneof before_optional{
+    config.DictionaryEntryB before=1;
+  }
+  oneof after_optional{
+    config.DictionaryEntryB after=2;
+  }
+}
+message UpdateResultDictionaryEntryBSame{
+  oneof value_optional{
+    config.DictionaryEntryB value=1;
+  }
+}
+message UpdateResultDictionaryEntryB{
+  oneof updateResult{
+    UpdateResultDictionaryEntryBOk resultOk=1;
+    UpdateResultDictionaryEntryBSame resultSame=2;
+    UpdateResultError error=3;
+  }
+}
+message MoveSimpleDictionary{
+  SimpleDictionaryUpdateTarget target=1;
+  uint32 from=2;
+  uint32 to=3;
+}
+message MoveSimpleDictionaryResultOk{
+}
+message MoveSimpleDictionaryResult{
+  oneof result{
+    MoveSimpleDictionaryResultOk resultOk=1;
+    UpdateResultError error=2;
+  }
+}
+service ConfigSetter {
+  rpc updateKind(UpdateString) returns (UpdateResultString){}
+  rpc updateReadName(UpdateReadName) returns (UpdateResultReadName){}
+  rpc updateSpeed(UpdateFloat) returns (UpdateResultFloat){}
+  rpc updateTone(UpdateFloat) returns (UpdateResultFloat){}
+  rpc updateVolume(UpdateFloat) returns (UpdateResultFloat){}
+  rpc updateAllpass(UpdateFloat) returns (UpdateResultFloat){}
+  rpc updateIntone(UpdateFloat) returns (UpdateResultFloat){}
+  rpc updateThreshold(UpdateFloat) returns (UpdateResultFloat){}
+  rpc updateRandomizer(UpdateString) returns (UpdateResultFloat){}
+  rpc updateMaxReadLimit(UpdateUint32) returns (UpdateResultUint32){}
+  rpc updateMaxVolume(UpdateUint32) returns (UpdateResultUint32){}
+  rpc updateOrInsertMainDictionary(UpdateOrInsertMainDictionary) returns (UpdateResultDictionaryEntryA){}
+  rpc removeMainDictionary(RemoveFromMainDictionary) returns (UpdateResultDictionaryEntryA){}
+  rpc updateSimpleDictionary(UpdateSimpleDictionary)returns (UpdateResultDictionaryEntryB){}
+  rpc insertSimpleDictionary(InsertSimpleDictionary)returns (UpdateResultDictionaryEntryB){}
+  rpc addSimpleDictionary(AddSimpleDictionary)returns (UpdateResultDictionaryEntryB){}
+  rpc removeSimpleDictionary(RemoveSimpleDictionary)returns (UpdateResultDictionaryEntryB){}
+  rpc moveSimpleDictionary(MoveSimpleDictionary) returns (MoveSimpleDictionaryResult) {}
+}

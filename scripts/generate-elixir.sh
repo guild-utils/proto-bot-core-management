@@ -1,0 +1,1 @@
+protoc --elixir_out=plugins=grpc:./generated/elixir ./protos/*.proto

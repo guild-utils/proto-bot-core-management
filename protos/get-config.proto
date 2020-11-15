@@ -1,0 +1,89 @@
+syntax = "proto3";
+import "config.proto";
+
+
+message LayeredVoiceConfig{
+  oneof kind_optional{
+    string kind=1;
+  }
+  oneof readName_optional{
+    string readName=2;
+  }
+  oneof speed_optional{
+    float speed=3;
+  }
+  oneof tone_optional{
+    float tone=4;
+  }
+  oneof volume_optional{
+    float volume=5;
+  }
+  oneof allpass_optional{
+    float allpass=6;
+  }
+  oneof intone_optional{
+    float intone=7;
+  }
+  oneof threshold_optional{
+    float threshold=8;
+  }
+  oneof randomizer_optional{
+    string randomizer=9;
+  }
+}
+message GuildVoiceConfig{
+  oneof maxReadLimit_optional{
+    uint32 maxReadLimit=1;
+  }
+  oneof maxVolume_optional{
+    uint32 maxVolume=2;
+  }
+  oneof readName_optional{
+    bool readName=3;
+  }
+  oneof randomizer_optional{
+    string randomizer=4;
+  }
+  config.Dictionary dictionary = 5;
+}
+
+message LayeredVoiceConfigRequest{
+  string user=1;
+  string guild=2;
+}
+message GuildVoiceConfigRequest{
+  string guild=1;
+}
+message ReadNameRequest{
+  string guild=1;
+  string user=2;
+}
+message ReadName{
+  oneof value_optional{
+    string value=1;
+  }
+}
+message ShardInfo{
+  uint32 numShards = 1;
+  uint32 shardId = 2;
+}
+message VoiceConfigUpdateStreamRequest{
+  ShardInfo shard = 1;
+}
+enum VoiceConfigUpdateInfoType {
+  UNKNOWN=0;
+  GUILD=1;
+  USER=2;
+  MEMBER=3;
+}
+message VoiceConfigUpdateInfo{
+  VoiceConfigUpdateInfoType type=1;
+  string guild=2;
+  string user=3;
+}
+service ConfigGetter {
+  rpc guildVoiceConfig(GuildVoiceConfigRequest) returns (GuildVoiceConfig){}
+  rpc layeredVoiceConfig(LayeredVoiceConfigRequest) returns (LayeredVoiceConfig){}
+  rpc readName(ReadNameRequest) returns (ReadName){}
+  rpc updateStream(VoiceConfigUpdateStreamRequest) returns(stream VoiceConfigUpdateInfo) {}
+}
