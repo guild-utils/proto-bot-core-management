@@ -1,4 +1,4 @@
-defmodule VoiceConfigUpdateInfoType do
+defmodule ManagementApp.Config.Get.VoiceConfigUpdateInfoType do
   @moduledoc false
   use Protobuf, enum: true, syntax: :proto3
   @type t :: integer | :UNKNOWN | :GUILD | :USER | :MEMBER
@@ -12,7 +12,7 @@ defmodule VoiceConfigUpdateInfoType do
   field :MEMBER, 3
 end
 
-defmodule LayeredVoiceConfig do
+defmodule ManagementApp.Config.Get.LayeredVoiceConfig do
   @moduledoc false
   use Protobuf, syntax: :proto3
 
@@ -60,7 +60,7 @@ defmodule LayeredVoiceConfig do
   field :randomizer, 9, type: :string, oneof: 8
 end
 
-defmodule GuildVoiceConfig do
+defmodule ManagementApp.Config.Get.GuildVoiceConfig do
   @moduledoc false
   use Protobuf, syntax: :proto3
 
@@ -69,7 +69,7 @@ defmodule GuildVoiceConfig do
           maxVolume_optional: {atom, any},
           readName_optional: {atom, any},
           randomizer_optional: {atom, any},
-          dictionary: Config.Dictionary.t() | nil
+          dictionary: ManagementApp.Config.Common.Dictionary.t() | nil
         }
 
   defstruct [
@@ -88,10 +88,10 @@ defmodule GuildVoiceConfig do
   field :maxVolume, 2, type: :uint32, oneof: 1
   field :readName, 3, type: :bool, oneof: 2
   field :randomizer, 4, type: :string, oneof: 3
-  field :dictionary, 5, type: Config.Dictionary
+  field :dictionary, 5, type: ManagementApp.Config.Common.Dictionary
 end
 
-defmodule LayeredVoiceConfigRequest do
+defmodule ManagementApp.Config.Get.LayeredVoiceConfigRequest do
   @moduledoc false
   use Protobuf, syntax: :proto3
 
@@ -106,7 +106,7 @@ defmodule LayeredVoiceConfigRequest do
   field :guild, 2, type: :string
 end
 
-defmodule GuildVoiceConfigRequest do
+defmodule ManagementApp.Config.Get.GuildVoiceConfigRequest do
   @moduledoc false
   use Protobuf, syntax: :proto3
 
@@ -119,7 +119,7 @@ defmodule GuildVoiceConfigRequest do
   field :guild, 1, type: :string
 end
 
-defmodule ReadNameRequest do
+defmodule ManagementApp.Config.Get.ReadNameRequest do
   @moduledoc false
   use Protobuf, syntax: :proto3
 
@@ -134,7 +134,7 @@ defmodule ReadNameRequest do
   field :user, 2, type: :string
 end
 
-defmodule ReadName do
+defmodule ManagementApp.Config.Get.ReadName do
   @moduledoc false
   use Protobuf, syntax: :proto3
 
@@ -148,7 +148,7 @@ defmodule ReadName do
   field :value, 1, type: :string, oneof: 0
 end
 
-defmodule ShardInfo do
+defmodule ManagementApp.Config.Get.ShardInfo do
   @moduledoc false
   use Protobuf, syntax: :proto3
 
@@ -163,50 +163,56 @@ defmodule ShardInfo do
   field :shardId, 2, type: :uint32
 end
 
-defmodule VoiceConfigUpdateStreamRequest do
+defmodule ManagementApp.Config.Get.VoiceConfigUpdateStreamRequest do
   @moduledoc false
   use Protobuf, syntax: :proto3
 
   @type t :: %__MODULE__{
-          shard: ShardInfo.t() | nil
+          shard: ManagementApp.Config.Get.ShardInfo.t() | nil
         }
 
   defstruct [:shard]
 
-  field :shard, 1, type: ShardInfo
+  field :shard, 1, type: ManagementApp.Config.Get.ShardInfo
 end
 
-defmodule VoiceConfigUpdateInfo do
+defmodule ManagementApp.Config.Get.VoiceConfigUpdateInfo do
   @moduledoc false
   use Protobuf, syntax: :proto3
 
   @type t :: %__MODULE__{
-          type: VoiceConfigUpdateInfoType.t(),
+          type: ManagementApp.Config.Get.VoiceConfigUpdateInfoType.t(),
           guild: String.t(),
           user: String.t()
         }
 
   defstruct [:type, :guild, :user]
 
-  field :type, 1, type: VoiceConfigUpdateInfoType, enum: true
+  field :type, 1, type: ManagementApp.Config.Get.VoiceConfigUpdateInfoType, enum: true
   field :guild, 2, type: :string
   field :user, 3, type: :string
 end
 
-defmodule ConfigGetter.Service do
+defmodule ManagementApp.Config.Get.ConfigGetter.Service do
   @moduledoc false
-  use GRPC.Service, name: "ConfigGetter"
+  use GRPC.Service, name: "management_app.config.get.ConfigGetter"
 
-  rpc :guildVoiceConfig, GuildVoiceConfigRequest, GuildVoiceConfig
+  rpc :guildVoiceConfig,
+      ManagementApp.Config.Get.GuildVoiceConfigRequest,
+      ManagementApp.Config.Get.GuildVoiceConfig
 
-  rpc :layeredVoiceConfig, LayeredVoiceConfigRequest, LayeredVoiceConfig
+  rpc :layeredVoiceConfig,
+      ManagementApp.Config.Get.LayeredVoiceConfigRequest,
+      ManagementApp.Config.Get.LayeredVoiceConfig
 
-  rpc :readName, ReadNameRequest, ReadName
+  rpc :readName, ManagementApp.Config.Get.ReadNameRequest, ManagementApp.Config.Get.ReadName
 
-  rpc :updateStream, VoiceConfigUpdateStreamRequest, stream(VoiceConfigUpdateInfo)
+  rpc :updateStream,
+      ManagementApp.Config.Get.VoiceConfigUpdateStreamRequest,
+      stream(ManagementApp.Config.Get.VoiceConfigUpdateInfo)
 end
 
-defmodule ConfigGetter.Stub do
+defmodule ManagementApp.Config.Get.ConfigGetter.Stub do
   @moduledoc false
-  use GRPC.Stub, service: ConfigGetter.Service
+  use GRPC.Stub, service: ManagementApp.Config.Get.ConfigGetter.Service
 end

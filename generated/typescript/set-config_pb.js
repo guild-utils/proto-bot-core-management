@@ -10,42 +10,42 @@ var goog = jspb;
 var global = Function('return this')();
 
 var config_pb = require('./config_pb.js');
-goog.exportSymbol('proto.AddSimpleDictionary', null, global);
-goog.exportSymbol('proto.InsertSimpleDictionary', null, global);
-goog.exportSymbol('proto.MoveSimpleDictionary', null, global);
-goog.exportSymbol('proto.MoveSimpleDictionaryResult', null, global);
-goog.exportSymbol('proto.MoveSimpleDictionaryResultOk', null, global);
-goog.exportSymbol('proto.RemoveFromMainDictionary', null, global);
-goog.exportSymbol('proto.RemoveSimpleDictionary', null, global);
-goog.exportSymbol('proto.SimpleDictionaryUpdateTarget', null, global);
-goog.exportSymbol('proto.SimpleDictionaryUpdateTargetGuild', null, global);
-goog.exportSymbol('proto.SimpleDictionaryUpdateTargetSharedDictionary', null, global);
-goog.exportSymbol('proto.Target', null, global);
-goog.exportSymbol('proto.UpdateFloat', null, global);
-goog.exportSymbol('proto.UpdateOrInsertMainDictionary', null, global);
-goog.exportSymbol('proto.UpdateReadName', null, global);
-goog.exportSymbol('proto.UpdateReadNameOk', null, global);
-goog.exportSymbol('proto.UpdateResultDictionaryEntryA', null, global);
-goog.exportSymbol('proto.UpdateResultDictionaryEntryAOk', null, global);
-goog.exportSymbol('proto.UpdateResultDictionaryEntryASame', null, global);
-goog.exportSymbol('proto.UpdateResultDictionaryEntryB', null, global);
-goog.exportSymbol('proto.UpdateResultDictionaryEntryBOk', null, global);
-goog.exportSymbol('proto.UpdateResultDictionaryEntryBSame', null, global);
-goog.exportSymbol('proto.UpdateResultError', null, global);
-goog.exportSymbol('proto.UpdateResultFloat', null, global);
-goog.exportSymbol('proto.UpdateResultFloatOk', null, global);
-goog.exportSymbol('proto.UpdateResultFloatSame', null, global);
-goog.exportSymbol('proto.UpdateResultReadName', null, global);
-goog.exportSymbol('proto.UpdateResultReadNameSame', null, global);
-goog.exportSymbol('proto.UpdateResultString', null, global);
-goog.exportSymbol('proto.UpdateResultStringOk', null, global);
-goog.exportSymbol('proto.UpdateResultStringSame', null, global);
-goog.exportSymbol('proto.UpdateResultUint32', null, global);
-goog.exportSymbol('proto.UpdateResultUint32Ok', null, global);
-goog.exportSymbol('proto.UpdateResultUint32Same', null, global);
-goog.exportSymbol('proto.UpdateSimpleDictionary', null, global);
-goog.exportSymbol('proto.UpdateString', null, global);
-goog.exportSymbol('proto.UpdateUint32', null, global);
+goog.exportSymbol('proto.management_app.config.set.AddSimpleDictionary', null, global);
+goog.exportSymbol('proto.management_app.config.set.InsertSimpleDictionary', null, global);
+goog.exportSymbol('proto.management_app.config.set.MoveSimpleDictionary', null, global);
+goog.exportSymbol('proto.management_app.config.set.MoveSimpleDictionaryResult', null, global);
+goog.exportSymbol('proto.management_app.config.set.MoveSimpleDictionaryResultOk', null, global);
+goog.exportSymbol('proto.management_app.config.set.RemoveFromMainDictionary', null, global);
+goog.exportSymbol('proto.management_app.config.set.RemoveSimpleDictionary', null, global);
+goog.exportSymbol('proto.management_app.config.set.SimpleDictionaryUpdateTarget', null, global);
+goog.exportSymbol('proto.management_app.config.set.SimpleDictionaryUpdateTargetGuild', null, global);
+goog.exportSymbol('proto.management_app.config.set.SimpleDictionaryUpdateTargetSharedDictionary', null, global);
+goog.exportSymbol('proto.management_app.config.set.Target', null, global);
+goog.exportSymbol('proto.management_app.config.set.UpdateFloat', null, global);
+goog.exportSymbol('proto.management_app.config.set.UpdateOrInsertMainDictionary', null, global);
+goog.exportSymbol('proto.management_app.config.set.UpdateReadName', null, global);
+goog.exportSymbol('proto.management_app.config.set.UpdateReadNameOk', null, global);
+goog.exportSymbol('proto.management_app.config.set.UpdateResultDictionaryEntryA', null, global);
+goog.exportSymbol('proto.management_app.config.set.UpdateResultDictionaryEntryAOk', null, global);
+goog.exportSymbol('proto.management_app.config.set.UpdateResultDictionaryEntryASame', null, global);
+goog.exportSymbol('proto.management_app.config.set.UpdateResultDictionaryEntryB', null, global);
+goog.exportSymbol('proto.management_app.config.set.UpdateResultDictionaryEntryBOk', null, global);
+goog.exportSymbol('proto.management_app.config.set.UpdateResultDictionaryEntryBSame', null, global);
+goog.exportSymbol('proto.management_app.config.set.UpdateResultError', null, global);
+goog.exportSymbol('proto.management_app.config.set.UpdateResultFloat', null, global);
+goog.exportSymbol('proto.management_app.config.set.UpdateResultFloatOk', null, global);
+goog.exportSymbol('proto.management_app.config.set.UpdateResultFloatSame', null, global);
+goog.exportSymbol('proto.management_app.config.set.UpdateResultReadName', null, global);
+goog.exportSymbol('proto.management_app.config.set.UpdateResultReadNameSame', null, global);
+goog.exportSymbol('proto.management_app.config.set.UpdateResultString', null, global);
+goog.exportSymbol('proto.management_app.config.set.UpdateResultStringOk', null, global);
+goog.exportSymbol('proto.management_app.config.set.UpdateResultStringSame', null, global);
+goog.exportSymbol('proto.management_app.config.set.UpdateResultUint32', null, global);
+goog.exportSymbol('proto.management_app.config.set.UpdateResultUint32Ok', null, global);
+goog.exportSymbol('proto.management_app.config.set.UpdateResultUint32Same', null, global);
+goog.exportSymbol('proto.management_app.config.set.UpdateSimpleDictionary', null, global);
+goog.exportSymbol('proto.management_app.config.set.UpdateString', null, global);
+goog.exportSymbol('proto.management_app.config.set.UpdateUint32', null, global);
 
 /**
  * Generated by JsPbCodeGenerator.
@@ -57,12 +57,12 @@ goog.exportSymbol('proto.UpdateUint32', null, global);
  * @extends {jspb.Message}
  * @constructor
  */
-proto.Target = function(opt_data) {
+proto.management_app.config.set.Target = function(opt_data) {
   jspb.Message.initialize(this, opt_data, 0, -1, null, null);
 };
-goog.inherits(proto.Target, jspb.Message);
+goog.inherits(proto.management_app.config.set.Target, jspb.Message);
 if (goog.DEBUG && !COMPILED) {
-  proto.Target.displayName = 'proto.Target';
+  proto.management_app.config.set.Target.displayName = 'proto.management_app.config.set.Target';
 }
 
 
@@ -77,8 +77,8 @@ if (jspb.Message.GENERATE_TO_OBJECT) {
  *     for transitional soy proto support: http://goto/soy-param-migration
  * @return {!Object}
  */
-proto.Target.prototype.toObject = function(opt_includeInstance) {
-  return proto.Target.toObject(opt_includeInstance, this);
+proto.management_app.config.set.Target.prototype.toObject = function(opt_includeInstance) {
+  return proto.management_app.config.set.Target.toObject(opt_includeInstance, this);
 };
 
 
@@ -87,10 +87,10 @@ proto.Target.prototype.toObject = function(opt_includeInstance) {
  * @param {boolean|undefined} includeInstance Whether to include the JSPB
  *     instance for transitional soy proto support:
  *     http://goto/soy-param-migration
- * @param {!proto.Target} msg The msg instance to transform.
+ * @param {!proto.management_app.config.set.Target} msg The msg instance to transform.
  * @return {!Object}
  */
-proto.Target.toObject = function(includeInstance, msg) {
+proto.management_app.config.set.Target.toObject = function(includeInstance, msg) {
   var f, obj = {
     guild: msg.getGuild(),
     user: msg.getUser()
@@ -107,23 +107,23 @@ proto.Target.toObject = function(includeInstance, msg) {
 /**
  * Deserializes binary data (in protobuf wire format).
  * @param {jspb.ByteSource} bytes The bytes to deserialize.
- * @return {!proto.Target}
+ * @return {!proto.management_app.config.set.Target}
  */
-proto.Target.deserializeBinary = function(bytes) {
+proto.management_app.config.set.Target.deserializeBinary = function(bytes) {
   var reader = new jspb.BinaryReader(bytes);
-  var msg = new proto.Target;
-  return proto.Target.deserializeBinaryFromReader(msg, reader);
+  var msg = new proto.management_app.config.set.Target;
+  return proto.management_app.config.set.Target.deserializeBinaryFromReader(msg, reader);
 };
 
 
 /**
  * Deserializes binary data (in protobuf wire format) from the
  * given reader into the given message object.
- * @param {!proto.Target} msg The message object to deserialize into.
+ * @param {!proto.management_app.config.set.Target} msg The message object to deserialize into.
  * @param {!jspb.BinaryReader} reader The BinaryReader to use.
- * @return {!proto.Target}
+ * @return {!proto.management_app.config.set.Target}
  */
-proto.Target.deserializeBinaryFromReader = function(msg, reader) {
+proto.management_app.config.set.Target.deserializeBinaryFromReader = function(msg, reader) {
   while (reader.nextField()) {
     if (reader.isEndGroup()) {
       break;
@@ -150,10 +150,10 @@ proto.Target.deserializeBinaryFromReader = function(msg, reader) {
 /**
  * Class method variant: serializes the given message to binary data
  * (in protobuf wire format), writing to the given BinaryWriter.
- * @param {!proto.Target} message
+ * @param {!proto.management_app.config.set.Target} message
  * @param {!jspb.BinaryWriter} writer
  */
-proto.Target.serializeBinaryToWriter = function(message, writer) {
+proto.management_app.config.set.Target.serializeBinaryToWriter = function(message, writer) {
   message.serializeBinaryToWriter(writer);
 };
 
@@ -162,7 +162,7 @@ proto.Target.serializeBinaryToWriter = function(message, writer) {
  * Serializes the message to binary data (in protobuf wire format).
  * @return {!Uint8Array}
  */
-proto.Target.prototype.serializeBinary = function() {
+proto.management_app.config.set.Target.prototype.serializeBinary = function() {
   var writer = new jspb.BinaryWriter();
   this.serializeBinaryToWriter(writer);
   return writer.getResultBuffer();
@@ -174,7 +174,7 @@ proto.Target.prototype.serializeBinary = function() {
  * writing to the given BinaryWriter.
  * @param {!jspb.BinaryWriter} writer
  */
-proto.Target.prototype.serializeBinaryToWriter = function (writer) {
+proto.management_app.config.set.Target.prototype.serializeBinaryToWriter = function (writer) {
   var f = undefined;
   f = this.getGuild();
   if (f.length > 0) {
@@ -195,10 +195,10 @@ proto.Target.prototype.serializeBinaryToWriter = function (writer) {
 
 /**
  * Creates a deep clone of this proto. No data is shared with the original.
- * @return {!proto.Target} The clone.
+ * @return {!proto.management_app.config.set.Target} The clone.
  */
-proto.Target.prototype.cloneMessage = function() {
-  return /** @type {!proto.Target} */ (jspb.Message.cloneMessage(this));
+proto.management_app.config.set.Target.prototype.cloneMessage = function() {
+  return /** @type {!proto.management_app.config.set.Target} */ (jspb.Message.cloneMessage(this));
 };
 
 
@@ -206,13 +206,13 @@ proto.Target.prototype.cloneMessage = function() {
  * optional string guild = 1;
  * @return {string}
  */
-proto.Target.prototype.getGuild = function() {
+proto.management_app.config.set.Target.prototype.getGuild = function() {
   return /** @type {string} */ (jspb.Message.getFieldProto3(this, 1, ""));
 };
 
 
 /** @param {string} value  */
-proto.Target.prototype.setGuild = function(value) {
+proto.management_app.config.set.Target.prototype.setGuild = function(value) {
   jspb.Message.setField(this, 1, value);
 };
 
@@ -221,13 +221,13 @@ proto.Target.prototype.setGuild = function(value) {
  * optional string user = 2;
  * @return {string}
  */
-proto.Target.prototype.getUser = function() {
+proto.management_app.config.set.Target.prototype.getUser = function() {
   return /** @type {string} */ (jspb.Message.getFieldProto3(this, 2, ""));
 };
 
 
 /** @param {string} value  */
-proto.Target.prototype.setUser = function(value) {
+proto.management_app.config.set.Target.prototype.setUser = function(value) {
   jspb.Message.setField(this, 2, value);
 };
 
@@ -243,12 +243,12 @@ proto.Target.prototype.setUser = function(value) {
  * @extends {jspb.Message}
  * @constructor
  */
-proto.UpdateResultError = function(opt_data) {
+proto.management_app.config.set.UpdateResultError = function(opt_data) {
   jspb.Message.initialize(this, opt_data, 0, -1, null, null);
 };
-goog.inherits(proto.UpdateResultError, jspb.Message);
+goog.inherits(proto.management_app.config.set.UpdateResultError, jspb.Message);
 if (goog.DEBUG && !COMPILED) {
-  proto.UpdateResultError.displayName = 'proto.UpdateResultError';
+  proto.management_app.config.set.UpdateResultError.displayName = 'proto.management_app.config.set.UpdateResultError';
 }
 
 
@@ -263,8 +263,8 @@ if (jspb.Message.GENERATE_TO_OBJECT) {
  *     for transitional soy proto support: http://goto/soy-param-migration
  * @return {!Object}
  */
-proto.UpdateResultError.prototype.toObject = function(opt_includeInstance) {
-  return proto.UpdateResultError.toObject(opt_includeInstance, this);
+proto.management_app.config.set.UpdateResultError.prototype.toObject = function(opt_includeInstance) {
+  return proto.management_app.config.set.UpdateResultError.toObject(opt_includeInstance, this);
 };
 
 
@@ -273,10 +273,10 @@ proto.UpdateResultError.prototype.toObject = function(opt_includeInstance) {
  * @param {boolean|undefined} includeInstance Whether to include the JSPB
  *     instance for transitional soy proto support:
  *     http://goto/soy-param-migration
- * @param {!proto.UpdateResultError} msg The msg instance to transform.
+ * @param {!proto.management_app.config.set.UpdateResultError} msg The msg instance to transform.
  * @return {!Object}
  */
-proto.UpdateResultError.toObject = function(includeInstance, msg) {
+proto.management_app.config.set.UpdateResultError.toObject = function(includeInstance, msg) {
   var f, obj = {
     message: msg.getMessage()
   };
@@ -292,23 +292,23 @@ proto.UpdateResultError.toObject = function(includeInstance, msg) {
 /**
  * Deserializes binary data (in protobuf wire format).
  * @param {jspb.ByteSource} bytes The bytes to deserialize.
- * @return {!proto.UpdateResultError}
+ * @return {!proto.management_app.config.set.UpdateResultError}
  */
-proto.UpdateResultError.deserializeBinary = function(bytes) {
+proto.management_app.config.set.UpdateResultError.deserializeBinary = function(bytes) {
   var reader = new jspb.BinaryReader(bytes);
-  var msg = new proto.UpdateResultError;
-  return proto.UpdateResultError.deserializeBinaryFromReader(msg, reader);
+  var msg = new proto.management_app.config.set.UpdateResultError;
+  return proto.management_app.config.set.UpdateResultError.deserializeBinaryFromReader(msg, reader);
 };
 
 
 /**
  * Deserializes binary data (in protobuf wire format) from the
  * given reader into the given message object.
- * @param {!proto.UpdateResultError} msg The message object to deserialize into.
+ * @param {!proto.management_app.config.set.UpdateResultError} msg The message object to deserialize into.
  * @param {!jspb.BinaryReader} reader The BinaryReader to use.
- * @return {!proto.UpdateResultError}
+ * @return {!proto.management_app.config.set.UpdateResultError}
  */
-proto.UpdateResultError.deserializeBinaryFromReader = function(msg, reader) {
+proto.management_app.config.set.UpdateResultError.deserializeBinaryFromReader = function(msg, reader) {
   while (reader.nextField()) {
     if (reader.isEndGroup()) {
       break;
@@ -331,10 +331,10 @@ proto.UpdateResultError.deserializeBinaryFromReader = function(msg, reader) {
 /**
  * Class method variant: serializes the given message to binary data
  * (in protobuf wire format), writing to the given BinaryWriter.
- * @param {!proto.UpdateResultError} message
+ * @param {!proto.management_app.config.set.UpdateResultError} message
  * @param {!jspb.BinaryWriter} writer
  */
-proto.UpdateResultError.serializeBinaryToWriter = function(message, writer) {
+proto.management_app.config.set.UpdateResultError.serializeBinaryToWriter = function(message, writer) {
   message.serializeBinaryToWriter(writer);
 };
 
@@ -343,7 +343,7 @@ proto.UpdateResultError.serializeBinaryToWriter = function(message, writer) {
  * Serializes the message to binary data (in protobuf wire format).
  * @return {!Uint8Array}
  */
-proto.UpdateResultError.prototype.serializeBinary = function() {
+proto.management_app.config.set.UpdateResultError.prototype.serializeBinary = function() {
   var writer = new jspb.BinaryWriter();
   this.serializeBinaryToWriter(writer);
   return writer.getResultBuffer();
@@ -355,7 +355,7 @@ proto.UpdateResultError.prototype.serializeBinary = function() {
  * writing to the given BinaryWriter.
  * @param {!jspb.BinaryWriter} writer
  */
-proto.UpdateResultError.prototype.serializeBinaryToWriter = function (writer) {
+proto.management_app.config.set.UpdateResultError.prototype.serializeBinaryToWriter = function (writer) {
   var f = undefined;
   f = this.getMessage();
   if (f.length > 0) {
@@ -369,10 +369,10 @@ proto.UpdateResultError.prototype.serializeBinaryToWriter = function (writer) {
 
 /**
  * Creates a deep clone of this proto. No data is shared with the original.
- * @return {!proto.UpdateResultError} The clone.
+ * @return {!proto.management_app.config.set.UpdateResultError} The clone.
  */
-proto.UpdateResultError.prototype.cloneMessage = function() {
-  return /** @type {!proto.UpdateResultError} */ (jspb.Message.cloneMessage(this));
+proto.management_app.config.set.UpdateResultError.prototype.cloneMessage = function() {
+  return /** @type {!proto.management_app.config.set.UpdateResultError} */ (jspb.Message.cloneMessage(this));
 };
 
 
@@ -380,13 +380,13 @@ proto.UpdateResultError.prototype.cloneMessage = function() {
  * optional string message = 1;
  * @return {string}
  */
-proto.UpdateResultError.prototype.getMessage = function() {
+proto.management_app.config.set.UpdateResultError.prototype.getMessage = function() {
   return /** @type {string} */ (jspb.Message.getFieldProto3(this, 1, ""));
 };
 
 
 /** @param {string} value  */
-proto.UpdateResultError.prototype.setMessage = function(value) {
+proto.management_app.config.set.UpdateResultError.prototype.setMessage = function(value) {
   jspb.Message.setField(this, 1, value);
 };
 
@@ -402,12 +402,12 @@ proto.UpdateResultError.prototype.setMessage = function(value) {
  * @extends {jspb.Message}
  * @constructor
  */
-proto.UpdateString = function(opt_data) {
-  jspb.Message.initialize(this, opt_data, 0, -1, null, proto.UpdateString.oneofGroups_);
+proto.management_app.config.set.UpdateString = function(opt_data) {
+  jspb.Message.initialize(this, opt_data, 0, -1, null, proto.management_app.config.set.UpdateString.oneofGroups_);
 };
-goog.inherits(proto.UpdateString, jspb.Message);
+goog.inherits(proto.management_app.config.set.UpdateString, jspb.Message);
 if (goog.DEBUG && !COMPILED) {
-  proto.UpdateString.displayName = 'proto.UpdateString';
+  proto.management_app.config.set.UpdateString.displayName = 'proto.management_app.config.set.UpdateString';
 }
 /**
  * Oneof group definitions for this message. Each group defines the field
@@ -417,21 +417,21 @@ if (goog.DEBUG && !COMPILED) {
  * @private {!Array<!Array<number>>}
  * @const
  */
-proto.UpdateString.oneofGroups_ = [[2]];
+proto.management_app.config.set.UpdateString.oneofGroups_ = [[2]];
 
 /**
  * @enum {number}
  */
-proto.UpdateString.ValueOptionalCase = {
+proto.management_app.config.set.UpdateString.ValueOptionalCase = {
   VALUE_OPTIONAL_NOT_SET: 0,
   VALUE: 2
 };
 
 /**
- * @return {proto.UpdateString.ValueOptionalCase}
+ * @return {proto.management_app.config.set.UpdateString.ValueOptionalCase}
  */
-proto.UpdateString.prototype.getValueOptionalCase = function() {
-  return /** @type {proto.UpdateString.ValueOptionalCase} */(jspb.Message.computeOneofCase(this, proto.UpdateString.oneofGroups_[0]));
+proto.management_app.config.set.UpdateString.prototype.getValueOptionalCase = function() {
+  return /** @type {proto.management_app.config.set.UpdateString.ValueOptionalCase} */(jspb.Message.computeOneofCase(this, proto.management_app.config.set.UpdateString.oneofGroups_[0]));
 };
 
 
@@ -447,8 +447,8 @@ if (jspb.Message.GENERATE_TO_OBJECT) {
  *     for transitional soy proto support: http://goto/soy-param-migration
  * @return {!Object}
  */
-proto.UpdateString.prototype.toObject = function(opt_includeInstance) {
-  return proto.UpdateString.toObject(opt_includeInstance, this);
+proto.management_app.config.set.UpdateString.prototype.toObject = function(opt_includeInstance) {
+  return proto.management_app.config.set.UpdateString.toObject(opt_includeInstance, this);
 };
 
 
@@ -457,12 +457,12 @@ proto.UpdateString.prototype.toObject = function(opt_includeInstance) {
  * @param {boolean|undefined} includeInstance Whether to include the JSPB
  *     instance for transitional soy proto support:
  *     http://goto/soy-param-migration
- * @param {!proto.UpdateString} msg The msg instance to transform.
+ * @param {!proto.management_app.config.set.UpdateString} msg The msg instance to transform.
  * @return {!Object}
  */
-proto.UpdateString.toObject = function(includeInstance, msg) {
+proto.management_app.config.set.UpdateString.toObject = function(includeInstance, msg) {
   var f, obj = {
-    target: (f = msg.getTarget()) && proto.Target.toObject(includeInstance, f),
+    target: (f = msg.getTarget()) && proto.management_app.config.set.Target.toObject(includeInstance, f),
     value: jspb.Message.getField(msg, 2)
   };
 
@@ -477,23 +477,23 @@ proto.UpdateString.toObject = function(includeInstance, msg) {
 /**
  * Deserializes binary data (in protobuf wire format).
  * @param {jspb.ByteSource} bytes The bytes to deserialize.
- * @return {!proto.UpdateString}
+ * @return {!proto.management_app.config.set.UpdateString}
  */
-proto.UpdateString.deserializeBinary = function(bytes) {
+proto.management_app.config.set.UpdateString.deserializeBinary = function(bytes) {
   var reader = new jspb.BinaryReader(bytes);
-  var msg = new proto.UpdateString;
-  return proto.UpdateString.deserializeBinaryFromReader(msg, reader);
+  var msg = new proto.management_app.config.set.UpdateString;
+  return proto.management_app.config.set.UpdateString.deserializeBinaryFromReader(msg, reader);
 };
 
 
 /**
  * Deserializes binary data (in protobuf wire format) from the
  * given reader into the given message object.
- * @param {!proto.UpdateString} msg The message object to deserialize into.
+ * @param {!proto.management_app.config.set.UpdateString} msg The message object to deserialize into.
  * @param {!jspb.BinaryReader} reader The BinaryReader to use.
- * @return {!proto.UpdateString}
+ * @return {!proto.management_app.config.set.UpdateString}
  */
-proto.UpdateString.deserializeBinaryFromReader = function(msg, reader) {
+proto.management_app.config.set.UpdateString.deserializeBinaryFromReader = function(msg, reader) {
   while (reader.nextField()) {
     if (reader.isEndGroup()) {
       break;
@@ -501,8 +501,8 @@ proto.UpdateString.deserializeBinaryFromReader = function(msg, reader) {
     var field = reader.getFieldNumber();
     switch (field) {
     case 1:
-      var value = new proto.Target;
-      reader.readMessage(value,proto.Target.deserializeBinaryFromReader);
+      var value = new proto.management_app.config.set.Target;
+      reader.readMessage(value,proto.management_app.config.set.Target.deserializeBinaryFromReader);
       msg.setTarget(value);
       break;
     case 2:
@@ -521,10 +521,10 @@ proto.UpdateString.deserializeBinaryFromReader = function(msg, reader) {
 /**
  * Class method variant: serializes the given message to binary data
  * (in protobuf wire format), writing to the given BinaryWriter.
- * @param {!proto.UpdateString} message
+ * @param {!proto.management_app.config.set.UpdateString} message
  * @param {!jspb.BinaryWriter} writer
  */
-proto.UpdateString.serializeBinaryToWriter = function(message, writer) {
+proto.management_app.config.set.UpdateString.serializeBinaryToWriter = function(message, writer) {
   message.serializeBinaryToWriter(writer);
 };
 
@@ -533,7 +533,7 @@ proto.UpdateString.serializeBinaryToWriter = function(message, writer) {
  * Serializes the message to binary data (in protobuf wire format).
  * @return {!Uint8Array}
  */
-proto.UpdateString.prototype.serializeBinary = function() {
+proto.management_app.config.set.UpdateString.prototype.serializeBinary = function() {
   var writer = new jspb.BinaryWriter();
   this.serializeBinaryToWriter(writer);
   return writer.getResultBuffer();
@@ -545,14 +545,14 @@ proto.UpdateString.prototype.serializeBinary = function() {
  * writing to the given BinaryWriter.
  * @param {!jspb.BinaryWriter} writer
  */
-proto.UpdateString.prototype.serializeBinaryToWriter = function (writer) {
+proto.management_app.config.set.UpdateString.prototype.serializeBinaryToWriter = function (writer) {
   var f = undefined;
   f = this.getTarget();
   if (f != null) {
     writer.writeMessage(
       1,
       f,
-      proto.Target.serializeBinaryToWriter
+      proto.management_app.config.set.Target.serializeBinaryToWriter
     );
   }
   f = jspb.Message.getField(this, 2);
@@ -567,30 +567,30 @@ proto.UpdateString.prototype.serializeBinaryToWriter = function (writer) {
 
 /**
  * Creates a deep clone of this proto. No data is shared with the original.
- * @return {!proto.UpdateString} The clone.
+ * @return {!proto.management_app.config.set.UpdateString} The clone.
  */
-proto.UpdateString.prototype.cloneMessage = function() {
-  return /** @type {!proto.UpdateString} */ (jspb.Message.cloneMessage(this));
+proto.management_app.config.set.UpdateString.prototype.cloneMessage = function() {
+  return /** @type {!proto.management_app.config.set.UpdateString} */ (jspb.Message.cloneMessage(this));
 };
 
 
 /**
  * optional Target target = 1;
- * @return {proto.Target}
+ * @return {proto.management_app.config.set.Target}
  */
-proto.UpdateString.prototype.getTarget = function() {
-  return /** @type{proto.Target} */ (
-    jspb.Message.getWrapperField(this, proto.Target, 1));
+proto.management_app.config.set.UpdateString.prototype.getTarget = function() {
+  return /** @type{proto.management_app.config.set.Target} */ (
+    jspb.Message.getWrapperField(this, proto.management_app.config.set.Target, 1));
 };
 
 
-/** @param {proto.Target|undefined} value  */
-proto.UpdateString.prototype.setTarget = function(value) {
+/** @param {proto.management_app.config.set.Target|undefined} value  */
+proto.management_app.config.set.UpdateString.prototype.setTarget = function(value) {
   jspb.Message.setWrapperField(this, 1, value);
 };
 
 
-proto.UpdateString.prototype.clearTarget = function() {
+proto.management_app.config.set.UpdateString.prototype.clearTarget = function() {
   this.setTarget(undefined);
 };
 
@@ -599,7 +599,7 @@ proto.UpdateString.prototype.clearTarget = function() {
  * Returns whether this field is set.
  * @return{!boolean}
  */
-proto.UpdateString.prototype.hasTarget = function() {
+proto.management_app.config.set.UpdateString.prototype.hasTarget = function() {
   return jspb.Message.getField(this, 1) != null;
 };
 
@@ -608,19 +608,19 @@ proto.UpdateString.prototype.hasTarget = function() {
  * optional string value = 2;
  * @return {string}
  */
-proto.UpdateString.prototype.getValue = function() {
+proto.management_app.config.set.UpdateString.prototype.getValue = function() {
   return /** @type {string} */ (!this.hasValue() ? "" : jspb.Message.getField(this, 2));
 };
 
 
 /** @param {string?|undefined} value  */
-proto.UpdateString.prototype.setValue = function(value) {
-  jspb.Message.setOneofField(this, 2, proto.UpdateString.oneofGroups_[0], value);
+proto.management_app.config.set.UpdateString.prototype.setValue = function(value) {
+  jspb.Message.setOneofField(this, 2, proto.management_app.config.set.UpdateString.oneofGroups_[0], value);
 };
 
 
-proto.UpdateString.prototype.clearValue = function() {
-  jspb.Message.setOneofField(this, 2, proto.UpdateString.oneofGroups_[0], undefined);
+proto.management_app.config.set.UpdateString.prototype.clearValue = function() {
+  jspb.Message.setOneofField(this, 2, proto.management_app.config.set.UpdateString.oneofGroups_[0], undefined);
 };
 
 
@@ -628,7 +628,7 @@ proto.UpdateString.prototype.clearValue = function() {
  * Returns whether this field is set.
  * @return{!boolean}
  */
-proto.UpdateString.prototype.hasValue = function() {
+proto.management_app.config.set.UpdateString.prototype.hasValue = function() {
   return jspb.Message.getField(this, 2) != null;
 };
 
@@ -644,12 +644,12 @@ proto.UpdateString.prototype.hasValue = function() {
  * @extends {jspb.Message}
  * @constructor
  */
-proto.UpdateResultStringOk = function(opt_data) {
-  jspb.Message.initialize(this, opt_data, 0, -1, null, proto.UpdateResultStringOk.oneofGroups_);
+proto.management_app.config.set.UpdateResultStringOk = function(opt_data) {
+  jspb.Message.initialize(this, opt_data, 0, -1, null, proto.management_app.config.set.UpdateResultStringOk.oneofGroups_);
 };
-goog.inherits(proto.UpdateResultStringOk, jspb.Message);
+goog.inherits(proto.management_app.config.set.UpdateResultStringOk, jspb.Message);
 if (goog.DEBUG && !COMPILED) {
-  proto.UpdateResultStringOk.displayName = 'proto.UpdateResultStringOk';
+  proto.management_app.config.set.UpdateResultStringOk.displayName = 'proto.management_app.config.set.UpdateResultStringOk';
 }
 /**
  * Oneof group definitions for this message. Each group defines the field
@@ -659,36 +659,36 @@ if (goog.DEBUG && !COMPILED) {
  * @private {!Array<!Array<number>>}
  * @const
  */
-proto.UpdateResultStringOk.oneofGroups_ = [[1],[2]];
+proto.management_app.config.set.UpdateResultStringOk.oneofGroups_ = [[1],[2]];
 
 /**
  * @enum {number}
  */
-proto.UpdateResultStringOk.BeforeOptionalCase = {
+proto.management_app.config.set.UpdateResultStringOk.BeforeOptionalCase = {
   BEFORE_OPTIONAL_NOT_SET: 0,
   BEFORE: 1
 };
 
 /**
- * @return {proto.UpdateResultStringOk.BeforeOptionalCase}
+ * @return {proto.management_app.config.set.UpdateResultStringOk.BeforeOptionalCase}
  */
-proto.UpdateResultStringOk.prototype.getBeforeOptionalCase = function() {
-  return /** @type {proto.UpdateResultStringOk.BeforeOptionalCase} */(jspb.Message.computeOneofCase(this, proto.UpdateResultStringOk.oneofGroups_[0]));
+proto.management_app.config.set.UpdateResultStringOk.prototype.getBeforeOptionalCase = function() {
+  return /** @type {proto.management_app.config.set.UpdateResultStringOk.BeforeOptionalCase} */(jspb.Message.computeOneofCase(this, proto.management_app.config.set.UpdateResultStringOk.oneofGroups_[0]));
 };
 
 /**
  * @enum {number}
  */
-proto.UpdateResultStringOk.AfterOptionalCase = {
+proto.management_app.config.set.UpdateResultStringOk.AfterOptionalCase = {
   AFTER_OPTIONAL_NOT_SET: 0,
   AFTER: 2
 };
 
 /**
- * @return {proto.UpdateResultStringOk.AfterOptionalCase}
+ * @return {proto.management_app.config.set.UpdateResultStringOk.AfterOptionalCase}
  */
-proto.UpdateResultStringOk.prototype.getAfterOptionalCase = function() {
-  return /** @type {proto.UpdateResultStringOk.AfterOptionalCase} */(jspb.Message.computeOneofCase(this, proto.UpdateResultStringOk.oneofGroups_[1]));
+proto.management_app.config.set.UpdateResultStringOk.prototype.getAfterOptionalCase = function() {
+  return /** @type {proto.management_app.config.set.UpdateResultStringOk.AfterOptionalCase} */(jspb.Message.computeOneofCase(this, proto.management_app.config.set.UpdateResultStringOk.oneofGroups_[1]));
 };
 
 
@@ -704,8 +704,8 @@ if (jspb.Message.GENERATE_TO_OBJECT) {
  *     for transitional soy proto support: http://goto/soy-param-migration
  * @return {!Object}
  */
-proto.UpdateResultStringOk.prototype.toObject = function(opt_includeInstance) {
-  return proto.UpdateResultStringOk.toObject(opt_includeInstance, this);
+proto.management_app.config.set.UpdateResultStringOk.prototype.toObject = function(opt_includeInstance) {
+  return proto.management_app.config.set.UpdateResultStringOk.toObject(opt_includeInstance, this);
 };
 
 
@@ -714,10 +714,10 @@ proto.UpdateResultStringOk.prototype.toObject = function(opt_includeInstance) {
  * @param {boolean|undefined} includeInstance Whether to include the JSPB
  *     instance for transitional soy proto support:
  *     http://goto/soy-param-migration
- * @param {!proto.UpdateResultStringOk} msg The msg instance to transform.
+ * @param {!proto.management_app.config.set.UpdateResultStringOk} msg The msg instance to transform.
  * @return {!Object}
  */
-proto.UpdateResultStringOk.toObject = function(includeInstance, msg) {
+proto.management_app.config.set.UpdateResultStringOk.toObject = function(includeInstance, msg) {
   var f, obj = {
     before: jspb.Message.getField(msg, 1),
     after: jspb.Message.getField(msg, 2)
@@ -734,23 +734,23 @@ proto.UpdateResultStringOk.toObject = function(includeInstance, msg) {
 /**
  * Deserializes binary data (in protobuf wire format).
  * @param {jspb.ByteSource} bytes The bytes to deserialize.
- * @return {!proto.UpdateResultStringOk}
+ * @return {!proto.management_app.config.set.UpdateResultStringOk}
  */
-proto.UpdateResultStringOk.deserializeBinary = function(bytes) {
+proto.management_app.config.set.UpdateResultStringOk.deserializeBinary = function(bytes) {
   var reader = new jspb.BinaryReader(bytes);
-  var msg = new proto.UpdateResultStringOk;
-  return proto.UpdateResultStringOk.deserializeBinaryFromReader(msg, reader);
+  var msg = new proto.management_app.config.set.UpdateResultStringOk;
+  return proto.management_app.config.set.UpdateResultStringOk.deserializeBinaryFromReader(msg, reader);
 };
 
 
 /**
  * Deserializes binary data (in protobuf wire format) from the
  * given reader into the given message object.
- * @param {!proto.UpdateResultStringOk} msg The message object to deserialize into.
+ * @param {!proto.management_app.config.set.UpdateResultStringOk} msg The message object to deserialize into.
  * @param {!jspb.BinaryReader} reader The BinaryReader to use.
- * @return {!proto.UpdateResultStringOk}
+ * @return {!proto.management_app.config.set.UpdateResultStringOk}
  */
-proto.UpdateResultStringOk.deserializeBinaryFromReader = function(msg, reader) {
+proto.management_app.config.set.UpdateResultStringOk.deserializeBinaryFromReader = function(msg, reader) {
   while (reader.nextField()) {
     if (reader.isEndGroup()) {
       break;
@@ -777,10 +777,10 @@ proto.UpdateResultStringOk.deserializeBinaryFromReader = function(msg, reader) {
 /**
  * Class method variant: serializes the given message to binary data
  * (in protobuf wire format), writing to the given BinaryWriter.
- * @param {!proto.UpdateResultStringOk} message
+ * @param {!proto.management_app.config.set.UpdateResultStringOk} message
  * @param {!jspb.BinaryWriter} writer
  */
-proto.UpdateResultStringOk.serializeBinaryToWriter = function(message, writer) {
+proto.management_app.config.set.UpdateResultStringOk.serializeBinaryToWriter = function(message, writer) {
   message.serializeBinaryToWriter(writer);
 };
 
@@ -789,7 +789,7 @@ proto.UpdateResultStringOk.serializeBinaryToWriter = function(message, writer) {
  * Serializes the message to binary data (in protobuf wire format).
  * @return {!Uint8Array}
  */
-proto.UpdateResultStringOk.prototype.serializeBinary = function() {
+proto.management_app.config.set.UpdateResultStringOk.prototype.serializeBinary = function() {
   var writer = new jspb.BinaryWriter();
   this.serializeBinaryToWriter(writer);
   return writer.getResultBuffer();
@@ -801,7 +801,7 @@ proto.UpdateResultStringOk.prototype.serializeBinary = function() {
  * writing to the given BinaryWriter.
  * @param {!jspb.BinaryWriter} writer
  */
-proto.UpdateResultStringOk.prototype.serializeBinaryToWriter = function (writer) {
+proto.management_app.config.set.UpdateResultStringOk.prototype.serializeBinaryToWriter = function (writer) {
   var f = undefined;
   f = jspb.Message.getField(this, 1);
   if (f != null) {
@@ -822,10 +822,10 @@ proto.UpdateResultStringOk.prototype.serializeBinaryToWriter = function (writer)
 
 /**
  * Creates a deep clone of this proto. No data is shared with the original.
- * @return {!proto.UpdateResultStringOk} The clone.
+ * @return {!proto.management_app.config.set.UpdateResultStringOk} The clone.
  */
-proto.UpdateResultStringOk.prototype.cloneMessage = function() {
-  return /** @type {!proto.UpdateResultStringOk} */ (jspb.Message.cloneMessage(this));
+proto.management_app.config.set.UpdateResultStringOk.prototype.cloneMessage = function() {
+  return /** @type {!proto.management_app.config.set.UpdateResultStringOk} */ (jspb.Message.cloneMessage(this));
 };
 
 
@@ -833,19 +833,19 @@ proto.UpdateResultStringOk.prototype.cloneMessage = function() {
  * optional string before = 1;
  * @return {string}
  */
-proto.UpdateResultStringOk.prototype.getBefore = function() {
+proto.management_app.config.set.UpdateResultStringOk.prototype.getBefore = function() {
   return /** @type {string} */ (!this.hasBefore() ? "" : jspb.Message.getField(this, 1));
 };
 
 
 /** @param {string?|undefined} value  */
-proto.UpdateResultStringOk.prototype.setBefore = function(value) {
-  jspb.Message.setOneofField(this, 1, proto.UpdateResultStringOk.oneofGroups_[0], value);
+proto.management_app.config.set.UpdateResultStringOk.prototype.setBefore = function(value) {
+  jspb.Message.setOneofField(this, 1, proto.management_app.config.set.UpdateResultStringOk.oneofGroups_[0], value);
 };
 
 
-proto.UpdateResultStringOk.prototype.clearBefore = function() {
-  jspb.Message.setOneofField(this, 1, proto.UpdateResultStringOk.oneofGroups_[0], undefined);
+proto.management_app.config.set.UpdateResultStringOk.prototype.clearBefore = function() {
+  jspb.Message.setOneofField(this, 1, proto.management_app.config.set.UpdateResultStringOk.oneofGroups_[0], undefined);
 };
 
 
@@ -853,7 +853,7 @@ proto.UpdateResultStringOk.prototype.clearBefore = function() {
  * Returns whether this field is set.
  * @return{!boolean}
  */
-proto.UpdateResultStringOk.prototype.hasBefore = function() {
+proto.management_app.config.set.UpdateResultStringOk.prototype.hasBefore = function() {
   return jspb.Message.getField(this, 1) != null;
 };
 
@@ -862,19 +862,19 @@ proto.UpdateResultStringOk.prototype.hasBefore = function() {
  * optional string after = 2;
  * @return {string}
  */
-proto.UpdateResultStringOk.prototype.getAfter = function() {
+proto.management_app.config.set.UpdateResultStringOk.prototype.getAfter = function() {
   return /** @type {string} */ (!this.hasAfter() ? "" : jspb.Message.getField(this, 2));
 };
 
 
 /** @param {string?|undefined} value  */
-proto.UpdateResultStringOk.prototype.setAfter = function(value) {
-  jspb.Message.setOneofField(this, 2, proto.UpdateResultStringOk.oneofGroups_[1], value);
+proto.management_app.config.set.UpdateResultStringOk.prototype.setAfter = function(value) {
+  jspb.Message.setOneofField(this, 2, proto.management_app.config.set.UpdateResultStringOk.oneofGroups_[1], value);
 };
 
 
-proto.UpdateResultStringOk.prototype.clearAfter = function() {
-  jspb.Message.setOneofField(this, 2, proto.UpdateResultStringOk.oneofGroups_[1], undefined);
+proto.management_app.config.set.UpdateResultStringOk.prototype.clearAfter = function() {
+  jspb.Message.setOneofField(this, 2, proto.management_app.config.set.UpdateResultStringOk.oneofGroups_[1], undefined);
 };
 
 
@@ -882,7 +882,7 @@ proto.UpdateResultStringOk.prototype.clearAfter = function() {
  * Returns whether this field is set.
  * @return{!boolean}
  */
-proto.UpdateResultStringOk.prototype.hasAfter = function() {
+proto.management_app.config.set.UpdateResultStringOk.prototype.hasAfter = function() {
   return jspb.Message.getField(this, 2) != null;
 };
 
@@ -898,12 +898,12 @@ proto.UpdateResultStringOk.prototype.hasAfter = function() {
  * @extends {jspb.Message}
  * @constructor
  */
-proto.UpdateResultStringSame = function(opt_data) {
-  jspb.Message.initialize(this, opt_data, 0, -1, null, proto.UpdateResultStringSame.oneofGroups_);
+proto.management_app.config.set.UpdateResultStringSame = function(opt_data) {
+  jspb.Message.initialize(this, opt_data, 0, -1, null, proto.management_app.config.set.UpdateResultStringSame.oneofGroups_);
 };
-goog.inherits(proto.UpdateResultStringSame, jspb.Message);
+goog.inherits(proto.management_app.config.set.UpdateResultStringSame, jspb.Message);
 if (goog.DEBUG && !COMPILED) {
-  proto.UpdateResultStringSame.displayName = 'proto.UpdateResultStringSame';
+  proto.management_app.config.set.UpdateResultStringSame.displayName = 'proto.management_app.config.set.UpdateResultStringSame';
 }
 /**
  * Oneof group definitions for this message. Each group defines the field
@@ -913,21 +913,21 @@ if (goog.DEBUG && !COMPILED) {
  * @private {!Array<!Array<number>>}
  * @const
  */
-proto.UpdateResultStringSame.oneofGroups_ = [[1]];
+proto.management_app.config.set.UpdateResultStringSame.oneofGroups_ = [[1]];
 
 /**
  * @enum {number}
  */
-proto.UpdateResultStringSame.ValueOptionalCase = {
+proto.management_app.config.set.UpdateResultStringSame.ValueOptionalCase = {
   VALUE_OPTIONAL_NOT_SET: 0,
   VALUE: 1
 };
 
 /**
- * @return {proto.UpdateResultStringSame.ValueOptionalCase}
+ * @return {proto.management_app.config.set.UpdateResultStringSame.ValueOptionalCase}
  */
-proto.UpdateResultStringSame.prototype.getValueOptionalCase = function() {
-  return /** @type {proto.UpdateResultStringSame.ValueOptionalCase} */(jspb.Message.computeOneofCase(this, proto.UpdateResultStringSame.oneofGroups_[0]));
+proto.management_app.config.set.UpdateResultStringSame.prototype.getValueOptionalCase = function() {
+  return /** @type {proto.management_app.config.set.UpdateResultStringSame.ValueOptionalCase} */(jspb.Message.computeOneofCase(this, proto.management_app.config.set.UpdateResultStringSame.oneofGroups_[0]));
 };
 
 
@@ -943,8 +943,8 @@ if (jspb.Message.GENERATE_TO_OBJECT) {
  *     for transitional soy proto support: http://goto/soy-param-migration
  * @return {!Object}
  */
-proto.UpdateResultStringSame.prototype.toObject = function(opt_includeInstance) {
-  return proto.UpdateResultStringSame.toObject(opt_includeInstance, this);
+proto.management_app.config.set.UpdateResultStringSame.prototype.toObject = function(opt_includeInstance) {
+  return proto.management_app.config.set.UpdateResultStringSame.toObject(opt_includeInstance, this);
 };
 
 
@@ -953,10 +953,10 @@ proto.UpdateResultStringSame.prototype.toObject = function(opt_includeInstance) 
  * @param {boolean|undefined} includeInstance Whether to include the JSPB
  *     instance for transitional soy proto support:
  *     http://goto/soy-param-migration
- * @param {!proto.UpdateResultStringSame} msg The msg instance to transform.
+ * @param {!proto.management_app.config.set.UpdateResultStringSame} msg The msg instance to transform.
  * @return {!Object}
  */
-proto.UpdateResultStringSame.toObject = function(includeInstance, msg) {
+proto.management_app.config.set.UpdateResultStringSame.toObject = function(includeInstance, msg) {
   var f, obj = {
     value: jspb.Message.getField(msg, 1)
   };
@@ -972,23 +972,23 @@ proto.UpdateResultStringSame.toObject = function(includeInstance, msg) {
 /**
  * Deserializes binary data (in protobuf wire format).
  * @param {jspb.ByteSource} bytes The bytes to deserialize.
- * @return {!proto.UpdateResultStringSame}
+ * @return {!proto.management_app.config.set.UpdateResultStringSame}
  */
-proto.UpdateResultStringSame.deserializeBinary = function(bytes) {
+proto.management_app.config.set.UpdateResultStringSame.deserializeBinary = function(bytes) {
   var reader = new jspb.BinaryReader(bytes);
-  var msg = new proto.UpdateResultStringSame;
-  return proto.UpdateResultStringSame.deserializeBinaryFromReader(msg, reader);
+  var msg = new proto.management_app.config.set.UpdateResultStringSame;
+  return proto.management_app.config.set.UpdateResultStringSame.deserializeBinaryFromReader(msg, reader);
 };
 
 
 /**
  * Deserializes binary data (in protobuf wire format) from the
  * given reader into the given message object.
- * @param {!proto.UpdateResultStringSame} msg The message object to deserialize into.
+ * @param {!proto.management_app.config.set.UpdateResultStringSame} msg The message object to deserialize into.
  * @param {!jspb.BinaryReader} reader The BinaryReader to use.
- * @return {!proto.UpdateResultStringSame}
+ * @return {!proto.management_app.config.set.UpdateResultStringSame}
  */
-proto.UpdateResultStringSame.deserializeBinaryFromReader = function(msg, reader) {
+proto.management_app.config.set.UpdateResultStringSame.deserializeBinaryFromReader = function(msg, reader) {
   while (reader.nextField()) {
     if (reader.isEndGroup()) {
       break;
@@ -1011,10 +1011,10 @@ proto.UpdateResultStringSame.deserializeBinaryFromReader = function(msg, reader)
 /**
  * Class method variant: serializes the given message to binary data
  * (in protobuf wire format), writing to the given BinaryWriter.
- * @param {!proto.UpdateResultStringSame} message
+ * @param {!proto.management_app.config.set.UpdateResultStringSame} message
  * @param {!jspb.BinaryWriter} writer
  */
-proto.UpdateResultStringSame.serializeBinaryToWriter = function(message, writer) {
+proto.management_app.config.set.UpdateResultStringSame.serializeBinaryToWriter = function(message, writer) {
   message.serializeBinaryToWriter(writer);
 };
 
@@ -1023,7 +1023,7 @@ proto.UpdateResultStringSame.serializeBinaryToWriter = function(message, writer)
  * Serializes the message to binary data (in protobuf wire format).
  * @return {!Uint8Array}
  */
-proto.UpdateResultStringSame.prototype.serializeBinary = function() {
+proto.management_app.config.set.UpdateResultStringSame.prototype.serializeBinary = function() {
   var writer = new jspb.BinaryWriter();
   this.serializeBinaryToWriter(writer);
   return writer.getResultBuffer();
@@ -1035,7 +1035,7 @@ proto.UpdateResultStringSame.prototype.serializeBinary = function() {
  * writing to the given BinaryWriter.
  * @param {!jspb.BinaryWriter} writer
  */
-proto.UpdateResultStringSame.prototype.serializeBinaryToWriter = function (writer) {
+proto.management_app.config.set.UpdateResultStringSame.prototype.serializeBinaryToWriter = function (writer) {
   var f = undefined;
   f = jspb.Message.getField(this, 1);
   if (f != null) {
@@ -1049,10 +1049,10 @@ proto.UpdateResultStringSame.prototype.serializeBinaryToWriter = function (write
 
 /**
  * Creates a deep clone of this proto. No data is shared with the original.
- * @return {!proto.UpdateResultStringSame} The clone.
+ * @return {!proto.management_app.config.set.UpdateResultStringSame} The clone.
  */
-proto.UpdateResultStringSame.prototype.cloneMessage = function() {
-  return /** @type {!proto.UpdateResultStringSame} */ (jspb.Message.cloneMessage(this));
+proto.management_app.config.set.UpdateResultStringSame.prototype.cloneMessage = function() {
+  return /** @type {!proto.management_app.config.set.UpdateResultStringSame} */ (jspb.Message.cloneMessage(this));
 };
 
 
@@ -1060,19 +1060,19 @@ proto.UpdateResultStringSame.prototype.cloneMessage = function() {
  * optional string value = 1;
  * @return {string}
  */
-proto.UpdateResultStringSame.prototype.getValue = function() {
+proto.management_app.config.set.UpdateResultStringSame.prototype.getValue = function() {
   return /** @type {string} */ (!this.hasValue() ? "" : jspb.Message.getField(this, 1));
 };
 
 
 /** @param {string?|undefined} value  */
-proto.UpdateResultStringSame.prototype.setValue = function(value) {
-  jspb.Message.setOneofField(this, 1, proto.UpdateResultStringSame.oneofGroups_[0], value);
+proto.management_app.config.set.UpdateResultStringSame.prototype.setValue = function(value) {
+  jspb.Message.setOneofField(this, 1, proto.management_app.config.set.UpdateResultStringSame.oneofGroups_[0], value);
 };
 
 
-proto.UpdateResultStringSame.prototype.clearValue = function() {
-  jspb.Message.setOneofField(this, 1, proto.UpdateResultStringSame.oneofGroups_[0], undefined);
+proto.management_app.config.set.UpdateResultStringSame.prototype.clearValue = function() {
+  jspb.Message.setOneofField(this, 1, proto.management_app.config.set.UpdateResultStringSame.oneofGroups_[0], undefined);
 };
 
 
@@ -1080,7 +1080,7 @@ proto.UpdateResultStringSame.prototype.clearValue = function() {
  * Returns whether this field is set.
  * @return{!boolean}
  */
-proto.UpdateResultStringSame.prototype.hasValue = function() {
+proto.management_app.config.set.UpdateResultStringSame.prototype.hasValue = function() {
   return jspb.Message.getField(this, 1) != null;
 };
 
@@ -1096,12 +1096,12 @@ proto.UpdateResultStringSame.prototype.hasValue = function() {
  * @extends {jspb.Message}
  * @constructor
  */
-proto.UpdateResultString = function(opt_data) {
-  jspb.Message.initialize(this, opt_data, 0, -1, null, proto.UpdateResultString.oneofGroups_);
+proto.management_app.config.set.UpdateResultString = function(opt_data) {
+  jspb.Message.initialize(this, opt_data, 0, -1, null, proto.management_app.config.set.UpdateResultString.oneofGroups_);
 };
-goog.inherits(proto.UpdateResultString, jspb.Message);
+goog.inherits(proto.management_app.config.set.UpdateResultString, jspb.Message);
 if (goog.DEBUG && !COMPILED) {
-  proto.UpdateResultString.displayName = 'proto.UpdateResultString';
+  proto.management_app.config.set.UpdateResultString.displayName = 'proto.management_app.config.set.UpdateResultString';
 }
 /**
  * Oneof group definitions for this message. Each group defines the field
@@ -1111,12 +1111,12 @@ if (goog.DEBUG && !COMPILED) {
  * @private {!Array<!Array<number>>}
  * @const
  */
-proto.UpdateResultString.oneofGroups_ = [[1,2,3]];
+proto.management_app.config.set.UpdateResultString.oneofGroups_ = [[1,2,3]];
 
 /**
  * @enum {number}
  */
-proto.UpdateResultString.UpdateresultCase = {
+proto.management_app.config.set.UpdateResultString.UpdateresultCase = {
   UPDATERESULT_NOT_SET: 0,
   RESULTOK: 1,
   RESULTSAME: 2,
@@ -1124,10 +1124,10 @@ proto.UpdateResultString.UpdateresultCase = {
 };
 
 /**
- * @return {proto.UpdateResultString.UpdateresultCase}
+ * @return {proto.management_app.config.set.UpdateResultString.UpdateresultCase}
  */
-proto.UpdateResultString.prototype.getUpdateresultCase = function() {
-  return /** @type {proto.UpdateResultString.UpdateresultCase} */(jspb.Message.computeOneofCase(this, proto.UpdateResultString.oneofGroups_[0]));
+proto.management_app.config.set.UpdateResultString.prototype.getUpdateresultCase = function() {
+  return /** @type {proto.management_app.config.set.UpdateResultString.UpdateresultCase} */(jspb.Message.computeOneofCase(this, proto.management_app.config.set.UpdateResultString.oneofGroups_[0]));
 };
 
 
@@ -1143,8 +1143,8 @@ if (jspb.Message.GENERATE_TO_OBJECT) {
  *     for transitional soy proto support: http://goto/soy-param-migration
  * @return {!Object}
  */
-proto.UpdateResultString.prototype.toObject = function(opt_includeInstance) {
-  return proto.UpdateResultString.toObject(opt_includeInstance, this);
+proto.management_app.config.set.UpdateResultString.prototype.toObject = function(opt_includeInstance) {
+  return proto.management_app.config.set.UpdateResultString.toObject(opt_includeInstance, this);
 };
 
 
@@ -1153,14 +1153,14 @@ proto.UpdateResultString.prototype.toObject = function(opt_includeInstance) {
  * @param {boolean|undefined} includeInstance Whether to include the JSPB
  *     instance for transitional soy proto support:
  *     http://goto/soy-param-migration
- * @param {!proto.UpdateResultString} msg The msg instance to transform.
+ * @param {!proto.management_app.config.set.UpdateResultString} msg The msg instance to transform.
  * @return {!Object}
  */
-proto.UpdateResultString.toObject = function(includeInstance, msg) {
+proto.management_app.config.set.UpdateResultString.toObject = function(includeInstance, msg) {
   var f, obj = {
-    resultok: (f = msg.getResultok()) && proto.UpdateResultStringOk.toObject(includeInstance, f),
-    resultsame: (f = msg.getResultsame()) && proto.UpdateResultStringSame.toObject(includeInstance, f),
-    error: (f = msg.getError()) && proto.UpdateResultError.toObject(includeInstance, f)
+    resultok: (f = msg.getResultok()) && proto.management_app.config.set.UpdateResultStringOk.toObject(includeInstance, f),
+    resultsame: (f = msg.getResultsame()) && proto.management_app.config.set.UpdateResultStringSame.toObject(includeInstance, f),
+    error: (f = msg.getError()) && proto.management_app.config.set.UpdateResultError.toObject(includeInstance, f)
   };
 
   if (includeInstance) {
@@ -1174,23 +1174,23 @@ proto.UpdateResultString.toObject = function(includeInstance, msg) {
 /**
  * Deserializes binary data (in protobuf wire format).
  * @param {jspb.ByteSource} bytes The bytes to deserialize.
- * @return {!proto.UpdateResultString}
+ * @return {!proto.management_app.config.set.UpdateResultString}
  */
-proto.UpdateResultString.deserializeBinary = function(bytes) {
+proto.management_app.config.set.UpdateResultString.deserializeBinary = function(bytes) {
   var reader = new jspb.BinaryReader(bytes);
-  var msg = new proto.UpdateResultString;
-  return proto.UpdateResultString.deserializeBinaryFromReader(msg, reader);
+  var msg = new proto.management_app.config.set.UpdateResultString;
+  return proto.management_app.config.set.UpdateResultString.deserializeBinaryFromReader(msg, reader);
 };
 
 
 /**
  * Deserializes binary data (in protobuf wire format) from the
  * given reader into the given message object.
- * @param {!proto.UpdateResultString} msg The message object to deserialize into.
+ * @param {!proto.management_app.config.set.UpdateResultString} msg The message object to deserialize into.
  * @param {!jspb.BinaryReader} reader The BinaryReader to use.
- * @return {!proto.UpdateResultString}
+ * @return {!proto.management_app.config.set.UpdateResultString}
  */
-proto.UpdateResultString.deserializeBinaryFromReader = function(msg, reader) {
+proto.management_app.config.set.UpdateResultString.deserializeBinaryFromReader = function(msg, reader) {
   while (reader.nextField()) {
     if (reader.isEndGroup()) {
       break;
@@ -1198,18 +1198,18 @@ proto.UpdateResultString.deserializeBinaryFromReader = function(msg, reader) {
     var field = reader.getFieldNumber();
     switch (field) {
     case 1:
-      var value = new proto.UpdateResultStringOk;
-      reader.readMessage(value,proto.UpdateResultStringOk.deserializeBinaryFromReader);
+      var value = new proto.management_app.config.set.UpdateResultStringOk;
+      reader.readMessage(value,proto.management_app.config.set.UpdateResultStringOk.deserializeBinaryFromReader);
       msg.setResultok(value);
       break;
     case 2:
-      var value = new proto.UpdateResultStringSame;
-      reader.readMessage(value,proto.UpdateResultStringSame.deserializeBinaryFromReader);
+      var value = new proto.management_app.config.set.UpdateResultStringSame;
+      reader.readMessage(value,proto.management_app.config.set.UpdateResultStringSame.deserializeBinaryFromReader);
       msg.setResultsame(value);
       break;
     case 3:
-      var value = new proto.UpdateResultError;
-      reader.readMessage(value,proto.UpdateResultError.deserializeBinaryFromReader);
+      var value = new proto.management_app.config.set.UpdateResultError;
+      reader.readMessage(value,proto.management_app.config.set.UpdateResultError.deserializeBinaryFromReader);
       msg.setError(value);
       break;
     default:
@@ -1224,10 +1224,10 @@ proto.UpdateResultString.deserializeBinaryFromReader = function(msg, reader) {
 /**
  * Class method variant: serializes the given message to binary data
  * (in protobuf wire format), writing to the given BinaryWriter.
- * @param {!proto.UpdateResultString} message
+ * @param {!proto.management_app.config.set.UpdateResultString} message
  * @param {!jspb.BinaryWriter} writer
  */
-proto.UpdateResultString.serializeBinaryToWriter = function(message, writer) {
+proto.management_app.config.set.UpdateResultString.serializeBinaryToWriter = function(message, writer) {
   message.serializeBinaryToWriter(writer);
 };
 
@@ -1236,7 +1236,7 @@ proto.UpdateResultString.serializeBinaryToWriter = function(message, writer) {
  * Serializes the message to binary data (in protobuf wire format).
  * @return {!Uint8Array}
  */
-proto.UpdateResultString.prototype.serializeBinary = function() {
+proto.management_app.config.set.UpdateResultString.prototype.serializeBinary = function() {
   var writer = new jspb.BinaryWriter();
   this.serializeBinaryToWriter(writer);
   return writer.getResultBuffer();
@@ -1248,14 +1248,14 @@ proto.UpdateResultString.prototype.serializeBinary = function() {
  * writing to the given BinaryWriter.
  * @param {!jspb.BinaryWriter} writer
  */
-proto.UpdateResultString.prototype.serializeBinaryToWriter = function (writer) {
+proto.management_app.config.set.UpdateResultString.prototype.serializeBinaryToWriter = function (writer) {
   var f = undefined;
   f = this.getResultok();
   if (f != null) {
     writer.writeMessage(
       1,
       f,
-      proto.UpdateResultStringOk.serializeBinaryToWriter
+      proto.management_app.config.set.UpdateResultStringOk.serializeBinaryToWriter
     );
   }
   f = this.getResultsame();
@@ -1263,7 +1263,7 @@ proto.UpdateResultString.prototype.serializeBinaryToWriter = function (writer) {
     writer.writeMessage(
       2,
       f,
-      proto.UpdateResultStringSame.serializeBinaryToWriter
+      proto.management_app.config.set.UpdateResultStringSame.serializeBinaryToWriter
     );
   }
   f = this.getError();
@@ -1271,7 +1271,7 @@ proto.UpdateResultString.prototype.serializeBinaryToWriter = function (writer) {
     writer.writeMessage(
       3,
       f,
-      proto.UpdateResultError.serializeBinaryToWriter
+      proto.management_app.config.set.UpdateResultError.serializeBinaryToWriter
     );
   }
 };
@@ -1279,30 +1279,30 @@ proto.UpdateResultString.prototype.serializeBinaryToWriter = function (writer) {
 
 /**
  * Creates a deep clone of this proto. No data is shared with the original.
- * @return {!proto.UpdateResultString} The clone.
+ * @return {!proto.management_app.config.set.UpdateResultString} The clone.
  */
-proto.UpdateResultString.prototype.cloneMessage = function() {
-  return /** @type {!proto.UpdateResultString} */ (jspb.Message.cloneMessage(this));
+proto.management_app.config.set.UpdateResultString.prototype.cloneMessage = function() {
+  return /** @type {!proto.management_app.config.set.UpdateResultString} */ (jspb.Message.cloneMessage(this));
 };
 
 
 /**
  * optional UpdateResultStringOk resultOk = 1;
- * @return {proto.UpdateResultStringOk}
+ * @return {proto.management_app.config.set.UpdateResultStringOk}
  */
-proto.UpdateResultString.prototype.getResultok = function() {
-  return /** @type{proto.UpdateResultStringOk} */ (
-    jspb.Message.getWrapperField(this, proto.UpdateResultStringOk, 1));
+proto.management_app.config.set.UpdateResultString.prototype.getResultok = function() {
+  return /** @type{proto.management_app.config.set.UpdateResultStringOk} */ (
+    jspb.Message.getWrapperField(this, proto.management_app.config.set.UpdateResultStringOk, 1));
 };
 
 
-/** @param {proto.UpdateResultStringOk|undefined} value  */
-proto.UpdateResultString.prototype.setResultok = function(value) {
-  jspb.Message.setOneofWrapperField(this, 1, proto.UpdateResultString.oneofGroups_[0], value);
+/** @param {proto.management_app.config.set.UpdateResultStringOk|undefined} value  */
+proto.management_app.config.set.UpdateResultString.prototype.setResultok = function(value) {
+  jspb.Message.setOneofWrapperField(this, 1, proto.management_app.config.set.UpdateResultString.oneofGroups_[0], value);
 };
 
 
-proto.UpdateResultString.prototype.clearResultok = function() {
+proto.management_app.config.set.UpdateResultString.prototype.clearResultok = function() {
   this.setResultok(undefined);
 };
 
@@ -1311,28 +1311,28 @@ proto.UpdateResultString.prototype.clearResultok = function() {
  * Returns whether this field is set.
  * @return{!boolean}
  */
-proto.UpdateResultString.prototype.hasResultok = function() {
+proto.management_app.config.set.UpdateResultString.prototype.hasResultok = function() {
   return jspb.Message.getField(this, 1) != null;
 };
 
 
 /**
  * optional UpdateResultStringSame resultSame = 2;
- * @return {proto.UpdateResultStringSame}
+ * @return {proto.management_app.config.set.UpdateResultStringSame}
  */
-proto.UpdateResultString.prototype.getResultsame = function() {
-  return /** @type{proto.UpdateResultStringSame} */ (
-    jspb.Message.getWrapperField(this, proto.UpdateResultStringSame, 2));
+proto.management_app.config.set.UpdateResultString.prototype.getResultsame = function() {
+  return /** @type{proto.management_app.config.set.UpdateResultStringSame} */ (
+    jspb.Message.getWrapperField(this, proto.management_app.config.set.UpdateResultStringSame, 2));
 };
 
 
-/** @param {proto.UpdateResultStringSame|undefined} value  */
-proto.UpdateResultString.prototype.setResultsame = function(value) {
-  jspb.Message.setOneofWrapperField(this, 2, proto.UpdateResultString.oneofGroups_[0], value);
+/** @param {proto.management_app.config.set.UpdateResultStringSame|undefined} value  */
+proto.management_app.config.set.UpdateResultString.prototype.setResultsame = function(value) {
+  jspb.Message.setOneofWrapperField(this, 2, proto.management_app.config.set.UpdateResultString.oneofGroups_[0], value);
 };
 
 
-proto.UpdateResultString.prototype.clearResultsame = function() {
+proto.management_app.config.set.UpdateResultString.prototype.clearResultsame = function() {
   this.setResultsame(undefined);
 };
 
@@ -1341,28 +1341,28 @@ proto.UpdateResultString.prototype.clearResultsame = function() {
  * Returns whether this field is set.
  * @return{!boolean}
  */
-proto.UpdateResultString.prototype.hasResultsame = function() {
+proto.management_app.config.set.UpdateResultString.prototype.hasResultsame = function() {
   return jspb.Message.getField(this, 2) != null;
 };
 
 
 /**
  * optional UpdateResultError error = 3;
- * @return {proto.UpdateResultError}
+ * @return {proto.management_app.config.set.UpdateResultError}
  */
-proto.UpdateResultString.prototype.getError = function() {
-  return /** @type{proto.UpdateResultError} */ (
-    jspb.Message.getWrapperField(this, proto.UpdateResultError, 3));
+proto.management_app.config.set.UpdateResultString.prototype.getError = function() {
+  return /** @type{proto.management_app.config.set.UpdateResultError} */ (
+    jspb.Message.getWrapperField(this, proto.management_app.config.set.UpdateResultError, 3));
 };
 
 
-/** @param {proto.UpdateResultError|undefined} value  */
-proto.UpdateResultString.prototype.setError = function(value) {
-  jspb.Message.setOneofWrapperField(this, 3, proto.UpdateResultString.oneofGroups_[0], value);
+/** @param {proto.management_app.config.set.UpdateResultError|undefined} value  */
+proto.management_app.config.set.UpdateResultString.prototype.setError = function(value) {
+  jspb.Message.setOneofWrapperField(this, 3, proto.management_app.config.set.UpdateResultString.oneofGroups_[0], value);
 };
 
 
-proto.UpdateResultString.prototype.clearError = function() {
+proto.management_app.config.set.UpdateResultString.prototype.clearError = function() {
   this.setError(undefined);
 };
 
@@ -1371,7 +1371,7 @@ proto.UpdateResultString.prototype.clearError = function() {
  * Returns whether this field is set.
  * @return{!boolean}
  */
-proto.UpdateResultString.prototype.hasError = function() {
+proto.management_app.config.set.UpdateResultString.prototype.hasError = function() {
   return jspb.Message.getField(this, 3) != null;
 };
 
@@ -1387,12 +1387,12 @@ proto.UpdateResultString.prototype.hasError = function() {
  * @extends {jspb.Message}
  * @constructor
  */
-proto.UpdateFloat = function(opt_data) {
-  jspb.Message.initialize(this, opt_data, 0, -1, null, proto.UpdateFloat.oneofGroups_);
+proto.management_app.config.set.UpdateFloat = function(opt_data) {
+  jspb.Message.initialize(this, opt_data, 0, -1, null, proto.management_app.config.set.UpdateFloat.oneofGroups_);
 };
-goog.inherits(proto.UpdateFloat, jspb.Message);
+goog.inherits(proto.management_app.config.set.UpdateFloat, jspb.Message);
 if (goog.DEBUG && !COMPILED) {
-  proto.UpdateFloat.displayName = 'proto.UpdateFloat';
+  proto.management_app.config.set.UpdateFloat.displayName = 'proto.management_app.config.set.UpdateFloat';
 }
 /**
  * Oneof group definitions for this message. Each group defines the field
@@ -1402,21 +1402,21 @@ if (goog.DEBUG && !COMPILED) {
  * @private {!Array<!Array<number>>}
  * @const
  */
-proto.UpdateFloat.oneofGroups_ = [[2]];
+proto.management_app.config.set.UpdateFloat.oneofGroups_ = [[2]];
 
 /**
  * @enum {number}
  */
-proto.UpdateFloat.ValueOptionalCase = {
+proto.management_app.config.set.UpdateFloat.ValueOptionalCase = {
   VALUE_OPTIONAL_NOT_SET: 0,
   VALUE: 2
 };
 
 /**
- * @return {proto.UpdateFloat.ValueOptionalCase}
+ * @return {proto.management_app.config.set.UpdateFloat.ValueOptionalCase}
  */
-proto.UpdateFloat.prototype.getValueOptionalCase = function() {
-  return /** @type {proto.UpdateFloat.ValueOptionalCase} */(jspb.Message.computeOneofCase(this, proto.UpdateFloat.oneofGroups_[0]));
+proto.management_app.config.set.UpdateFloat.prototype.getValueOptionalCase = function() {
+  return /** @type {proto.management_app.config.set.UpdateFloat.ValueOptionalCase} */(jspb.Message.computeOneofCase(this, proto.management_app.config.set.UpdateFloat.oneofGroups_[0]));
 };
 
 
@@ -1432,8 +1432,8 @@ if (jspb.Message.GENERATE_TO_OBJECT) {
  *     for transitional soy proto support: http://goto/soy-param-migration
  * @return {!Object}
  */
-proto.UpdateFloat.prototype.toObject = function(opt_includeInstance) {
-  return proto.UpdateFloat.toObject(opt_includeInstance, this);
+proto.management_app.config.set.UpdateFloat.prototype.toObject = function(opt_includeInstance) {
+  return proto.management_app.config.set.UpdateFloat.toObject(opt_includeInstance, this);
 };
 
 
@@ -1442,12 +1442,12 @@ proto.UpdateFloat.prototype.toObject = function(opt_includeInstance) {
  * @param {boolean|undefined} includeInstance Whether to include the JSPB
  *     instance for transitional soy proto support:
  *     http://goto/soy-param-migration
- * @param {!proto.UpdateFloat} msg The msg instance to transform.
+ * @param {!proto.management_app.config.set.UpdateFloat} msg The msg instance to transform.
  * @return {!Object}
  */
-proto.UpdateFloat.toObject = function(includeInstance, msg) {
+proto.management_app.config.set.UpdateFloat.toObject = function(includeInstance, msg) {
   var f, obj = {
-    target: (f = msg.getTarget()) && proto.Target.toObject(includeInstance, f),
+    target: (f = msg.getTarget()) && proto.management_app.config.set.Target.toObject(includeInstance, f),
     value: jspb.Message.getOptionalFloatingPointField(msg, 2)
   };
 
@@ -1462,23 +1462,23 @@ proto.UpdateFloat.toObject = function(includeInstance, msg) {
 /**
  * Deserializes binary data (in protobuf wire format).
  * @param {jspb.ByteSource} bytes The bytes to deserialize.
- * @return {!proto.UpdateFloat}
+ * @return {!proto.management_app.config.set.UpdateFloat}
  */
-proto.UpdateFloat.deserializeBinary = function(bytes) {
+proto.management_app.config.set.UpdateFloat.deserializeBinary = function(bytes) {
   var reader = new jspb.BinaryReader(bytes);
-  var msg = new proto.UpdateFloat;
-  return proto.UpdateFloat.deserializeBinaryFromReader(msg, reader);
+  var msg = new proto.management_app.config.set.UpdateFloat;
+  return proto.management_app.config.set.UpdateFloat.deserializeBinaryFromReader(msg, reader);
 };
 
 
 /**
  * Deserializes binary data (in protobuf wire format) from the
  * given reader into the given message object.
- * @param {!proto.UpdateFloat} msg The message object to deserialize into.
+ * @param {!proto.management_app.config.set.UpdateFloat} msg The message object to deserialize into.
  * @param {!jspb.BinaryReader} reader The BinaryReader to use.
- * @return {!proto.UpdateFloat}
+ * @return {!proto.management_app.config.set.UpdateFloat}
  */
-proto.UpdateFloat.deserializeBinaryFromReader = function(msg, reader) {
+proto.management_app.config.set.UpdateFloat.deserializeBinaryFromReader = function(msg, reader) {
   while (reader.nextField()) {
     if (reader.isEndGroup()) {
       break;
@@ -1486,8 +1486,8 @@ proto.UpdateFloat.deserializeBinaryFromReader = function(msg, reader) {
     var field = reader.getFieldNumber();
     switch (field) {
     case 1:
-      var value = new proto.Target;
-      reader.readMessage(value,proto.Target.deserializeBinaryFromReader);
+      var value = new proto.management_app.config.set.Target;
+      reader.readMessage(value,proto.management_app.config.set.Target.deserializeBinaryFromReader);
       msg.setTarget(value);
       break;
     case 2:
@@ -1506,10 +1506,10 @@ proto.UpdateFloat.deserializeBinaryFromReader = function(msg, reader) {
 /**
  * Class method variant: serializes the given message to binary data
  * (in protobuf wire format), writing to the given BinaryWriter.
- * @param {!proto.UpdateFloat} message
+ * @param {!proto.management_app.config.set.UpdateFloat} message
  * @param {!jspb.BinaryWriter} writer
  */
-proto.UpdateFloat.serializeBinaryToWriter = function(message, writer) {
+proto.management_app.config.set.UpdateFloat.serializeBinaryToWriter = function(message, writer) {
   message.serializeBinaryToWriter(writer);
 };
 
@@ -1518,7 +1518,7 @@ proto.UpdateFloat.serializeBinaryToWriter = function(message, writer) {
  * Serializes the message to binary data (in protobuf wire format).
  * @return {!Uint8Array}
  */
-proto.UpdateFloat.prototype.serializeBinary = function() {
+proto.management_app.config.set.UpdateFloat.prototype.serializeBinary = function() {
   var writer = new jspb.BinaryWriter();
   this.serializeBinaryToWriter(writer);
   return writer.getResultBuffer();
@@ -1530,14 +1530,14 @@ proto.UpdateFloat.prototype.serializeBinary = function() {
  * writing to the given BinaryWriter.
  * @param {!jspb.BinaryWriter} writer
  */
-proto.UpdateFloat.prototype.serializeBinaryToWriter = function (writer) {
+proto.management_app.config.set.UpdateFloat.prototype.serializeBinaryToWriter = function (writer) {
   var f = undefined;
   f = this.getTarget();
   if (f != null) {
     writer.writeMessage(
       1,
       f,
-      proto.Target.serializeBinaryToWriter
+      proto.management_app.config.set.Target.serializeBinaryToWriter
     );
   }
   f = jspb.Message.getField(this, 2);
@@ -1552,30 +1552,30 @@ proto.UpdateFloat.prototype.serializeBinaryToWriter = function (writer) {
 
 /**
  * Creates a deep clone of this proto. No data is shared with the original.
- * @return {!proto.UpdateFloat} The clone.
+ * @return {!proto.management_app.config.set.UpdateFloat} The clone.
  */
-proto.UpdateFloat.prototype.cloneMessage = function() {
-  return /** @type {!proto.UpdateFloat} */ (jspb.Message.cloneMessage(this));
+proto.management_app.config.set.UpdateFloat.prototype.cloneMessage = function() {
+  return /** @type {!proto.management_app.config.set.UpdateFloat} */ (jspb.Message.cloneMessage(this));
 };
 
 
 /**
  * optional Target target = 1;
- * @return {proto.Target}
+ * @return {proto.management_app.config.set.Target}
  */
-proto.UpdateFloat.prototype.getTarget = function() {
-  return /** @type{proto.Target} */ (
-    jspb.Message.getWrapperField(this, proto.Target, 1));
+proto.management_app.config.set.UpdateFloat.prototype.getTarget = function() {
+  return /** @type{proto.management_app.config.set.Target} */ (
+    jspb.Message.getWrapperField(this, proto.management_app.config.set.Target, 1));
 };
 
 
-/** @param {proto.Target|undefined} value  */
-proto.UpdateFloat.prototype.setTarget = function(value) {
+/** @param {proto.management_app.config.set.Target|undefined} value  */
+proto.management_app.config.set.UpdateFloat.prototype.setTarget = function(value) {
   jspb.Message.setWrapperField(this, 1, value);
 };
 
 
-proto.UpdateFloat.prototype.clearTarget = function() {
+proto.management_app.config.set.UpdateFloat.prototype.clearTarget = function() {
   this.setTarget(undefined);
 };
 
@@ -1584,7 +1584,7 @@ proto.UpdateFloat.prototype.clearTarget = function() {
  * Returns whether this field is set.
  * @return{!boolean}
  */
-proto.UpdateFloat.prototype.hasTarget = function() {
+proto.management_app.config.set.UpdateFloat.prototype.hasTarget = function() {
   return jspb.Message.getField(this, 1) != null;
 };
 
@@ -1593,19 +1593,19 @@ proto.UpdateFloat.prototype.hasTarget = function() {
  * optional float value = 2;
  * @return {number}
  */
-proto.UpdateFloat.prototype.getValue = function() {
+proto.management_app.config.set.UpdateFloat.prototype.getValue = function() {
   return /** @type {number} */ (!this.hasValue() ? 0.0 : +jspb.Message.getField(this, 2));
 };
 
 
 /** @param {number?|undefined} value  */
-proto.UpdateFloat.prototype.setValue = function(value) {
-  jspb.Message.setOneofField(this, 2, proto.UpdateFloat.oneofGroups_[0], value);
+proto.management_app.config.set.UpdateFloat.prototype.setValue = function(value) {
+  jspb.Message.setOneofField(this, 2, proto.management_app.config.set.UpdateFloat.oneofGroups_[0], value);
 };
 
 
-proto.UpdateFloat.prototype.clearValue = function() {
-  jspb.Message.setOneofField(this, 2, proto.UpdateFloat.oneofGroups_[0], undefined);
+proto.management_app.config.set.UpdateFloat.prototype.clearValue = function() {
+  jspb.Message.setOneofField(this, 2, proto.management_app.config.set.UpdateFloat.oneofGroups_[0], undefined);
 };
 
 
@@ -1613,7 +1613,7 @@ proto.UpdateFloat.prototype.clearValue = function() {
  * Returns whether this field is set.
  * @return{!boolean}
  */
-proto.UpdateFloat.prototype.hasValue = function() {
+proto.management_app.config.set.UpdateFloat.prototype.hasValue = function() {
   return jspb.Message.getField(this, 2) != null;
 };
 
@@ -1629,12 +1629,12 @@ proto.UpdateFloat.prototype.hasValue = function() {
  * @extends {jspb.Message}
  * @constructor
  */
-proto.UpdateResultFloatOk = function(opt_data) {
-  jspb.Message.initialize(this, opt_data, 0, -1, null, proto.UpdateResultFloatOk.oneofGroups_);
+proto.management_app.config.set.UpdateResultFloatOk = function(opt_data) {
+  jspb.Message.initialize(this, opt_data, 0, -1, null, proto.management_app.config.set.UpdateResultFloatOk.oneofGroups_);
 };
-goog.inherits(proto.UpdateResultFloatOk, jspb.Message);
+goog.inherits(proto.management_app.config.set.UpdateResultFloatOk, jspb.Message);
 if (goog.DEBUG && !COMPILED) {
-  proto.UpdateResultFloatOk.displayName = 'proto.UpdateResultFloatOk';
+  proto.management_app.config.set.UpdateResultFloatOk.displayName = 'proto.management_app.config.set.UpdateResultFloatOk';
 }
 /**
  * Oneof group definitions for this message. Each group defines the field
@@ -1644,36 +1644,36 @@ if (goog.DEBUG && !COMPILED) {
  * @private {!Array<!Array<number>>}
  * @const
  */
-proto.UpdateResultFloatOk.oneofGroups_ = [[1],[2]];
+proto.management_app.config.set.UpdateResultFloatOk.oneofGroups_ = [[1],[2]];
 
 /**
  * @enum {number}
  */
-proto.UpdateResultFloatOk.BeforeOptionalCase = {
+proto.management_app.config.set.UpdateResultFloatOk.BeforeOptionalCase = {
   BEFORE_OPTIONAL_NOT_SET: 0,
   BEFORE: 1
 };
 
 /**
- * @return {proto.UpdateResultFloatOk.BeforeOptionalCase}
+ * @return {proto.management_app.config.set.UpdateResultFloatOk.BeforeOptionalCase}
  */
-proto.UpdateResultFloatOk.prototype.getBeforeOptionalCase = function() {
-  return /** @type {proto.UpdateResultFloatOk.BeforeOptionalCase} */(jspb.Message.computeOneofCase(this, proto.UpdateResultFloatOk.oneofGroups_[0]));
+proto.management_app.config.set.UpdateResultFloatOk.prototype.getBeforeOptionalCase = function() {
+  return /** @type {proto.management_app.config.set.UpdateResultFloatOk.BeforeOptionalCase} */(jspb.Message.computeOneofCase(this, proto.management_app.config.set.UpdateResultFloatOk.oneofGroups_[0]));
 };
 
 /**
  * @enum {number}
  */
-proto.UpdateResultFloatOk.AfterOptionalCase = {
+proto.management_app.config.set.UpdateResultFloatOk.AfterOptionalCase = {
   AFTER_OPTIONAL_NOT_SET: 0,
   AFTER: 2
 };
 
 /**
- * @return {proto.UpdateResultFloatOk.AfterOptionalCase}
+ * @return {proto.management_app.config.set.UpdateResultFloatOk.AfterOptionalCase}
  */
-proto.UpdateResultFloatOk.prototype.getAfterOptionalCase = function() {
-  return /** @type {proto.UpdateResultFloatOk.AfterOptionalCase} */(jspb.Message.computeOneofCase(this, proto.UpdateResultFloatOk.oneofGroups_[1]));
+proto.management_app.config.set.UpdateResultFloatOk.prototype.getAfterOptionalCase = function() {
+  return /** @type {proto.management_app.config.set.UpdateResultFloatOk.AfterOptionalCase} */(jspb.Message.computeOneofCase(this, proto.management_app.config.set.UpdateResultFloatOk.oneofGroups_[1]));
 };
 
 
@@ -1689,8 +1689,8 @@ if (jspb.Message.GENERATE_TO_OBJECT) {
  *     for transitional soy proto support: http://goto/soy-param-migration
  * @return {!Object}
  */
-proto.UpdateResultFloatOk.prototype.toObject = function(opt_includeInstance) {
-  return proto.UpdateResultFloatOk.toObject(opt_includeInstance, this);
+proto.management_app.config.set.UpdateResultFloatOk.prototype.toObject = function(opt_includeInstance) {
+  return proto.management_app.config.set.UpdateResultFloatOk.toObject(opt_includeInstance, this);
 };
 
 
@@ -1699,10 +1699,10 @@ proto.UpdateResultFloatOk.prototype.toObject = function(opt_includeInstance) {
  * @param {boolean|undefined} includeInstance Whether to include the JSPB
  *     instance for transitional soy proto support:
  *     http://goto/soy-param-migration
- * @param {!proto.UpdateResultFloatOk} msg The msg instance to transform.
+ * @param {!proto.management_app.config.set.UpdateResultFloatOk} msg The msg instance to transform.
  * @return {!Object}
  */
-proto.UpdateResultFloatOk.toObject = function(includeInstance, msg) {
+proto.management_app.config.set.UpdateResultFloatOk.toObject = function(includeInstance, msg) {
   var f, obj = {
     before: jspb.Message.getOptionalFloatingPointField(msg, 1),
     after: jspb.Message.getOptionalFloatingPointField(msg, 2)
@@ -1719,23 +1719,23 @@ proto.UpdateResultFloatOk.toObject = function(includeInstance, msg) {
 /**
  * Deserializes binary data (in protobuf wire format).
  * @param {jspb.ByteSource} bytes The bytes to deserialize.
- * @return {!proto.UpdateResultFloatOk}
+ * @return {!proto.management_app.config.set.UpdateResultFloatOk}
  */
-proto.UpdateResultFloatOk.deserializeBinary = function(bytes) {
+proto.management_app.config.set.UpdateResultFloatOk.deserializeBinary = function(bytes) {
   var reader = new jspb.BinaryReader(bytes);
-  var msg = new proto.UpdateResultFloatOk;
-  return proto.UpdateResultFloatOk.deserializeBinaryFromReader(msg, reader);
+  var msg = new proto.management_app.config.set.UpdateResultFloatOk;
+  return proto.management_app.config.set.UpdateResultFloatOk.deserializeBinaryFromReader(msg, reader);
 };
 
 
 /**
  * Deserializes binary data (in protobuf wire format) from the
  * given reader into the given message object.
- * @param {!proto.UpdateResultFloatOk} msg The message object to deserialize into.
+ * @param {!proto.management_app.config.set.UpdateResultFloatOk} msg The message object to deserialize into.
  * @param {!jspb.BinaryReader} reader The BinaryReader to use.
- * @return {!proto.UpdateResultFloatOk}
+ * @return {!proto.management_app.config.set.UpdateResultFloatOk}
  */
-proto.UpdateResultFloatOk.deserializeBinaryFromReader = function(msg, reader) {
+proto.management_app.config.set.UpdateResultFloatOk.deserializeBinaryFromReader = function(msg, reader) {
   while (reader.nextField()) {
     if (reader.isEndGroup()) {
       break;
@@ -1762,10 +1762,10 @@ proto.UpdateResultFloatOk.deserializeBinaryFromReader = function(msg, reader) {
 /**
  * Class method variant: serializes the given message to binary data
  * (in protobuf wire format), writing to the given BinaryWriter.
- * @param {!proto.UpdateResultFloatOk} message
+ * @param {!proto.management_app.config.set.UpdateResultFloatOk} message
  * @param {!jspb.BinaryWriter} writer
  */
-proto.UpdateResultFloatOk.serializeBinaryToWriter = function(message, writer) {
+proto.management_app.config.set.UpdateResultFloatOk.serializeBinaryToWriter = function(message, writer) {
   message.serializeBinaryToWriter(writer);
 };
 
@@ -1774,7 +1774,7 @@ proto.UpdateResultFloatOk.serializeBinaryToWriter = function(message, writer) {
  * Serializes the message to binary data (in protobuf wire format).
  * @return {!Uint8Array}
  */
-proto.UpdateResultFloatOk.prototype.serializeBinary = function() {
+proto.management_app.config.set.UpdateResultFloatOk.prototype.serializeBinary = function() {
   var writer = new jspb.BinaryWriter();
   this.serializeBinaryToWriter(writer);
   return writer.getResultBuffer();
@@ -1786,7 +1786,7 @@ proto.UpdateResultFloatOk.prototype.serializeBinary = function() {
  * writing to the given BinaryWriter.
  * @param {!jspb.BinaryWriter} writer
  */
-proto.UpdateResultFloatOk.prototype.serializeBinaryToWriter = function (writer) {
+proto.management_app.config.set.UpdateResultFloatOk.prototype.serializeBinaryToWriter = function (writer) {
   var f = undefined;
   f = jspb.Message.getField(this, 1);
   if (f != null) {
@@ -1807,10 +1807,10 @@ proto.UpdateResultFloatOk.prototype.serializeBinaryToWriter = function (writer) 
 
 /**
  * Creates a deep clone of this proto. No data is shared with the original.
- * @return {!proto.UpdateResultFloatOk} The clone.
+ * @return {!proto.management_app.config.set.UpdateResultFloatOk} The clone.
  */
-proto.UpdateResultFloatOk.prototype.cloneMessage = function() {
-  return /** @type {!proto.UpdateResultFloatOk} */ (jspb.Message.cloneMessage(this));
+proto.management_app.config.set.UpdateResultFloatOk.prototype.cloneMessage = function() {
+  return /** @type {!proto.management_app.config.set.UpdateResultFloatOk} */ (jspb.Message.cloneMessage(this));
 };
 
 
@@ -1818,19 +1818,19 @@ proto.UpdateResultFloatOk.prototype.cloneMessage = function() {
  * optional float before = 1;
  * @return {number}
  */
-proto.UpdateResultFloatOk.prototype.getBefore = function() {
+proto.management_app.config.set.UpdateResultFloatOk.prototype.getBefore = function() {
   return /** @type {number} */ (!this.hasBefore() ? 0.0 : +jspb.Message.getField(this, 1));
 };
 
 
 /** @param {number?|undefined} value  */
-proto.UpdateResultFloatOk.prototype.setBefore = function(value) {
-  jspb.Message.setOneofField(this, 1, proto.UpdateResultFloatOk.oneofGroups_[0], value);
+proto.management_app.config.set.UpdateResultFloatOk.prototype.setBefore = function(value) {
+  jspb.Message.setOneofField(this, 1, proto.management_app.config.set.UpdateResultFloatOk.oneofGroups_[0], value);
 };
 
 
-proto.UpdateResultFloatOk.prototype.clearBefore = function() {
-  jspb.Message.setOneofField(this, 1, proto.UpdateResultFloatOk.oneofGroups_[0], undefined);
+proto.management_app.config.set.UpdateResultFloatOk.prototype.clearBefore = function() {
+  jspb.Message.setOneofField(this, 1, proto.management_app.config.set.UpdateResultFloatOk.oneofGroups_[0], undefined);
 };
 
 
@@ -1838,7 +1838,7 @@ proto.UpdateResultFloatOk.prototype.clearBefore = function() {
  * Returns whether this field is set.
  * @return{!boolean}
  */
-proto.UpdateResultFloatOk.prototype.hasBefore = function() {
+proto.management_app.config.set.UpdateResultFloatOk.prototype.hasBefore = function() {
   return jspb.Message.getField(this, 1) != null;
 };
 
@@ -1847,19 +1847,19 @@ proto.UpdateResultFloatOk.prototype.hasBefore = function() {
  * optional float after = 2;
  * @return {number}
  */
-proto.UpdateResultFloatOk.prototype.getAfter = function() {
+proto.management_app.config.set.UpdateResultFloatOk.prototype.getAfter = function() {
   return /** @type {number} */ (!this.hasAfter() ? 0.0 : +jspb.Message.getField(this, 2));
 };
 
 
 /** @param {number?|undefined} value  */
-proto.UpdateResultFloatOk.prototype.setAfter = function(value) {
-  jspb.Message.setOneofField(this, 2, proto.UpdateResultFloatOk.oneofGroups_[1], value);
+proto.management_app.config.set.UpdateResultFloatOk.prototype.setAfter = function(value) {
+  jspb.Message.setOneofField(this, 2, proto.management_app.config.set.UpdateResultFloatOk.oneofGroups_[1], value);
 };
 
 
-proto.UpdateResultFloatOk.prototype.clearAfter = function() {
-  jspb.Message.setOneofField(this, 2, proto.UpdateResultFloatOk.oneofGroups_[1], undefined);
+proto.management_app.config.set.UpdateResultFloatOk.prototype.clearAfter = function() {
+  jspb.Message.setOneofField(this, 2, proto.management_app.config.set.UpdateResultFloatOk.oneofGroups_[1], undefined);
 };
 
 
@@ -1867,7 +1867,7 @@ proto.UpdateResultFloatOk.prototype.clearAfter = function() {
  * Returns whether this field is set.
  * @return{!boolean}
  */
-proto.UpdateResultFloatOk.prototype.hasAfter = function() {
+proto.management_app.config.set.UpdateResultFloatOk.prototype.hasAfter = function() {
   return jspb.Message.getField(this, 2) != null;
 };
 
@@ -1883,12 +1883,12 @@ proto.UpdateResultFloatOk.prototype.hasAfter = function() {
  * @extends {jspb.Message}
  * @constructor
  */
-proto.UpdateResultFloatSame = function(opt_data) {
-  jspb.Message.initialize(this, opt_data, 0, -1, null, proto.UpdateResultFloatSame.oneofGroups_);
+proto.management_app.config.set.UpdateResultFloatSame = function(opt_data) {
+  jspb.Message.initialize(this, opt_data, 0, -1, null, proto.management_app.config.set.UpdateResultFloatSame.oneofGroups_);
 };
-goog.inherits(proto.UpdateResultFloatSame, jspb.Message);
+goog.inherits(proto.management_app.config.set.UpdateResultFloatSame, jspb.Message);
 if (goog.DEBUG && !COMPILED) {
-  proto.UpdateResultFloatSame.displayName = 'proto.UpdateResultFloatSame';
+  proto.management_app.config.set.UpdateResultFloatSame.displayName = 'proto.management_app.config.set.UpdateResultFloatSame';
 }
 /**
  * Oneof group definitions for this message. Each group defines the field
@@ -1898,21 +1898,21 @@ if (goog.DEBUG && !COMPILED) {
  * @private {!Array<!Array<number>>}
  * @const
  */
-proto.UpdateResultFloatSame.oneofGroups_ = [[1]];
+proto.management_app.config.set.UpdateResultFloatSame.oneofGroups_ = [[1]];
 
 /**
  * @enum {number}
  */
-proto.UpdateResultFloatSame.ValueOptionalCase = {
+proto.management_app.config.set.UpdateResultFloatSame.ValueOptionalCase = {
   VALUE_OPTIONAL_NOT_SET: 0,
   VALUE: 1
 };
 
 /**
- * @return {proto.UpdateResultFloatSame.ValueOptionalCase}
+ * @return {proto.management_app.config.set.UpdateResultFloatSame.ValueOptionalCase}
  */
-proto.UpdateResultFloatSame.prototype.getValueOptionalCase = function() {
-  return /** @type {proto.UpdateResultFloatSame.ValueOptionalCase} */(jspb.Message.computeOneofCase(this, proto.UpdateResultFloatSame.oneofGroups_[0]));
+proto.management_app.config.set.UpdateResultFloatSame.prototype.getValueOptionalCase = function() {
+  return /** @type {proto.management_app.config.set.UpdateResultFloatSame.ValueOptionalCase} */(jspb.Message.computeOneofCase(this, proto.management_app.config.set.UpdateResultFloatSame.oneofGroups_[0]));
 };
 
 
@@ -1928,8 +1928,8 @@ if (jspb.Message.GENERATE_TO_OBJECT) {
  *     for transitional soy proto support: http://goto/soy-param-migration
  * @return {!Object}
  */
-proto.UpdateResultFloatSame.prototype.toObject = function(opt_includeInstance) {
-  return proto.UpdateResultFloatSame.toObject(opt_includeInstance, this);
+proto.management_app.config.set.UpdateResultFloatSame.prototype.toObject = function(opt_includeInstance) {
+  return proto.management_app.config.set.UpdateResultFloatSame.toObject(opt_includeInstance, this);
 };
 
 
@@ -1938,10 +1938,10 @@ proto.UpdateResultFloatSame.prototype.toObject = function(opt_includeInstance) {
  * @param {boolean|undefined} includeInstance Whether to include the JSPB
  *     instance for transitional soy proto support:
  *     http://goto/soy-param-migration
- * @param {!proto.UpdateResultFloatSame} msg The msg instance to transform.
+ * @param {!proto.management_app.config.set.UpdateResultFloatSame} msg The msg instance to transform.
  * @return {!Object}
  */
-proto.UpdateResultFloatSame.toObject = function(includeInstance, msg) {
+proto.management_app.config.set.UpdateResultFloatSame.toObject = function(includeInstance, msg) {
   var f, obj = {
     value: jspb.Message.getOptionalFloatingPointField(msg, 1)
   };
@@ -1957,23 +1957,23 @@ proto.UpdateResultFloatSame.toObject = function(includeInstance, msg) {
 /**
  * Deserializes binary data (in protobuf wire format).
  * @param {jspb.ByteSource} bytes The bytes to deserialize.
- * @return {!proto.UpdateResultFloatSame}
+ * @return {!proto.management_app.config.set.UpdateResultFloatSame}
  */
-proto.UpdateResultFloatSame.deserializeBinary = function(bytes) {
+proto.management_app.config.set.UpdateResultFloatSame.deserializeBinary = function(bytes) {
   var reader = new jspb.BinaryReader(bytes);
-  var msg = new proto.UpdateResultFloatSame;
-  return proto.UpdateResultFloatSame.deserializeBinaryFromReader(msg, reader);
+  var msg = new proto.management_app.config.set.UpdateResultFloatSame;
+  return proto.management_app.config.set.UpdateResultFloatSame.deserializeBinaryFromReader(msg, reader);
 };
 
 
 /**
  * Deserializes binary data (in protobuf wire format) from the
  * given reader into the given message object.
- * @param {!proto.UpdateResultFloatSame} msg The message object to deserialize into.
+ * @param {!proto.management_app.config.set.UpdateResultFloatSame} msg The message object to deserialize into.
  * @param {!jspb.BinaryReader} reader The BinaryReader to use.
- * @return {!proto.UpdateResultFloatSame}
+ * @return {!proto.management_app.config.set.UpdateResultFloatSame}
  */
-proto.UpdateResultFloatSame.deserializeBinaryFromReader = function(msg, reader) {
+proto.management_app.config.set.UpdateResultFloatSame.deserializeBinaryFromReader = function(msg, reader) {
   while (reader.nextField()) {
     if (reader.isEndGroup()) {
       break;
@@ -1996,10 +1996,10 @@ proto.UpdateResultFloatSame.deserializeBinaryFromReader = function(msg, reader) 
 /**
  * Class method variant: serializes the given message to binary data
  * (in protobuf wire format), writing to the given BinaryWriter.
- * @param {!proto.UpdateResultFloatSame} message
+ * @param {!proto.management_app.config.set.UpdateResultFloatSame} message
  * @param {!jspb.BinaryWriter} writer
  */
-proto.UpdateResultFloatSame.serializeBinaryToWriter = function(message, writer) {
+proto.management_app.config.set.UpdateResultFloatSame.serializeBinaryToWriter = function(message, writer) {
   message.serializeBinaryToWriter(writer);
 };
 
@@ -2008,7 +2008,7 @@ proto.UpdateResultFloatSame.serializeBinaryToWriter = function(message, writer) 
  * Serializes the message to binary data (in protobuf wire format).
  * @return {!Uint8Array}
  */
-proto.UpdateResultFloatSame.prototype.serializeBinary = function() {
+proto.management_app.config.set.UpdateResultFloatSame.prototype.serializeBinary = function() {
   var writer = new jspb.BinaryWriter();
   this.serializeBinaryToWriter(writer);
   return writer.getResultBuffer();
@@ -2020,7 +2020,7 @@ proto.UpdateResultFloatSame.prototype.serializeBinary = function() {
  * writing to the given BinaryWriter.
  * @param {!jspb.BinaryWriter} writer
  */
-proto.UpdateResultFloatSame.prototype.serializeBinaryToWriter = function (writer) {
+proto.management_app.config.set.UpdateResultFloatSame.prototype.serializeBinaryToWriter = function (writer) {
   var f = undefined;
   f = jspb.Message.getField(this, 1);
   if (f != null) {
@@ -2034,10 +2034,10 @@ proto.UpdateResultFloatSame.prototype.serializeBinaryToWriter = function (writer
 
 /**
  * Creates a deep clone of this proto. No data is shared with the original.
- * @return {!proto.UpdateResultFloatSame} The clone.
+ * @return {!proto.management_app.config.set.UpdateResultFloatSame} The clone.
  */
-proto.UpdateResultFloatSame.prototype.cloneMessage = function() {
-  return /** @type {!proto.UpdateResultFloatSame} */ (jspb.Message.cloneMessage(this));
+proto.management_app.config.set.UpdateResultFloatSame.prototype.cloneMessage = function() {
+  return /** @type {!proto.management_app.config.set.UpdateResultFloatSame} */ (jspb.Message.cloneMessage(this));
 };
 
 
@@ -2045,19 +2045,19 @@ proto.UpdateResultFloatSame.prototype.cloneMessage = function() {
  * optional float value = 1;
  * @return {number}
  */
-proto.UpdateResultFloatSame.prototype.getValue = function() {
+proto.management_app.config.set.UpdateResultFloatSame.prototype.getValue = function() {
   return /** @type {number} */ (!this.hasValue() ? 0.0 : +jspb.Message.getField(this, 1));
 };
 
 
 /** @param {number?|undefined} value  */
-proto.UpdateResultFloatSame.prototype.setValue = function(value) {
-  jspb.Message.setOneofField(this, 1, proto.UpdateResultFloatSame.oneofGroups_[0], value);
+proto.management_app.config.set.UpdateResultFloatSame.prototype.setValue = function(value) {
+  jspb.Message.setOneofField(this, 1, proto.management_app.config.set.UpdateResultFloatSame.oneofGroups_[0], value);
 };
 
 
-proto.UpdateResultFloatSame.prototype.clearValue = function() {
-  jspb.Message.setOneofField(this, 1, proto.UpdateResultFloatSame.oneofGroups_[0], undefined);
+proto.management_app.config.set.UpdateResultFloatSame.prototype.clearValue = function() {
+  jspb.Message.setOneofField(this, 1, proto.management_app.config.set.UpdateResultFloatSame.oneofGroups_[0], undefined);
 };
 
 
@@ -2065,7 +2065,7 @@ proto.UpdateResultFloatSame.prototype.clearValue = function() {
  * Returns whether this field is set.
  * @return{!boolean}
  */
-proto.UpdateResultFloatSame.prototype.hasValue = function() {
+proto.management_app.config.set.UpdateResultFloatSame.prototype.hasValue = function() {
   return jspb.Message.getField(this, 1) != null;
 };
 
@@ -2081,12 +2081,12 @@ proto.UpdateResultFloatSame.prototype.hasValue = function() {
  * @extends {jspb.Message}
  * @constructor
  */
-proto.UpdateResultFloat = function(opt_data) {
-  jspb.Message.initialize(this, opt_data, 0, -1, null, proto.UpdateResultFloat.oneofGroups_);
+proto.management_app.config.set.UpdateResultFloat = function(opt_data) {
+  jspb.Message.initialize(this, opt_data, 0, -1, null, proto.management_app.config.set.UpdateResultFloat.oneofGroups_);
 };
-goog.inherits(proto.UpdateResultFloat, jspb.Message);
+goog.inherits(proto.management_app.config.set.UpdateResultFloat, jspb.Message);
 if (goog.DEBUG && !COMPILED) {
-  proto.UpdateResultFloat.displayName = 'proto.UpdateResultFloat';
+  proto.management_app.config.set.UpdateResultFloat.displayName = 'proto.management_app.config.set.UpdateResultFloat';
 }
 /**
  * Oneof group definitions for this message. Each group defines the field
@@ -2096,12 +2096,12 @@ if (goog.DEBUG && !COMPILED) {
  * @private {!Array<!Array<number>>}
  * @const
  */
-proto.UpdateResultFloat.oneofGroups_ = [[1,2,3]];
+proto.management_app.config.set.UpdateResultFloat.oneofGroups_ = [[1,2,3]];
 
 /**
  * @enum {number}
  */
-proto.UpdateResultFloat.UpdateresultCase = {
+proto.management_app.config.set.UpdateResultFloat.UpdateresultCase = {
   UPDATERESULT_NOT_SET: 0,
   RESULTOK: 1,
   RESULTSAME: 2,
@@ -2109,10 +2109,10 @@ proto.UpdateResultFloat.UpdateresultCase = {
 };
 
 /**
- * @return {proto.UpdateResultFloat.UpdateresultCase}
+ * @return {proto.management_app.config.set.UpdateResultFloat.UpdateresultCase}
  */
-proto.UpdateResultFloat.prototype.getUpdateresultCase = function() {
-  return /** @type {proto.UpdateResultFloat.UpdateresultCase} */(jspb.Message.computeOneofCase(this, proto.UpdateResultFloat.oneofGroups_[0]));
+proto.management_app.config.set.UpdateResultFloat.prototype.getUpdateresultCase = function() {
+  return /** @type {proto.management_app.config.set.UpdateResultFloat.UpdateresultCase} */(jspb.Message.computeOneofCase(this, proto.management_app.config.set.UpdateResultFloat.oneofGroups_[0]));
 };
 
 
@@ -2128,8 +2128,8 @@ if (jspb.Message.GENERATE_TO_OBJECT) {
  *     for transitional soy proto support: http://goto/soy-param-migration
  * @return {!Object}
  */
-proto.UpdateResultFloat.prototype.toObject = function(opt_includeInstance) {
-  return proto.UpdateResultFloat.toObject(opt_includeInstance, this);
+proto.management_app.config.set.UpdateResultFloat.prototype.toObject = function(opt_includeInstance) {
+  return proto.management_app.config.set.UpdateResultFloat.toObject(opt_includeInstance, this);
 };
 
 
@@ -2138,14 +2138,14 @@ proto.UpdateResultFloat.prototype.toObject = function(opt_includeInstance) {
  * @param {boolean|undefined} includeInstance Whether to include the JSPB
  *     instance for transitional soy proto support:
  *     http://goto/soy-param-migration
- * @param {!proto.UpdateResultFloat} msg The msg instance to transform.
+ * @param {!proto.management_app.config.set.UpdateResultFloat} msg The msg instance to transform.
  * @return {!Object}
  */
-proto.UpdateResultFloat.toObject = function(includeInstance, msg) {
+proto.management_app.config.set.UpdateResultFloat.toObject = function(includeInstance, msg) {
   var f, obj = {
-    resultok: (f = msg.getResultok()) && proto.UpdateResultFloatOk.toObject(includeInstance, f),
-    resultsame: (f = msg.getResultsame()) && proto.UpdateResultFloatSame.toObject(includeInstance, f),
-    error: (f = msg.getError()) && proto.UpdateResultError.toObject(includeInstance, f)
+    resultok: (f = msg.getResultok()) && proto.management_app.config.set.UpdateResultFloatOk.toObject(includeInstance, f),
+    resultsame: (f = msg.getResultsame()) && proto.management_app.config.set.UpdateResultFloatSame.toObject(includeInstance, f),
+    error: (f = msg.getError()) && proto.management_app.config.set.UpdateResultError.toObject(includeInstance, f)
   };
 
   if (includeInstance) {
@@ -2159,23 +2159,23 @@ proto.UpdateResultFloat.toObject = function(includeInstance, msg) {
 /**
  * Deserializes binary data (in protobuf wire format).
  * @param {jspb.ByteSource} bytes The bytes to deserialize.
- * @return {!proto.UpdateResultFloat}
+ * @return {!proto.management_app.config.set.UpdateResultFloat}
  */
-proto.UpdateResultFloat.deserializeBinary = function(bytes) {
+proto.management_app.config.set.UpdateResultFloat.deserializeBinary = function(bytes) {
   var reader = new jspb.BinaryReader(bytes);
-  var msg = new proto.UpdateResultFloat;
-  return proto.UpdateResultFloat.deserializeBinaryFromReader(msg, reader);
+  var msg = new proto.management_app.config.set.UpdateResultFloat;
+  return proto.management_app.config.set.UpdateResultFloat.deserializeBinaryFromReader(msg, reader);
 };
 
 
 /**
  * Deserializes binary data (in protobuf wire format) from the
  * given reader into the given message object.
- * @param {!proto.UpdateResultFloat} msg The message object to deserialize into.
+ * @param {!proto.management_app.config.set.UpdateResultFloat} msg The message object to deserialize into.
  * @param {!jspb.BinaryReader} reader The BinaryReader to use.
- * @return {!proto.UpdateResultFloat}
+ * @return {!proto.management_app.config.set.UpdateResultFloat}
  */
-proto.UpdateResultFloat.deserializeBinaryFromReader = function(msg, reader) {
+proto.management_app.config.set.UpdateResultFloat.deserializeBinaryFromReader = function(msg, reader) {
   while (reader.nextField()) {
     if (reader.isEndGroup()) {
       break;
@@ -2183,18 +2183,18 @@ proto.UpdateResultFloat.deserializeBinaryFromReader = function(msg, reader) {
     var field = reader.getFieldNumber();
     switch (field) {
     case 1:
-      var value = new proto.UpdateResultFloatOk;
-      reader.readMessage(value,proto.UpdateResultFloatOk.deserializeBinaryFromReader);
+      var value = new proto.management_app.config.set.UpdateResultFloatOk;
+      reader.readMessage(value,proto.management_app.config.set.UpdateResultFloatOk.deserializeBinaryFromReader);
       msg.setResultok(value);
       break;
     case 2:
-      var value = new proto.UpdateResultFloatSame;
-      reader.readMessage(value,proto.UpdateResultFloatSame.deserializeBinaryFromReader);
+      var value = new proto.management_app.config.set.UpdateResultFloatSame;
+      reader.readMessage(value,proto.management_app.config.set.UpdateResultFloatSame.deserializeBinaryFromReader);
       msg.setResultsame(value);
       break;
     case 3:
-      var value = new proto.UpdateResultError;
-      reader.readMessage(value,proto.UpdateResultError.deserializeBinaryFromReader);
+      var value = new proto.management_app.config.set.UpdateResultError;
+      reader.readMessage(value,proto.management_app.config.set.UpdateResultError.deserializeBinaryFromReader);
       msg.setError(value);
       break;
     default:
@@ -2209,10 +2209,10 @@ proto.UpdateResultFloat.deserializeBinaryFromReader = function(msg, reader) {
 /**
  * Class method variant: serializes the given message to binary data
  * (in protobuf wire format), writing to the given BinaryWriter.
- * @param {!proto.UpdateResultFloat} message
+ * @param {!proto.management_app.config.set.UpdateResultFloat} message
  * @param {!jspb.BinaryWriter} writer
  */
-proto.UpdateResultFloat.serializeBinaryToWriter = function(message, writer) {
+proto.management_app.config.set.UpdateResultFloat.serializeBinaryToWriter = function(message, writer) {
   message.serializeBinaryToWriter(writer);
 };
 
@@ -2221,7 +2221,7 @@ proto.UpdateResultFloat.serializeBinaryToWriter = function(message, writer) {
  * Serializes the message to binary data (in protobuf wire format).
  * @return {!Uint8Array}
  */
-proto.UpdateResultFloat.prototype.serializeBinary = function() {
+proto.management_app.config.set.UpdateResultFloat.prototype.serializeBinary = function() {
   var writer = new jspb.BinaryWriter();
   this.serializeBinaryToWriter(writer);
   return writer.getResultBuffer();
@@ -2233,14 +2233,14 @@ proto.UpdateResultFloat.prototype.serializeBinary = function() {
  * writing to the given BinaryWriter.
  * @param {!jspb.BinaryWriter} writer
  */
-proto.UpdateResultFloat.prototype.serializeBinaryToWriter = function (writer) {
+proto.management_app.config.set.UpdateResultFloat.prototype.serializeBinaryToWriter = function (writer) {
   var f = undefined;
   f = this.getResultok();
   if (f != null) {
     writer.writeMessage(
       1,
       f,
-      proto.UpdateResultFloatOk.serializeBinaryToWriter
+      proto.management_app.config.set.UpdateResultFloatOk.serializeBinaryToWriter
     );
   }
   f = this.getResultsame();
@@ -2248,7 +2248,7 @@ proto.UpdateResultFloat.prototype.serializeBinaryToWriter = function (writer) {
     writer.writeMessage(
       2,
       f,
-      proto.UpdateResultFloatSame.serializeBinaryToWriter
+      proto.management_app.config.set.UpdateResultFloatSame.serializeBinaryToWriter
     );
   }
   f = this.getError();
@@ -2256,7 +2256,7 @@ proto.UpdateResultFloat.prototype.serializeBinaryToWriter = function (writer) {
     writer.writeMessage(
       3,
       f,
-      proto.UpdateResultError.serializeBinaryToWriter
+      proto.management_app.config.set.UpdateResultError.serializeBinaryToWriter
     );
   }
 };
@@ -2264,30 +2264,30 @@ proto.UpdateResultFloat.prototype.serializeBinaryToWriter = function (writer) {
 
 /**
  * Creates a deep clone of this proto. No data is shared with the original.
- * @return {!proto.UpdateResultFloat} The clone.
+ * @return {!proto.management_app.config.set.UpdateResultFloat} The clone.
  */
-proto.UpdateResultFloat.prototype.cloneMessage = function() {
-  return /** @type {!proto.UpdateResultFloat} */ (jspb.Message.cloneMessage(this));
+proto.management_app.config.set.UpdateResultFloat.prototype.cloneMessage = function() {
+  return /** @type {!proto.management_app.config.set.UpdateResultFloat} */ (jspb.Message.cloneMessage(this));
 };
 
 
 /**
  * optional UpdateResultFloatOk resultOk = 1;
- * @return {proto.UpdateResultFloatOk}
+ * @return {proto.management_app.config.set.UpdateResultFloatOk}
  */
-proto.UpdateResultFloat.prototype.getResultok = function() {
-  return /** @type{proto.UpdateResultFloatOk} */ (
-    jspb.Message.getWrapperField(this, proto.UpdateResultFloatOk, 1));
+proto.management_app.config.set.UpdateResultFloat.prototype.getResultok = function() {
+  return /** @type{proto.management_app.config.set.UpdateResultFloatOk} */ (
+    jspb.Message.getWrapperField(this, proto.management_app.config.set.UpdateResultFloatOk, 1));
 };
 
 
-/** @param {proto.UpdateResultFloatOk|undefined} value  */
-proto.UpdateResultFloat.prototype.setResultok = function(value) {
-  jspb.Message.setOneofWrapperField(this, 1, proto.UpdateResultFloat.oneofGroups_[0], value);
+/** @param {proto.management_app.config.set.UpdateResultFloatOk|undefined} value  */
+proto.management_app.config.set.UpdateResultFloat.prototype.setResultok = function(value) {
+  jspb.Message.setOneofWrapperField(this, 1, proto.management_app.config.set.UpdateResultFloat.oneofGroups_[0], value);
 };
 
 
-proto.UpdateResultFloat.prototype.clearResultok = function() {
+proto.management_app.config.set.UpdateResultFloat.prototype.clearResultok = function() {
   this.setResultok(undefined);
 };
 
@@ -2296,28 +2296,28 @@ proto.UpdateResultFloat.prototype.clearResultok = function() {
  * Returns whether this field is set.
  * @return{!boolean}
  */
-proto.UpdateResultFloat.prototype.hasResultok = function() {
+proto.management_app.config.set.UpdateResultFloat.prototype.hasResultok = function() {
   return jspb.Message.getField(this, 1) != null;
 };
 
 
 /**
  * optional UpdateResultFloatSame resultSame = 2;
- * @return {proto.UpdateResultFloatSame}
+ * @return {proto.management_app.config.set.UpdateResultFloatSame}
  */
-proto.UpdateResultFloat.prototype.getResultsame = function() {
-  return /** @type{proto.UpdateResultFloatSame} */ (
-    jspb.Message.getWrapperField(this, proto.UpdateResultFloatSame, 2));
+proto.management_app.config.set.UpdateResultFloat.prototype.getResultsame = function() {
+  return /** @type{proto.management_app.config.set.UpdateResultFloatSame} */ (
+    jspb.Message.getWrapperField(this, proto.management_app.config.set.UpdateResultFloatSame, 2));
 };
 
 
-/** @param {proto.UpdateResultFloatSame|undefined} value  */
-proto.UpdateResultFloat.prototype.setResultsame = function(value) {
-  jspb.Message.setOneofWrapperField(this, 2, proto.UpdateResultFloat.oneofGroups_[0], value);
+/** @param {proto.management_app.config.set.UpdateResultFloatSame|undefined} value  */
+proto.management_app.config.set.UpdateResultFloat.prototype.setResultsame = function(value) {
+  jspb.Message.setOneofWrapperField(this, 2, proto.management_app.config.set.UpdateResultFloat.oneofGroups_[0], value);
 };
 
 
-proto.UpdateResultFloat.prototype.clearResultsame = function() {
+proto.management_app.config.set.UpdateResultFloat.prototype.clearResultsame = function() {
   this.setResultsame(undefined);
 };
 
@@ -2326,28 +2326,28 @@ proto.UpdateResultFloat.prototype.clearResultsame = function() {
  * Returns whether this field is set.
  * @return{!boolean}
  */
-proto.UpdateResultFloat.prototype.hasResultsame = function() {
+proto.management_app.config.set.UpdateResultFloat.prototype.hasResultsame = function() {
   return jspb.Message.getField(this, 2) != null;
 };
 
 
 /**
  * optional UpdateResultError error = 3;
- * @return {proto.UpdateResultError}
+ * @return {proto.management_app.config.set.UpdateResultError}
  */
-proto.UpdateResultFloat.prototype.getError = function() {
-  return /** @type{proto.UpdateResultError} */ (
-    jspb.Message.getWrapperField(this, proto.UpdateResultError, 3));
+proto.management_app.config.set.UpdateResultFloat.prototype.getError = function() {
+  return /** @type{proto.management_app.config.set.UpdateResultError} */ (
+    jspb.Message.getWrapperField(this, proto.management_app.config.set.UpdateResultError, 3));
 };
 
 
-/** @param {proto.UpdateResultError|undefined} value  */
-proto.UpdateResultFloat.prototype.setError = function(value) {
-  jspb.Message.setOneofWrapperField(this, 3, proto.UpdateResultFloat.oneofGroups_[0], value);
+/** @param {proto.management_app.config.set.UpdateResultError|undefined} value  */
+proto.management_app.config.set.UpdateResultFloat.prototype.setError = function(value) {
+  jspb.Message.setOneofWrapperField(this, 3, proto.management_app.config.set.UpdateResultFloat.oneofGroups_[0], value);
 };
 
 
-proto.UpdateResultFloat.prototype.clearError = function() {
+proto.management_app.config.set.UpdateResultFloat.prototype.clearError = function() {
   this.setError(undefined);
 };
 
@@ -2356,7 +2356,7 @@ proto.UpdateResultFloat.prototype.clearError = function() {
  * Returns whether this field is set.
  * @return{!boolean}
  */
-proto.UpdateResultFloat.prototype.hasError = function() {
+proto.management_app.config.set.UpdateResultFloat.prototype.hasError = function() {
   return jspb.Message.getField(this, 3) != null;
 };
 
@@ -2372,12 +2372,12 @@ proto.UpdateResultFloat.prototype.hasError = function() {
  * @extends {jspb.Message}
  * @constructor
  */
-proto.UpdateReadName = function(opt_data) {
-  jspb.Message.initialize(this, opt_data, 0, -1, null, proto.UpdateReadName.oneofGroups_);
+proto.management_app.config.set.UpdateReadName = function(opt_data) {
+  jspb.Message.initialize(this, opt_data, 0, -1, null, proto.management_app.config.set.UpdateReadName.oneofGroups_);
 };
-goog.inherits(proto.UpdateReadName, jspb.Message);
+goog.inherits(proto.management_app.config.set.UpdateReadName, jspb.Message);
 if (goog.DEBUG && !COMPILED) {
-  proto.UpdateReadName.displayName = 'proto.UpdateReadName';
+  proto.management_app.config.set.UpdateReadName.displayName = 'proto.management_app.config.set.UpdateReadName';
 }
 /**
  * Oneof group definitions for this message. Each group defines the field
@@ -2387,22 +2387,22 @@ if (goog.DEBUG && !COMPILED) {
  * @private {!Array<!Array<number>>}
  * @const
  */
-proto.UpdateReadName.oneofGroups_ = [[2,3]];
+proto.management_app.config.set.UpdateReadName.oneofGroups_ = [[2,3]];
 
 /**
  * @enum {number}
  */
-proto.UpdateReadName.ValueOptionalCase = {
+proto.management_app.config.set.UpdateReadName.ValueOptionalCase = {
   VALUE_OPTIONAL_NOT_SET: 0,
   VALUE_STRING: 2,
   VALUE_BOOL: 3
 };
 
 /**
- * @return {proto.UpdateReadName.ValueOptionalCase}
+ * @return {proto.management_app.config.set.UpdateReadName.ValueOptionalCase}
  */
-proto.UpdateReadName.prototype.getValueOptionalCase = function() {
-  return /** @type {proto.UpdateReadName.ValueOptionalCase} */(jspb.Message.computeOneofCase(this, proto.UpdateReadName.oneofGroups_[0]));
+proto.management_app.config.set.UpdateReadName.prototype.getValueOptionalCase = function() {
+  return /** @type {proto.management_app.config.set.UpdateReadName.ValueOptionalCase} */(jspb.Message.computeOneofCase(this, proto.management_app.config.set.UpdateReadName.oneofGroups_[0]));
 };
 
 
@@ -2418,8 +2418,8 @@ if (jspb.Message.GENERATE_TO_OBJECT) {
  *     for transitional soy proto support: http://goto/soy-param-migration
  * @return {!Object}
  */
-proto.UpdateReadName.prototype.toObject = function(opt_includeInstance) {
-  return proto.UpdateReadName.toObject(opt_includeInstance, this);
+proto.management_app.config.set.UpdateReadName.prototype.toObject = function(opt_includeInstance) {
+  return proto.management_app.config.set.UpdateReadName.toObject(opt_includeInstance, this);
 };
 
 
@@ -2428,12 +2428,12 @@ proto.UpdateReadName.prototype.toObject = function(opt_includeInstance) {
  * @param {boolean|undefined} includeInstance Whether to include the JSPB
  *     instance for transitional soy proto support:
  *     http://goto/soy-param-migration
- * @param {!proto.UpdateReadName} msg The msg instance to transform.
+ * @param {!proto.management_app.config.set.UpdateReadName} msg The msg instance to transform.
  * @return {!Object}
  */
-proto.UpdateReadName.toObject = function(includeInstance, msg) {
+proto.management_app.config.set.UpdateReadName.toObject = function(includeInstance, msg) {
   var f, obj = {
-    target: (f = msg.getTarget()) && proto.Target.toObject(includeInstance, f),
+    target: (f = msg.getTarget()) && proto.management_app.config.set.Target.toObject(includeInstance, f),
     valueString: jspb.Message.getField(msg, 2),
     valueBool: jspb.Message.getField(msg, 3)
   };
@@ -2449,23 +2449,23 @@ proto.UpdateReadName.toObject = function(includeInstance, msg) {
 /**
  * Deserializes binary data (in protobuf wire format).
  * @param {jspb.ByteSource} bytes The bytes to deserialize.
- * @return {!proto.UpdateReadName}
+ * @return {!proto.management_app.config.set.UpdateReadName}
  */
-proto.UpdateReadName.deserializeBinary = function(bytes) {
+proto.management_app.config.set.UpdateReadName.deserializeBinary = function(bytes) {
   var reader = new jspb.BinaryReader(bytes);
-  var msg = new proto.UpdateReadName;
-  return proto.UpdateReadName.deserializeBinaryFromReader(msg, reader);
+  var msg = new proto.management_app.config.set.UpdateReadName;
+  return proto.management_app.config.set.UpdateReadName.deserializeBinaryFromReader(msg, reader);
 };
 
 
 /**
  * Deserializes binary data (in protobuf wire format) from the
  * given reader into the given message object.
- * @param {!proto.UpdateReadName} msg The message object to deserialize into.
+ * @param {!proto.management_app.config.set.UpdateReadName} msg The message object to deserialize into.
  * @param {!jspb.BinaryReader} reader The BinaryReader to use.
- * @return {!proto.UpdateReadName}
+ * @return {!proto.management_app.config.set.UpdateReadName}
  */
-proto.UpdateReadName.deserializeBinaryFromReader = function(msg, reader) {
+proto.management_app.config.set.UpdateReadName.deserializeBinaryFromReader = function(msg, reader) {
   while (reader.nextField()) {
     if (reader.isEndGroup()) {
       break;
@@ -2473,8 +2473,8 @@ proto.UpdateReadName.deserializeBinaryFromReader = function(msg, reader) {
     var field = reader.getFieldNumber();
     switch (field) {
     case 1:
-      var value = new proto.Target;
-      reader.readMessage(value,proto.Target.deserializeBinaryFromReader);
+      var value = new proto.management_app.config.set.Target;
+      reader.readMessage(value,proto.management_app.config.set.Target.deserializeBinaryFromReader);
       msg.setTarget(value);
       break;
     case 2:
@@ -2497,10 +2497,10 @@ proto.UpdateReadName.deserializeBinaryFromReader = function(msg, reader) {
 /**
  * Class method variant: serializes the given message to binary data
  * (in protobuf wire format), writing to the given BinaryWriter.
- * @param {!proto.UpdateReadName} message
+ * @param {!proto.management_app.config.set.UpdateReadName} message
  * @param {!jspb.BinaryWriter} writer
  */
-proto.UpdateReadName.serializeBinaryToWriter = function(message, writer) {
+proto.management_app.config.set.UpdateReadName.serializeBinaryToWriter = function(message, writer) {
   message.serializeBinaryToWriter(writer);
 };
 
@@ -2509,7 +2509,7 @@ proto.UpdateReadName.serializeBinaryToWriter = function(message, writer) {
  * Serializes the message to binary data (in protobuf wire format).
  * @return {!Uint8Array}
  */
-proto.UpdateReadName.prototype.serializeBinary = function() {
+proto.management_app.config.set.UpdateReadName.prototype.serializeBinary = function() {
   var writer = new jspb.BinaryWriter();
   this.serializeBinaryToWriter(writer);
   return writer.getResultBuffer();
@@ -2521,14 +2521,14 @@ proto.UpdateReadName.prototype.serializeBinary = function() {
  * writing to the given BinaryWriter.
  * @param {!jspb.BinaryWriter} writer
  */
-proto.UpdateReadName.prototype.serializeBinaryToWriter = function (writer) {
+proto.management_app.config.set.UpdateReadName.prototype.serializeBinaryToWriter = function (writer) {
   var f = undefined;
   f = this.getTarget();
   if (f != null) {
     writer.writeMessage(
       1,
       f,
-      proto.Target.serializeBinaryToWriter
+      proto.management_app.config.set.Target.serializeBinaryToWriter
     );
   }
   f = jspb.Message.getField(this, 2);
@@ -2550,30 +2550,30 @@ proto.UpdateReadName.prototype.serializeBinaryToWriter = function (writer) {
 
 /**
  * Creates a deep clone of this proto. No data is shared with the original.
- * @return {!proto.UpdateReadName} The clone.
+ * @return {!proto.management_app.config.set.UpdateReadName} The clone.
  */
-proto.UpdateReadName.prototype.cloneMessage = function() {
-  return /** @type {!proto.UpdateReadName} */ (jspb.Message.cloneMessage(this));
+proto.management_app.config.set.UpdateReadName.prototype.cloneMessage = function() {
+  return /** @type {!proto.management_app.config.set.UpdateReadName} */ (jspb.Message.cloneMessage(this));
 };
 
 
 /**
  * optional Target target = 1;
- * @return {proto.Target}
+ * @return {proto.management_app.config.set.Target}
  */
-proto.UpdateReadName.prototype.getTarget = function() {
-  return /** @type{proto.Target} */ (
-    jspb.Message.getWrapperField(this, proto.Target, 1));
+proto.management_app.config.set.UpdateReadName.prototype.getTarget = function() {
+  return /** @type{proto.management_app.config.set.Target} */ (
+    jspb.Message.getWrapperField(this, proto.management_app.config.set.Target, 1));
 };
 
 
-/** @param {proto.Target|undefined} value  */
-proto.UpdateReadName.prototype.setTarget = function(value) {
+/** @param {proto.management_app.config.set.Target|undefined} value  */
+proto.management_app.config.set.UpdateReadName.prototype.setTarget = function(value) {
   jspb.Message.setWrapperField(this, 1, value);
 };
 
 
-proto.UpdateReadName.prototype.clearTarget = function() {
+proto.management_app.config.set.UpdateReadName.prototype.clearTarget = function() {
   this.setTarget(undefined);
 };
 
@@ -2582,7 +2582,7 @@ proto.UpdateReadName.prototype.clearTarget = function() {
  * Returns whether this field is set.
  * @return{!boolean}
  */
-proto.UpdateReadName.prototype.hasTarget = function() {
+proto.management_app.config.set.UpdateReadName.prototype.hasTarget = function() {
   return jspb.Message.getField(this, 1) != null;
 };
 
@@ -2591,19 +2591,19 @@ proto.UpdateReadName.prototype.hasTarget = function() {
  * optional string value_string = 2;
  * @return {string}
  */
-proto.UpdateReadName.prototype.getValueString = function() {
+proto.management_app.config.set.UpdateReadName.prototype.getValueString = function() {
   return /** @type {string} */ (!this.hasValueString() ? "" : jspb.Message.getField(this, 2));
 };
 
 
 /** @param {string?|undefined} value  */
-proto.UpdateReadName.prototype.setValueString = function(value) {
-  jspb.Message.setOneofField(this, 2, proto.UpdateReadName.oneofGroups_[0], value);
+proto.management_app.config.set.UpdateReadName.prototype.setValueString = function(value) {
+  jspb.Message.setOneofField(this, 2, proto.management_app.config.set.UpdateReadName.oneofGroups_[0], value);
 };
 
 
-proto.UpdateReadName.prototype.clearValueString = function() {
-  jspb.Message.setOneofField(this, 2, proto.UpdateReadName.oneofGroups_[0], undefined);
+proto.management_app.config.set.UpdateReadName.prototype.clearValueString = function() {
+  jspb.Message.setOneofField(this, 2, proto.management_app.config.set.UpdateReadName.oneofGroups_[0], undefined);
 };
 
 
@@ -2611,7 +2611,7 @@ proto.UpdateReadName.prototype.clearValueString = function() {
  * Returns whether this field is set.
  * @return{!boolean}
  */
-proto.UpdateReadName.prototype.hasValueString = function() {
+proto.management_app.config.set.UpdateReadName.prototype.hasValueString = function() {
   return jspb.Message.getField(this, 2) != null;
 };
 
@@ -2622,19 +2622,19 @@ proto.UpdateReadName.prototype.hasValueString = function() {
  * You should avoid comparisons like {@code val === true/false} in those cases.
  * @return {boolean}
  */
-proto.UpdateReadName.prototype.getValueBool = function() {
+proto.management_app.config.set.UpdateReadName.prototype.getValueBool = function() {
   return /** @type {boolean} */ (!this.hasValueBool() ? false : jspb.Message.getField(this, 3));
 };
 
 
 /** @param {boolean?|undefined} value  */
-proto.UpdateReadName.prototype.setValueBool = function(value) {
-  jspb.Message.setOneofField(this, 3, proto.UpdateReadName.oneofGroups_[0], value);
+proto.management_app.config.set.UpdateReadName.prototype.setValueBool = function(value) {
+  jspb.Message.setOneofField(this, 3, proto.management_app.config.set.UpdateReadName.oneofGroups_[0], value);
 };
 
 
-proto.UpdateReadName.prototype.clearValueBool = function() {
-  jspb.Message.setOneofField(this, 3, proto.UpdateReadName.oneofGroups_[0], undefined);
+proto.management_app.config.set.UpdateReadName.prototype.clearValueBool = function() {
+  jspb.Message.setOneofField(this, 3, proto.management_app.config.set.UpdateReadName.oneofGroups_[0], undefined);
 };
 
 
@@ -2642,7 +2642,7 @@ proto.UpdateReadName.prototype.clearValueBool = function() {
  * Returns whether this field is set.
  * @return{!boolean}
  */
-proto.UpdateReadName.prototype.hasValueBool = function() {
+proto.management_app.config.set.UpdateReadName.prototype.hasValueBool = function() {
   return jspb.Message.getField(this, 3) != null;
 };
 
@@ -2658,12 +2658,12 @@ proto.UpdateReadName.prototype.hasValueBool = function() {
  * @extends {jspb.Message}
  * @constructor
  */
-proto.UpdateReadNameOk = function(opt_data) {
-  jspb.Message.initialize(this, opt_data, 0, -1, null, proto.UpdateReadNameOk.oneofGroups_);
+proto.management_app.config.set.UpdateReadNameOk = function(opt_data) {
+  jspb.Message.initialize(this, opt_data, 0, -1, null, proto.management_app.config.set.UpdateReadNameOk.oneofGroups_);
 };
-goog.inherits(proto.UpdateReadNameOk, jspb.Message);
+goog.inherits(proto.management_app.config.set.UpdateReadNameOk, jspb.Message);
 if (goog.DEBUG && !COMPILED) {
-  proto.UpdateReadNameOk.displayName = 'proto.UpdateReadNameOk';
+  proto.management_app.config.set.UpdateReadNameOk.displayName = 'proto.management_app.config.set.UpdateReadNameOk';
 }
 /**
  * Oneof group definitions for this message. Each group defines the field
@@ -2673,38 +2673,38 @@ if (goog.DEBUG && !COMPILED) {
  * @private {!Array<!Array<number>>}
  * @const
  */
-proto.UpdateReadNameOk.oneofGroups_ = [[1,2],[3,4]];
+proto.management_app.config.set.UpdateReadNameOk.oneofGroups_ = [[1,2],[3,4]];
 
 /**
  * @enum {number}
  */
-proto.UpdateReadNameOk.BeforeOptionalCase = {
+proto.management_app.config.set.UpdateReadNameOk.BeforeOptionalCase = {
   BEFORE_OPTIONAL_NOT_SET: 0,
   BEFORE_STRING: 1,
   BEFORE_BOOL: 2
 };
 
 /**
- * @return {proto.UpdateReadNameOk.BeforeOptionalCase}
+ * @return {proto.management_app.config.set.UpdateReadNameOk.BeforeOptionalCase}
  */
-proto.UpdateReadNameOk.prototype.getBeforeOptionalCase = function() {
-  return /** @type {proto.UpdateReadNameOk.BeforeOptionalCase} */(jspb.Message.computeOneofCase(this, proto.UpdateReadNameOk.oneofGroups_[0]));
+proto.management_app.config.set.UpdateReadNameOk.prototype.getBeforeOptionalCase = function() {
+  return /** @type {proto.management_app.config.set.UpdateReadNameOk.BeforeOptionalCase} */(jspb.Message.computeOneofCase(this, proto.management_app.config.set.UpdateReadNameOk.oneofGroups_[0]));
 };
 
 /**
  * @enum {number}
  */
-proto.UpdateReadNameOk.AfterOptionalCase = {
+proto.management_app.config.set.UpdateReadNameOk.AfterOptionalCase = {
   AFTER_OPTIONAL_NOT_SET: 0,
   AFTER_STRING: 3,
   AFTER_BOOL: 4
 };
 
 /**
- * @return {proto.UpdateReadNameOk.AfterOptionalCase}
+ * @return {proto.management_app.config.set.UpdateReadNameOk.AfterOptionalCase}
  */
-proto.UpdateReadNameOk.prototype.getAfterOptionalCase = function() {
-  return /** @type {proto.UpdateReadNameOk.AfterOptionalCase} */(jspb.Message.computeOneofCase(this, proto.UpdateReadNameOk.oneofGroups_[1]));
+proto.management_app.config.set.UpdateReadNameOk.prototype.getAfterOptionalCase = function() {
+  return /** @type {proto.management_app.config.set.UpdateReadNameOk.AfterOptionalCase} */(jspb.Message.computeOneofCase(this, proto.management_app.config.set.UpdateReadNameOk.oneofGroups_[1]));
 };
 
 
@@ -2720,8 +2720,8 @@ if (jspb.Message.GENERATE_TO_OBJECT) {
  *     for transitional soy proto support: http://goto/soy-param-migration
  * @return {!Object}
  */
-proto.UpdateReadNameOk.prototype.toObject = function(opt_includeInstance) {
-  return proto.UpdateReadNameOk.toObject(opt_includeInstance, this);
+proto.management_app.config.set.UpdateReadNameOk.prototype.toObject = function(opt_includeInstance) {
+  return proto.management_app.config.set.UpdateReadNameOk.toObject(opt_includeInstance, this);
 };
 
 
@@ -2730,10 +2730,10 @@ proto.UpdateReadNameOk.prototype.toObject = function(opt_includeInstance) {
  * @param {boolean|undefined} includeInstance Whether to include the JSPB
  *     instance for transitional soy proto support:
  *     http://goto/soy-param-migration
- * @param {!proto.UpdateReadNameOk} msg The msg instance to transform.
+ * @param {!proto.management_app.config.set.UpdateReadNameOk} msg The msg instance to transform.
  * @return {!Object}
  */
-proto.UpdateReadNameOk.toObject = function(includeInstance, msg) {
+proto.management_app.config.set.UpdateReadNameOk.toObject = function(includeInstance, msg) {
   var f, obj = {
     beforeString: jspb.Message.getField(msg, 1),
     beforeBool: jspb.Message.getField(msg, 2),
@@ -2752,23 +2752,23 @@ proto.UpdateReadNameOk.toObject = function(includeInstance, msg) {
 /**
  * Deserializes binary data (in protobuf wire format).
  * @param {jspb.ByteSource} bytes The bytes to deserialize.
- * @return {!proto.UpdateReadNameOk}
+ * @return {!proto.management_app.config.set.UpdateReadNameOk}
  */
-proto.UpdateReadNameOk.deserializeBinary = function(bytes) {
+proto.management_app.config.set.UpdateReadNameOk.deserializeBinary = function(bytes) {
   var reader = new jspb.BinaryReader(bytes);
-  var msg = new proto.UpdateReadNameOk;
-  return proto.UpdateReadNameOk.deserializeBinaryFromReader(msg, reader);
+  var msg = new proto.management_app.config.set.UpdateReadNameOk;
+  return proto.management_app.config.set.UpdateReadNameOk.deserializeBinaryFromReader(msg, reader);
 };
 
 
 /**
  * Deserializes binary data (in protobuf wire format) from the
  * given reader into the given message object.
- * @param {!proto.UpdateReadNameOk} msg The message object to deserialize into.
+ * @param {!proto.management_app.config.set.UpdateReadNameOk} msg The message object to deserialize into.
  * @param {!jspb.BinaryReader} reader The BinaryReader to use.
- * @return {!proto.UpdateReadNameOk}
+ * @return {!proto.management_app.config.set.UpdateReadNameOk}
  */
-proto.UpdateReadNameOk.deserializeBinaryFromReader = function(msg, reader) {
+proto.management_app.config.set.UpdateReadNameOk.deserializeBinaryFromReader = function(msg, reader) {
   while (reader.nextField()) {
     if (reader.isEndGroup()) {
       break;
@@ -2803,10 +2803,10 @@ proto.UpdateReadNameOk.deserializeBinaryFromReader = function(msg, reader) {
 /**
  * Class method variant: serializes the given message to binary data
  * (in protobuf wire format), writing to the given BinaryWriter.
- * @param {!proto.UpdateReadNameOk} message
+ * @param {!proto.management_app.config.set.UpdateReadNameOk} message
  * @param {!jspb.BinaryWriter} writer
  */
-proto.UpdateReadNameOk.serializeBinaryToWriter = function(message, writer) {
+proto.management_app.config.set.UpdateReadNameOk.serializeBinaryToWriter = function(message, writer) {
   message.serializeBinaryToWriter(writer);
 };
 
@@ -2815,7 +2815,7 @@ proto.UpdateReadNameOk.serializeBinaryToWriter = function(message, writer) {
  * Serializes the message to binary data (in protobuf wire format).
  * @return {!Uint8Array}
  */
-proto.UpdateReadNameOk.prototype.serializeBinary = function() {
+proto.management_app.config.set.UpdateReadNameOk.prototype.serializeBinary = function() {
   var writer = new jspb.BinaryWriter();
   this.serializeBinaryToWriter(writer);
   return writer.getResultBuffer();
@@ -2827,7 +2827,7 @@ proto.UpdateReadNameOk.prototype.serializeBinary = function() {
  * writing to the given BinaryWriter.
  * @param {!jspb.BinaryWriter} writer
  */
-proto.UpdateReadNameOk.prototype.serializeBinaryToWriter = function (writer) {
+proto.management_app.config.set.UpdateReadNameOk.prototype.serializeBinaryToWriter = function (writer) {
   var f = undefined;
   f = jspb.Message.getField(this, 1);
   if (f != null) {
@@ -2862,10 +2862,10 @@ proto.UpdateReadNameOk.prototype.serializeBinaryToWriter = function (writer) {
 
 /**
  * Creates a deep clone of this proto. No data is shared with the original.
- * @return {!proto.UpdateReadNameOk} The clone.
+ * @return {!proto.management_app.config.set.UpdateReadNameOk} The clone.
  */
-proto.UpdateReadNameOk.prototype.cloneMessage = function() {
-  return /** @type {!proto.UpdateReadNameOk} */ (jspb.Message.cloneMessage(this));
+proto.management_app.config.set.UpdateReadNameOk.prototype.cloneMessage = function() {
+  return /** @type {!proto.management_app.config.set.UpdateReadNameOk} */ (jspb.Message.cloneMessage(this));
 };
 
 
@@ -2873,19 +2873,19 @@ proto.UpdateReadNameOk.prototype.cloneMessage = function() {
  * optional string before_string = 1;
  * @return {string}
  */
-proto.UpdateReadNameOk.prototype.getBeforeString = function() {
+proto.management_app.config.set.UpdateReadNameOk.prototype.getBeforeString = function() {
   return /** @type {string} */ (!this.hasBeforeString() ? "" : jspb.Message.getField(this, 1));
 };
 
 
 /** @param {string?|undefined} value  */
-proto.UpdateReadNameOk.prototype.setBeforeString = function(value) {
-  jspb.Message.setOneofField(this, 1, proto.UpdateReadNameOk.oneofGroups_[0], value);
+proto.management_app.config.set.UpdateReadNameOk.prototype.setBeforeString = function(value) {
+  jspb.Message.setOneofField(this, 1, proto.management_app.config.set.UpdateReadNameOk.oneofGroups_[0], value);
 };
 
 
-proto.UpdateReadNameOk.prototype.clearBeforeString = function() {
-  jspb.Message.setOneofField(this, 1, proto.UpdateReadNameOk.oneofGroups_[0], undefined);
+proto.management_app.config.set.UpdateReadNameOk.prototype.clearBeforeString = function() {
+  jspb.Message.setOneofField(this, 1, proto.management_app.config.set.UpdateReadNameOk.oneofGroups_[0], undefined);
 };
 
 
@@ -2893,7 +2893,7 @@ proto.UpdateReadNameOk.prototype.clearBeforeString = function() {
  * Returns whether this field is set.
  * @return{!boolean}
  */
-proto.UpdateReadNameOk.prototype.hasBeforeString = function() {
+proto.management_app.config.set.UpdateReadNameOk.prototype.hasBeforeString = function() {
   return jspb.Message.getField(this, 1) != null;
 };
 
@@ -2904,19 +2904,19 @@ proto.UpdateReadNameOk.prototype.hasBeforeString = function() {
  * You should avoid comparisons like {@code val === true/false} in those cases.
  * @return {boolean}
  */
-proto.UpdateReadNameOk.prototype.getBeforeBool = function() {
+proto.management_app.config.set.UpdateReadNameOk.prototype.getBeforeBool = function() {
   return /** @type {boolean} */ (!this.hasBeforeBool() ? false : jspb.Message.getField(this, 2));
 };
 
 
 /** @param {boolean?|undefined} value  */
-proto.UpdateReadNameOk.prototype.setBeforeBool = function(value) {
-  jspb.Message.setOneofField(this, 2, proto.UpdateReadNameOk.oneofGroups_[0], value);
+proto.management_app.config.set.UpdateReadNameOk.prototype.setBeforeBool = function(value) {
+  jspb.Message.setOneofField(this, 2, proto.management_app.config.set.UpdateReadNameOk.oneofGroups_[0], value);
 };
 
 
-proto.UpdateReadNameOk.prototype.clearBeforeBool = function() {
-  jspb.Message.setOneofField(this, 2, proto.UpdateReadNameOk.oneofGroups_[0], undefined);
+proto.management_app.config.set.UpdateReadNameOk.prototype.clearBeforeBool = function() {
+  jspb.Message.setOneofField(this, 2, proto.management_app.config.set.UpdateReadNameOk.oneofGroups_[0], undefined);
 };
 
 
@@ -2924,7 +2924,7 @@ proto.UpdateReadNameOk.prototype.clearBeforeBool = function() {
  * Returns whether this field is set.
  * @return{!boolean}
  */
-proto.UpdateReadNameOk.prototype.hasBeforeBool = function() {
+proto.management_app.config.set.UpdateReadNameOk.prototype.hasBeforeBool = function() {
   return jspb.Message.getField(this, 2) != null;
 };
 
@@ -2933,19 +2933,19 @@ proto.UpdateReadNameOk.prototype.hasBeforeBool = function() {
  * optional string after_string = 3;
  * @return {string}
  */
-proto.UpdateReadNameOk.prototype.getAfterString = function() {
+proto.management_app.config.set.UpdateReadNameOk.prototype.getAfterString = function() {
   return /** @type {string} */ (!this.hasAfterString() ? "" : jspb.Message.getField(this, 3));
 };
 
 
 /** @param {string?|undefined} value  */
-proto.UpdateReadNameOk.prototype.setAfterString = function(value) {
-  jspb.Message.setOneofField(this, 3, proto.UpdateReadNameOk.oneofGroups_[1], value);
+proto.management_app.config.set.UpdateReadNameOk.prototype.setAfterString = function(value) {
+  jspb.Message.setOneofField(this, 3, proto.management_app.config.set.UpdateReadNameOk.oneofGroups_[1], value);
 };
 
 
-proto.UpdateReadNameOk.prototype.clearAfterString = function() {
-  jspb.Message.setOneofField(this, 3, proto.UpdateReadNameOk.oneofGroups_[1], undefined);
+proto.management_app.config.set.UpdateReadNameOk.prototype.clearAfterString = function() {
+  jspb.Message.setOneofField(this, 3, proto.management_app.config.set.UpdateReadNameOk.oneofGroups_[1], undefined);
 };
 
 
@@ -2953,7 +2953,7 @@ proto.UpdateReadNameOk.prototype.clearAfterString = function() {
  * Returns whether this field is set.
  * @return{!boolean}
  */
-proto.UpdateReadNameOk.prototype.hasAfterString = function() {
+proto.management_app.config.set.UpdateReadNameOk.prototype.hasAfterString = function() {
   return jspb.Message.getField(this, 3) != null;
 };
 
@@ -2964,19 +2964,19 @@ proto.UpdateReadNameOk.prototype.hasAfterString = function() {
  * You should avoid comparisons like {@code val === true/false} in those cases.
  * @return {boolean}
  */
-proto.UpdateReadNameOk.prototype.getAfterBool = function() {
+proto.management_app.config.set.UpdateReadNameOk.prototype.getAfterBool = function() {
   return /** @type {boolean} */ (!this.hasAfterBool() ? false : jspb.Message.getField(this, 4));
 };
 
 
 /** @param {boolean?|undefined} value  */
-proto.UpdateReadNameOk.prototype.setAfterBool = function(value) {
-  jspb.Message.setOneofField(this, 4, proto.UpdateReadNameOk.oneofGroups_[1], value);
+proto.management_app.config.set.UpdateReadNameOk.prototype.setAfterBool = function(value) {
+  jspb.Message.setOneofField(this, 4, proto.management_app.config.set.UpdateReadNameOk.oneofGroups_[1], value);
 };
 
 
-proto.UpdateReadNameOk.prototype.clearAfterBool = function() {
-  jspb.Message.setOneofField(this, 4, proto.UpdateReadNameOk.oneofGroups_[1], undefined);
+proto.management_app.config.set.UpdateReadNameOk.prototype.clearAfterBool = function() {
+  jspb.Message.setOneofField(this, 4, proto.management_app.config.set.UpdateReadNameOk.oneofGroups_[1], undefined);
 };
 
 
@@ -2984,7 +2984,7 @@ proto.UpdateReadNameOk.prototype.clearAfterBool = function() {
  * Returns whether this field is set.
  * @return{!boolean}
  */
-proto.UpdateReadNameOk.prototype.hasAfterBool = function() {
+proto.management_app.config.set.UpdateReadNameOk.prototype.hasAfterBool = function() {
   return jspb.Message.getField(this, 4) != null;
 };
 
@@ -3000,12 +3000,12 @@ proto.UpdateReadNameOk.prototype.hasAfterBool = function() {
  * @extends {jspb.Message}
  * @constructor
  */
-proto.UpdateResultReadNameSame = function(opt_data) {
-  jspb.Message.initialize(this, opt_data, 0, -1, null, proto.UpdateResultReadNameSame.oneofGroups_);
+proto.management_app.config.set.UpdateResultReadNameSame = function(opt_data) {
+  jspb.Message.initialize(this, opt_data, 0, -1, null, proto.management_app.config.set.UpdateResultReadNameSame.oneofGroups_);
 };
-goog.inherits(proto.UpdateResultReadNameSame, jspb.Message);
+goog.inherits(proto.management_app.config.set.UpdateResultReadNameSame, jspb.Message);
 if (goog.DEBUG && !COMPILED) {
-  proto.UpdateResultReadNameSame.displayName = 'proto.UpdateResultReadNameSame';
+  proto.management_app.config.set.UpdateResultReadNameSame.displayName = 'proto.management_app.config.set.UpdateResultReadNameSame';
 }
 /**
  * Oneof group definitions for this message. Each group defines the field
@@ -3015,22 +3015,22 @@ if (goog.DEBUG && !COMPILED) {
  * @private {!Array<!Array<number>>}
  * @const
  */
-proto.UpdateResultReadNameSame.oneofGroups_ = [[1,2]];
+proto.management_app.config.set.UpdateResultReadNameSame.oneofGroups_ = [[1,2]];
 
 /**
  * @enum {number}
  */
-proto.UpdateResultReadNameSame.ValueOptionalCase = {
+proto.management_app.config.set.UpdateResultReadNameSame.ValueOptionalCase = {
   VALUE_OPTIONAL_NOT_SET: 0,
   VALUE_STRING: 1,
   VALUE_BOOL: 2
 };
 
 /**
- * @return {proto.UpdateResultReadNameSame.ValueOptionalCase}
+ * @return {proto.management_app.config.set.UpdateResultReadNameSame.ValueOptionalCase}
  */
-proto.UpdateResultReadNameSame.prototype.getValueOptionalCase = function() {
-  return /** @type {proto.UpdateResultReadNameSame.ValueOptionalCase} */(jspb.Message.computeOneofCase(this, proto.UpdateResultReadNameSame.oneofGroups_[0]));
+proto.management_app.config.set.UpdateResultReadNameSame.prototype.getValueOptionalCase = function() {
+  return /** @type {proto.management_app.config.set.UpdateResultReadNameSame.ValueOptionalCase} */(jspb.Message.computeOneofCase(this, proto.management_app.config.set.UpdateResultReadNameSame.oneofGroups_[0]));
 };
 
 
@@ -3046,8 +3046,8 @@ if (jspb.Message.GENERATE_TO_OBJECT) {
  *     for transitional soy proto support: http://goto/soy-param-migration
  * @return {!Object}
  */
-proto.UpdateResultReadNameSame.prototype.toObject = function(opt_includeInstance) {
-  return proto.UpdateResultReadNameSame.toObject(opt_includeInstance, this);
+proto.management_app.config.set.UpdateResultReadNameSame.prototype.toObject = function(opt_includeInstance) {
+  return proto.management_app.config.set.UpdateResultReadNameSame.toObject(opt_includeInstance, this);
 };
 
 
@@ -3056,10 +3056,10 @@ proto.UpdateResultReadNameSame.prototype.toObject = function(opt_includeInstance
  * @param {boolean|undefined} includeInstance Whether to include the JSPB
  *     instance for transitional soy proto support:
  *     http://goto/soy-param-migration
- * @param {!proto.UpdateResultReadNameSame} msg The msg instance to transform.
+ * @param {!proto.management_app.config.set.UpdateResultReadNameSame} msg The msg instance to transform.
  * @return {!Object}
  */
-proto.UpdateResultReadNameSame.toObject = function(includeInstance, msg) {
+proto.management_app.config.set.UpdateResultReadNameSame.toObject = function(includeInstance, msg) {
   var f, obj = {
     valueString: jspb.Message.getField(msg, 1),
     valueBool: jspb.Message.getField(msg, 2)
@@ -3076,23 +3076,23 @@ proto.UpdateResultReadNameSame.toObject = function(includeInstance, msg) {
 /**
  * Deserializes binary data (in protobuf wire format).
  * @param {jspb.ByteSource} bytes The bytes to deserialize.
- * @return {!proto.UpdateResultReadNameSame}
+ * @return {!proto.management_app.config.set.UpdateResultReadNameSame}
  */
-proto.UpdateResultReadNameSame.deserializeBinary = function(bytes) {
+proto.management_app.config.set.UpdateResultReadNameSame.deserializeBinary = function(bytes) {
   var reader = new jspb.BinaryReader(bytes);
-  var msg = new proto.UpdateResultReadNameSame;
-  return proto.UpdateResultReadNameSame.deserializeBinaryFromReader(msg, reader);
+  var msg = new proto.management_app.config.set.UpdateResultReadNameSame;
+  return proto.management_app.config.set.UpdateResultReadNameSame.deserializeBinaryFromReader(msg, reader);
 };
 
 
 /**
  * Deserializes binary data (in protobuf wire format) from the
  * given reader into the given message object.
- * @param {!proto.UpdateResultReadNameSame} msg The message object to deserialize into.
+ * @param {!proto.management_app.config.set.UpdateResultReadNameSame} msg The message object to deserialize into.
  * @param {!jspb.BinaryReader} reader The BinaryReader to use.
- * @return {!proto.UpdateResultReadNameSame}
+ * @return {!proto.management_app.config.set.UpdateResultReadNameSame}
  */
-proto.UpdateResultReadNameSame.deserializeBinaryFromReader = function(msg, reader) {
+proto.management_app.config.set.UpdateResultReadNameSame.deserializeBinaryFromReader = function(msg, reader) {
   while (reader.nextField()) {
     if (reader.isEndGroup()) {
       break;
@@ -3119,10 +3119,10 @@ proto.UpdateResultReadNameSame.deserializeBinaryFromReader = function(msg, reade
 /**
  * Class method variant: serializes the given message to binary data
  * (in protobuf wire format), writing to the given BinaryWriter.
- * @param {!proto.UpdateResultReadNameSame} message
+ * @param {!proto.management_app.config.set.UpdateResultReadNameSame} message
  * @param {!jspb.BinaryWriter} writer
  */
-proto.UpdateResultReadNameSame.serializeBinaryToWriter = function(message, writer) {
+proto.management_app.config.set.UpdateResultReadNameSame.serializeBinaryToWriter = function(message, writer) {
   message.serializeBinaryToWriter(writer);
 };
 
@@ -3131,7 +3131,7 @@ proto.UpdateResultReadNameSame.serializeBinaryToWriter = function(message, write
  * Serializes the message to binary data (in protobuf wire format).
  * @return {!Uint8Array}
  */
-proto.UpdateResultReadNameSame.prototype.serializeBinary = function() {
+proto.management_app.config.set.UpdateResultReadNameSame.prototype.serializeBinary = function() {
   var writer = new jspb.BinaryWriter();
   this.serializeBinaryToWriter(writer);
   return writer.getResultBuffer();
@@ -3143,7 +3143,7 @@ proto.UpdateResultReadNameSame.prototype.serializeBinary = function() {
  * writing to the given BinaryWriter.
  * @param {!jspb.BinaryWriter} writer
  */
-proto.UpdateResultReadNameSame.prototype.serializeBinaryToWriter = function (writer) {
+proto.management_app.config.set.UpdateResultReadNameSame.prototype.serializeBinaryToWriter = function (writer) {
   var f = undefined;
   f = jspb.Message.getField(this, 1);
   if (f != null) {
@@ -3164,10 +3164,10 @@ proto.UpdateResultReadNameSame.prototype.serializeBinaryToWriter = function (wri
 
 /**
  * Creates a deep clone of this proto. No data is shared with the original.
- * @return {!proto.UpdateResultReadNameSame} The clone.
+ * @return {!proto.management_app.config.set.UpdateResultReadNameSame} The clone.
  */
-proto.UpdateResultReadNameSame.prototype.cloneMessage = function() {
-  return /** @type {!proto.UpdateResultReadNameSame} */ (jspb.Message.cloneMessage(this));
+proto.management_app.config.set.UpdateResultReadNameSame.prototype.cloneMessage = function() {
+  return /** @type {!proto.management_app.config.set.UpdateResultReadNameSame} */ (jspb.Message.cloneMessage(this));
 };
 
 
@@ -3175,19 +3175,19 @@ proto.UpdateResultReadNameSame.prototype.cloneMessage = function() {
  * optional string value_string = 1;
  * @return {string}
  */
-proto.UpdateResultReadNameSame.prototype.getValueString = function() {
+proto.management_app.config.set.UpdateResultReadNameSame.prototype.getValueString = function() {
   return /** @type {string} */ (!this.hasValueString() ? "" : jspb.Message.getField(this, 1));
 };
 
 
 /** @param {string?|undefined} value  */
-proto.UpdateResultReadNameSame.prototype.setValueString = function(value) {
-  jspb.Message.setOneofField(this, 1, proto.UpdateResultReadNameSame.oneofGroups_[0], value);
+proto.management_app.config.set.UpdateResultReadNameSame.prototype.setValueString = function(value) {
+  jspb.Message.setOneofField(this, 1, proto.management_app.config.set.UpdateResultReadNameSame.oneofGroups_[0], value);
 };
 
 
-proto.UpdateResultReadNameSame.prototype.clearValueString = function() {
-  jspb.Message.setOneofField(this, 1, proto.UpdateResultReadNameSame.oneofGroups_[0], undefined);
+proto.management_app.config.set.UpdateResultReadNameSame.prototype.clearValueString = function() {
+  jspb.Message.setOneofField(this, 1, proto.management_app.config.set.UpdateResultReadNameSame.oneofGroups_[0], undefined);
 };
 
 
@@ -3195,7 +3195,7 @@ proto.UpdateResultReadNameSame.prototype.clearValueString = function() {
  * Returns whether this field is set.
  * @return{!boolean}
  */
-proto.UpdateResultReadNameSame.prototype.hasValueString = function() {
+proto.management_app.config.set.UpdateResultReadNameSame.prototype.hasValueString = function() {
   return jspb.Message.getField(this, 1) != null;
 };
 
@@ -3206,19 +3206,19 @@ proto.UpdateResultReadNameSame.prototype.hasValueString = function() {
  * You should avoid comparisons like {@code val === true/false} in those cases.
  * @return {boolean}
  */
-proto.UpdateResultReadNameSame.prototype.getValueBool = function() {
+proto.management_app.config.set.UpdateResultReadNameSame.prototype.getValueBool = function() {
   return /** @type {boolean} */ (!this.hasValueBool() ? false : jspb.Message.getField(this, 2));
 };
 
 
 /** @param {boolean?|undefined} value  */
-proto.UpdateResultReadNameSame.prototype.setValueBool = function(value) {
-  jspb.Message.setOneofField(this, 2, proto.UpdateResultReadNameSame.oneofGroups_[0], value);
+proto.management_app.config.set.UpdateResultReadNameSame.prototype.setValueBool = function(value) {
+  jspb.Message.setOneofField(this, 2, proto.management_app.config.set.UpdateResultReadNameSame.oneofGroups_[0], value);
 };
 
 
-proto.UpdateResultReadNameSame.prototype.clearValueBool = function() {
-  jspb.Message.setOneofField(this, 2, proto.UpdateResultReadNameSame.oneofGroups_[0], undefined);
+proto.management_app.config.set.UpdateResultReadNameSame.prototype.clearValueBool = function() {
+  jspb.Message.setOneofField(this, 2, proto.management_app.config.set.UpdateResultReadNameSame.oneofGroups_[0], undefined);
 };
 
 
@@ -3226,7 +3226,7 @@ proto.UpdateResultReadNameSame.prototype.clearValueBool = function() {
  * Returns whether this field is set.
  * @return{!boolean}
  */
-proto.UpdateResultReadNameSame.prototype.hasValueBool = function() {
+proto.management_app.config.set.UpdateResultReadNameSame.prototype.hasValueBool = function() {
   return jspb.Message.getField(this, 2) != null;
 };
 
@@ -3242,12 +3242,12 @@ proto.UpdateResultReadNameSame.prototype.hasValueBool = function() {
  * @extends {jspb.Message}
  * @constructor
  */
-proto.UpdateResultReadName = function(opt_data) {
-  jspb.Message.initialize(this, opt_data, 0, -1, null, proto.UpdateResultReadName.oneofGroups_);
+proto.management_app.config.set.UpdateResultReadName = function(opt_data) {
+  jspb.Message.initialize(this, opt_data, 0, -1, null, proto.management_app.config.set.UpdateResultReadName.oneofGroups_);
 };
-goog.inherits(proto.UpdateResultReadName, jspb.Message);
+goog.inherits(proto.management_app.config.set.UpdateResultReadName, jspb.Message);
 if (goog.DEBUG && !COMPILED) {
-  proto.UpdateResultReadName.displayName = 'proto.UpdateResultReadName';
+  proto.management_app.config.set.UpdateResultReadName.displayName = 'proto.management_app.config.set.UpdateResultReadName';
 }
 /**
  * Oneof group definitions for this message. Each group defines the field
@@ -3257,12 +3257,12 @@ if (goog.DEBUG && !COMPILED) {
  * @private {!Array<!Array<number>>}
  * @const
  */
-proto.UpdateResultReadName.oneofGroups_ = [[1,2,3]];
+proto.management_app.config.set.UpdateResultReadName.oneofGroups_ = [[1,2,3]];
 
 /**
  * @enum {number}
  */
-proto.UpdateResultReadName.UpdateresultCase = {
+proto.management_app.config.set.UpdateResultReadName.UpdateresultCase = {
   UPDATERESULT_NOT_SET: 0,
   RESULTOK: 1,
   RESULTSAME: 2,
@@ -3270,10 +3270,10 @@ proto.UpdateResultReadName.UpdateresultCase = {
 };
 
 /**
- * @return {proto.UpdateResultReadName.UpdateresultCase}
+ * @return {proto.management_app.config.set.UpdateResultReadName.UpdateresultCase}
  */
-proto.UpdateResultReadName.prototype.getUpdateresultCase = function() {
-  return /** @type {proto.UpdateResultReadName.UpdateresultCase} */(jspb.Message.computeOneofCase(this, proto.UpdateResultReadName.oneofGroups_[0]));
+proto.management_app.config.set.UpdateResultReadName.prototype.getUpdateresultCase = function() {
+  return /** @type {proto.management_app.config.set.UpdateResultReadName.UpdateresultCase} */(jspb.Message.computeOneofCase(this, proto.management_app.config.set.UpdateResultReadName.oneofGroups_[0]));
 };
 
 
@@ -3289,8 +3289,8 @@ if (jspb.Message.GENERATE_TO_OBJECT) {
  *     for transitional soy proto support: http://goto/soy-param-migration
  * @return {!Object}
  */
-proto.UpdateResultReadName.prototype.toObject = function(opt_includeInstance) {
-  return proto.UpdateResultReadName.toObject(opt_includeInstance, this);
+proto.management_app.config.set.UpdateResultReadName.prototype.toObject = function(opt_includeInstance) {
+  return proto.management_app.config.set.UpdateResultReadName.toObject(opt_includeInstance, this);
 };
 
 
@@ -3299,14 +3299,14 @@ proto.UpdateResultReadName.prototype.toObject = function(opt_includeInstance) {
  * @param {boolean|undefined} includeInstance Whether to include the JSPB
  *     instance for transitional soy proto support:
  *     http://goto/soy-param-migration
- * @param {!proto.UpdateResultReadName} msg The msg instance to transform.
+ * @param {!proto.management_app.config.set.UpdateResultReadName} msg The msg instance to transform.
  * @return {!Object}
  */
-proto.UpdateResultReadName.toObject = function(includeInstance, msg) {
+proto.management_app.config.set.UpdateResultReadName.toObject = function(includeInstance, msg) {
   var f, obj = {
-    resultok: (f = msg.getResultok()) && proto.UpdateReadNameOk.toObject(includeInstance, f),
-    resultsame: (f = msg.getResultsame()) && proto.UpdateResultReadNameSame.toObject(includeInstance, f),
-    error: (f = msg.getError()) && proto.UpdateResultError.toObject(includeInstance, f)
+    resultok: (f = msg.getResultok()) && proto.management_app.config.set.UpdateReadNameOk.toObject(includeInstance, f),
+    resultsame: (f = msg.getResultsame()) && proto.management_app.config.set.UpdateResultReadNameSame.toObject(includeInstance, f),
+    error: (f = msg.getError()) && proto.management_app.config.set.UpdateResultError.toObject(includeInstance, f)
   };
 
   if (includeInstance) {
@@ -3320,23 +3320,23 @@ proto.UpdateResultReadName.toObject = function(includeInstance, msg) {
 /**
  * Deserializes binary data (in protobuf wire format).
  * @param {jspb.ByteSource} bytes The bytes to deserialize.
- * @return {!proto.UpdateResultReadName}
+ * @return {!proto.management_app.config.set.UpdateResultReadName}
  */
-proto.UpdateResultReadName.deserializeBinary = function(bytes) {
+proto.management_app.config.set.UpdateResultReadName.deserializeBinary = function(bytes) {
   var reader = new jspb.BinaryReader(bytes);
-  var msg = new proto.UpdateResultReadName;
-  return proto.UpdateResultReadName.deserializeBinaryFromReader(msg, reader);
+  var msg = new proto.management_app.config.set.UpdateResultReadName;
+  return proto.management_app.config.set.UpdateResultReadName.deserializeBinaryFromReader(msg, reader);
 };
 
 
 /**
  * Deserializes binary data (in protobuf wire format) from the
  * given reader into the given message object.
- * @param {!proto.UpdateResultReadName} msg The message object to deserialize into.
+ * @param {!proto.management_app.config.set.UpdateResultReadName} msg The message object to deserialize into.
  * @param {!jspb.BinaryReader} reader The BinaryReader to use.
- * @return {!proto.UpdateResultReadName}
+ * @return {!proto.management_app.config.set.UpdateResultReadName}
  */
-proto.UpdateResultReadName.deserializeBinaryFromReader = function(msg, reader) {
+proto.management_app.config.set.UpdateResultReadName.deserializeBinaryFromReader = function(msg, reader) {
   while (reader.nextField()) {
     if (reader.isEndGroup()) {
       break;
@@ -3344,18 +3344,18 @@ proto.UpdateResultReadName.deserializeBinaryFromReader = function(msg, reader) {
     var field = reader.getFieldNumber();
     switch (field) {
     case 1:
-      var value = new proto.UpdateReadNameOk;
-      reader.readMessage(value,proto.UpdateReadNameOk.deserializeBinaryFromReader);
+      var value = new proto.management_app.config.set.UpdateReadNameOk;
+      reader.readMessage(value,proto.management_app.config.set.UpdateReadNameOk.deserializeBinaryFromReader);
       msg.setResultok(value);
       break;
     case 2:
-      var value = new proto.UpdateResultReadNameSame;
-      reader.readMessage(value,proto.UpdateResultReadNameSame.deserializeBinaryFromReader);
+      var value = new proto.management_app.config.set.UpdateResultReadNameSame;
+      reader.readMessage(value,proto.management_app.config.set.UpdateResultReadNameSame.deserializeBinaryFromReader);
       msg.setResultsame(value);
       break;
     case 3:
-      var value = new proto.UpdateResultError;
-      reader.readMessage(value,proto.UpdateResultError.deserializeBinaryFromReader);
+      var value = new proto.management_app.config.set.UpdateResultError;
+      reader.readMessage(value,proto.management_app.config.set.UpdateResultError.deserializeBinaryFromReader);
       msg.setError(value);
       break;
     default:
@@ -3370,10 +3370,10 @@ proto.UpdateResultReadName.deserializeBinaryFromReader = function(msg, reader) {
 /**
  * Class method variant: serializes the given message to binary data
  * (in protobuf wire format), writing to the given BinaryWriter.
- * @param {!proto.UpdateResultReadName} message
+ * @param {!proto.management_app.config.set.UpdateResultReadName} message
  * @param {!jspb.BinaryWriter} writer
  */
-proto.UpdateResultReadName.serializeBinaryToWriter = function(message, writer) {
+proto.management_app.config.set.UpdateResultReadName.serializeBinaryToWriter = function(message, writer) {
   message.serializeBinaryToWriter(writer);
 };
 
@@ -3382,7 +3382,7 @@ proto.UpdateResultReadName.serializeBinaryToWriter = function(message, writer) {
  * Serializes the message to binary data (in protobuf wire format).
  * @return {!Uint8Array}
  */
-proto.UpdateResultReadName.prototype.serializeBinary = function() {
+proto.management_app.config.set.UpdateResultReadName.prototype.serializeBinary = function() {
   var writer = new jspb.BinaryWriter();
   this.serializeBinaryToWriter(writer);
   return writer.getResultBuffer();
@@ -3394,14 +3394,14 @@ proto.UpdateResultReadName.prototype.serializeBinary = function() {
  * writing to the given BinaryWriter.
  * @param {!jspb.BinaryWriter} writer
  */
-proto.UpdateResultReadName.prototype.serializeBinaryToWriter = function (writer) {
+proto.management_app.config.set.UpdateResultReadName.prototype.serializeBinaryToWriter = function (writer) {
   var f = undefined;
   f = this.getResultok();
   if (f != null) {
     writer.writeMessage(
       1,
       f,
-      proto.UpdateReadNameOk.serializeBinaryToWriter
+      proto.management_app.config.set.UpdateReadNameOk.serializeBinaryToWriter
     );
   }
   f = this.getResultsame();
@@ -3409,7 +3409,7 @@ proto.UpdateResultReadName.prototype.serializeBinaryToWriter = function (writer)
     writer.writeMessage(
       2,
       f,
-      proto.UpdateResultReadNameSame.serializeBinaryToWriter
+      proto.management_app.config.set.UpdateResultReadNameSame.serializeBinaryToWriter
     );
   }
   f = this.getError();
@@ -3417,7 +3417,7 @@ proto.UpdateResultReadName.prototype.serializeBinaryToWriter = function (writer)
     writer.writeMessage(
       3,
       f,
-      proto.UpdateResultError.serializeBinaryToWriter
+      proto.management_app.config.set.UpdateResultError.serializeBinaryToWriter
     );
   }
 };
@@ -3425,30 +3425,30 @@ proto.UpdateResultReadName.prototype.serializeBinaryToWriter = function (writer)
 
 /**
  * Creates a deep clone of this proto. No data is shared with the original.
- * @return {!proto.UpdateResultReadName} The clone.
+ * @return {!proto.management_app.config.set.UpdateResultReadName} The clone.
  */
-proto.UpdateResultReadName.prototype.cloneMessage = function() {
-  return /** @type {!proto.UpdateResultReadName} */ (jspb.Message.cloneMessage(this));
+proto.management_app.config.set.UpdateResultReadName.prototype.cloneMessage = function() {
+  return /** @type {!proto.management_app.config.set.UpdateResultReadName} */ (jspb.Message.cloneMessage(this));
 };
 
 
 /**
  * optional UpdateReadNameOk resultOk = 1;
- * @return {proto.UpdateReadNameOk}
+ * @return {proto.management_app.config.set.UpdateReadNameOk}
  */
-proto.UpdateResultReadName.prototype.getResultok = function() {
-  return /** @type{proto.UpdateReadNameOk} */ (
-    jspb.Message.getWrapperField(this, proto.UpdateReadNameOk, 1));
+proto.management_app.config.set.UpdateResultReadName.prototype.getResultok = function() {
+  return /** @type{proto.management_app.config.set.UpdateReadNameOk} */ (
+    jspb.Message.getWrapperField(this, proto.management_app.config.set.UpdateReadNameOk, 1));
 };
 
 
-/** @param {proto.UpdateReadNameOk|undefined} value  */
-proto.UpdateResultReadName.prototype.setResultok = function(value) {
-  jspb.Message.setOneofWrapperField(this, 1, proto.UpdateResultReadName.oneofGroups_[0], value);
+/** @param {proto.management_app.config.set.UpdateReadNameOk|undefined} value  */
+proto.management_app.config.set.UpdateResultReadName.prototype.setResultok = function(value) {
+  jspb.Message.setOneofWrapperField(this, 1, proto.management_app.config.set.UpdateResultReadName.oneofGroups_[0], value);
 };
 
 
-proto.UpdateResultReadName.prototype.clearResultok = function() {
+proto.management_app.config.set.UpdateResultReadName.prototype.clearResultok = function() {
   this.setResultok(undefined);
 };
 
@@ -3457,28 +3457,28 @@ proto.UpdateResultReadName.prototype.clearResultok = function() {
  * Returns whether this field is set.
  * @return{!boolean}
  */
-proto.UpdateResultReadName.prototype.hasResultok = function() {
+proto.management_app.config.set.UpdateResultReadName.prototype.hasResultok = function() {
   return jspb.Message.getField(this, 1) != null;
 };
 
 
 /**
  * optional UpdateResultReadNameSame resultSame = 2;
- * @return {proto.UpdateResultReadNameSame}
+ * @return {proto.management_app.config.set.UpdateResultReadNameSame}
  */
-proto.UpdateResultReadName.prototype.getResultsame = function() {
-  return /** @type{proto.UpdateResultReadNameSame} */ (
-    jspb.Message.getWrapperField(this, proto.UpdateResultReadNameSame, 2));
+proto.management_app.config.set.UpdateResultReadName.prototype.getResultsame = function() {
+  return /** @type{proto.management_app.config.set.UpdateResultReadNameSame} */ (
+    jspb.Message.getWrapperField(this, proto.management_app.config.set.UpdateResultReadNameSame, 2));
 };
 
 
-/** @param {proto.UpdateResultReadNameSame|undefined} value  */
-proto.UpdateResultReadName.prototype.setResultsame = function(value) {
-  jspb.Message.setOneofWrapperField(this, 2, proto.UpdateResultReadName.oneofGroups_[0], value);
+/** @param {proto.management_app.config.set.UpdateResultReadNameSame|undefined} value  */
+proto.management_app.config.set.UpdateResultReadName.prototype.setResultsame = function(value) {
+  jspb.Message.setOneofWrapperField(this, 2, proto.management_app.config.set.UpdateResultReadName.oneofGroups_[0], value);
 };
 
 
-proto.UpdateResultReadName.prototype.clearResultsame = function() {
+proto.management_app.config.set.UpdateResultReadName.prototype.clearResultsame = function() {
   this.setResultsame(undefined);
 };
 
@@ -3487,28 +3487,28 @@ proto.UpdateResultReadName.prototype.clearResultsame = function() {
  * Returns whether this field is set.
  * @return{!boolean}
  */
-proto.UpdateResultReadName.prototype.hasResultsame = function() {
+proto.management_app.config.set.UpdateResultReadName.prototype.hasResultsame = function() {
   return jspb.Message.getField(this, 2) != null;
 };
 
 
 /**
  * optional UpdateResultError error = 3;
- * @return {proto.UpdateResultError}
+ * @return {proto.management_app.config.set.UpdateResultError}
  */
-proto.UpdateResultReadName.prototype.getError = function() {
-  return /** @type{proto.UpdateResultError} */ (
-    jspb.Message.getWrapperField(this, proto.UpdateResultError, 3));
+proto.management_app.config.set.UpdateResultReadName.prototype.getError = function() {
+  return /** @type{proto.management_app.config.set.UpdateResultError} */ (
+    jspb.Message.getWrapperField(this, proto.management_app.config.set.UpdateResultError, 3));
 };
 
 
-/** @param {proto.UpdateResultError|undefined} value  */
-proto.UpdateResultReadName.prototype.setError = function(value) {
-  jspb.Message.setOneofWrapperField(this, 3, proto.UpdateResultReadName.oneofGroups_[0], value);
+/** @param {proto.management_app.config.set.UpdateResultError|undefined} value  */
+proto.management_app.config.set.UpdateResultReadName.prototype.setError = function(value) {
+  jspb.Message.setOneofWrapperField(this, 3, proto.management_app.config.set.UpdateResultReadName.oneofGroups_[0], value);
 };
 
 
-proto.UpdateResultReadName.prototype.clearError = function() {
+proto.management_app.config.set.UpdateResultReadName.prototype.clearError = function() {
   this.setError(undefined);
 };
 
@@ -3517,7 +3517,7 @@ proto.UpdateResultReadName.prototype.clearError = function() {
  * Returns whether this field is set.
  * @return{!boolean}
  */
-proto.UpdateResultReadName.prototype.hasError = function() {
+proto.management_app.config.set.UpdateResultReadName.prototype.hasError = function() {
   return jspb.Message.getField(this, 3) != null;
 };
 
@@ -3533,12 +3533,12 @@ proto.UpdateResultReadName.prototype.hasError = function() {
  * @extends {jspb.Message}
  * @constructor
  */
-proto.UpdateUint32 = function(opt_data) {
-  jspb.Message.initialize(this, opt_data, 0, -1, null, proto.UpdateUint32.oneofGroups_);
+proto.management_app.config.set.UpdateUint32 = function(opt_data) {
+  jspb.Message.initialize(this, opt_data, 0, -1, null, proto.management_app.config.set.UpdateUint32.oneofGroups_);
 };
-goog.inherits(proto.UpdateUint32, jspb.Message);
+goog.inherits(proto.management_app.config.set.UpdateUint32, jspb.Message);
 if (goog.DEBUG && !COMPILED) {
-  proto.UpdateUint32.displayName = 'proto.UpdateUint32';
+  proto.management_app.config.set.UpdateUint32.displayName = 'proto.management_app.config.set.UpdateUint32';
 }
 /**
  * Oneof group definitions for this message. Each group defines the field
@@ -3548,21 +3548,21 @@ if (goog.DEBUG && !COMPILED) {
  * @private {!Array<!Array<number>>}
  * @const
  */
-proto.UpdateUint32.oneofGroups_ = [[2]];
+proto.management_app.config.set.UpdateUint32.oneofGroups_ = [[2]];
 
 /**
  * @enum {number}
  */
-proto.UpdateUint32.ValueOptionalCase = {
+proto.management_app.config.set.UpdateUint32.ValueOptionalCase = {
   VALUE_OPTIONAL_NOT_SET: 0,
   VALUE: 2
 };
 
 /**
- * @return {proto.UpdateUint32.ValueOptionalCase}
+ * @return {proto.management_app.config.set.UpdateUint32.ValueOptionalCase}
  */
-proto.UpdateUint32.prototype.getValueOptionalCase = function() {
-  return /** @type {proto.UpdateUint32.ValueOptionalCase} */(jspb.Message.computeOneofCase(this, proto.UpdateUint32.oneofGroups_[0]));
+proto.management_app.config.set.UpdateUint32.prototype.getValueOptionalCase = function() {
+  return /** @type {proto.management_app.config.set.UpdateUint32.ValueOptionalCase} */(jspb.Message.computeOneofCase(this, proto.management_app.config.set.UpdateUint32.oneofGroups_[0]));
 };
 
 
@@ -3578,8 +3578,8 @@ if (jspb.Message.GENERATE_TO_OBJECT) {
  *     for transitional soy proto support: http://goto/soy-param-migration
  * @return {!Object}
  */
-proto.UpdateUint32.prototype.toObject = function(opt_includeInstance) {
-  return proto.UpdateUint32.toObject(opt_includeInstance, this);
+proto.management_app.config.set.UpdateUint32.prototype.toObject = function(opt_includeInstance) {
+  return proto.management_app.config.set.UpdateUint32.toObject(opt_includeInstance, this);
 };
 
 
@@ -3588,12 +3588,12 @@ proto.UpdateUint32.prototype.toObject = function(opt_includeInstance) {
  * @param {boolean|undefined} includeInstance Whether to include the JSPB
  *     instance for transitional soy proto support:
  *     http://goto/soy-param-migration
- * @param {!proto.UpdateUint32} msg The msg instance to transform.
+ * @param {!proto.management_app.config.set.UpdateUint32} msg The msg instance to transform.
  * @return {!Object}
  */
-proto.UpdateUint32.toObject = function(includeInstance, msg) {
+proto.management_app.config.set.UpdateUint32.toObject = function(includeInstance, msg) {
   var f, obj = {
-    target: (f = msg.getTarget()) && proto.Target.toObject(includeInstance, f),
+    target: (f = msg.getTarget()) && proto.management_app.config.set.Target.toObject(includeInstance, f),
     value: jspb.Message.getField(msg, 2)
   };
 
@@ -3608,23 +3608,23 @@ proto.UpdateUint32.toObject = function(includeInstance, msg) {
 /**
  * Deserializes binary data (in protobuf wire format).
  * @param {jspb.ByteSource} bytes The bytes to deserialize.
- * @return {!proto.UpdateUint32}
+ * @return {!proto.management_app.config.set.UpdateUint32}
  */
-proto.UpdateUint32.deserializeBinary = function(bytes) {
+proto.management_app.config.set.UpdateUint32.deserializeBinary = function(bytes) {
   var reader = new jspb.BinaryReader(bytes);
-  var msg = new proto.UpdateUint32;
-  return proto.UpdateUint32.deserializeBinaryFromReader(msg, reader);
+  var msg = new proto.management_app.config.set.UpdateUint32;
+  return proto.management_app.config.set.UpdateUint32.deserializeBinaryFromReader(msg, reader);
 };
 
 
 /**
  * Deserializes binary data (in protobuf wire format) from the
  * given reader into the given message object.
- * @param {!proto.UpdateUint32} msg The message object to deserialize into.
+ * @param {!proto.management_app.config.set.UpdateUint32} msg The message object to deserialize into.
  * @param {!jspb.BinaryReader} reader The BinaryReader to use.
- * @return {!proto.UpdateUint32}
+ * @return {!proto.management_app.config.set.UpdateUint32}
  */
-proto.UpdateUint32.deserializeBinaryFromReader = function(msg, reader) {
+proto.management_app.config.set.UpdateUint32.deserializeBinaryFromReader = function(msg, reader) {
   while (reader.nextField()) {
     if (reader.isEndGroup()) {
       break;
@@ -3632,8 +3632,8 @@ proto.UpdateUint32.deserializeBinaryFromReader = function(msg, reader) {
     var field = reader.getFieldNumber();
     switch (field) {
     case 1:
-      var value = new proto.Target;
-      reader.readMessage(value,proto.Target.deserializeBinaryFromReader);
+      var value = new proto.management_app.config.set.Target;
+      reader.readMessage(value,proto.management_app.config.set.Target.deserializeBinaryFromReader);
       msg.setTarget(value);
       break;
     case 2:
@@ -3652,10 +3652,10 @@ proto.UpdateUint32.deserializeBinaryFromReader = function(msg, reader) {
 /**
  * Class method variant: serializes the given message to binary data
  * (in protobuf wire format), writing to the given BinaryWriter.
- * @param {!proto.UpdateUint32} message
+ * @param {!proto.management_app.config.set.UpdateUint32} message
  * @param {!jspb.BinaryWriter} writer
  */
-proto.UpdateUint32.serializeBinaryToWriter = function(message, writer) {
+proto.management_app.config.set.UpdateUint32.serializeBinaryToWriter = function(message, writer) {
   message.serializeBinaryToWriter(writer);
 };
 
@@ -3664,7 +3664,7 @@ proto.UpdateUint32.serializeBinaryToWriter = function(message, writer) {
  * Serializes the message to binary data (in protobuf wire format).
  * @return {!Uint8Array}
  */
-proto.UpdateUint32.prototype.serializeBinary = function() {
+proto.management_app.config.set.UpdateUint32.prototype.serializeBinary = function() {
   var writer = new jspb.BinaryWriter();
   this.serializeBinaryToWriter(writer);
   return writer.getResultBuffer();
@@ -3676,14 +3676,14 @@ proto.UpdateUint32.prototype.serializeBinary = function() {
  * writing to the given BinaryWriter.
  * @param {!jspb.BinaryWriter} writer
  */
-proto.UpdateUint32.prototype.serializeBinaryToWriter = function (writer) {
+proto.management_app.config.set.UpdateUint32.prototype.serializeBinaryToWriter = function (writer) {
   var f = undefined;
   f = this.getTarget();
   if (f != null) {
     writer.writeMessage(
       1,
       f,
-      proto.Target.serializeBinaryToWriter
+      proto.management_app.config.set.Target.serializeBinaryToWriter
     );
   }
   f = jspb.Message.getField(this, 2);
@@ -3698,30 +3698,30 @@ proto.UpdateUint32.prototype.serializeBinaryToWriter = function (writer) {
 
 /**
  * Creates a deep clone of this proto. No data is shared with the original.
- * @return {!proto.UpdateUint32} The clone.
+ * @return {!proto.management_app.config.set.UpdateUint32} The clone.
  */
-proto.UpdateUint32.prototype.cloneMessage = function() {
-  return /** @type {!proto.UpdateUint32} */ (jspb.Message.cloneMessage(this));
+proto.management_app.config.set.UpdateUint32.prototype.cloneMessage = function() {
+  return /** @type {!proto.management_app.config.set.UpdateUint32} */ (jspb.Message.cloneMessage(this));
 };
 
 
 /**
  * optional Target target = 1;
- * @return {proto.Target}
+ * @return {proto.management_app.config.set.Target}
  */
-proto.UpdateUint32.prototype.getTarget = function() {
-  return /** @type{proto.Target} */ (
-    jspb.Message.getWrapperField(this, proto.Target, 1));
+proto.management_app.config.set.UpdateUint32.prototype.getTarget = function() {
+  return /** @type{proto.management_app.config.set.Target} */ (
+    jspb.Message.getWrapperField(this, proto.management_app.config.set.Target, 1));
 };
 
 
-/** @param {proto.Target|undefined} value  */
-proto.UpdateUint32.prototype.setTarget = function(value) {
+/** @param {proto.management_app.config.set.Target|undefined} value  */
+proto.management_app.config.set.UpdateUint32.prototype.setTarget = function(value) {
   jspb.Message.setWrapperField(this, 1, value);
 };
 
 
-proto.UpdateUint32.prototype.clearTarget = function() {
+proto.management_app.config.set.UpdateUint32.prototype.clearTarget = function() {
   this.setTarget(undefined);
 };
 
@@ -3730,7 +3730,7 @@ proto.UpdateUint32.prototype.clearTarget = function() {
  * Returns whether this field is set.
  * @return{!boolean}
  */
-proto.UpdateUint32.prototype.hasTarget = function() {
+proto.management_app.config.set.UpdateUint32.prototype.hasTarget = function() {
   return jspb.Message.getField(this, 1) != null;
 };
 
@@ -3739,19 +3739,19 @@ proto.UpdateUint32.prototype.hasTarget = function() {
  * optional uint32 value = 2;
  * @return {number}
  */
-proto.UpdateUint32.prototype.getValue = function() {
+proto.management_app.config.set.UpdateUint32.prototype.getValue = function() {
   return /** @type {number} */ (!this.hasValue() ? 0 : jspb.Message.getField(this, 2));
 };
 
 
 /** @param {number?|undefined} value  */
-proto.UpdateUint32.prototype.setValue = function(value) {
-  jspb.Message.setOneofField(this, 2, proto.UpdateUint32.oneofGroups_[0], value);
+proto.management_app.config.set.UpdateUint32.prototype.setValue = function(value) {
+  jspb.Message.setOneofField(this, 2, proto.management_app.config.set.UpdateUint32.oneofGroups_[0], value);
 };
 
 
-proto.UpdateUint32.prototype.clearValue = function() {
-  jspb.Message.setOneofField(this, 2, proto.UpdateUint32.oneofGroups_[0], undefined);
+proto.management_app.config.set.UpdateUint32.prototype.clearValue = function() {
+  jspb.Message.setOneofField(this, 2, proto.management_app.config.set.UpdateUint32.oneofGroups_[0], undefined);
 };
 
 
@@ -3759,7 +3759,7 @@ proto.UpdateUint32.prototype.clearValue = function() {
  * Returns whether this field is set.
  * @return{!boolean}
  */
-proto.UpdateUint32.prototype.hasValue = function() {
+proto.management_app.config.set.UpdateUint32.prototype.hasValue = function() {
   return jspb.Message.getField(this, 2) != null;
 };
 
@@ -3775,12 +3775,12 @@ proto.UpdateUint32.prototype.hasValue = function() {
  * @extends {jspb.Message}
  * @constructor
  */
-proto.UpdateResultUint32Ok = function(opt_data) {
-  jspb.Message.initialize(this, opt_data, 0, -1, null, proto.UpdateResultUint32Ok.oneofGroups_);
+proto.management_app.config.set.UpdateResultUint32Ok = function(opt_data) {
+  jspb.Message.initialize(this, opt_data, 0, -1, null, proto.management_app.config.set.UpdateResultUint32Ok.oneofGroups_);
 };
-goog.inherits(proto.UpdateResultUint32Ok, jspb.Message);
+goog.inherits(proto.management_app.config.set.UpdateResultUint32Ok, jspb.Message);
 if (goog.DEBUG && !COMPILED) {
-  proto.UpdateResultUint32Ok.displayName = 'proto.UpdateResultUint32Ok';
+  proto.management_app.config.set.UpdateResultUint32Ok.displayName = 'proto.management_app.config.set.UpdateResultUint32Ok';
 }
 /**
  * Oneof group definitions for this message. Each group defines the field
@@ -3790,36 +3790,36 @@ if (goog.DEBUG && !COMPILED) {
  * @private {!Array<!Array<number>>}
  * @const
  */
-proto.UpdateResultUint32Ok.oneofGroups_ = [[1],[2]];
+proto.management_app.config.set.UpdateResultUint32Ok.oneofGroups_ = [[1],[2]];
 
 /**
  * @enum {number}
  */
-proto.UpdateResultUint32Ok.BeforeOptionalCase = {
+proto.management_app.config.set.UpdateResultUint32Ok.BeforeOptionalCase = {
   BEFORE_OPTIONAL_NOT_SET: 0,
   BEFORE: 1
 };
 
 /**
- * @return {proto.UpdateResultUint32Ok.BeforeOptionalCase}
+ * @return {proto.management_app.config.set.UpdateResultUint32Ok.BeforeOptionalCase}
  */
-proto.UpdateResultUint32Ok.prototype.getBeforeOptionalCase = function() {
-  return /** @type {proto.UpdateResultUint32Ok.BeforeOptionalCase} */(jspb.Message.computeOneofCase(this, proto.UpdateResultUint32Ok.oneofGroups_[0]));
+proto.management_app.config.set.UpdateResultUint32Ok.prototype.getBeforeOptionalCase = function() {
+  return /** @type {proto.management_app.config.set.UpdateResultUint32Ok.BeforeOptionalCase} */(jspb.Message.computeOneofCase(this, proto.management_app.config.set.UpdateResultUint32Ok.oneofGroups_[0]));
 };
 
 /**
  * @enum {number}
  */
-proto.UpdateResultUint32Ok.AfterOptionalCase = {
+proto.management_app.config.set.UpdateResultUint32Ok.AfterOptionalCase = {
   AFTER_OPTIONAL_NOT_SET: 0,
   AFTER: 2
 };
 
 /**
- * @return {proto.UpdateResultUint32Ok.AfterOptionalCase}
+ * @return {proto.management_app.config.set.UpdateResultUint32Ok.AfterOptionalCase}
  */
-proto.UpdateResultUint32Ok.prototype.getAfterOptionalCase = function() {
-  return /** @type {proto.UpdateResultUint32Ok.AfterOptionalCase} */(jspb.Message.computeOneofCase(this, proto.UpdateResultUint32Ok.oneofGroups_[1]));
+proto.management_app.config.set.UpdateResultUint32Ok.prototype.getAfterOptionalCase = function() {
+  return /** @type {proto.management_app.config.set.UpdateResultUint32Ok.AfterOptionalCase} */(jspb.Message.computeOneofCase(this, proto.management_app.config.set.UpdateResultUint32Ok.oneofGroups_[1]));
 };
 
 
@@ -3835,8 +3835,8 @@ if (jspb.Message.GENERATE_TO_OBJECT) {
  *     for transitional soy proto support: http://goto/soy-param-migration
  * @return {!Object}
  */
-proto.UpdateResultUint32Ok.prototype.toObject = function(opt_includeInstance) {
-  return proto.UpdateResultUint32Ok.toObject(opt_includeInstance, this);
+proto.management_app.config.set.UpdateResultUint32Ok.prototype.toObject = function(opt_includeInstance) {
+  return proto.management_app.config.set.UpdateResultUint32Ok.toObject(opt_includeInstance, this);
 };
 
 
@@ -3845,10 +3845,10 @@ proto.UpdateResultUint32Ok.prototype.toObject = function(opt_includeInstance) {
  * @param {boolean|undefined} includeInstance Whether to include the JSPB
  *     instance for transitional soy proto support:
  *     http://goto/soy-param-migration
- * @param {!proto.UpdateResultUint32Ok} msg The msg instance to transform.
+ * @param {!proto.management_app.config.set.UpdateResultUint32Ok} msg The msg instance to transform.
  * @return {!Object}
  */
-proto.UpdateResultUint32Ok.toObject = function(includeInstance, msg) {
+proto.management_app.config.set.UpdateResultUint32Ok.toObject = function(includeInstance, msg) {
   var f, obj = {
     before: jspb.Message.getField(msg, 1),
     after: jspb.Message.getField(msg, 2)
@@ -3865,23 +3865,23 @@ proto.UpdateResultUint32Ok.toObject = function(includeInstance, msg) {
 /**
  * Deserializes binary data (in protobuf wire format).
  * @param {jspb.ByteSource} bytes The bytes to deserialize.
- * @return {!proto.UpdateResultUint32Ok}
+ * @return {!proto.management_app.config.set.UpdateResultUint32Ok}
  */
-proto.UpdateResultUint32Ok.deserializeBinary = function(bytes) {
+proto.management_app.config.set.UpdateResultUint32Ok.deserializeBinary = function(bytes) {
   var reader = new jspb.BinaryReader(bytes);
-  var msg = new proto.UpdateResultUint32Ok;
-  return proto.UpdateResultUint32Ok.deserializeBinaryFromReader(msg, reader);
+  var msg = new proto.management_app.config.set.UpdateResultUint32Ok;
+  return proto.management_app.config.set.UpdateResultUint32Ok.deserializeBinaryFromReader(msg, reader);
 };
 
 
 /**
  * Deserializes binary data (in protobuf wire format) from the
  * given reader into the given message object.
- * @param {!proto.UpdateResultUint32Ok} msg The message object to deserialize into.
+ * @param {!proto.management_app.config.set.UpdateResultUint32Ok} msg The message object to deserialize into.
  * @param {!jspb.BinaryReader} reader The BinaryReader to use.
- * @return {!proto.UpdateResultUint32Ok}
+ * @return {!proto.management_app.config.set.UpdateResultUint32Ok}
  */
-proto.UpdateResultUint32Ok.deserializeBinaryFromReader = function(msg, reader) {
+proto.management_app.config.set.UpdateResultUint32Ok.deserializeBinaryFromReader = function(msg, reader) {
   while (reader.nextField()) {
     if (reader.isEndGroup()) {
       break;
@@ -3908,10 +3908,10 @@ proto.UpdateResultUint32Ok.deserializeBinaryFromReader = function(msg, reader) {
 /**
  * Class method variant: serializes the given message to binary data
  * (in protobuf wire format), writing to the given BinaryWriter.
- * @param {!proto.UpdateResultUint32Ok} message
+ * @param {!proto.management_app.config.set.UpdateResultUint32Ok} message
  * @param {!jspb.BinaryWriter} writer
  */
-proto.UpdateResultUint32Ok.serializeBinaryToWriter = function(message, writer) {
+proto.management_app.config.set.UpdateResultUint32Ok.serializeBinaryToWriter = function(message, writer) {
   message.serializeBinaryToWriter(writer);
 };
 
@@ -3920,7 +3920,7 @@ proto.UpdateResultUint32Ok.serializeBinaryToWriter = function(message, writer) {
  * Serializes the message to binary data (in protobuf wire format).
  * @return {!Uint8Array}
  */
-proto.UpdateResultUint32Ok.prototype.serializeBinary = function() {
+proto.management_app.config.set.UpdateResultUint32Ok.prototype.serializeBinary = function() {
   var writer = new jspb.BinaryWriter();
   this.serializeBinaryToWriter(writer);
   return writer.getResultBuffer();
@@ -3932,7 +3932,7 @@ proto.UpdateResultUint32Ok.prototype.serializeBinary = function() {
  * writing to the given BinaryWriter.
  * @param {!jspb.BinaryWriter} writer
  */
-proto.UpdateResultUint32Ok.prototype.serializeBinaryToWriter = function (writer) {
+proto.management_app.config.set.UpdateResultUint32Ok.prototype.serializeBinaryToWriter = function (writer) {
   var f = undefined;
   f = jspb.Message.getField(this, 1);
   if (f != null) {
@@ -3953,10 +3953,10 @@ proto.UpdateResultUint32Ok.prototype.serializeBinaryToWriter = function (writer)
 
 /**
  * Creates a deep clone of this proto. No data is shared with the original.
- * @return {!proto.UpdateResultUint32Ok} The clone.
+ * @return {!proto.management_app.config.set.UpdateResultUint32Ok} The clone.
  */
-proto.UpdateResultUint32Ok.prototype.cloneMessage = function() {
-  return /** @type {!proto.UpdateResultUint32Ok} */ (jspb.Message.cloneMessage(this));
+proto.management_app.config.set.UpdateResultUint32Ok.prototype.cloneMessage = function() {
+  return /** @type {!proto.management_app.config.set.UpdateResultUint32Ok} */ (jspb.Message.cloneMessage(this));
 };
 
 
@@ -3964,19 +3964,19 @@ proto.UpdateResultUint32Ok.prototype.cloneMessage = function() {
  * optional uint32 before = 1;
  * @return {number}
  */
-proto.UpdateResultUint32Ok.prototype.getBefore = function() {
+proto.management_app.config.set.UpdateResultUint32Ok.prototype.getBefore = function() {
   return /** @type {number} */ (!this.hasBefore() ? 0 : jspb.Message.getField(this, 1));
 };
 
 
 /** @param {number?|undefined} value  */
-proto.UpdateResultUint32Ok.prototype.setBefore = function(value) {
-  jspb.Message.setOneofField(this, 1, proto.UpdateResultUint32Ok.oneofGroups_[0], value);
+proto.management_app.config.set.UpdateResultUint32Ok.prototype.setBefore = function(value) {
+  jspb.Message.setOneofField(this, 1, proto.management_app.config.set.UpdateResultUint32Ok.oneofGroups_[0], value);
 };
 
 
-proto.UpdateResultUint32Ok.prototype.clearBefore = function() {
-  jspb.Message.setOneofField(this, 1, proto.UpdateResultUint32Ok.oneofGroups_[0], undefined);
+proto.management_app.config.set.UpdateResultUint32Ok.prototype.clearBefore = function() {
+  jspb.Message.setOneofField(this, 1, proto.management_app.config.set.UpdateResultUint32Ok.oneofGroups_[0], undefined);
 };
 
 
@@ -3984,7 +3984,7 @@ proto.UpdateResultUint32Ok.prototype.clearBefore = function() {
  * Returns whether this field is set.
  * @return{!boolean}
  */
-proto.UpdateResultUint32Ok.prototype.hasBefore = function() {
+proto.management_app.config.set.UpdateResultUint32Ok.prototype.hasBefore = function() {
   return jspb.Message.getField(this, 1) != null;
 };
 
@@ -3993,19 +3993,19 @@ proto.UpdateResultUint32Ok.prototype.hasBefore = function() {
  * optional uint32 after = 2;
  * @return {number}
  */
-proto.UpdateResultUint32Ok.prototype.getAfter = function() {
+proto.management_app.config.set.UpdateResultUint32Ok.prototype.getAfter = function() {
   return /** @type {number} */ (!this.hasAfter() ? 0 : jspb.Message.getField(this, 2));
 };
 
 
 /** @param {number?|undefined} value  */
-proto.UpdateResultUint32Ok.prototype.setAfter = function(value) {
-  jspb.Message.setOneofField(this, 2, proto.UpdateResultUint32Ok.oneofGroups_[1], value);
+proto.management_app.config.set.UpdateResultUint32Ok.prototype.setAfter = function(value) {
+  jspb.Message.setOneofField(this, 2, proto.management_app.config.set.UpdateResultUint32Ok.oneofGroups_[1], value);
 };
 
 
-proto.UpdateResultUint32Ok.prototype.clearAfter = function() {
-  jspb.Message.setOneofField(this, 2, proto.UpdateResultUint32Ok.oneofGroups_[1], undefined);
+proto.management_app.config.set.UpdateResultUint32Ok.prototype.clearAfter = function() {
+  jspb.Message.setOneofField(this, 2, proto.management_app.config.set.UpdateResultUint32Ok.oneofGroups_[1], undefined);
 };
 
 
@@ -4013,7 +4013,7 @@ proto.UpdateResultUint32Ok.prototype.clearAfter = function() {
  * Returns whether this field is set.
  * @return{!boolean}
  */
-proto.UpdateResultUint32Ok.prototype.hasAfter = function() {
+proto.management_app.config.set.UpdateResultUint32Ok.prototype.hasAfter = function() {
   return jspb.Message.getField(this, 2) != null;
 };
 
@@ -4029,12 +4029,12 @@ proto.UpdateResultUint32Ok.prototype.hasAfter = function() {
  * @extends {jspb.Message}
  * @constructor
  */
-proto.UpdateResultUint32Same = function(opt_data) {
-  jspb.Message.initialize(this, opt_data, 0, -1, null, proto.UpdateResultUint32Same.oneofGroups_);
+proto.management_app.config.set.UpdateResultUint32Same = function(opt_data) {
+  jspb.Message.initialize(this, opt_data, 0, -1, null, proto.management_app.config.set.UpdateResultUint32Same.oneofGroups_);
 };
-goog.inherits(proto.UpdateResultUint32Same, jspb.Message);
+goog.inherits(proto.management_app.config.set.UpdateResultUint32Same, jspb.Message);
 if (goog.DEBUG && !COMPILED) {
-  proto.UpdateResultUint32Same.displayName = 'proto.UpdateResultUint32Same';
+  proto.management_app.config.set.UpdateResultUint32Same.displayName = 'proto.management_app.config.set.UpdateResultUint32Same';
 }
 /**
  * Oneof group definitions for this message. Each group defines the field
@@ -4044,21 +4044,21 @@ if (goog.DEBUG && !COMPILED) {
  * @private {!Array<!Array<number>>}
  * @const
  */
-proto.UpdateResultUint32Same.oneofGroups_ = [[1]];
+proto.management_app.config.set.UpdateResultUint32Same.oneofGroups_ = [[1]];
 
 /**
  * @enum {number}
  */
-proto.UpdateResultUint32Same.ValueOptionalCase = {
+proto.management_app.config.set.UpdateResultUint32Same.ValueOptionalCase = {
   VALUE_OPTIONAL_NOT_SET: 0,
   VALUE: 1
 };
 
 /**
- * @return {proto.UpdateResultUint32Same.ValueOptionalCase}
+ * @return {proto.management_app.config.set.UpdateResultUint32Same.ValueOptionalCase}
  */
-proto.UpdateResultUint32Same.prototype.getValueOptionalCase = function() {
-  return /** @type {proto.UpdateResultUint32Same.ValueOptionalCase} */(jspb.Message.computeOneofCase(this, proto.UpdateResultUint32Same.oneofGroups_[0]));
+proto.management_app.config.set.UpdateResultUint32Same.prototype.getValueOptionalCase = function() {
+  return /** @type {proto.management_app.config.set.UpdateResultUint32Same.ValueOptionalCase} */(jspb.Message.computeOneofCase(this, proto.management_app.config.set.UpdateResultUint32Same.oneofGroups_[0]));
 };
 
 
@@ -4074,8 +4074,8 @@ if (jspb.Message.GENERATE_TO_OBJECT) {
  *     for transitional soy proto support: http://goto/soy-param-migration
  * @return {!Object}
  */
-proto.UpdateResultUint32Same.prototype.toObject = function(opt_includeInstance) {
-  return proto.UpdateResultUint32Same.toObject(opt_includeInstance, this);
+proto.management_app.config.set.UpdateResultUint32Same.prototype.toObject = function(opt_includeInstance) {
+  return proto.management_app.config.set.UpdateResultUint32Same.toObject(opt_includeInstance, this);
 };
 
 
@@ -4084,10 +4084,10 @@ proto.UpdateResultUint32Same.prototype.toObject = function(opt_includeInstance) 
  * @param {boolean|undefined} includeInstance Whether to include the JSPB
  *     instance for transitional soy proto support:
  *     http://goto/soy-param-migration
- * @param {!proto.UpdateResultUint32Same} msg The msg instance to transform.
+ * @param {!proto.management_app.config.set.UpdateResultUint32Same} msg The msg instance to transform.
  * @return {!Object}
  */
-proto.UpdateResultUint32Same.toObject = function(includeInstance, msg) {
+proto.management_app.config.set.UpdateResultUint32Same.toObject = function(includeInstance, msg) {
   var f, obj = {
     value: jspb.Message.getField(msg, 1)
   };
@@ -4103,23 +4103,23 @@ proto.UpdateResultUint32Same.toObject = function(includeInstance, msg) {
 /**
  * Deserializes binary data (in protobuf wire format).
  * @param {jspb.ByteSource} bytes The bytes to deserialize.
- * @return {!proto.UpdateResultUint32Same}
+ * @return {!proto.management_app.config.set.UpdateResultUint32Same}
  */
-proto.UpdateResultUint32Same.deserializeBinary = function(bytes) {
+proto.management_app.config.set.UpdateResultUint32Same.deserializeBinary = function(bytes) {
   var reader = new jspb.BinaryReader(bytes);
-  var msg = new proto.UpdateResultUint32Same;
-  return proto.UpdateResultUint32Same.deserializeBinaryFromReader(msg, reader);
+  var msg = new proto.management_app.config.set.UpdateResultUint32Same;
+  return proto.management_app.config.set.UpdateResultUint32Same.deserializeBinaryFromReader(msg, reader);
 };
 
 
 /**
  * Deserializes binary data (in protobuf wire format) from the
  * given reader into the given message object.
- * @param {!proto.UpdateResultUint32Same} msg The message object to deserialize into.
+ * @param {!proto.management_app.config.set.UpdateResultUint32Same} msg The message object to deserialize into.
  * @param {!jspb.BinaryReader} reader The BinaryReader to use.
- * @return {!proto.UpdateResultUint32Same}
+ * @return {!proto.management_app.config.set.UpdateResultUint32Same}
  */
-proto.UpdateResultUint32Same.deserializeBinaryFromReader = function(msg, reader) {
+proto.management_app.config.set.UpdateResultUint32Same.deserializeBinaryFromReader = function(msg, reader) {
   while (reader.nextField()) {
     if (reader.isEndGroup()) {
       break;
@@ -4142,10 +4142,10 @@ proto.UpdateResultUint32Same.deserializeBinaryFromReader = function(msg, reader)
 /**
  * Class method variant: serializes the given message to binary data
  * (in protobuf wire format), writing to the given BinaryWriter.
- * @param {!proto.UpdateResultUint32Same} message
+ * @param {!proto.management_app.config.set.UpdateResultUint32Same} message
  * @param {!jspb.BinaryWriter} writer
  */
-proto.UpdateResultUint32Same.serializeBinaryToWriter = function(message, writer) {
+proto.management_app.config.set.UpdateResultUint32Same.serializeBinaryToWriter = function(message, writer) {
   message.serializeBinaryToWriter(writer);
 };
 
@@ -4154,7 +4154,7 @@ proto.UpdateResultUint32Same.serializeBinaryToWriter = function(message, writer)
  * Serializes the message to binary data (in protobuf wire format).
  * @return {!Uint8Array}
  */
-proto.UpdateResultUint32Same.prototype.serializeBinary = function() {
+proto.management_app.config.set.UpdateResultUint32Same.prototype.serializeBinary = function() {
   var writer = new jspb.BinaryWriter();
   this.serializeBinaryToWriter(writer);
   return writer.getResultBuffer();
@@ -4166,7 +4166,7 @@ proto.UpdateResultUint32Same.prototype.serializeBinary = function() {
  * writing to the given BinaryWriter.
  * @param {!jspb.BinaryWriter} writer
  */
-proto.UpdateResultUint32Same.prototype.serializeBinaryToWriter = function (writer) {
+proto.management_app.config.set.UpdateResultUint32Same.prototype.serializeBinaryToWriter = function (writer) {
   var f = undefined;
   f = jspb.Message.getField(this, 1);
   if (f != null) {
@@ -4180,10 +4180,10 @@ proto.UpdateResultUint32Same.prototype.serializeBinaryToWriter = function (write
 
 /**
  * Creates a deep clone of this proto. No data is shared with the original.
- * @return {!proto.UpdateResultUint32Same} The clone.
+ * @return {!proto.management_app.config.set.UpdateResultUint32Same} The clone.
  */
-proto.UpdateResultUint32Same.prototype.cloneMessage = function() {
-  return /** @type {!proto.UpdateResultUint32Same} */ (jspb.Message.cloneMessage(this));
+proto.management_app.config.set.UpdateResultUint32Same.prototype.cloneMessage = function() {
+  return /** @type {!proto.management_app.config.set.UpdateResultUint32Same} */ (jspb.Message.cloneMessage(this));
 };
 
 
@@ -4191,19 +4191,19 @@ proto.UpdateResultUint32Same.prototype.cloneMessage = function() {
  * optional uint32 value = 1;
  * @return {number}
  */
-proto.UpdateResultUint32Same.prototype.getValue = function() {
+proto.management_app.config.set.UpdateResultUint32Same.prototype.getValue = function() {
   return /** @type {number} */ (!this.hasValue() ? 0 : jspb.Message.getField(this, 1));
 };
 
 
 /** @param {number?|undefined} value  */
-proto.UpdateResultUint32Same.prototype.setValue = function(value) {
-  jspb.Message.setOneofField(this, 1, proto.UpdateResultUint32Same.oneofGroups_[0], value);
+proto.management_app.config.set.UpdateResultUint32Same.prototype.setValue = function(value) {
+  jspb.Message.setOneofField(this, 1, proto.management_app.config.set.UpdateResultUint32Same.oneofGroups_[0], value);
 };
 
 
-proto.UpdateResultUint32Same.prototype.clearValue = function() {
-  jspb.Message.setOneofField(this, 1, proto.UpdateResultUint32Same.oneofGroups_[0], undefined);
+proto.management_app.config.set.UpdateResultUint32Same.prototype.clearValue = function() {
+  jspb.Message.setOneofField(this, 1, proto.management_app.config.set.UpdateResultUint32Same.oneofGroups_[0], undefined);
 };
 
 
@@ -4211,7 +4211,7 @@ proto.UpdateResultUint32Same.prototype.clearValue = function() {
  * Returns whether this field is set.
  * @return{!boolean}
  */
-proto.UpdateResultUint32Same.prototype.hasValue = function() {
+proto.management_app.config.set.UpdateResultUint32Same.prototype.hasValue = function() {
   return jspb.Message.getField(this, 1) != null;
 };
 
@@ -4227,12 +4227,12 @@ proto.UpdateResultUint32Same.prototype.hasValue = function() {
  * @extends {jspb.Message}
  * @constructor
  */
-proto.UpdateResultUint32 = function(opt_data) {
-  jspb.Message.initialize(this, opt_data, 0, -1, null, proto.UpdateResultUint32.oneofGroups_);
+proto.management_app.config.set.UpdateResultUint32 = function(opt_data) {
+  jspb.Message.initialize(this, opt_data, 0, -1, null, proto.management_app.config.set.UpdateResultUint32.oneofGroups_);
 };
-goog.inherits(proto.UpdateResultUint32, jspb.Message);
+goog.inherits(proto.management_app.config.set.UpdateResultUint32, jspb.Message);
 if (goog.DEBUG && !COMPILED) {
-  proto.UpdateResultUint32.displayName = 'proto.UpdateResultUint32';
+  proto.management_app.config.set.UpdateResultUint32.displayName = 'proto.management_app.config.set.UpdateResultUint32';
 }
 /**
  * Oneof group definitions for this message. Each group defines the field
@@ -4242,12 +4242,12 @@ if (goog.DEBUG && !COMPILED) {
  * @private {!Array<!Array<number>>}
  * @const
  */
-proto.UpdateResultUint32.oneofGroups_ = [[1,2,3]];
+proto.management_app.config.set.UpdateResultUint32.oneofGroups_ = [[1,2,3]];
 
 /**
  * @enum {number}
  */
-proto.UpdateResultUint32.UpdateresultCase = {
+proto.management_app.config.set.UpdateResultUint32.UpdateresultCase = {
   UPDATERESULT_NOT_SET: 0,
   RESULTOK: 1,
   RESULTSAME: 2,
@@ -4255,10 +4255,10 @@ proto.UpdateResultUint32.UpdateresultCase = {
 };
 
 /**
- * @return {proto.UpdateResultUint32.UpdateresultCase}
+ * @return {proto.management_app.config.set.UpdateResultUint32.UpdateresultCase}
  */
-proto.UpdateResultUint32.prototype.getUpdateresultCase = function() {
-  return /** @type {proto.UpdateResultUint32.UpdateresultCase} */(jspb.Message.computeOneofCase(this, proto.UpdateResultUint32.oneofGroups_[0]));
+proto.management_app.config.set.UpdateResultUint32.prototype.getUpdateresultCase = function() {
+  return /** @type {proto.management_app.config.set.UpdateResultUint32.UpdateresultCase} */(jspb.Message.computeOneofCase(this, proto.management_app.config.set.UpdateResultUint32.oneofGroups_[0]));
 };
 
 
@@ -4274,8 +4274,8 @@ if (jspb.Message.GENERATE_TO_OBJECT) {
  *     for transitional soy proto support: http://goto/soy-param-migration
  * @return {!Object}
  */
-proto.UpdateResultUint32.prototype.toObject = function(opt_includeInstance) {
-  return proto.UpdateResultUint32.toObject(opt_includeInstance, this);
+proto.management_app.config.set.UpdateResultUint32.prototype.toObject = function(opt_includeInstance) {
+  return proto.management_app.config.set.UpdateResultUint32.toObject(opt_includeInstance, this);
 };
 
 
@@ -4284,14 +4284,14 @@ proto.UpdateResultUint32.prototype.toObject = function(opt_includeInstance) {
  * @param {boolean|undefined} includeInstance Whether to include the JSPB
  *     instance for transitional soy proto support:
  *     http://goto/soy-param-migration
- * @param {!proto.UpdateResultUint32} msg The msg instance to transform.
+ * @param {!proto.management_app.config.set.UpdateResultUint32} msg The msg instance to transform.
  * @return {!Object}
  */
-proto.UpdateResultUint32.toObject = function(includeInstance, msg) {
+proto.management_app.config.set.UpdateResultUint32.toObject = function(includeInstance, msg) {
   var f, obj = {
-    resultok: (f = msg.getResultok()) && proto.UpdateResultUint32Ok.toObject(includeInstance, f),
-    resultsame: (f = msg.getResultsame()) && proto.UpdateResultUint32Same.toObject(includeInstance, f),
-    error: (f = msg.getError()) && proto.UpdateResultError.toObject(includeInstance, f)
+    resultok: (f = msg.getResultok()) && proto.management_app.config.set.UpdateResultUint32Ok.toObject(includeInstance, f),
+    resultsame: (f = msg.getResultsame()) && proto.management_app.config.set.UpdateResultUint32Same.toObject(includeInstance, f),
+    error: (f = msg.getError()) && proto.management_app.config.set.UpdateResultError.toObject(includeInstance, f)
   };
 
   if (includeInstance) {
@@ -4305,23 +4305,23 @@ proto.UpdateResultUint32.toObject = function(includeInstance, msg) {
 /**
  * Deserializes binary data (in protobuf wire format).
  * @param {jspb.ByteSource} bytes The bytes to deserialize.
- * @return {!proto.UpdateResultUint32}
+ * @return {!proto.management_app.config.set.UpdateResultUint32}
  */
-proto.UpdateResultUint32.deserializeBinary = function(bytes) {
+proto.management_app.config.set.UpdateResultUint32.deserializeBinary = function(bytes) {
   var reader = new jspb.BinaryReader(bytes);
-  var msg = new proto.UpdateResultUint32;
-  return proto.UpdateResultUint32.deserializeBinaryFromReader(msg, reader);
+  var msg = new proto.management_app.config.set.UpdateResultUint32;
+  return proto.management_app.config.set.UpdateResultUint32.deserializeBinaryFromReader(msg, reader);
 };
 
 
 /**
  * Deserializes binary data (in protobuf wire format) from the
  * given reader into the given message object.
- * @param {!proto.UpdateResultUint32} msg The message object to deserialize into.
+ * @param {!proto.management_app.config.set.UpdateResultUint32} msg The message object to deserialize into.
  * @param {!jspb.BinaryReader} reader The BinaryReader to use.
- * @return {!proto.UpdateResultUint32}
+ * @return {!proto.management_app.config.set.UpdateResultUint32}
  */
-proto.UpdateResultUint32.deserializeBinaryFromReader = function(msg, reader) {
+proto.management_app.config.set.UpdateResultUint32.deserializeBinaryFromReader = function(msg, reader) {
   while (reader.nextField()) {
     if (reader.isEndGroup()) {
       break;
@@ -4329,18 +4329,18 @@ proto.UpdateResultUint32.deserializeBinaryFromReader = function(msg, reader) {
     var field = reader.getFieldNumber();
     switch (field) {
     case 1:
-      var value = new proto.UpdateResultUint32Ok;
-      reader.readMessage(value,proto.UpdateResultUint32Ok.deserializeBinaryFromReader);
+      var value = new proto.management_app.config.set.UpdateResultUint32Ok;
+      reader.readMessage(value,proto.management_app.config.set.UpdateResultUint32Ok.deserializeBinaryFromReader);
       msg.setResultok(value);
       break;
     case 2:
-      var value = new proto.UpdateResultUint32Same;
-      reader.readMessage(value,proto.UpdateResultUint32Same.deserializeBinaryFromReader);
+      var value = new proto.management_app.config.set.UpdateResultUint32Same;
+      reader.readMessage(value,proto.management_app.config.set.UpdateResultUint32Same.deserializeBinaryFromReader);
       msg.setResultsame(value);
       break;
     case 3:
-      var value = new proto.UpdateResultError;
-      reader.readMessage(value,proto.UpdateResultError.deserializeBinaryFromReader);
+      var value = new proto.management_app.config.set.UpdateResultError;
+      reader.readMessage(value,proto.management_app.config.set.UpdateResultError.deserializeBinaryFromReader);
       msg.setError(value);
       break;
     default:
@@ -4355,10 +4355,10 @@ proto.UpdateResultUint32.deserializeBinaryFromReader = function(msg, reader) {
 /**
  * Class method variant: serializes the given message to binary data
  * (in protobuf wire format), writing to the given BinaryWriter.
- * @param {!proto.UpdateResultUint32} message
+ * @param {!proto.management_app.config.set.UpdateResultUint32} message
  * @param {!jspb.BinaryWriter} writer
  */
-proto.UpdateResultUint32.serializeBinaryToWriter = function(message, writer) {
+proto.management_app.config.set.UpdateResultUint32.serializeBinaryToWriter = function(message, writer) {
   message.serializeBinaryToWriter(writer);
 };
 
@@ -4367,7 +4367,7 @@ proto.UpdateResultUint32.serializeBinaryToWriter = function(message, writer) {
  * Serializes the message to binary data (in protobuf wire format).
  * @return {!Uint8Array}
  */
-proto.UpdateResultUint32.prototype.serializeBinary = function() {
+proto.management_app.config.set.UpdateResultUint32.prototype.serializeBinary = function() {
   var writer = new jspb.BinaryWriter();
   this.serializeBinaryToWriter(writer);
   return writer.getResultBuffer();
@@ -4379,14 +4379,14 @@ proto.UpdateResultUint32.prototype.serializeBinary = function() {
  * writing to the given BinaryWriter.
  * @param {!jspb.BinaryWriter} writer
  */
-proto.UpdateResultUint32.prototype.serializeBinaryToWriter = function (writer) {
+proto.management_app.config.set.UpdateResultUint32.prototype.serializeBinaryToWriter = function (writer) {
   var f = undefined;
   f = this.getResultok();
   if (f != null) {
     writer.writeMessage(
       1,
       f,
-      proto.UpdateResultUint32Ok.serializeBinaryToWriter
+      proto.management_app.config.set.UpdateResultUint32Ok.serializeBinaryToWriter
     );
   }
   f = this.getResultsame();
@@ -4394,7 +4394,7 @@ proto.UpdateResultUint32.prototype.serializeBinaryToWriter = function (writer) {
     writer.writeMessage(
       2,
       f,
-      proto.UpdateResultUint32Same.serializeBinaryToWriter
+      proto.management_app.config.set.UpdateResultUint32Same.serializeBinaryToWriter
     );
   }
   f = this.getError();
@@ -4402,7 +4402,7 @@ proto.UpdateResultUint32.prototype.serializeBinaryToWriter = function (writer) {
     writer.writeMessage(
       3,
       f,
-      proto.UpdateResultError.serializeBinaryToWriter
+      proto.management_app.config.set.UpdateResultError.serializeBinaryToWriter
     );
   }
 };
@@ -4410,30 +4410,30 @@ proto.UpdateResultUint32.prototype.serializeBinaryToWriter = function (writer) {
 
 /**
  * Creates a deep clone of this proto. No data is shared with the original.
- * @return {!proto.UpdateResultUint32} The clone.
+ * @return {!proto.management_app.config.set.UpdateResultUint32} The clone.
  */
-proto.UpdateResultUint32.prototype.cloneMessage = function() {
-  return /** @type {!proto.UpdateResultUint32} */ (jspb.Message.cloneMessage(this));
+proto.management_app.config.set.UpdateResultUint32.prototype.cloneMessage = function() {
+  return /** @type {!proto.management_app.config.set.UpdateResultUint32} */ (jspb.Message.cloneMessage(this));
 };
 
 
 /**
  * optional UpdateResultUint32Ok resultOk = 1;
- * @return {proto.UpdateResultUint32Ok}
+ * @return {proto.management_app.config.set.UpdateResultUint32Ok}
  */
-proto.UpdateResultUint32.prototype.getResultok = function() {
-  return /** @type{proto.UpdateResultUint32Ok} */ (
-    jspb.Message.getWrapperField(this, proto.UpdateResultUint32Ok, 1));
+proto.management_app.config.set.UpdateResultUint32.prototype.getResultok = function() {
+  return /** @type{proto.management_app.config.set.UpdateResultUint32Ok} */ (
+    jspb.Message.getWrapperField(this, proto.management_app.config.set.UpdateResultUint32Ok, 1));
 };
 
 
-/** @param {proto.UpdateResultUint32Ok|undefined} value  */
-proto.UpdateResultUint32.prototype.setResultok = function(value) {
-  jspb.Message.setOneofWrapperField(this, 1, proto.UpdateResultUint32.oneofGroups_[0], value);
+/** @param {proto.management_app.config.set.UpdateResultUint32Ok|undefined} value  */
+proto.management_app.config.set.UpdateResultUint32.prototype.setResultok = function(value) {
+  jspb.Message.setOneofWrapperField(this, 1, proto.management_app.config.set.UpdateResultUint32.oneofGroups_[0], value);
 };
 
 
-proto.UpdateResultUint32.prototype.clearResultok = function() {
+proto.management_app.config.set.UpdateResultUint32.prototype.clearResultok = function() {
   this.setResultok(undefined);
 };
 
@@ -4442,28 +4442,28 @@ proto.UpdateResultUint32.prototype.clearResultok = function() {
  * Returns whether this field is set.
  * @return{!boolean}
  */
-proto.UpdateResultUint32.prototype.hasResultok = function() {
+proto.management_app.config.set.UpdateResultUint32.prototype.hasResultok = function() {
   return jspb.Message.getField(this, 1) != null;
 };
 
 
 /**
  * optional UpdateResultUint32Same resultSame = 2;
- * @return {proto.UpdateResultUint32Same}
+ * @return {proto.management_app.config.set.UpdateResultUint32Same}
  */
-proto.UpdateResultUint32.prototype.getResultsame = function() {
-  return /** @type{proto.UpdateResultUint32Same} */ (
-    jspb.Message.getWrapperField(this, proto.UpdateResultUint32Same, 2));
+proto.management_app.config.set.UpdateResultUint32.prototype.getResultsame = function() {
+  return /** @type{proto.management_app.config.set.UpdateResultUint32Same} */ (
+    jspb.Message.getWrapperField(this, proto.management_app.config.set.UpdateResultUint32Same, 2));
 };
 
 
-/** @param {proto.UpdateResultUint32Same|undefined} value  */
-proto.UpdateResultUint32.prototype.setResultsame = function(value) {
-  jspb.Message.setOneofWrapperField(this, 2, proto.UpdateResultUint32.oneofGroups_[0], value);
+/** @param {proto.management_app.config.set.UpdateResultUint32Same|undefined} value  */
+proto.management_app.config.set.UpdateResultUint32.prototype.setResultsame = function(value) {
+  jspb.Message.setOneofWrapperField(this, 2, proto.management_app.config.set.UpdateResultUint32.oneofGroups_[0], value);
 };
 
 
-proto.UpdateResultUint32.prototype.clearResultsame = function() {
+proto.management_app.config.set.UpdateResultUint32.prototype.clearResultsame = function() {
   this.setResultsame(undefined);
 };
 
@@ -4472,28 +4472,28 @@ proto.UpdateResultUint32.prototype.clearResultsame = function() {
  * Returns whether this field is set.
  * @return{!boolean}
  */
-proto.UpdateResultUint32.prototype.hasResultsame = function() {
+proto.management_app.config.set.UpdateResultUint32.prototype.hasResultsame = function() {
   return jspb.Message.getField(this, 2) != null;
 };
 
 
 /**
  * optional UpdateResultError error = 3;
- * @return {proto.UpdateResultError}
+ * @return {proto.management_app.config.set.UpdateResultError}
  */
-proto.UpdateResultUint32.prototype.getError = function() {
-  return /** @type{proto.UpdateResultError} */ (
-    jspb.Message.getWrapperField(this, proto.UpdateResultError, 3));
+proto.management_app.config.set.UpdateResultUint32.prototype.getError = function() {
+  return /** @type{proto.management_app.config.set.UpdateResultError} */ (
+    jspb.Message.getWrapperField(this, proto.management_app.config.set.UpdateResultError, 3));
 };
 
 
-/** @param {proto.UpdateResultError|undefined} value  */
-proto.UpdateResultUint32.prototype.setError = function(value) {
-  jspb.Message.setOneofWrapperField(this, 3, proto.UpdateResultUint32.oneofGroups_[0], value);
+/** @param {proto.management_app.config.set.UpdateResultError|undefined} value  */
+proto.management_app.config.set.UpdateResultUint32.prototype.setError = function(value) {
+  jspb.Message.setOneofWrapperField(this, 3, proto.management_app.config.set.UpdateResultUint32.oneofGroups_[0], value);
 };
 
 
-proto.UpdateResultUint32.prototype.clearError = function() {
+proto.management_app.config.set.UpdateResultUint32.prototype.clearError = function() {
   this.setError(undefined);
 };
 
@@ -4502,7 +4502,7 @@ proto.UpdateResultUint32.prototype.clearError = function() {
  * Returns whether this field is set.
  * @return{!boolean}
  */
-proto.UpdateResultUint32.prototype.hasError = function() {
+proto.management_app.config.set.UpdateResultUint32.prototype.hasError = function() {
   return jspb.Message.getField(this, 3) != null;
 };
 
@@ -4518,12 +4518,12 @@ proto.UpdateResultUint32.prototype.hasError = function() {
  * @extends {jspb.Message}
  * @constructor
  */
-proto.RemoveFromMainDictionary = function(opt_data) {
+proto.management_app.config.set.RemoveFromMainDictionary = function(opt_data) {
   jspb.Message.initialize(this, opt_data, 0, -1, null, null);
 };
-goog.inherits(proto.RemoveFromMainDictionary, jspb.Message);
+goog.inherits(proto.management_app.config.set.RemoveFromMainDictionary, jspb.Message);
 if (goog.DEBUG && !COMPILED) {
-  proto.RemoveFromMainDictionary.displayName = 'proto.RemoveFromMainDictionary';
+  proto.management_app.config.set.RemoveFromMainDictionary.displayName = 'proto.management_app.config.set.RemoveFromMainDictionary';
 }
 
 
@@ -4538,8 +4538,8 @@ if (jspb.Message.GENERATE_TO_OBJECT) {
  *     for transitional soy proto support: http://goto/soy-param-migration
  * @return {!Object}
  */
-proto.RemoveFromMainDictionary.prototype.toObject = function(opt_includeInstance) {
-  return proto.RemoveFromMainDictionary.toObject(opt_includeInstance, this);
+proto.management_app.config.set.RemoveFromMainDictionary.prototype.toObject = function(opt_includeInstance) {
+  return proto.management_app.config.set.RemoveFromMainDictionary.toObject(opt_includeInstance, this);
 };
 
 
@@ -4548,10 +4548,10 @@ proto.RemoveFromMainDictionary.prototype.toObject = function(opt_includeInstance
  * @param {boolean|undefined} includeInstance Whether to include the JSPB
  *     instance for transitional soy proto support:
  *     http://goto/soy-param-migration
- * @param {!proto.RemoveFromMainDictionary} msg The msg instance to transform.
+ * @param {!proto.management_app.config.set.RemoveFromMainDictionary} msg The msg instance to transform.
  * @return {!Object}
  */
-proto.RemoveFromMainDictionary.toObject = function(includeInstance, msg) {
+proto.management_app.config.set.RemoveFromMainDictionary.toObject = function(includeInstance, msg) {
   var f, obj = {
     guild: msg.getGuild(),
     key: msg.getKey()
@@ -4568,23 +4568,23 @@ proto.RemoveFromMainDictionary.toObject = function(includeInstance, msg) {
 /**
  * Deserializes binary data (in protobuf wire format).
  * @param {jspb.ByteSource} bytes The bytes to deserialize.
- * @return {!proto.RemoveFromMainDictionary}
+ * @return {!proto.management_app.config.set.RemoveFromMainDictionary}
  */
-proto.RemoveFromMainDictionary.deserializeBinary = function(bytes) {
+proto.management_app.config.set.RemoveFromMainDictionary.deserializeBinary = function(bytes) {
   var reader = new jspb.BinaryReader(bytes);
-  var msg = new proto.RemoveFromMainDictionary;
-  return proto.RemoveFromMainDictionary.deserializeBinaryFromReader(msg, reader);
+  var msg = new proto.management_app.config.set.RemoveFromMainDictionary;
+  return proto.management_app.config.set.RemoveFromMainDictionary.deserializeBinaryFromReader(msg, reader);
 };
 
 
 /**
  * Deserializes binary data (in protobuf wire format) from the
  * given reader into the given message object.
- * @param {!proto.RemoveFromMainDictionary} msg The message object to deserialize into.
+ * @param {!proto.management_app.config.set.RemoveFromMainDictionary} msg The message object to deserialize into.
  * @param {!jspb.BinaryReader} reader The BinaryReader to use.
- * @return {!proto.RemoveFromMainDictionary}
+ * @return {!proto.management_app.config.set.RemoveFromMainDictionary}
  */
-proto.RemoveFromMainDictionary.deserializeBinaryFromReader = function(msg, reader) {
+proto.management_app.config.set.RemoveFromMainDictionary.deserializeBinaryFromReader = function(msg, reader) {
   while (reader.nextField()) {
     if (reader.isEndGroup()) {
       break;
@@ -4611,10 +4611,10 @@ proto.RemoveFromMainDictionary.deserializeBinaryFromReader = function(msg, reade
 /**
  * Class method variant: serializes the given message to binary data
  * (in protobuf wire format), writing to the given BinaryWriter.
- * @param {!proto.RemoveFromMainDictionary} message
+ * @param {!proto.management_app.config.set.RemoveFromMainDictionary} message
  * @param {!jspb.BinaryWriter} writer
  */
-proto.RemoveFromMainDictionary.serializeBinaryToWriter = function(message, writer) {
+proto.management_app.config.set.RemoveFromMainDictionary.serializeBinaryToWriter = function(message, writer) {
   message.serializeBinaryToWriter(writer);
 };
 
@@ -4623,7 +4623,7 @@ proto.RemoveFromMainDictionary.serializeBinaryToWriter = function(message, write
  * Serializes the message to binary data (in protobuf wire format).
  * @return {!Uint8Array}
  */
-proto.RemoveFromMainDictionary.prototype.serializeBinary = function() {
+proto.management_app.config.set.RemoveFromMainDictionary.prototype.serializeBinary = function() {
   var writer = new jspb.BinaryWriter();
   this.serializeBinaryToWriter(writer);
   return writer.getResultBuffer();
@@ -4635,7 +4635,7 @@ proto.RemoveFromMainDictionary.prototype.serializeBinary = function() {
  * writing to the given BinaryWriter.
  * @param {!jspb.BinaryWriter} writer
  */
-proto.RemoveFromMainDictionary.prototype.serializeBinaryToWriter = function (writer) {
+proto.management_app.config.set.RemoveFromMainDictionary.prototype.serializeBinaryToWriter = function (writer) {
   var f = undefined;
   f = this.getGuild();
   if (f.length > 0) {
@@ -4656,10 +4656,10 @@ proto.RemoveFromMainDictionary.prototype.serializeBinaryToWriter = function (wri
 
 /**
  * Creates a deep clone of this proto. No data is shared with the original.
- * @return {!proto.RemoveFromMainDictionary} The clone.
+ * @return {!proto.management_app.config.set.RemoveFromMainDictionary} The clone.
  */
-proto.RemoveFromMainDictionary.prototype.cloneMessage = function() {
-  return /** @type {!proto.RemoveFromMainDictionary} */ (jspb.Message.cloneMessage(this));
+proto.management_app.config.set.RemoveFromMainDictionary.prototype.cloneMessage = function() {
+  return /** @type {!proto.management_app.config.set.RemoveFromMainDictionary} */ (jspb.Message.cloneMessage(this));
 };
 
 
@@ -4667,13 +4667,13 @@ proto.RemoveFromMainDictionary.prototype.cloneMessage = function() {
  * optional string guild = 1;
  * @return {string}
  */
-proto.RemoveFromMainDictionary.prototype.getGuild = function() {
+proto.management_app.config.set.RemoveFromMainDictionary.prototype.getGuild = function() {
   return /** @type {string} */ (jspb.Message.getFieldProto3(this, 1, ""));
 };
 
 
 /** @param {string} value  */
-proto.RemoveFromMainDictionary.prototype.setGuild = function(value) {
+proto.management_app.config.set.RemoveFromMainDictionary.prototype.setGuild = function(value) {
   jspb.Message.setField(this, 1, value);
 };
 
@@ -4682,13 +4682,13 @@ proto.RemoveFromMainDictionary.prototype.setGuild = function(value) {
  * optional string key = 2;
  * @return {string}
  */
-proto.RemoveFromMainDictionary.prototype.getKey = function() {
+proto.management_app.config.set.RemoveFromMainDictionary.prototype.getKey = function() {
   return /** @type {string} */ (jspb.Message.getFieldProto3(this, 2, ""));
 };
 
 
 /** @param {string} value  */
-proto.RemoveFromMainDictionary.prototype.setKey = function(value) {
+proto.management_app.config.set.RemoveFromMainDictionary.prototype.setKey = function(value) {
   jspb.Message.setField(this, 2, value);
 };
 
@@ -4704,12 +4704,12 @@ proto.RemoveFromMainDictionary.prototype.setKey = function(value) {
  * @extends {jspb.Message}
  * @constructor
  */
-proto.UpdateResultDictionaryEntryAOk = function(opt_data) {
-  jspb.Message.initialize(this, opt_data, 0, -1, null, proto.UpdateResultDictionaryEntryAOk.oneofGroups_);
+proto.management_app.config.set.UpdateResultDictionaryEntryAOk = function(opt_data) {
+  jspb.Message.initialize(this, opt_data, 0, -1, null, proto.management_app.config.set.UpdateResultDictionaryEntryAOk.oneofGroups_);
 };
-goog.inherits(proto.UpdateResultDictionaryEntryAOk, jspb.Message);
+goog.inherits(proto.management_app.config.set.UpdateResultDictionaryEntryAOk, jspb.Message);
 if (goog.DEBUG && !COMPILED) {
-  proto.UpdateResultDictionaryEntryAOk.displayName = 'proto.UpdateResultDictionaryEntryAOk';
+  proto.management_app.config.set.UpdateResultDictionaryEntryAOk.displayName = 'proto.management_app.config.set.UpdateResultDictionaryEntryAOk';
 }
 /**
  * Oneof group definitions for this message. Each group defines the field
@@ -4719,36 +4719,36 @@ if (goog.DEBUG && !COMPILED) {
  * @private {!Array<!Array<number>>}
  * @const
  */
-proto.UpdateResultDictionaryEntryAOk.oneofGroups_ = [[1],[2]];
+proto.management_app.config.set.UpdateResultDictionaryEntryAOk.oneofGroups_ = [[1],[2]];
 
 /**
  * @enum {number}
  */
-proto.UpdateResultDictionaryEntryAOk.BeforeOptionalCase = {
+proto.management_app.config.set.UpdateResultDictionaryEntryAOk.BeforeOptionalCase = {
   BEFORE_OPTIONAL_NOT_SET: 0,
   BEFORE: 1
 };
 
 /**
- * @return {proto.UpdateResultDictionaryEntryAOk.BeforeOptionalCase}
+ * @return {proto.management_app.config.set.UpdateResultDictionaryEntryAOk.BeforeOptionalCase}
  */
-proto.UpdateResultDictionaryEntryAOk.prototype.getBeforeOptionalCase = function() {
-  return /** @type {proto.UpdateResultDictionaryEntryAOk.BeforeOptionalCase} */(jspb.Message.computeOneofCase(this, proto.UpdateResultDictionaryEntryAOk.oneofGroups_[0]));
+proto.management_app.config.set.UpdateResultDictionaryEntryAOk.prototype.getBeforeOptionalCase = function() {
+  return /** @type {proto.management_app.config.set.UpdateResultDictionaryEntryAOk.BeforeOptionalCase} */(jspb.Message.computeOneofCase(this, proto.management_app.config.set.UpdateResultDictionaryEntryAOk.oneofGroups_[0]));
 };
 
 /**
  * @enum {number}
  */
-proto.UpdateResultDictionaryEntryAOk.AfterOptionalCase = {
+proto.management_app.config.set.UpdateResultDictionaryEntryAOk.AfterOptionalCase = {
   AFTER_OPTIONAL_NOT_SET: 0,
   AFTER: 2
 };
 
 /**
- * @return {proto.UpdateResultDictionaryEntryAOk.AfterOptionalCase}
+ * @return {proto.management_app.config.set.UpdateResultDictionaryEntryAOk.AfterOptionalCase}
  */
-proto.UpdateResultDictionaryEntryAOk.prototype.getAfterOptionalCase = function() {
-  return /** @type {proto.UpdateResultDictionaryEntryAOk.AfterOptionalCase} */(jspb.Message.computeOneofCase(this, proto.UpdateResultDictionaryEntryAOk.oneofGroups_[1]));
+proto.management_app.config.set.UpdateResultDictionaryEntryAOk.prototype.getAfterOptionalCase = function() {
+  return /** @type {proto.management_app.config.set.UpdateResultDictionaryEntryAOk.AfterOptionalCase} */(jspb.Message.computeOneofCase(this, proto.management_app.config.set.UpdateResultDictionaryEntryAOk.oneofGroups_[1]));
 };
 
 
@@ -4764,8 +4764,8 @@ if (jspb.Message.GENERATE_TO_OBJECT) {
  *     for transitional soy proto support: http://goto/soy-param-migration
  * @return {!Object}
  */
-proto.UpdateResultDictionaryEntryAOk.prototype.toObject = function(opt_includeInstance) {
-  return proto.UpdateResultDictionaryEntryAOk.toObject(opt_includeInstance, this);
+proto.management_app.config.set.UpdateResultDictionaryEntryAOk.prototype.toObject = function(opt_includeInstance) {
+  return proto.management_app.config.set.UpdateResultDictionaryEntryAOk.toObject(opt_includeInstance, this);
 };
 
 
@@ -4774,10 +4774,10 @@ proto.UpdateResultDictionaryEntryAOk.prototype.toObject = function(opt_includeIn
  * @param {boolean|undefined} includeInstance Whether to include the JSPB
  *     instance for transitional soy proto support:
  *     http://goto/soy-param-migration
- * @param {!proto.UpdateResultDictionaryEntryAOk} msg The msg instance to transform.
+ * @param {!proto.management_app.config.set.UpdateResultDictionaryEntryAOk} msg The msg instance to transform.
  * @return {!Object}
  */
-proto.UpdateResultDictionaryEntryAOk.toObject = function(includeInstance, msg) {
+proto.management_app.config.set.UpdateResultDictionaryEntryAOk.toObject = function(includeInstance, msg) {
   var f, obj = {
     before: (f = msg.getBefore()) && config_pb.DictionaryEntryA.toObject(includeInstance, f),
     after: (f = msg.getAfter()) && config_pb.DictionaryEntryA.toObject(includeInstance, f)
@@ -4794,23 +4794,23 @@ proto.UpdateResultDictionaryEntryAOk.toObject = function(includeInstance, msg) {
 /**
  * Deserializes binary data (in protobuf wire format).
  * @param {jspb.ByteSource} bytes The bytes to deserialize.
- * @return {!proto.UpdateResultDictionaryEntryAOk}
+ * @return {!proto.management_app.config.set.UpdateResultDictionaryEntryAOk}
  */
-proto.UpdateResultDictionaryEntryAOk.deserializeBinary = function(bytes) {
+proto.management_app.config.set.UpdateResultDictionaryEntryAOk.deserializeBinary = function(bytes) {
   var reader = new jspb.BinaryReader(bytes);
-  var msg = new proto.UpdateResultDictionaryEntryAOk;
-  return proto.UpdateResultDictionaryEntryAOk.deserializeBinaryFromReader(msg, reader);
+  var msg = new proto.management_app.config.set.UpdateResultDictionaryEntryAOk;
+  return proto.management_app.config.set.UpdateResultDictionaryEntryAOk.deserializeBinaryFromReader(msg, reader);
 };
 
 
 /**
  * Deserializes binary data (in protobuf wire format) from the
  * given reader into the given message object.
- * @param {!proto.UpdateResultDictionaryEntryAOk} msg The message object to deserialize into.
+ * @param {!proto.management_app.config.set.UpdateResultDictionaryEntryAOk} msg The message object to deserialize into.
  * @param {!jspb.BinaryReader} reader The BinaryReader to use.
- * @return {!proto.UpdateResultDictionaryEntryAOk}
+ * @return {!proto.management_app.config.set.UpdateResultDictionaryEntryAOk}
  */
-proto.UpdateResultDictionaryEntryAOk.deserializeBinaryFromReader = function(msg, reader) {
+proto.management_app.config.set.UpdateResultDictionaryEntryAOk.deserializeBinaryFromReader = function(msg, reader) {
   while (reader.nextField()) {
     if (reader.isEndGroup()) {
       break;
@@ -4839,10 +4839,10 @@ proto.UpdateResultDictionaryEntryAOk.deserializeBinaryFromReader = function(msg,
 /**
  * Class method variant: serializes the given message to binary data
  * (in protobuf wire format), writing to the given BinaryWriter.
- * @param {!proto.UpdateResultDictionaryEntryAOk} message
+ * @param {!proto.management_app.config.set.UpdateResultDictionaryEntryAOk} message
  * @param {!jspb.BinaryWriter} writer
  */
-proto.UpdateResultDictionaryEntryAOk.serializeBinaryToWriter = function(message, writer) {
+proto.management_app.config.set.UpdateResultDictionaryEntryAOk.serializeBinaryToWriter = function(message, writer) {
   message.serializeBinaryToWriter(writer);
 };
 
@@ -4851,7 +4851,7 @@ proto.UpdateResultDictionaryEntryAOk.serializeBinaryToWriter = function(message,
  * Serializes the message to binary data (in protobuf wire format).
  * @return {!Uint8Array}
  */
-proto.UpdateResultDictionaryEntryAOk.prototype.serializeBinary = function() {
+proto.management_app.config.set.UpdateResultDictionaryEntryAOk.prototype.serializeBinary = function() {
   var writer = new jspb.BinaryWriter();
   this.serializeBinaryToWriter(writer);
   return writer.getResultBuffer();
@@ -4863,7 +4863,7 @@ proto.UpdateResultDictionaryEntryAOk.prototype.serializeBinary = function() {
  * writing to the given BinaryWriter.
  * @param {!jspb.BinaryWriter} writer
  */
-proto.UpdateResultDictionaryEntryAOk.prototype.serializeBinaryToWriter = function (writer) {
+proto.management_app.config.set.UpdateResultDictionaryEntryAOk.prototype.serializeBinaryToWriter = function (writer) {
   var f = undefined;
   f = this.getBefore();
   if (f != null) {
@@ -4886,30 +4886,30 @@ proto.UpdateResultDictionaryEntryAOk.prototype.serializeBinaryToWriter = functio
 
 /**
  * Creates a deep clone of this proto. No data is shared with the original.
- * @return {!proto.UpdateResultDictionaryEntryAOk} The clone.
+ * @return {!proto.management_app.config.set.UpdateResultDictionaryEntryAOk} The clone.
  */
-proto.UpdateResultDictionaryEntryAOk.prototype.cloneMessage = function() {
-  return /** @type {!proto.UpdateResultDictionaryEntryAOk} */ (jspb.Message.cloneMessage(this));
+proto.management_app.config.set.UpdateResultDictionaryEntryAOk.prototype.cloneMessage = function() {
+  return /** @type {!proto.management_app.config.set.UpdateResultDictionaryEntryAOk} */ (jspb.Message.cloneMessage(this));
 };
 
 
 /**
- * optional config.DictionaryEntryA before = 1;
- * @return {proto.config.DictionaryEntryA}
+ * optional management_app.config.common.DictionaryEntryA before = 1;
+ * @return {proto.management_app.config.common.DictionaryEntryA}
  */
-proto.UpdateResultDictionaryEntryAOk.prototype.getBefore = function() {
-  return /** @type{proto.config.DictionaryEntryA} */ (
+proto.management_app.config.set.UpdateResultDictionaryEntryAOk.prototype.getBefore = function() {
+  return /** @type{proto.management_app.config.common.DictionaryEntryA} */ (
     jspb.Message.getWrapperField(this, config_pb.DictionaryEntryA, 1));
 };
 
 
-/** @param {proto.config.DictionaryEntryA|undefined} value  */
-proto.UpdateResultDictionaryEntryAOk.prototype.setBefore = function(value) {
-  jspb.Message.setOneofWrapperField(this, 1, proto.UpdateResultDictionaryEntryAOk.oneofGroups_[0], value);
+/** @param {proto.management_app.config.common.DictionaryEntryA|undefined} value  */
+proto.management_app.config.set.UpdateResultDictionaryEntryAOk.prototype.setBefore = function(value) {
+  jspb.Message.setOneofWrapperField(this, 1, proto.management_app.config.set.UpdateResultDictionaryEntryAOk.oneofGroups_[0], value);
 };
 
 
-proto.UpdateResultDictionaryEntryAOk.prototype.clearBefore = function() {
+proto.management_app.config.set.UpdateResultDictionaryEntryAOk.prototype.clearBefore = function() {
   this.setBefore(undefined);
 };
 
@@ -4918,28 +4918,28 @@ proto.UpdateResultDictionaryEntryAOk.prototype.clearBefore = function() {
  * Returns whether this field is set.
  * @return{!boolean}
  */
-proto.UpdateResultDictionaryEntryAOk.prototype.hasBefore = function() {
+proto.management_app.config.set.UpdateResultDictionaryEntryAOk.prototype.hasBefore = function() {
   return jspb.Message.getField(this, 1) != null;
 };
 
 
 /**
- * optional config.DictionaryEntryA after = 2;
- * @return {proto.config.DictionaryEntryA}
+ * optional management_app.config.common.DictionaryEntryA after = 2;
+ * @return {proto.management_app.config.common.DictionaryEntryA}
  */
-proto.UpdateResultDictionaryEntryAOk.prototype.getAfter = function() {
-  return /** @type{proto.config.DictionaryEntryA} */ (
+proto.management_app.config.set.UpdateResultDictionaryEntryAOk.prototype.getAfter = function() {
+  return /** @type{proto.management_app.config.common.DictionaryEntryA} */ (
     jspb.Message.getWrapperField(this, config_pb.DictionaryEntryA, 2));
 };
 
 
-/** @param {proto.config.DictionaryEntryA|undefined} value  */
-proto.UpdateResultDictionaryEntryAOk.prototype.setAfter = function(value) {
-  jspb.Message.setOneofWrapperField(this, 2, proto.UpdateResultDictionaryEntryAOk.oneofGroups_[1], value);
+/** @param {proto.management_app.config.common.DictionaryEntryA|undefined} value  */
+proto.management_app.config.set.UpdateResultDictionaryEntryAOk.prototype.setAfter = function(value) {
+  jspb.Message.setOneofWrapperField(this, 2, proto.management_app.config.set.UpdateResultDictionaryEntryAOk.oneofGroups_[1], value);
 };
 
 
-proto.UpdateResultDictionaryEntryAOk.prototype.clearAfter = function() {
+proto.management_app.config.set.UpdateResultDictionaryEntryAOk.prototype.clearAfter = function() {
   this.setAfter(undefined);
 };
 
@@ -4948,7 +4948,7 @@ proto.UpdateResultDictionaryEntryAOk.prototype.clearAfter = function() {
  * Returns whether this field is set.
  * @return{!boolean}
  */
-proto.UpdateResultDictionaryEntryAOk.prototype.hasAfter = function() {
+proto.management_app.config.set.UpdateResultDictionaryEntryAOk.prototype.hasAfter = function() {
   return jspb.Message.getField(this, 2) != null;
 };
 
@@ -4964,12 +4964,12 @@ proto.UpdateResultDictionaryEntryAOk.prototype.hasAfter = function() {
  * @extends {jspb.Message}
  * @constructor
  */
-proto.UpdateResultDictionaryEntryASame = function(opt_data) {
-  jspb.Message.initialize(this, opt_data, 0, -1, null, proto.UpdateResultDictionaryEntryASame.oneofGroups_);
+proto.management_app.config.set.UpdateResultDictionaryEntryASame = function(opt_data) {
+  jspb.Message.initialize(this, opt_data, 0, -1, null, proto.management_app.config.set.UpdateResultDictionaryEntryASame.oneofGroups_);
 };
-goog.inherits(proto.UpdateResultDictionaryEntryASame, jspb.Message);
+goog.inherits(proto.management_app.config.set.UpdateResultDictionaryEntryASame, jspb.Message);
 if (goog.DEBUG && !COMPILED) {
-  proto.UpdateResultDictionaryEntryASame.displayName = 'proto.UpdateResultDictionaryEntryASame';
+  proto.management_app.config.set.UpdateResultDictionaryEntryASame.displayName = 'proto.management_app.config.set.UpdateResultDictionaryEntryASame';
 }
 /**
  * Oneof group definitions for this message. Each group defines the field
@@ -4979,21 +4979,21 @@ if (goog.DEBUG && !COMPILED) {
  * @private {!Array<!Array<number>>}
  * @const
  */
-proto.UpdateResultDictionaryEntryASame.oneofGroups_ = [[1]];
+proto.management_app.config.set.UpdateResultDictionaryEntryASame.oneofGroups_ = [[1]];
 
 /**
  * @enum {number}
  */
-proto.UpdateResultDictionaryEntryASame.ValueOptionalCase = {
+proto.management_app.config.set.UpdateResultDictionaryEntryASame.ValueOptionalCase = {
   VALUE_OPTIONAL_NOT_SET: 0,
   VALUE: 1
 };
 
 /**
- * @return {proto.UpdateResultDictionaryEntryASame.ValueOptionalCase}
+ * @return {proto.management_app.config.set.UpdateResultDictionaryEntryASame.ValueOptionalCase}
  */
-proto.UpdateResultDictionaryEntryASame.prototype.getValueOptionalCase = function() {
-  return /** @type {proto.UpdateResultDictionaryEntryASame.ValueOptionalCase} */(jspb.Message.computeOneofCase(this, proto.UpdateResultDictionaryEntryASame.oneofGroups_[0]));
+proto.management_app.config.set.UpdateResultDictionaryEntryASame.prototype.getValueOptionalCase = function() {
+  return /** @type {proto.management_app.config.set.UpdateResultDictionaryEntryASame.ValueOptionalCase} */(jspb.Message.computeOneofCase(this, proto.management_app.config.set.UpdateResultDictionaryEntryASame.oneofGroups_[0]));
 };
 
 
@@ -5009,8 +5009,8 @@ if (jspb.Message.GENERATE_TO_OBJECT) {
  *     for transitional soy proto support: http://goto/soy-param-migration
  * @return {!Object}
  */
-proto.UpdateResultDictionaryEntryASame.prototype.toObject = function(opt_includeInstance) {
-  return proto.UpdateResultDictionaryEntryASame.toObject(opt_includeInstance, this);
+proto.management_app.config.set.UpdateResultDictionaryEntryASame.prototype.toObject = function(opt_includeInstance) {
+  return proto.management_app.config.set.UpdateResultDictionaryEntryASame.toObject(opt_includeInstance, this);
 };
 
 
@@ -5019,10 +5019,10 @@ proto.UpdateResultDictionaryEntryASame.prototype.toObject = function(opt_include
  * @param {boolean|undefined} includeInstance Whether to include the JSPB
  *     instance for transitional soy proto support:
  *     http://goto/soy-param-migration
- * @param {!proto.UpdateResultDictionaryEntryASame} msg The msg instance to transform.
+ * @param {!proto.management_app.config.set.UpdateResultDictionaryEntryASame} msg The msg instance to transform.
  * @return {!Object}
  */
-proto.UpdateResultDictionaryEntryASame.toObject = function(includeInstance, msg) {
+proto.management_app.config.set.UpdateResultDictionaryEntryASame.toObject = function(includeInstance, msg) {
   var f, obj = {
     value: (f = msg.getValue()) && config_pb.DictionaryEntryA.toObject(includeInstance, f)
   };
@@ -5038,23 +5038,23 @@ proto.UpdateResultDictionaryEntryASame.toObject = function(includeInstance, msg)
 /**
  * Deserializes binary data (in protobuf wire format).
  * @param {jspb.ByteSource} bytes The bytes to deserialize.
- * @return {!proto.UpdateResultDictionaryEntryASame}
+ * @return {!proto.management_app.config.set.UpdateResultDictionaryEntryASame}
  */
-proto.UpdateResultDictionaryEntryASame.deserializeBinary = function(bytes) {
+proto.management_app.config.set.UpdateResultDictionaryEntryASame.deserializeBinary = function(bytes) {
   var reader = new jspb.BinaryReader(bytes);
-  var msg = new proto.UpdateResultDictionaryEntryASame;
-  return proto.UpdateResultDictionaryEntryASame.deserializeBinaryFromReader(msg, reader);
+  var msg = new proto.management_app.config.set.UpdateResultDictionaryEntryASame;
+  return proto.management_app.config.set.UpdateResultDictionaryEntryASame.deserializeBinaryFromReader(msg, reader);
 };
 
 
 /**
  * Deserializes binary data (in protobuf wire format) from the
  * given reader into the given message object.
- * @param {!proto.UpdateResultDictionaryEntryASame} msg The message object to deserialize into.
+ * @param {!proto.management_app.config.set.UpdateResultDictionaryEntryASame} msg The message object to deserialize into.
  * @param {!jspb.BinaryReader} reader The BinaryReader to use.
- * @return {!proto.UpdateResultDictionaryEntryASame}
+ * @return {!proto.management_app.config.set.UpdateResultDictionaryEntryASame}
  */
-proto.UpdateResultDictionaryEntryASame.deserializeBinaryFromReader = function(msg, reader) {
+proto.management_app.config.set.UpdateResultDictionaryEntryASame.deserializeBinaryFromReader = function(msg, reader) {
   while (reader.nextField()) {
     if (reader.isEndGroup()) {
       break;
@@ -5078,10 +5078,10 @@ proto.UpdateResultDictionaryEntryASame.deserializeBinaryFromReader = function(ms
 /**
  * Class method variant: serializes the given message to binary data
  * (in protobuf wire format), writing to the given BinaryWriter.
- * @param {!proto.UpdateResultDictionaryEntryASame} message
+ * @param {!proto.management_app.config.set.UpdateResultDictionaryEntryASame} message
  * @param {!jspb.BinaryWriter} writer
  */
-proto.UpdateResultDictionaryEntryASame.serializeBinaryToWriter = function(message, writer) {
+proto.management_app.config.set.UpdateResultDictionaryEntryASame.serializeBinaryToWriter = function(message, writer) {
   message.serializeBinaryToWriter(writer);
 };
 
@@ -5090,7 +5090,7 @@ proto.UpdateResultDictionaryEntryASame.serializeBinaryToWriter = function(messag
  * Serializes the message to binary data (in protobuf wire format).
  * @return {!Uint8Array}
  */
-proto.UpdateResultDictionaryEntryASame.prototype.serializeBinary = function() {
+proto.management_app.config.set.UpdateResultDictionaryEntryASame.prototype.serializeBinary = function() {
   var writer = new jspb.BinaryWriter();
   this.serializeBinaryToWriter(writer);
   return writer.getResultBuffer();
@@ -5102,7 +5102,7 @@ proto.UpdateResultDictionaryEntryASame.prototype.serializeBinary = function() {
  * writing to the given BinaryWriter.
  * @param {!jspb.BinaryWriter} writer
  */
-proto.UpdateResultDictionaryEntryASame.prototype.serializeBinaryToWriter = function (writer) {
+proto.management_app.config.set.UpdateResultDictionaryEntryASame.prototype.serializeBinaryToWriter = function (writer) {
   var f = undefined;
   f = this.getValue();
   if (f != null) {
@@ -5117,30 +5117,30 @@ proto.UpdateResultDictionaryEntryASame.prototype.serializeBinaryToWriter = funct
 
 /**
  * Creates a deep clone of this proto. No data is shared with the original.
- * @return {!proto.UpdateResultDictionaryEntryASame} The clone.
+ * @return {!proto.management_app.config.set.UpdateResultDictionaryEntryASame} The clone.
  */
-proto.UpdateResultDictionaryEntryASame.prototype.cloneMessage = function() {
-  return /** @type {!proto.UpdateResultDictionaryEntryASame} */ (jspb.Message.cloneMessage(this));
+proto.management_app.config.set.UpdateResultDictionaryEntryASame.prototype.cloneMessage = function() {
+  return /** @type {!proto.management_app.config.set.UpdateResultDictionaryEntryASame} */ (jspb.Message.cloneMessage(this));
 };
 
 
 /**
- * optional config.DictionaryEntryA value = 1;
- * @return {proto.config.DictionaryEntryA}
+ * optional management_app.config.common.DictionaryEntryA value = 1;
+ * @return {proto.management_app.config.common.DictionaryEntryA}
  */
-proto.UpdateResultDictionaryEntryASame.prototype.getValue = function() {
-  return /** @type{proto.config.DictionaryEntryA} */ (
+proto.management_app.config.set.UpdateResultDictionaryEntryASame.prototype.getValue = function() {
+  return /** @type{proto.management_app.config.common.DictionaryEntryA} */ (
     jspb.Message.getWrapperField(this, config_pb.DictionaryEntryA, 1));
 };
 
 
-/** @param {proto.config.DictionaryEntryA|undefined} value  */
-proto.UpdateResultDictionaryEntryASame.prototype.setValue = function(value) {
-  jspb.Message.setOneofWrapperField(this, 1, proto.UpdateResultDictionaryEntryASame.oneofGroups_[0], value);
+/** @param {proto.management_app.config.common.DictionaryEntryA|undefined} value  */
+proto.management_app.config.set.UpdateResultDictionaryEntryASame.prototype.setValue = function(value) {
+  jspb.Message.setOneofWrapperField(this, 1, proto.management_app.config.set.UpdateResultDictionaryEntryASame.oneofGroups_[0], value);
 };
 
 
-proto.UpdateResultDictionaryEntryASame.prototype.clearValue = function() {
+proto.management_app.config.set.UpdateResultDictionaryEntryASame.prototype.clearValue = function() {
   this.setValue(undefined);
 };
 
@@ -5149,7 +5149,7 @@ proto.UpdateResultDictionaryEntryASame.prototype.clearValue = function() {
  * Returns whether this field is set.
  * @return{!boolean}
  */
-proto.UpdateResultDictionaryEntryASame.prototype.hasValue = function() {
+proto.management_app.config.set.UpdateResultDictionaryEntryASame.prototype.hasValue = function() {
   return jspb.Message.getField(this, 1) != null;
 };
 
@@ -5165,12 +5165,12 @@ proto.UpdateResultDictionaryEntryASame.prototype.hasValue = function() {
  * @extends {jspb.Message}
  * @constructor
  */
-proto.UpdateResultDictionaryEntryA = function(opt_data) {
-  jspb.Message.initialize(this, opt_data, 0, -1, null, proto.UpdateResultDictionaryEntryA.oneofGroups_);
+proto.management_app.config.set.UpdateResultDictionaryEntryA = function(opt_data) {
+  jspb.Message.initialize(this, opt_data, 0, -1, null, proto.management_app.config.set.UpdateResultDictionaryEntryA.oneofGroups_);
 };
-goog.inherits(proto.UpdateResultDictionaryEntryA, jspb.Message);
+goog.inherits(proto.management_app.config.set.UpdateResultDictionaryEntryA, jspb.Message);
 if (goog.DEBUG && !COMPILED) {
-  proto.UpdateResultDictionaryEntryA.displayName = 'proto.UpdateResultDictionaryEntryA';
+  proto.management_app.config.set.UpdateResultDictionaryEntryA.displayName = 'proto.management_app.config.set.UpdateResultDictionaryEntryA';
 }
 /**
  * Oneof group definitions for this message. Each group defines the field
@@ -5180,12 +5180,12 @@ if (goog.DEBUG && !COMPILED) {
  * @private {!Array<!Array<number>>}
  * @const
  */
-proto.UpdateResultDictionaryEntryA.oneofGroups_ = [[1,2,3]];
+proto.management_app.config.set.UpdateResultDictionaryEntryA.oneofGroups_ = [[1,2,3]];
 
 /**
  * @enum {number}
  */
-proto.UpdateResultDictionaryEntryA.UpdateresultCase = {
+proto.management_app.config.set.UpdateResultDictionaryEntryA.UpdateresultCase = {
   UPDATERESULT_NOT_SET: 0,
   RESULTOK: 1,
   RESULTSAME: 2,
@@ -5193,10 +5193,10 @@ proto.UpdateResultDictionaryEntryA.UpdateresultCase = {
 };
 
 /**
- * @return {proto.UpdateResultDictionaryEntryA.UpdateresultCase}
+ * @return {proto.management_app.config.set.UpdateResultDictionaryEntryA.UpdateresultCase}
  */
-proto.UpdateResultDictionaryEntryA.prototype.getUpdateresultCase = function() {
-  return /** @type {proto.UpdateResultDictionaryEntryA.UpdateresultCase} */(jspb.Message.computeOneofCase(this, proto.UpdateResultDictionaryEntryA.oneofGroups_[0]));
+proto.management_app.config.set.UpdateResultDictionaryEntryA.prototype.getUpdateresultCase = function() {
+  return /** @type {proto.management_app.config.set.UpdateResultDictionaryEntryA.UpdateresultCase} */(jspb.Message.computeOneofCase(this, proto.management_app.config.set.UpdateResultDictionaryEntryA.oneofGroups_[0]));
 };
 
 
@@ -5212,8 +5212,8 @@ if (jspb.Message.GENERATE_TO_OBJECT) {
  *     for transitional soy proto support: http://goto/soy-param-migration
  * @return {!Object}
  */
-proto.UpdateResultDictionaryEntryA.prototype.toObject = function(opt_includeInstance) {
-  return proto.UpdateResultDictionaryEntryA.toObject(opt_includeInstance, this);
+proto.management_app.config.set.UpdateResultDictionaryEntryA.prototype.toObject = function(opt_includeInstance) {
+  return proto.management_app.config.set.UpdateResultDictionaryEntryA.toObject(opt_includeInstance, this);
 };
 
 
@@ -5222,14 +5222,14 @@ proto.UpdateResultDictionaryEntryA.prototype.toObject = function(opt_includeInst
  * @param {boolean|undefined} includeInstance Whether to include the JSPB
  *     instance for transitional soy proto support:
  *     http://goto/soy-param-migration
- * @param {!proto.UpdateResultDictionaryEntryA} msg The msg instance to transform.
+ * @param {!proto.management_app.config.set.UpdateResultDictionaryEntryA} msg The msg instance to transform.
  * @return {!Object}
  */
-proto.UpdateResultDictionaryEntryA.toObject = function(includeInstance, msg) {
+proto.management_app.config.set.UpdateResultDictionaryEntryA.toObject = function(includeInstance, msg) {
   var f, obj = {
-    resultok: (f = msg.getResultok()) && proto.UpdateResultDictionaryEntryAOk.toObject(includeInstance, f),
-    resultsame: (f = msg.getResultsame()) && proto.UpdateResultDictionaryEntryASame.toObject(includeInstance, f),
-    error: (f = msg.getError()) && proto.UpdateResultError.toObject(includeInstance, f)
+    resultok: (f = msg.getResultok()) && proto.management_app.config.set.UpdateResultDictionaryEntryAOk.toObject(includeInstance, f),
+    resultsame: (f = msg.getResultsame()) && proto.management_app.config.set.UpdateResultDictionaryEntryASame.toObject(includeInstance, f),
+    error: (f = msg.getError()) && proto.management_app.config.set.UpdateResultError.toObject(includeInstance, f)
   };
 
   if (includeInstance) {
@@ -5243,23 +5243,23 @@ proto.UpdateResultDictionaryEntryA.toObject = function(includeInstance, msg) {
 /**
  * Deserializes binary data (in protobuf wire format).
  * @param {jspb.ByteSource} bytes The bytes to deserialize.
- * @return {!proto.UpdateResultDictionaryEntryA}
+ * @return {!proto.management_app.config.set.UpdateResultDictionaryEntryA}
  */
-proto.UpdateResultDictionaryEntryA.deserializeBinary = function(bytes) {
+proto.management_app.config.set.UpdateResultDictionaryEntryA.deserializeBinary = function(bytes) {
   var reader = new jspb.BinaryReader(bytes);
-  var msg = new proto.UpdateResultDictionaryEntryA;
-  return proto.UpdateResultDictionaryEntryA.deserializeBinaryFromReader(msg, reader);
+  var msg = new proto.management_app.config.set.UpdateResultDictionaryEntryA;
+  return proto.management_app.config.set.UpdateResultDictionaryEntryA.deserializeBinaryFromReader(msg, reader);
 };
 
 
 /**
  * Deserializes binary data (in protobuf wire format) from the
  * given reader into the given message object.
- * @param {!proto.UpdateResultDictionaryEntryA} msg The message object to deserialize into.
+ * @param {!proto.management_app.config.set.UpdateResultDictionaryEntryA} msg The message object to deserialize into.
  * @param {!jspb.BinaryReader} reader The BinaryReader to use.
- * @return {!proto.UpdateResultDictionaryEntryA}
+ * @return {!proto.management_app.config.set.UpdateResultDictionaryEntryA}
  */
-proto.UpdateResultDictionaryEntryA.deserializeBinaryFromReader = function(msg, reader) {
+proto.management_app.config.set.UpdateResultDictionaryEntryA.deserializeBinaryFromReader = function(msg, reader) {
   while (reader.nextField()) {
     if (reader.isEndGroup()) {
       break;
@@ -5267,18 +5267,18 @@ proto.UpdateResultDictionaryEntryA.deserializeBinaryFromReader = function(msg, r
     var field = reader.getFieldNumber();
     switch (field) {
     case 1:
-      var value = new proto.UpdateResultDictionaryEntryAOk;
-      reader.readMessage(value,proto.UpdateResultDictionaryEntryAOk.deserializeBinaryFromReader);
+      var value = new proto.management_app.config.set.UpdateResultDictionaryEntryAOk;
+      reader.readMessage(value,proto.management_app.config.set.UpdateResultDictionaryEntryAOk.deserializeBinaryFromReader);
       msg.setResultok(value);
       break;
     case 2:
-      var value = new proto.UpdateResultDictionaryEntryASame;
-      reader.readMessage(value,proto.UpdateResultDictionaryEntryASame.deserializeBinaryFromReader);
+      var value = new proto.management_app.config.set.UpdateResultDictionaryEntryASame;
+      reader.readMessage(value,proto.management_app.config.set.UpdateResultDictionaryEntryASame.deserializeBinaryFromReader);
       msg.setResultsame(value);
       break;
     case 3:
-      var value = new proto.UpdateResultError;
-      reader.readMessage(value,proto.UpdateResultError.deserializeBinaryFromReader);
+      var value = new proto.management_app.config.set.UpdateResultError;
+      reader.readMessage(value,proto.management_app.config.set.UpdateResultError.deserializeBinaryFromReader);
       msg.setError(value);
       break;
     default:
@@ -5293,10 +5293,10 @@ proto.UpdateResultDictionaryEntryA.deserializeBinaryFromReader = function(msg, r
 /**
  * Class method variant: serializes the given message to binary data
  * (in protobuf wire format), writing to the given BinaryWriter.
- * @param {!proto.UpdateResultDictionaryEntryA} message
+ * @param {!proto.management_app.config.set.UpdateResultDictionaryEntryA} message
  * @param {!jspb.BinaryWriter} writer
  */
-proto.UpdateResultDictionaryEntryA.serializeBinaryToWriter = function(message, writer) {
+proto.management_app.config.set.UpdateResultDictionaryEntryA.serializeBinaryToWriter = function(message, writer) {
   message.serializeBinaryToWriter(writer);
 };
 
@@ -5305,7 +5305,7 @@ proto.UpdateResultDictionaryEntryA.serializeBinaryToWriter = function(message, w
  * Serializes the message to binary data (in protobuf wire format).
  * @return {!Uint8Array}
  */
-proto.UpdateResultDictionaryEntryA.prototype.serializeBinary = function() {
+proto.management_app.config.set.UpdateResultDictionaryEntryA.prototype.serializeBinary = function() {
   var writer = new jspb.BinaryWriter();
   this.serializeBinaryToWriter(writer);
   return writer.getResultBuffer();
@@ -5317,14 +5317,14 @@ proto.UpdateResultDictionaryEntryA.prototype.serializeBinary = function() {
  * writing to the given BinaryWriter.
  * @param {!jspb.BinaryWriter} writer
  */
-proto.UpdateResultDictionaryEntryA.prototype.serializeBinaryToWriter = function (writer) {
+proto.management_app.config.set.UpdateResultDictionaryEntryA.prototype.serializeBinaryToWriter = function (writer) {
   var f = undefined;
   f = this.getResultok();
   if (f != null) {
     writer.writeMessage(
       1,
       f,
-      proto.UpdateResultDictionaryEntryAOk.serializeBinaryToWriter
+      proto.management_app.config.set.UpdateResultDictionaryEntryAOk.serializeBinaryToWriter
     );
   }
   f = this.getResultsame();
@@ -5332,7 +5332,7 @@ proto.UpdateResultDictionaryEntryA.prototype.serializeBinaryToWriter = function 
     writer.writeMessage(
       2,
       f,
-      proto.UpdateResultDictionaryEntryASame.serializeBinaryToWriter
+      proto.management_app.config.set.UpdateResultDictionaryEntryASame.serializeBinaryToWriter
     );
   }
   f = this.getError();
@@ -5340,7 +5340,7 @@ proto.UpdateResultDictionaryEntryA.prototype.serializeBinaryToWriter = function 
     writer.writeMessage(
       3,
       f,
-      proto.UpdateResultError.serializeBinaryToWriter
+      proto.management_app.config.set.UpdateResultError.serializeBinaryToWriter
     );
   }
 };
@@ -5348,30 +5348,30 @@ proto.UpdateResultDictionaryEntryA.prototype.serializeBinaryToWriter = function 
 
 /**
  * Creates a deep clone of this proto. No data is shared with the original.
- * @return {!proto.UpdateResultDictionaryEntryA} The clone.
+ * @return {!proto.management_app.config.set.UpdateResultDictionaryEntryA} The clone.
  */
-proto.UpdateResultDictionaryEntryA.prototype.cloneMessage = function() {
-  return /** @type {!proto.UpdateResultDictionaryEntryA} */ (jspb.Message.cloneMessage(this));
+proto.management_app.config.set.UpdateResultDictionaryEntryA.prototype.cloneMessage = function() {
+  return /** @type {!proto.management_app.config.set.UpdateResultDictionaryEntryA} */ (jspb.Message.cloneMessage(this));
 };
 
 
 /**
  * optional UpdateResultDictionaryEntryAOk resultOk = 1;
- * @return {proto.UpdateResultDictionaryEntryAOk}
+ * @return {proto.management_app.config.set.UpdateResultDictionaryEntryAOk}
  */
-proto.UpdateResultDictionaryEntryA.prototype.getResultok = function() {
-  return /** @type{proto.UpdateResultDictionaryEntryAOk} */ (
-    jspb.Message.getWrapperField(this, proto.UpdateResultDictionaryEntryAOk, 1));
+proto.management_app.config.set.UpdateResultDictionaryEntryA.prototype.getResultok = function() {
+  return /** @type{proto.management_app.config.set.UpdateResultDictionaryEntryAOk} */ (
+    jspb.Message.getWrapperField(this, proto.management_app.config.set.UpdateResultDictionaryEntryAOk, 1));
 };
 
 
-/** @param {proto.UpdateResultDictionaryEntryAOk|undefined} value  */
-proto.UpdateResultDictionaryEntryA.prototype.setResultok = function(value) {
-  jspb.Message.setOneofWrapperField(this, 1, proto.UpdateResultDictionaryEntryA.oneofGroups_[0], value);
+/** @param {proto.management_app.config.set.UpdateResultDictionaryEntryAOk|undefined} value  */
+proto.management_app.config.set.UpdateResultDictionaryEntryA.prototype.setResultok = function(value) {
+  jspb.Message.setOneofWrapperField(this, 1, proto.management_app.config.set.UpdateResultDictionaryEntryA.oneofGroups_[0], value);
 };
 
 
-proto.UpdateResultDictionaryEntryA.prototype.clearResultok = function() {
+proto.management_app.config.set.UpdateResultDictionaryEntryA.prototype.clearResultok = function() {
   this.setResultok(undefined);
 };
 
@@ -5380,28 +5380,28 @@ proto.UpdateResultDictionaryEntryA.prototype.clearResultok = function() {
  * Returns whether this field is set.
  * @return{!boolean}
  */
-proto.UpdateResultDictionaryEntryA.prototype.hasResultok = function() {
+proto.management_app.config.set.UpdateResultDictionaryEntryA.prototype.hasResultok = function() {
   return jspb.Message.getField(this, 1) != null;
 };
 
 
 /**
  * optional UpdateResultDictionaryEntryASame resultSame = 2;
- * @return {proto.UpdateResultDictionaryEntryASame}
+ * @return {proto.management_app.config.set.UpdateResultDictionaryEntryASame}
  */
-proto.UpdateResultDictionaryEntryA.prototype.getResultsame = function() {
-  return /** @type{proto.UpdateResultDictionaryEntryASame} */ (
-    jspb.Message.getWrapperField(this, proto.UpdateResultDictionaryEntryASame, 2));
+proto.management_app.config.set.UpdateResultDictionaryEntryA.prototype.getResultsame = function() {
+  return /** @type{proto.management_app.config.set.UpdateResultDictionaryEntryASame} */ (
+    jspb.Message.getWrapperField(this, proto.management_app.config.set.UpdateResultDictionaryEntryASame, 2));
 };
 
 
-/** @param {proto.UpdateResultDictionaryEntryASame|undefined} value  */
-proto.UpdateResultDictionaryEntryA.prototype.setResultsame = function(value) {
-  jspb.Message.setOneofWrapperField(this, 2, proto.UpdateResultDictionaryEntryA.oneofGroups_[0], value);
+/** @param {proto.management_app.config.set.UpdateResultDictionaryEntryASame|undefined} value  */
+proto.management_app.config.set.UpdateResultDictionaryEntryA.prototype.setResultsame = function(value) {
+  jspb.Message.setOneofWrapperField(this, 2, proto.management_app.config.set.UpdateResultDictionaryEntryA.oneofGroups_[0], value);
 };
 
 
-proto.UpdateResultDictionaryEntryA.prototype.clearResultsame = function() {
+proto.management_app.config.set.UpdateResultDictionaryEntryA.prototype.clearResultsame = function() {
   this.setResultsame(undefined);
 };
 
@@ -5410,28 +5410,28 @@ proto.UpdateResultDictionaryEntryA.prototype.clearResultsame = function() {
  * Returns whether this field is set.
  * @return{!boolean}
  */
-proto.UpdateResultDictionaryEntryA.prototype.hasResultsame = function() {
+proto.management_app.config.set.UpdateResultDictionaryEntryA.prototype.hasResultsame = function() {
   return jspb.Message.getField(this, 2) != null;
 };
 
 
 /**
  * optional UpdateResultError error = 3;
- * @return {proto.UpdateResultError}
+ * @return {proto.management_app.config.set.UpdateResultError}
  */
-proto.UpdateResultDictionaryEntryA.prototype.getError = function() {
-  return /** @type{proto.UpdateResultError} */ (
-    jspb.Message.getWrapperField(this, proto.UpdateResultError, 3));
+proto.management_app.config.set.UpdateResultDictionaryEntryA.prototype.getError = function() {
+  return /** @type{proto.management_app.config.set.UpdateResultError} */ (
+    jspb.Message.getWrapperField(this, proto.management_app.config.set.UpdateResultError, 3));
 };
 
 
-/** @param {proto.UpdateResultError|undefined} value  */
-proto.UpdateResultDictionaryEntryA.prototype.setError = function(value) {
-  jspb.Message.setOneofWrapperField(this, 3, proto.UpdateResultDictionaryEntryA.oneofGroups_[0], value);
+/** @param {proto.management_app.config.set.UpdateResultError|undefined} value  */
+proto.management_app.config.set.UpdateResultDictionaryEntryA.prototype.setError = function(value) {
+  jspb.Message.setOneofWrapperField(this, 3, proto.management_app.config.set.UpdateResultDictionaryEntryA.oneofGroups_[0], value);
 };
 
 
-proto.UpdateResultDictionaryEntryA.prototype.clearError = function() {
+proto.management_app.config.set.UpdateResultDictionaryEntryA.prototype.clearError = function() {
   this.setError(undefined);
 };
 
@@ -5440,7 +5440,7 @@ proto.UpdateResultDictionaryEntryA.prototype.clearError = function() {
  * Returns whether this field is set.
  * @return{!boolean}
  */
-proto.UpdateResultDictionaryEntryA.prototype.hasError = function() {
+proto.management_app.config.set.UpdateResultDictionaryEntryA.prototype.hasError = function() {
   return jspb.Message.getField(this, 3) != null;
 };
 
@@ -5456,12 +5456,12 @@ proto.UpdateResultDictionaryEntryA.prototype.hasError = function() {
  * @extends {jspb.Message}
  * @constructor
  */
-proto.UpdateOrInsertMainDictionary = function(opt_data) {
+proto.management_app.config.set.UpdateOrInsertMainDictionary = function(opt_data) {
   jspb.Message.initialize(this, opt_data, 0, -1, null, null);
 };
-goog.inherits(proto.UpdateOrInsertMainDictionary, jspb.Message);
+goog.inherits(proto.management_app.config.set.UpdateOrInsertMainDictionary, jspb.Message);
 if (goog.DEBUG && !COMPILED) {
-  proto.UpdateOrInsertMainDictionary.displayName = 'proto.UpdateOrInsertMainDictionary';
+  proto.management_app.config.set.UpdateOrInsertMainDictionary.displayName = 'proto.management_app.config.set.UpdateOrInsertMainDictionary';
 }
 
 
@@ -5476,8 +5476,8 @@ if (jspb.Message.GENERATE_TO_OBJECT) {
  *     for transitional soy proto support: http://goto/soy-param-migration
  * @return {!Object}
  */
-proto.UpdateOrInsertMainDictionary.prototype.toObject = function(opt_includeInstance) {
-  return proto.UpdateOrInsertMainDictionary.toObject(opt_includeInstance, this);
+proto.management_app.config.set.UpdateOrInsertMainDictionary.prototype.toObject = function(opt_includeInstance) {
+  return proto.management_app.config.set.UpdateOrInsertMainDictionary.toObject(opt_includeInstance, this);
 };
 
 
@@ -5486,10 +5486,10 @@ proto.UpdateOrInsertMainDictionary.prototype.toObject = function(opt_includeInst
  * @param {boolean|undefined} includeInstance Whether to include the JSPB
  *     instance for transitional soy proto support:
  *     http://goto/soy-param-migration
- * @param {!proto.UpdateOrInsertMainDictionary} msg The msg instance to transform.
+ * @param {!proto.management_app.config.set.UpdateOrInsertMainDictionary} msg The msg instance to transform.
  * @return {!Object}
  */
-proto.UpdateOrInsertMainDictionary.toObject = function(includeInstance, msg) {
+proto.management_app.config.set.UpdateOrInsertMainDictionary.toObject = function(includeInstance, msg) {
   var f, obj = {
     guild: msg.getGuild(),
     value: (f = msg.getValue()) && config_pb.DictionaryEntryA.toObject(includeInstance, f)
@@ -5506,23 +5506,23 @@ proto.UpdateOrInsertMainDictionary.toObject = function(includeInstance, msg) {
 /**
  * Deserializes binary data (in protobuf wire format).
  * @param {jspb.ByteSource} bytes The bytes to deserialize.
- * @return {!proto.UpdateOrInsertMainDictionary}
+ * @return {!proto.management_app.config.set.UpdateOrInsertMainDictionary}
  */
-proto.UpdateOrInsertMainDictionary.deserializeBinary = function(bytes) {
+proto.management_app.config.set.UpdateOrInsertMainDictionary.deserializeBinary = function(bytes) {
   var reader = new jspb.BinaryReader(bytes);
-  var msg = new proto.UpdateOrInsertMainDictionary;
-  return proto.UpdateOrInsertMainDictionary.deserializeBinaryFromReader(msg, reader);
+  var msg = new proto.management_app.config.set.UpdateOrInsertMainDictionary;
+  return proto.management_app.config.set.UpdateOrInsertMainDictionary.deserializeBinaryFromReader(msg, reader);
 };
 
 
 /**
  * Deserializes binary data (in protobuf wire format) from the
  * given reader into the given message object.
- * @param {!proto.UpdateOrInsertMainDictionary} msg The message object to deserialize into.
+ * @param {!proto.management_app.config.set.UpdateOrInsertMainDictionary} msg The message object to deserialize into.
  * @param {!jspb.BinaryReader} reader The BinaryReader to use.
- * @return {!proto.UpdateOrInsertMainDictionary}
+ * @return {!proto.management_app.config.set.UpdateOrInsertMainDictionary}
  */
-proto.UpdateOrInsertMainDictionary.deserializeBinaryFromReader = function(msg, reader) {
+proto.management_app.config.set.UpdateOrInsertMainDictionary.deserializeBinaryFromReader = function(msg, reader) {
   while (reader.nextField()) {
     if (reader.isEndGroup()) {
       break;
@@ -5550,10 +5550,10 @@ proto.UpdateOrInsertMainDictionary.deserializeBinaryFromReader = function(msg, r
 /**
  * Class method variant: serializes the given message to binary data
  * (in protobuf wire format), writing to the given BinaryWriter.
- * @param {!proto.UpdateOrInsertMainDictionary} message
+ * @param {!proto.management_app.config.set.UpdateOrInsertMainDictionary} message
  * @param {!jspb.BinaryWriter} writer
  */
-proto.UpdateOrInsertMainDictionary.serializeBinaryToWriter = function(message, writer) {
+proto.management_app.config.set.UpdateOrInsertMainDictionary.serializeBinaryToWriter = function(message, writer) {
   message.serializeBinaryToWriter(writer);
 };
 
@@ -5562,7 +5562,7 @@ proto.UpdateOrInsertMainDictionary.serializeBinaryToWriter = function(message, w
  * Serializes the message to binary data (in protobuf wire format).
  * @return {!Uint8Array}
  */
-proto.UpdateOrInsertMainDictionary.prototype.serializeBinary = function() {
+proto.management_app.config.set.UpdateOrInsertMainDictionary.prototype.serializeBinary = function() {
   var writer = new jspb.BinaryWriter();
   this.serializeBinaryToWriter(writer);
   return writer.getResultBuffer();
@@ -5574,7 +5574,7 @@ proto.UpdateOrInsertMainDictionary.prototype.serializeBinary = function() {
  * writing to the given BinaryWriter.
  * @param {!jspb.BinaryWriter} writer
  */
-proto.UpdateOrInsertMainDictionary.prototype.serializeBinaryToWriter = function (writer) {
+proto.management_app.config.set.UpdateOrInsertMainDictionary.prototype.serializeBinaryToWriter = function (writer) {
   var f = undefined;
   f = this.getGuild();
   if (f.length > 0) {
@@ -5596,10 +5596,10 @@ proto.UpdateOrInsertMainDictionary.prototype.serializeBinaryToWriter = function 
 
 /**
  * Creates a deep clone of this proto. No data is shared with the original.
- * @return {!proto.UpdateOrInsertMainDictionary} The clone.
+ * @return {!proto.management_app.config.set.UpdateOrInsertMainDictionary} The clone.
  */
-proto.UpdateOrInsertMainDictionary.prototype.cloneMessage = function() {
-  return /** @type {!proto.UpdateOrInsertMainDictionary} */ (jspb.Message.cloneMessage(this));
+proto.management_app.config.set.UpdateOrInsertMainDictionary.prototype.cloneMessage = function() {
+  return /** @type {!proto.management_app.config.set.UpdateOrInsertMainDictionary} */ (jspb.Message.cloneMessage(this));
 };
 
 
@@ -5607,34 +5607,34 @@ proto.UpdateOrInsertMainDictionary.prototype.cloneMessage = function() {
  * optional string guild = 1;
  * @return {string}
  */
-proto.UpdateOrInsertMainDictionary.prototype.getGuild = function() {
+proto.management_app.config.set.UpdateOrInsertMainDictionary.prototype.getGuild = function() {
   return /** @type {string} */ (jspb.Message.getFieldProto3(this, 1, ""));
 };
 
 
 /** @param {string} value  */
-proto.UpdateOrInsertMainDictionary.prototype.setGuild = function(value) {
+proto.management_app.config.set.UpdateOrInsertMainDictionary.prototype.setGuild = function(value) {
   jspb.Message.setField(this, 1, value);
 };
 
 
 /**
- * optional config.DictionaryEntryA value = 2;
- * @return {proto.config.DictionaryEntryA}
+ * optional management_app.config.common.DictionaryEntryA value = 2;
+ * @return {proto.management_app.config.common.DictionaryEntryA}
  */
-proto.UpdateOrInsertMainDictionary.prototype.getValue = function() {
-  return /** @type{proto.config.DictionaryEntryA} */ (
+proto.management_app.config.set.UpdateOrInsertMainDictionary.prototype.getValue = function() {
+  return /** @type{proto.management_app.config.common.DictionaryEntryA} */ (
     jspb.Message.getWrapperField(this, config_pb.DictionaryEntryA, 2));
 };
 
 
-/** @param {proto.config.DictionaryEntryA|undefined} value  */
-proto.UpdateOrInsertMainDictionary.prototype.setValue = function(value) {
+/** @param {proto.management_app.config.common.DictionaryEntryA|undefined} value  */
+proto.management_app.config.set.UpdateOrInsertMainDictionary.prototype.setValue = function(value) {
   jspb.Message.setWrapperField(this, 2, value);
 };
 
 
-proto.UpdateOrInsertMainDictionary.prototype.clearValue = function() {
+proto.management_app.config.set.UpdateOrInsertMainDictionary.prototype.clearValue = function() {
   this.setValue(undefined);
 };
 
@@ -5643,7 +5643,7 @@ proto.UpdateOrInsertMainDictionary.prototype.clearValue = function() {
  * Returns whether this field is set.
  * @return{!boolean}
  */
-proto.UpdateOrInsertMainDictionary.prototype.hasValue = function() {
+proto.management_app.config.set.UpdateOrInsertMainDictionary.prototype.hasValue = function() {
   return jspb.Message.getField(this, 2) != null;
 };
 
@@ -5659,12 +5659,12 @@ proto.UpdateOrInsertMainDictionary.prototype.hasValue = function() {
  * @extends {jspb.Message}
  * @constructor
  */
-proto.SimpleDictionaryUpdateTargetGuild = function(opt_data) {
+proto.management_app.config.set.SimpleDictionaryUpdateTargetGuild = function(opt_data) {
   jspb.Message.initialize(this, opt_data, 0, -1, null, null);
 };
-goog.inherits(proto.SimpleDictionaryUpdateTargetGuild, jspb.Message);
+goog.inherits(proto.management_app.config.set.SimpleDictionaryUpdateTargetGuild, jspb.Message);
 if (goog.DEBUG && !COMPILED) {
-  proto.SimpleDictionaryUpdateTargetGuild.displayName = 'proto.SimpleDictionaryUpdateTargetGuild';
+  proto.management_app.config.set.SimpleDictionaryUpdateTargetGuild.displayName = 'proto.management_app.config.set.SimpleDictionaryUpdateTargetGuild';
 }
 
 
@@ -5679,8 +5679,8 @@ if (jspb.Message.GENERATE_TO_OBJECT) {
  *     for transitional soy proto support: http://goto/soy-param-migration
  * @return {!Object}
  */
-proto.SimpleDictionaryUpdateTargetGuild.prototype.toObject = function(opt_includeInstance) {
-  return proto.SimpleDictionaryUpdateTargetGuild.toObject(opt_includeInstance, this);
+proto.management_app.config.set.SimpleDictionaryUpdateTargetGuild.prototype.toObject = function(opt_includeInstance) {
+  return proto.management_app.config.set.SimpleDictionaryUpdateTargetGuild.toObject(opt_includeInstance, this);
 };
 
 
@@ -5689,10 +5689,10 @@ proto.SimpleDictionaryUpdateTargetGuild.prototype.toObject = function(opt_includ
  * @param {boolean|undefined} includeInstance Whether to include the JSPB
  *     instance for transitional soy proto support:
  *     http://goto/soy-param-migration
- * @param {!proto.SimpleDictionaryUpdateTargetGuild} msg The msg instance to transform.
+ * @param {!proto.management_app.config.set.SimpleDictionaryUpdateTargetGuild} msg The msg instance to transform.
  * @return {!Object}
  */
-proto.SimpleDictionaryUpdateTargetGuild.toObject = function(includeInstance, msg) {
+proto.management_app.config.set.SimpleDictionaryUpdateTargetGuild.toObject = function(includeInstance, msg) {
   var f, obj = {
     guild: msg.getGuild()
   };
@@ -5708,23 +5708,23 @@ proto.SimpleDictionaryUpdateTargetGuild.toObject = function(includeInstance, msg
 /**
  * Deserializes binary data (in protobuf wire format).
  * @param {jspb.ByteSource} bytes The bytes to deserialize.
- * @return {!proto.SimpleDictionaryUpdateTargetGuild}
+ * @return {!proto.management_app.config.set.SimpleDictionaryUpdateTargetGuild}
  */
-proto.SimpleDictionaryUpdateTargetGuild.deserializeBinary = function(bytes) {
+proto.management_app.config.set.SimpleDictionaryUpdateTargetGuild.deserializeBinary = function(bytes) {
   var reader = new jspb.BinaryReader(bytes);
-  var msg = new proto.SimpleDictionaryUpdateTargetGuild;
-  return proto.SimpleDictionaryUpdateTargetGuild.deserializeBinaryFromReader(msg, reader);
+  var msg = new proto.management_app.config.set.SimpleDictionaryUpdateTargetGuild;
+  return proto.management_app.config.set.SimpleDictionaryUpdateTargetGuild.deserializeBinaryFromReader(msg, reader);
 };
 
 
 /**
  * Deserializes binary data (in protobuf wire format) from the
  * given reader into the given message object.
- * @param {!proto.SimpleDictionaryUpdateTargetGuild} msg The message object to deserialize into.
+ * @param {!proto.management_app.config.set.SimpleDictionaryUpdateTargetGuild} msg The message object to deserialize into.
  * @param {!jspb.BinaryReader} reader The BinaryReader to use.
- * @return {!proto.SimpleDictionaryUpdateTargetGuild}
+ * @return {!proto.management_app.config.set.SimpleDictionaryUpdateTargetGuild}
  */
-proto.SimpleDictionaryUpdateTargetGuild.deserializeBinaryFromReader = function(msg, reader) {
+proto.management_app.config.set.SimpleDictionaryUpdateTargetGuild.deserializeBinaryFromReader = function(msg, reader) {
   while (reader.nextField()) {
     if (reader.isEndGroup()) {
       break;
@@ -5747,10 +5747,10 @@ proto.SimpleDictionaryUpdateTargetGuild.deserializeBinaryFromReader = function(m
 /**
  * Class method variant: serializes the given message to binary data
  * (in protobuf wire format), writing to the given BinaryWriter.
- * @param {!proto.SimpleDictionaryUpdateTargetGuild} message
+ * @param {!proto.management_app.config.set.SimpleDictionaryUpdateTargetGuild} message
  * @param {!jspb.BinaryWriter} writer
  */
-proto.SimpleDictionaryUpdateTargetGuild.serializeBinaryToWriter = function(message, writer) {
+proto.management_app.config.set.SimpleDictionaryUpdateTargetGuild.serializeBinaryToWriter = function(message, writer) {
   message.serializeBinaryToWriter(writer);
 };
 
@@ -5759,7 +5759,7 @@ proto.SimpleDictionaryUpdateTargetGuild.serializeBinaryToWriter = function(messa
  * Serializes the message to binary data (in protobuf wire format).
  * @return {!Uint8Array}
  */
-proto.SimpleDictionaryUpdateTargetGuild.prototype.serializeBinary = function() {
+proto.management_app.config.set.SimpleDictionaryUpdateTargetGuild.prototype.serializeBinary = function() {
   var writer = new jspb.BinaryWriter();
   this.serializeBinaryToWriter(writer);
   return writer.getResultBuffer();
@@ -5771,7 +5771,7 @@ proto.SimpleDictionaryUpdateTargetGuild.prototype.serializeBinary = function() {
  * writing to the given BinaryWriter.
  * @param {!jspb.BinaryWriter} writer
  */
-proto.SimpleDictionaryUpdateTargetGuild.prototype.serializeBinaryToWriter = function (writer) {
+proto.management_app.config.set.SimpleDictionaryUpdateTargetGuild.prototype.serializeBinaryToWriter = function (writer) {
   var f = undefined;
   f = this.getGuild();
   if (f.length > 0) {
@@ -5785,10 +5785,10 @@ proto.SimpleDictionaryUpdateTargetGuild.prototype.serializeBinaryToWriter = func
 
 /**
  * Creates a deep clone of this proto. No data is shared with the original.
- * @return {!proto.SimpleDictionaryUpdateTargetGuild} The clone.
+ * @return {!proto.management_app.config.set.SimpleDictionaryUpdateTargetGuild} The clone.
  */
-proto.SimpleDictionaryUpdateTargetGuild.prototype.cloneMessage = function() {
-  return /** @type {!proto.SimpleDictionaryUpdateTargetGuild} */ (jspb.Message.cloneMessage(this));
+proto.management_app.config.set.SimpleDictionaryUpdateTargetGuild.prototype.cloneMessage = function() {
+  return /** @type {!proto.management_app.config.set.SimpleDictionaryUpdateTargetGuild} */ (jspb.Message.cloneMessage(this));
 };
 
 
@@ -5796,13 +5796,13 @@ proto.SimpleDictionaryUpdateTargetGuild.prototype.cloneMessage = function() {
  * optional string guild = 1;
  * @return {string}
  */
-proto.SimpleDictionaryUpdateTargetGuild.prototype.getGuild = function() {
+proto.management_app.config.set.SimpleDictionaryUpdateTargetGuild.prototype.getGuild = function() {
   return /** @type {string} */ (jspb.Message.getFieldProto3(this, 1, ""));
 };
 
 
 /** @param {string} value  */
-proto.SimpleDictionaryUpdateTargetGuild.prototype.setGuild = function(value) {
+proto.management_app.config.set.SimpleDictionaryUpdateTargetGuild.prototype.setGuild = function(value) {
   jspb.Message.setField(this, 1, value);
 };
 
@@ -5818,12 +5818,12 @@ proto.SimpleDictionaryUpdateTargetGuild.prototype.setGuild = function(value) {
  * @extends {jspb.Message}
  * @constructor
  */
-proto.SimpleDictionaryUpdateTargetSharedDictionary = function(opt_data) {
+proto.management_app.config.set.SimpleDictionaryUpdateTargetSharedDictionary = function(opt_data) {
   jspb.Message.initialize(this, opt_data, 0, -1, null, null);
 };
-goog.inherits(proto.SimpleDictionaryUpdateTargetSharedDictionary, jspb.Message);
+goog.inherits(proto.management_app.config.set.SimpleDictionaryUpdateTargetSharedDictionary, jspb.Message);
 if (goog.DEBUG && !COMPILED) {
-  proto.SimpleDictionaryUpdateTargetSharedDictionary.displayName = 'proto.SimpleDictionaryUpdateTargetSharedDictionary';
+  proto.management_app.config.set.SimpleDictionaryUpdateTargetSharedDictionary.displayName = 'proto.management_app.config.set.SimpleDictionaryUpdateTargetSharedDictionary';
 }
 
 
@@ -5838,8 +5838,8 @@ if (jspb.Message.GENERATE_TO_OBJECT) {
  *     for transitional soy proto support: http://goto/soy-param-migration
  * @return {!Object}
  */
-proto.SimpleDictionaryUpdateTargetSharedDictionary.prototype.toObject = function(opt_includeInstance) {
-  return proto.SimpleDictionaryUpdateTargetSharedDictionary.toObject(opt_includeInstance, this);
+proto.management_app.config.set.SimpleDictionaryUpdateTargetSharedDictionary.prototype.toObject = function(opt_includeInstance) {
+  return proto.management_app.config.set.SimpleDictionaryUpdateTargetSharedDictionary.toObject(opt_includeInstance, this);
 };
 
 
@@ -5848,10 +5848,10 @@ proto.SimpleDictionaryUpdateTargetSharedDictionary.prototype.toObject = function
  * @param {boolean|undefined} includeInstance Whether to include the JSPB
  *     instance for transitional soy proto support:
  *     http://goto/soy-param-migration
- * @param {!proto.SimpleDictionaryUpdateTargetSharedDictionary} msg The msg instance to transform.
+ * @param {!proto.management_app.config.set.SimpleDictionaryUpdateTargetSharedDictionary} msg The msg instance to transform.
  * @return {!Object}
  */
-proto.SimpleDictionaryUpdateTargetSharedDictionary.toObject = function(includeInstance, msg) {
+proto.management_app.config.set.SimpleDictionaryUpdateTargetSharedDictionary.toObject = function(includeInstance, msg) {
   var f, obj = {
     id: msg.getId()
   };
@@ -5867,23 +5867,23 @@ proto.SimpleDictionaryUpdateTargetSharedDictionary.toObject = function(includeIn
 /**
  * Deserializes binary data (in protobuf wire format).
  * @param {jspb.ByteSource} bytes The bytes to deserialize.
- * @return {!proto.SimpleDictionaryUpdateTargetSharedDictionary}
+ * @return {!proto.management_app.config.set.SimpleDictionaryUpdateTargetSharedDictionary}
  */
-proto.SimpleDictionaryUpdateTargetSharedDictionary.deserializeBinary = function(bytes) {
+proto.management_app.config.set.SimpleDictionaryUpdateTargetSharedDictionary.deserializeBinary = function(bytes) {
   var reader = new jspb.BinaryReader(bytes);
-  var msg = new proto.SimpleDictionaryUpdateTargetSharedDictionary;
-  return proto.SimpleDictionaryUpdateTargetSharedDictionary.deserializeBinaryFromReader(msg, reader);
+  var msg = new proto.management_app.config.set.SimpleDictionaryUpdateTargetSharedDictionary;
+  return proto.management_app.config.set.SimpleDictionaryUpdateTargetSharedDictionary.deserializeBinaryFromReader(msg, reader);
 };
 
 
 /**
  * Deserializes binary data (in protobuf wire format) from the
  * given reader into the given message object.
- * @param {!proto.SimpleDictionaryUpdateTargetSharedDictionary} msg The message object to deserialize into.
+ * @param {!proto.management_app.config.set.SimpleDictionaryUpdateTargetSharedDictionary} msg The message object to deserialize into.
  * @param {!jspb.BinaryReader} reader The BinaryReader to use.
- * @return {!proto.SimpleDictionaryUpdateTargetSharedDictionary}
+ * @return {!proto.management_app.config.set.SimpleDictionaryUpdateTargetSharedDictionary}
  */
-proto.SimpleDictionaryUpdateTargetSharedDictionary.deserializeBinaryFromReader = function(msg, reader) {
+proto.management_app.config.set.SimpleDictionaryUpdateTargetSharedDictionary.deserializeBinaryFromReader = function(msg, reader) {
   while (reader.nextField()) {
     if (reader.isEndGroup()) {
       break;
@@ -5906,10 +5906,10 @@ proto.SimpleDictionaryUpdateTargetSharedDictionary.deserializeBinaryFromReader =
 /**
  * Class method variant: serializes the given message to binary data
  * (in protobuf wire format), writing to the given BinaryWriter.
- * @param {!proto.SimpleDictionaryUpdateTargetSharedDictionary} message
+ * @param {!proto.management_app.config.set.SimpleDictionaryUpdateTargetSharedDictionary} message
  * @param {!jspb.BinaryWriter} writer
  */
-proto.SimpleDictionaryUpdateTargetSharedDictionary.serializeBinaryToWriter = function(message, writer) {
+proto.management_app.config.set.SimpleDictionaryUpdateTargetSharedDictionary.serializeBinaryToWriter = function(message, writer) {
   message.serializeBinaryToWriter(writer);
 };
 
@@ -5918,7 +5918,7 @@ proto.SimpleDictionaryUpdateTargetSharedDictionary.serializeBinaryToWriter = fun
  * Serializes the message to binary data (in protobuf wire format).
  * @return {!Uint8Array}
  */
-proto.SimpleDictionaryUpdateTargetSharedDictionary.prototype.serializeBinary = function() {
+proto.management_app.config.set.SimpleDictionaryUpdateTargetSharedDictionary.prototype.serializeBinary = function() {
   var writer = new jspb.BinaryWriter();
   this.serializeBinaryToWriter(writer);
   return writer.getResultBuffer();
@@ -5930,7 +5930,7 @@ proto.SimpleDictionaryUpdateTargetSharedDictionary.prototype.serializeBinary = f
  * writing to the given BinaryWriter.
  * @param {!jspb.BinaryWriter} writer
  */
-proto.SimpleDictionaryUpdateTargetSharedDictionary.prototype.serializeBinaryToWriter = function (writer) {
+proto.management_app.config.set.SimpleDictionaryUpdateTargetSharedDictionary.prototype.serializeBinaryToWriter = function (writer) {
   var f = undefined;
   f = this.getId();
   if (f.length > 0) {
@@ -5944,10 +5944,10 @@ proto.SimpleDictionaryUpdateTargetSharedDictionary.prototype.serializeBinaryToWr
 
 /**
  * Creates a deep clone of this proto. No data is shared with the original.
- * @return {!proto.SimpleDictionaryUpdateTargetSharedDictionary} The clone.
+ * @return {!proto.management_app.config.set.SimpleDictionaryUpdateTargetSharedDictionary} The clone.
  */
-proto.SimpleDictionaryUpdateTargetSharedDictionary.prototype.cloneMessage = function() {
-  return /** @type {!proto.SimpleDictionaryUpdateTargetSharedDictionary} */ (jspb.Message.cloneMessage(this));
+proto.management_app.config.set.SimpleDictionaryUpdateTargetSharedDictionary.prototype.cloneMessage = function() {
+  return /** @type {!proto.management_app.config.set.SimpleDictionaryUpdateTargetSharedDictionary} */ (jspb.Message.cloneMessage(this));
 };
 
 
@@ -5955,13 +5955,13 @@ proto.SimpleDictionaryUpdateTargetSharedDictionary.prototype.cloneMessage = func
  * optional string id = 1;
  * @return {string}
  */
-proto.SimpleDictionaryUpdateTargetSharedDictionary.prototype.getId = function() {
+proto.management_app.config.set.SimpleDictionaryUpdateTargetSharedDictionary.prototype.getId = function() {
   return /** @type {string} */ (jspb.Message.getFieldProto3(this, 1, ""));
 };
 
 
 /** @param {string} value  */
-proto.SimpleDictionaryUpdateTargetSharedDictionary.prototype.setId = function(value) {
+proto.management_app.config.set.SimpleDictionaryUpdateTargetSharedDictionary.prototype.setId = function(value) {
   jspb.Message.setField(this, 1, value);
 };
 
@@ -5977,12 +5977,12 @@ proto.SimpleDictionaryUpdateTargetSharedDictionary.prototype.setId = function(va
  * @extends {jspb.Message}
  * @constructor
  */
-proto.SimpleDictionaryUpdateTarget = function(opt_data) {
-  jspb.Message.initialize(this, opt_data, 0, -1, null, proto.SimpleDictionaryUpdateTarget.oneofGroups_);
+proto.management_app.config.set.SimpleDictionaryUpdateTarget = function(opt_data) {
+  jspb.Message.initialize(this, opt_data, 0, -1, null, proto.management_app.config.set.SimpleDictionaryUpdateTarget.oneofGroups_);
 };
-goog.inherits(proto.SimpleDictionaryUpdateTarget, jspb.Message);
+goog.inherits(proto.management_app.config.set.SimpleDictionaryUpdateTarget, jspb.Message);
 if (goog.DEBUG && !COMPILED) {
-  proto.SimpleDictionaryUpdateTarget.displayName = 'proto.SimpleDictionaryUpdateTarget';
+  proto.management_app.config.set.SimpleDictionaryUpdateTarget.displayName = 'proto.management_app.config.set.SimpleDictionaryUpdateTarget';
 }
 /**
  * Oneof group definitions for this message. Each group defines the field
@@ -5992,12 +5992,12 @@ if (goog.DEBUG && !COMPILED) {
  * @private {!Array<!Array<number>>}
  * @const
  */
-proto.SimpleDictionaryUpdateTarget.oneofGroups_ = [[1,2,3]];
+proto.management_app.config.set.SimpleDictionaryUpdateTarget.oneofGroups_ = [[1,2,3]];
 
 /**
  * @enum {number}
  */
-proto.SimpleDictionaryUpdateTarget.TargetCase = {
+proto.management_app.config.set.SimpleDictionaryUpdateTarget.TargetCase = {
   TARGET_NOT_SET: 0,
   BEFORE: 1,
   AFTER: 2,
@@ -6005,10 +6005,10 @@ proto.SimpleDictionaryUpdateTarget.TargetCase = {
 };
 
 /**
- * @return {proto.SimpleDictionaryUpdateTarget.TargetCase}
+ * @return {proto.management_app.config.set.SimpleDictionaryUpdateTarget.TargetCase}
  */
-proto.SimpleDictionaryUpdateTarget.prototype.getTargetCase = function() {
-  return /** @type {proto.SimpleDictionaryUpdateTarget.TargetCase} */(jspb.Message.computeOneofCase(this, proto.SimpleDictionaryUpdateTarget.oneofGroups_[0]));
+proto.management_app.config.set.SimpleDictionaryUpdateTarget.prototype.getTargetCase = function() {
+  return /** @type {proto.management_app.config.set.SimpleDictionaryUpdateTarget.TargetCase} */(jspb.Message.computeOneofCase(this, proto.management_app.config.set.SimpleDictionaryUpdateTarget.oneofGroups_[0]));
 };
 
 
@@ -6024,8 +6024,8 @@ if (jspb.Message.GENERATE_TO_OBJECT) {
  *     for transitional soy proto support: http://goto/soy-param-migration
  * @return {!Object}
  */
-proto.SimpleDictionaryUpdateTarget.prototype.toObject = function(opt_includeInstance) {
-  return proto.SimpleDictionaryUpdateTarget.toObject(opt_includeInstance, this);
+proto.management_app.config.set.SimpleDictionaryUpdateTarget.prototype.toObject = function(opt_includeInstance) {
+  return proto.management_app.config.set.SimpleDictionaryUpdateTarget.toObject(opt_includeInstance, this);
 };
 
 
@@ -6034,14 +6034,14 @@ proto.SimpleDictionaryUpdateTarget.prototype.toObject = function(opt_includeInst
  * @param {boolean|undefined} includeInstance Whether to include the JSPB
  *     instance for transitional soy proto support:
  *     http://goto/soy-param-migration
- * @param {!proto.SimpleDictionaryUpdateTarget} msg The msg instance to transform.
+ * @param {!proto.management_app.config.set.SimpleDictionaryUpdateTarget} msg The msg instance to transform.
  * @return {!Object}
  */
-proto.SimpleDictionaryUpdateTarget.toObject = function(includeInstance, msg) {
+proto.management_app.config.set.SimpleDictionaryUpdateTarget.toObject = function(includeInstance, msg) {
   var f, obj = {
-    before: (f = msg.getBefore()) && proto.SimpleDictionaryUpdateTargetGuild.toObject(includeInstance, f),
-    after: (f = msg.getAfter()) && proto.SimpleDictionaryUpdateTargetGuild.toObject(includeInstance, f),
-    shared: (f = msg.getShared()) && proto.SimpleDictionaryUpdateTargetSharedDictionary.toObject(includeInstance, f)
+    before: (f = msg.getBefore()) && proto.management_app.config.set.SimpleDictionaryUpdateTargetGuild.toObject(includeInstance, f),
+    after: (f = msg.getAfter()) && proto.management_app.config.set.SimpleDictionaryUpdateTargetGuild.toObject(includeInstance, f),
+    shared: (f = msg.getShared()) && proto.management_app.config.set.SimpleDictionaryUpdateTargetSharedDictionary.toObject(includeInstance, f)
   };
 
   if (includeInstance) {
@@ -6055,23 +6055,23 @@ proto.SimpleDictionaryUpdateTarget.toObject = function(includeInstance, msg) {
 /**
  * Deserializes binary data (in protobuf wire format).
  * @param {jspb.ByteSource} bytes The bytes to deserialize.
- * @return {!proto.SimpleDictionaryUpdateTarget}
+ * @return {!proto.management_app.config.set.SimpleDictionaryUpdateTarget}
  */
-proto.SimpleDictionaryUpdateTarget.deserializeBinary = function(bytes) {
+proto.management_app.config.set.SimpleDictionaryUpdateTarget.deserializeBinary = function(bytes) {
   var reader = new jspb.BinaryReader(bytes);
-  var msg = new proto.SimpleDictionaryUpdateTarget;
-  return proto.SimpleDictionaryUpdateTarget.deserializeBinaryFromReader(msg, reader);
+  var msg = new proto.management_app.config.set.SimpleDictionaryUpdateTarget;
+  return proto.management_app.config.set.SimpleDictionaryUpdateTarget.deserializeBinaryFromReader(msg, reader);
 };
 
 
 /**
  * Deserializes binary data (in protobuf wire format) from the
  * given reader into the given message object.
- * @param {!proto.SimpleDictionaryUpdateTarget} msg The message object to deserialize into.
+ * @param {!proto.management_app.config.set.SimpleDictionaryUpdateTarget} msg The message object to deserialize into.
  * @param {!jspb.BinaryReader} reader The BinaryReader to use.
- * @return {!proto.SimpleDictionaryUpdateTarget}
+ * @return {!proto.management_app.config.set.SimpleDictionaryUpdateTarget}
  */
-proto.SimpleDictionaryUpdateTarget.deserializeBinaryFromReader = function(msg, reader) {
+proto.management_app.config.set.SimpleDictionaryUpdateTarget.deserializeBinaryFromReader = function(msg, reader) {
   while (reader.nextField()) {
     if (reader.isEndGroup()) {
       break;
@@ -6079,18 +6079,18 @@ proto.SimpleDictionaryUpdateTarget.deserializeBinaryFromReader = function(msg, r
     var field = reader.getFieldNumber();
     switch (field) {
     case 1:
-      var value = new proto.SimpleDictionaryUpdateTargetGuild;
-      reader.readMessage(value,proto.SimpleDictionaryUpdateTargetGuild.deserializeBinaryFromReader);
+      var value = new proto.management_app.config.set.SimpleDictionaryUpdateTargetGuild;
+      reader.readMessage(value,proto.management_app.config.set.SimpleDictionaryUpdateTargetGuild.deserializeBinaryFromReader);
       msg.setBefore(value);
       break;
     case 2:
-      var value = new proto.SimpleDictionaryUpdateTargetGuild;
-      reader.readMessage(value,proto.SimpleDictionaryUpdateTargetGuild.deserializeBinaryFromReader);
+      var value = new proto.management_app.config.set.SimpleDictionaryUpdateTargetGuild;
+      reader.readMessage(value,proto.management_app.config.set.SimpleDictionaryUpdateTargetGuild.deserializeBinaryFromReader);
       msg.setAfter(value);
       break;
     case 3:
-      var value = new proto.SimpleDictionaryUpdateTargetSharedDictionary;
-      reader.readMessage(value,proto.SimpleDictionaryUpdateTargetSharedDictionary.deserializeBinaryFromReader);
+      var value = new proto.management_app.config.set.SimpleDictionaryUpdateTargetSharedDictionary;
+      reader.readMessage(value,proto.management_app.config.set.SimpleDictionaryUpdateTargetSharedDictionary.deserializeBinaryFromReader);
       msg.setShared(value);
       break;
     default:
@@ -6105,10 +6105,10 @@ proto.SimpleDictionaryUpdateTarget.deserializeBinaryFromReader = function(msg, r
 /**
  * Class method variant: serializes the given message to binary data
  * (in protobuf wire format), writing to the given BinaryWriter.
- * @param {!proto.SimpleDictionaryUpdateTarget} message
+ * @param {!proto.management_app.config.set.SimpleDictionaryUpdateTarget} message
  * @param {!jspb.BinaryWriter} writer
  */
-proto.SimpleDictionaryUpdateTarget.serializeBinaryToWriter = function(message, writer) {
+proto.management_app.config.set.SimpleDictionaryUpdateTarget.serializeBinaryToWriter = function(message, writer) {
   message.serializeBinaryToWriter(writer);
 };
 
@@ -6117,7 +6117,7 @@ proto.SimpleDictionaryUpdateTarget.serializeBinaryToWriter = function(message, w
  * Serializes the message to binary data (in protobuf wire format).
  * @return {!Uint8Array}
  */
-proto.SimpleDictionaryUpdateTarget.prototype.serializeBinary = function() {
+proto.management_app.config.set.SimpleDictionaryUpdateTarget.prototype.serializeBinary = function() {
   var writer = new jspb.BinaryWriter();
   this.serializeBinaryToWriter(writer);
   return writer.getResultBuffer();
@@ -6129,14 +6129,14 @@ proto.SimpleDictionaryUpdateTarget.prototype.serializeBinary = function() {
  * writing to the given BinaryWriter.
  * @param {!jspb.BinaryWriter} writer
  */
-proto.SimpleDictionaryUpdateTarget.prototype.serializeBinaryToWriter = function (writer) {
+proto.management_app.config.set.SimpleDictionaryUpdateTarget.prototype.serializeBinaryToWriter = function (writer) {
   var f = undefined;
   f = this.getBefore();
   if (f != null) {
     writer.writeMessage(
       1,
       f,
-      proto.SimpleDictionaryUpdateTargetGuild.serializeBinaryToWriter
+      proto.management_app.config.set.SimpleDictionaryUpdateTargetGuild.serializeBinaryToWriter
     );
   }
   f = this.getAfter();
@@ -6144,7 +6144,7 @@ proto.SimpleDictionaryUpdateTarget.prototype.serializeBinaryToWriter = function 
     writer.writeMessage(
       2,
       f,
-      proto.SimpleDictionaryUpdateTargetGuild.serializeBinaryToWriter
+      proto.management_app.config.set.SimpleDictionaryUpdateTargetGuild.serializeBinaryToWriter
     );
   }
   f = this.getShared();
@@ -6152,7 +6152,7 @@ proto.SimpleDictionaryUpdateTarget.prototype.serializeBinaryToWriter = function 
     writer.writeMessage(
       3,
       f,
-      proto.SimpleDictionaryUpdateTargetSharedDictionary.serializeBinaryToWriter
+      proto.management_app.config.set.SimpleDictionaryUpdateTargetSharedDictionary.serializeBinaryToWriter
     );
   }
 };
@@ -6160,30 +6160,30 @@ proto.SimpleDictionaryUpdateTarget.prototype.serializeBinaryToWriter = function 
 
 /**
  * Creates a deep clone of this proto. No data is shared with the original.
- * @return {!proto.SimpleDictionaryUpdateTarget} The clone.
+ * @return {!proto.management_app.config.set.SimpleDictionaryUpdateTarget} The clone.
  */
-proto.SimpleDictionaryUpdateTarget.prototype.cloneMessage = function() {
-  return /** @type {!proto.SimpleDictionaryUpdateTarget} */ (jspb.Message.cloneMessage(this));
+proto.management_app.config.set.SimpleDictionaryUpdateTarget.prototype.cloneMessage = function() {
+  return /** @type {!proto.management_app.config.set.SimpleDictionaryUpdateTarget} */ (jspb.Message.cloneMessage(this));
 };
 
 
 /**
  * optional SimpleDictionaryUpdateTargetGuild before = 1;
- * @return {proto.SimpleDictionaryUpdateTargetGuild}
+ * @return {proto.management_app.config.set.SimpleDictionaryUpdateTargetGuild}
  */
-proto.SimpleDictionaryUpdateTarget.prototype.getBefore = function() {
-  return /** @type{proto.SimpleDictionaryUpdateTargetGuild} */ (
-    jspb.Message.getWrapperField(this, proto.SimpleDictionaryUpdateTargetGuild, 1));
+proto.management_app.config.set.SimpleDictionaryUpdateTarget.prototype.getBefore = function() {
+  return /** @type{proto.management_app.config.set.SimpleDictionaryUpdateTargetGuild} */ (
+    jspb.Message.getWrapperField(this, proto.management_app.config.set.SimpleDictionaryUpdateTargetGuild, 1));
 };
 
 
-/** @param {proto.SimpleDictionaryUpdateTargetGuild|undefined} value  */
-proto.SimpleDictionaryUpdateTarget.prototype.setBefore = function(value) {
-  jspb.Message.setOneofWrapperField(this, 1, proto.SimpleDictionaryUpdateTarget.oneofGroups_[0], value);
+/** @param {proto.management_app.config.set.SimpleDictionaryUpdateTargetGuild|undefined} value  */
+proto.management_app.config.set.SimpleDictionaryUpdateTarget.prototype.setBefore = function(value) {
+  jspb.Message.setOneofWrapperField(this, 1, proto.management_app.config.set.SimpleDictionaryUpdateTarget.oneofGroups_[0], value);
 };
 
 
-proto.SimpleDictionaryUpdateTarget.prototype.clearBefore = function() {
+proto.management_app.config.set.SimpleDictionaryUpdateTarget.prototype.clearBefore = function() {
   this.setBefore(undefined);
 };
 
@@ -6192,28 +6192,28 @@ proto.SimpleDictionaryUpdateTarget.prototype.clearBefore = function() {
  * Returns whether this field is set.
  * @return{!boolean}
  */
-proto.SimpleDictionaryUpdateTarget.prototype.hasBefore = function() {
+proto.management_app.config.set.SimpleDictionaryUpdateTarget.prototype.hasBefore = function() {
   return jspb.Message.getField(this, 1) != null;
 };
 
 
 /**
  * optional SimpleDictionaryUpdateTargetGuild after = 2;
- * @return {proto.SimpleDictionaryUpdateTargetGuild}
+ * @return {proto.management_app.config.set.SimpleDictionaryUpdateTargetGuild}
  */
-proto.SimpleDictionaryUpdateTarget.prototype.getAfter = function() {
-  return /** @type{proto.SimpleDictionaryUpdateTargetGuild} */ (
-    jspb.Message.getWrapperField(this, proto.SimpleDictionaryUpdateTargetGuild, 2));
+proto.management_app.config.set.SimpleDictionaryUpdateTarget.prototype.getAfter = function() {
+  return /** @type{proto.management_app.config.set.SimpleDictionaryUpdateTargetGuild} */ (
+    jspb.Message.getWrapperField(this, proto.management_app.config.set.SimpleDictionaryUpdateTargetGuild, 2));
 };
 
 
-/** @param {proto.SimpleDictionaryUpdateTargetGuild|undefined} value  */
-proto.SimpleDictionaryUpdateTarget.prototype.setAfter = function(value) {
-  jspb.Message.setOneofWrapperField(this, 2, proto.SimpleDictionaryUpdateTarget.oneofGroups_[0], value);
+/** @param {proto.management_app.config.set.SimpleDictionaryUpdateTargetGuild|undefined} value  */
+proto.management_app.config.set.SimpleDictionaryUpdateTarget.prototype.setAfter = function(value) {
+  jspb.Message.setOneofWrapperField(this, 2, proto.management_app.config.set.SimpleDictionaryUpdateTarget.oneofGroups_[0], value);
 };
 
 
-proto.SimpleDictionaryUpdateTarget.prototype.clearAfter = function() {
+proto.management_app.config.set.SimpleDictionaryUpdateTarget.prototype.clearAfter = function() {
   this.setAfter(undefined);
 };
 
@@ -6222,28 +6222,28 @@ proto.SimpleDictionaryUpdateTarget.prototype.clearAfter = function() {
  * Returns whether this field is set.
  * @return{!boolean}
  */
-proto.SimpleDictionaryUpdateTarget.prototype.hasAfter = function() {
+proto.management_app.config.set.SimpleDictionaryUpdateTarget.prototype.hasAfter = function() {
   return jspb.Message.getField(this, 2) != null;
 };
 
 
 /**
  * optional SimpleDictionaryUpdateTargetSharedDictionary shared = 3;
- * @return {proto.SimpleDictionaryUpdateTargetSharedDictionary}
+ * @return {proto.management_app.config.set.SimpleDictionaryUpdateTargetSharedDictionary}
  */
-proto.SimpleDictionaryUpdateTarget.prototype.getShared = function() {
-  return /** @type{proto.SimpleDictionaryUpdateTargetSharedDictionary} */ (
-    jspb.Message.getWrapperField(this, proto.SimpleDictionaryUpdateTargetSharedDictionary, 3));
+proto.management_app.config.set.SimpleDictionaryUpdateTarget.prototype.getShared = function() {
+  return /** @type{proto.management_app.config.set.SimpleDictionaryUpdateTargetSharedDictionary} */ (
+    jspb.Message.getWrapperField(this, proto.management_app.config.set.SimpleDictionaryUpdateTargetSharedDictionary, 3));
 };
 
 
-/** @param {proto.SimpleDictionaryUpdateTargetSharedDictionary|undefined} value  */
-proto.SimpleDictionaryUpdateTarget.prototype.setShared = function(value) {
-  jspb.Message.setOneofWrapperField(this, 3, proto.SimpleDictionaryUpdateTarget.oneofGroups_[0], value);
+/** @param {proto.management_app.config.set.SimpleDictionaryUpdateTargetSharedDictionary|undefined} value  */
+proto.management_app.config.set.SimpleDictionaryUpdateTarget.prototype.setShared = function(value) {
+  jspb.Message.setOneofWrapperField(this, 3, proto.management_app.config.set.SimpleDictionaryUpdateTarget.oneofGroups_[0], value);
 };
 
 
-proto.SimpleDictionaryUpdateTarget.prototype.clearShared = function() {
+proto.management_app.config.set.SimpleDictionaryUpdateTarget.prototype.clearShared = function() {
   this.setShared(undefined);
 };
 
@@ -6252,7 +6252,7 @@ proto.SimpleDictionaryUpdateTarget.prototype.clearShared = function() {
  * Returns whether this field is set.
  * @return{!boolean}
  */
-proto.SimpleDictionaryUpdateTarget.prototype.hasShared = function() {
+proto.management_app.config.set.SimpleDictionaryUpdateTarget.prototype.hasShared = function() {
   return jspb.Message.getField(this, 3) != null;
 };
 
@@ -6268,12 +6268,12 @@ proto.SimpleDictionaryUpdateTarget.prototype.hasShared = function() {
  * @extends {jspb.Message}
  * @constructor
  */
-proto.UpdateSimpleDictionary = function(opt_data) {
+proto.management_app.config.set.UpdateSimpleDictionary = function(opt_data) {
   jspb.Message.initialize(this, opt_data, 0, -1, null, null);
 };
-goog.inherits(proto.UpdateSimpleDictionary, jspb.Message);
+goog.inherits(proto.management_app.config.set.UpdateSimpleDictionary, jspb.Message);
 if (goog.DEBUG && !COMPILED) {
-  proto.UpdateSimpleDictionary.displayName = 'proto.UpdateSimpleDictionary';
+  proto.management_app.config.set.UpdateSimpleDictionary.displayName = 'proto.management_app.config.set.UpdateSimpleDictionary';
 }
 
 
@@ -6288,8 +6288,8 @@ if (jspb.Message.GENERATE_TO_OBJECT) {
  *     for transitional soy proto support: http://goto/soy-param-migration
  * @return {!Object}
  */
-proto.UpdateSimpleDictionary.prototype.toObject = function(opt_includeInstance) {
-  return proto.UpdateSimpleDictionary.toObject(opt_includeInstance, this);
+proto.management_app.config.set.UpdateSimpleDictionary.prototype.toObject = function(opt_includeInstance) {
+  return proto.management_app.config.set.UpdateSimpleDictionary.toObject(opt_includeInstance, this);
 };
 
 
@@ -6298,12 +6298,12 @@ proto.UpdateSimpleDictionary.prototype.toObject = function(opt_includeInstance) 
  * @param {boolean|undefined} includeInstance Whether to include the JSPB
  *     instance for transitional soy proto support:
  *     http://goto/soy-param-migration
- * @param {!proto.UpdateSimpleDictionary} msg The msg instance to transform.
+ * @param {!proto.management_app.config.set.UpdateSimpleDictionary} msg The msg instance to transform.
  * @return {!Object}
  */
-proto.UpdateSimpleDictionary.toObject = function(includeInstance, msg) {
+proto.management_app.config.set.UpdateSimpleDictionary.toObject = function(includeInstance, msg) {
   var f, obj = {
-    target: (f = msg.getTarget()) && proto.SimpleDictionaryUpdateTarget.toObject(includeInstance, f),
+    target: (f = msg.getTarget()) && proto.management_app.config.set.SimpleDictionaryUpdateTarget.toObject(includeInstance, f),
     value: (f = msg.getValue()) && config_pb.DictionaryEntryB.toObject(includeInstance, f)
   };
 
@@ -6318,23 +6318,23 @@ proto.UpdateSimpleDictionary.toObject = function(includeInstance, msg) {
 /**
  * Deserializes binary data (in protobuf wire format).
  * @param {jspb.ByteSource} bytes The bytes to deserialize.
- * @return {!proto.UpdateSimpleDictionary}
+ * @return {!proto.management_app.config.set.UpdateSimpleDictionary}
  */
-proto.UpdateSimpleDictionary.deserializeBinary = function(bytes) {
+proto.management_app.config.set.UpdateSimpleDictionary.deserializeBinary = function(bytes) {
   var reader = new jspb.BinaryReader(bytes);
-  var msg = new proto.UpdateSimpleDictionary;
-  return proto.UpdateSimpleDictionary.deserializeBinaryFromReader(msg, reader);
+  var msg = new proto.management_app.config.set.UpdateSimpleDictionary;
+  return proto.management_app.config.set.UpdateSimpleDictionary.deserializeBinaryFromReader(msg, reader);
 };
 
 
 /**
  * Deserializes binary data (in protobuf wire format) from the
  * given reader into the given message object.
- * @param {!proto.UpdateSimpleDictionary} msg The message object to deserialize into.
+ * @param {!proto.management_app.config.set.UpdateSimpleDictionary} msg The message object to deserialize into.
  * @param {!jspb.BinaryReader} reader The BinaryReader to use.
- * @return {!proto.UpdateSimpleDictionary}
+ * @return {!proto.management_app.config.set.UpdateSimpleDictionary}
  */
-proto.UpdateSimpleDictionary.deserializeBinaryFromReader = function(msg, reader) {
+proto.management_app.config.set.UpdateSimpleDictionary.deserializeBinaryFromReader = function(msg, reader) {
   while (reader.nextField()) {
     if (reader.isEndGroup()) {
       break;
@@ -6342,8 +6342,8 @@ proto.UpdateSimpleDictionary.deserializeBinaryFromReader = function(msg, reader)
     var field = reader.getFieldNumber();
     switch (field) {
     case 1:
-      var value = new proto.SimpleDictionaryUpdateTarget;
-      reader.readMessage(value,proto.SimpleDictionaryUpdateTarget.deserializeBinaryFromReader);
+      var value = new proto.management_app.config.set.SimpleDictionaryUpdateTarget;
+      reader.readMessage(value,proto.management_app.config.set.SimpleDictionaryUpdateTarget.deserializeBinaryFromReader);
       msg.setTarget(value);
       break;
     case 2:
@@ -6363,10 +6363,10 @@ proto.UpdateSimpleDictionary.deserializeBinaryFromReader = function(msg, reader)
 /**
  * Class method variant: serializes the given message to binary data
  * (in protobuf wire format), writing to the given BinaryWriter.
- * @param {!proto.UpdateSimpleDictionary} message
+ * @param {!proto.management_app.config.set.UpdateSimpleDictionary} message
  * @param {!jspb.BinaryWriter} writer
  */
-proto.UpdateSimpleDictionary.serializeBinaryToWriter = function(message, writer) {
+proto.management_app.config.set.UpdateSimpleDictionary.serializeBinaryToWriter = function(message, writer) {
   message.serializeBinaryToWriter(writer);
 };
 
@@ -6375,7 +6375,7 @@ proto.UpdateSimpleDictionary.serializeBinaryToWriter = function(message, writer)
  * Serializes the message to binary data (in protobuf wire format).
  * @return {!Uint8Array}
  */
-proto.UpdateSimpleDictionary.prototype.serializeBinary = function() {
+proto.management_app.config.set.UpdateSimpleDictionary.prototype.serializeBinary = function() {
   var writer = new jspb.BinaryWriter();
   this.serializeBinaryToWriter(writer);
   return writer.getResultBuffer();
@@ -6387,14 +6387,14 @@ proto.UpdateSimpleDictionary.prototype.serializeBinary = function() {
  * writing to the given BinaryWriter.
  * @param {!jspb.BinaryWriter} writer
  */
-proto.UpdateSimpleDictionary.prototype.serializeBinaryToWriter = function (writer) {
+proto.management_app.config.set.UpdateSimpleDictionary.prototype.serializeBinaryToWriter = function (writer) {
   var f = undefined;
   f = this.getTarget();
   if (f != null) {
     writer.writeMessage(
       1,
       f,
-      proto.SimpleDictionaryUpdateTarget.serializeBinaryToWriter
+      proto.management_app.config.set.SimpleDictionaryUpdateTarget.serializeBinaryToWriter
     );
   }
   f = this.getValue();
@@ -6410,30 +6410,30 @@ proto.UpdateSimpleDictionary.prototype.serializeBinaryToWriter = function (write
 
 /**
  * Creates a deep clone of this proto. No data is shared with the original.
- * @return {!proto.UpdateSimpleDictionary} The clone.
+ * @return {!proto.management_app.config.set.UpdateSimpleDictionary} The clone.
  */
-proto.UpdateSimpleDictionary.prototype.cloneMessage = function() {
-  return /** @type {!proto.UpdateSimpleDictionary} */ (jspb.Message.cloneMessage(this));
+proto.management_app.config.set.UpdateSimpleDictionary.prototype.cloneMessage = function() {
+  return /** @type {!proto.management_app.config.set.UpdateSimpleDictionary} */ (jspb.Message.cloneMessage(this));
 };
 
 
 /**
  * optional SimpleDictionaryUpdateTarget target = 1;
- * @return {proto.SimpleDictionaryUpdateTarget}
+ * @return {proto.management_app.config.set.SimpleDictionaryUpdateTarget}
  */
-proto.UpdateSimpleDictionary.prototype.getTarget = function() {
-  return /** @type{proto.SimpleDictionaryUpdateTarget} */ (
-    jspb.Message.getWrapperField(this, proto.SimpleDictionaryUpdateTarget, 1));
+proto.management_app.config.set.UpdateSimpleDictionary.prototype.getTarget = function() {
+  return /** @type{proto.management_app.config.set.SimpleDictionaryUpdateTarget} */ (
+    jspb.Message.getWrapperField(this, proto.management_app.config.set.SimpleDictionaryUpdateTarget, 1));
 };
 
 
-/** @param {proto.SimpleDictionaryUpdateTarget|undefined} value  */
-proto.UpdateSimpleDictionary.prototype.setTarget = function(value) {
+/** @param {proto.management_app.config.set.SimpleDictionaryUpdateTarget|undefined} value  */
+proto.management_app.config.set.UpdateSimpleDictionary.prototype.setTarget = function(value) {
   jspb.Message.setWrapperField(this, 1, value);
 };
 
 
-proto.UpdateSimpleDictionary.prototype.clearTarget = function() {
+proto.management_app.config.set.UpdateSimpleDictionary.prototype.clearTarget = function() {
   this.setTarget(undefined);
 };
 
@@ -6442,28 +6442,28 @@ proto.UpdateSimpleDictionary.prototype.clearTarget = function() {
  * Returns whether this field is set.
  * @return{!boolean}
  */
-proto.UpdateSimpleDictionary.prototype.hasTarget = function() {
+proto.management_app.config.set.UpdateSimpleDictionary.prototype.hasTarget = function() {
   return jspb.Message.getField(this, 1) != null;
 };
 
 
 /**
- * optional config.DictionaryEntryB value = 2;
- * @return {proto.config.DictionaryEntryB}
+ * optional management_app.config.common.DictionaryEntryB value = 2;
+ * @return {proto.management_app.config.common.DictionaryEntryB}
  */
-proto.UpdateSimpleDictionary.prototype.getValue = function() {
-  return /** @type{proto.config.DictionaryEntryB} */ (
+proto.management_app.config.set.UpdateSimpleDictionary.prototype.getValue = function() {
+  return /** @type{proto.management_app.config.common.DictionaryEntryB} */ (
     jspb.Message.getWrapperField(this, config_pb.DictionaryEntryB, 2));
 };
 
 
-/** @param {proto.config.DictionaryEntryB|undefined} value  */
-proto.UpdateSimpleDictionary.prototype.setValue = function(value) {
+/** @param {proto.management_app.config.common.DictionaryEntryB|undefined} value  */
+proto.management_app.config.set.UpdateSimpleDictionary.prototype.setValue = function(value) {
   jspb.Message.setWrapperField(this, 2, value);
 };
 
 
-proto.UpdateSimpleDictionary.prototype.clearValue = function() {
+proto.management_app.config.set.UpdateSimpleDictionary.prototype.clearValue = function() {
   this.setValue(undefined);
 };
 
@@ -6472,7 +6472,7 @@ proto.UpdateSimpleDictionary.prototype.clearValue = function() {
  * Returns whether this field is set.
  * @return{!boolean}
  */
-proto.UpdateSimpleDictionary.prototype.hasValue = function() {
+proto.management_app.config.set.UpdateSimpleDictionary.prototype.hasValue = function() {
   return jspb.Message.getField(this, 2) != null;
 };
 
@@ -6488,12 +6488,12 @@ proto.UpdateSimpleDictionary.prototype.hasValue = function() {
  * @extends {jspb.Message}
  * @constructor
  */
-proto.InsertSimpleDictionary = function(opt_data) {
+proto.management_app.config.set.InsertSimpleDictionary = function(opt_data) {
   jspb.Message.initialize(this, opt_data, 0, -1, null, null);
 };
-goog.inherits(proto.InsertSimpleDictionary, jspb.Message);
+goog.inherits(proto.management_app.config.set.InsertSimpleDictionary, jspb.Message);
 if (goog.DEBUG && !COMPILED) {
-  proto.InsertSimpleDictionary.displayName = 'proto.InsertSimpleDictionary';
+  proto.management_app.config.set.InsertSimpleDictionary.displayName = 'proto.management_app.config.set.InsertSimpleDictionary';
 }
 
 
@@ -6508,8 +6508,8 @@ if (jspb.Message.GENERATE_TO_OBJECT) {
  *     for transitional soy proto support: http://goto/soy-param-migration
  * @return {!Object}
  */
-proto.InsertSimpleDictionary.prototype.toObject = function(opt_includeInstance) {
-  return proto.InsertSimpleDictionary.toObject(opt_includeInstance, this);
+proto.management_app.config.set.InsertSimpleDictionary.prototype.toObject = function(opt_includeInstance) {
+  return proto.management_app.config.set.InsertSimpleDictionary.toObject(opt_includeInstance, this);
 };
 
 
@@ -6518,12 +6518,12 @@ proto.InsertSimpleDictionary.prototype.toObject = function(opt_includeInstance) 
  * @param {boolean|undefined} includeInstance Whether to include the JSPB
  *     instance for transitional soy proto support:
  *     http://goto/soy-param-migration
- * @param {!proto.InsertSimpleDictionary} msg The msg instance to transform.
+ * @param {!proto.management_app.config.set.InsertSimpleDictionary} msg The msg instance to transform.
  * @return {!Object}
  */
-proto.InsertSimpleDictionary.toObject = function(includeInstance, msg) {
+proto.management_app.config.set.InsertSimpleDictionary.toObject = function(includeInstance, msg) {
   var f, obj = {
-    target: (f = msg.getTarget()) && proto.SimpleDictionaryUpdateTarget.toObject(includeInstance, f),
+    target: (f = msg.getTarget()) && proto.management_app.config.set.SimpleDictionaryUpdateTarget.toObject(includeInstance, f),
     value: (f = msg.getValue()) && config_pb.DictionaryEntryB.toObject(includeInstance, f)
   };
 
@@ -6538,23 +6538,23 @@ proto.InsertSimpleDictionary.toObject = function(includeInstance, msg) {
 /**
  * Deserializes binary data (in protobuf wire format).
  * @param {jspb.ByteSource} bytes The bytes to deserialize.
- * @return {!proto.InsertSimpleDictionary}
+ * @return {!proto.management_app.config.set.InsertSimpleDictionary}
  */
-proto.InsertSimpleDictionary.deserializeBinary = function(bytes) {
+proto.management_app.config.set.InsertSimpleDictionary.deserializeBinary = function(bytes) {
   var reader = new jspb.BinaryReader(bytes);
-  var msg = new proto.InsertSimpleDictionary;
-  return proto.InsertSimpleDictionary.deserializeBinaryFromReader(msg, reader);
+  var msg = new proto.management_app.config.set.InsertSimpleDictionary;
+  return proto.management_app.config.set.InsertSimpleDictionary.deserializeBinaryFromReader(msg, reader);
 };
 
 
 /**
  * Deserializes binary data (in protobuf wire format) from the
  * given reader into the given message object.
- * @param {!proto.InsertSimpleDictionary} msg The message object to deserialize into.
+ * @param {!proto.management_app.config.set.InsertSimpleDictionary} msg The message object to deserialize into.
  * @param {!jspb.BinaryReader} reader The BinaryReader to use.
- * @return {!proto.InsertSimpleDictionary}
+ * @return {!proto.management_app.config.set.InsertSimpleDictionary}
  */
-proto.InsertSimpleDictionary.deserializeBinaryFromReader = function(msg, reader) {
+proto.management_app.config.set.InsertSimpleDictionary.deserializeBinaryFromReader = function(msg, reader) {
   while (reader.nextField()) {
     if (reader.isEndGroup()) {
       break;
@@ -6562,8 +6562,8 @@ proto.InsertSimpleDictionary.deserializeBinaryFromReader = function(msg, reader)
     var field = reader.getFieldNumber();
     switch (field) {
     case 1:
-      var value = new proto.SimpleDictionaryUpdateTarget;
-      reader.readMessage(value,proto.SimpleDictionaryUpdateTarget.deserializeBinaryFromReader);
+      var value = new proto.management_app.config.set.SimpleDictionaryUpdateTarget;
+      reader.readMessage(value,proto.management_app.config.set.SimpleDictionaryUpdateTarget.deserializeBinaryFromReader);
       msg.setTarget(value);
       break;
     case 2:
@@ -6583,10 +6583,10 @@ proto.InsertSimpleDictionary.deserializeBinaryFromReader = function(msg, reader)
 /**
  * Class method variant: serializes the given message to binary data
  * (in protobuf wire format), writing to the given BinaryWriter.
- * @param {!proto.InsertSimpleDictionary} message
+ * @param {!proto.management_app.config.set.InsertSimpleDictionary} message
  * @param {!jspb.BinaryWriter} writer
  */
-proto.InsertSimpleDictionary.serializeBinaryToWriter = function(message, writer) {
+proto.management_app.config.set.InsertSimpleDictionary.serializeBinaryToWriter = function(message, writer) {
   message.serializeBinaryToWriter(writer);
 };
 
@@ -6595,7 +6595,7 @@ proto.InsertSimpleDictionary.serializeBinaryToWriter = function(message, writer)
  * Serializes the message to binary data (in protobuf wire format).
  * @return {!Uint8Array}
  */
-proto.InsertSimpleDictionary.prototype.serializeBinary = function() {
+proto.management_app.config.set.InsertSimpleDictionary.prototype.serializeBinary = function() {
   var writer = new jspb.BinaryWriter();
   this.serializeBinaryToWriter(writer);
   return writer.getResultBuffer();
@@ -6607,14 +6607,14 @@ proto.InsertSimpleDictionary.prototype.serializeBinary = function() {
  * writing to the given BinaryWriter.
  * @param {!jspb.BinaryWriter} writer
  */
-proto.InsertSimpleDictionary.prototype.serializeBinaryToWriter = function (writer) {
+proto.management_app.config.set.InsertSimpleDictionary.prototype.serializeBinaryToWriter = function (writer) {
   var f = undefined;
   f = this.getTarget();
   if (f != null) {
     writer.writeMessage(
       1,
       f,
-      proto.SimpleDictionaryUpdateTarget.serializeBinaryToWriter
+      proto.management_app.config.set.SimpleDictionaryUpdateTarget.serializeBinaryToWriter
     );
   }
   f = this.getValue();
@@ -6630,30 +6630,30 @@ proto.InsertSimpleDictionary.prototype.serializeBinaryToWriter = function (write
 
 /**
  * Creates a deep clone of this proto. No data is shared with the original.
- * @return {!proto.InsertSimpleDictionary} The clone.
+ * @return {!proto.management_app.config.set.InsertSimpleDictionary} The clone.
  */
-proto.InsertSimpleDictionary.prototype.cloneMessage = function() {
-  return /** @type {!proto.InsertSimpleDictionary} */ (jspb.Message.cloneMessage(this));
+proto.management_app.config.set.InsertSimpleDictionary.prototype.cloneMessage = function() {
+  return /** @type {!proto.management_app.config.set.InsertSimpleDictionary} */ (jspb.Message.cloneMessage(this));
 };
 
 
 /**
  * optional SimpleDictionaryUpdateTarget target = 1;
- * @return {proto.SimpleDictionaryUpdateTarget}
+ * @return {proto.management_app.config.set.SimpleDictionaryUpdateTarget}
  */
-proto.InsertSimpleDictionary.prototype.getTarget = function() {
-  return /** @type{proto.SimpleDictionaryUpdateTarget} */ (
-    jspb.Message.getWrapperField(this, proto.SimpleDictionaryUpdateTarget, 1));
+proto.management_app.config.set.InsertSimpleDictionary.prototype.getTarget = function() {
+  return /** @type{proto.management_app.config.set.SimpleDictionaryUpdateTarget} */ (
+    jspb.Message.getWrapperField(this, proto.management_app.config.set.SimpleDictionaryUpdateTarget, 1));
 };
 
 
-/** @param {proto.SimpleDictionaryUpdateTarget|undefined} value  */
-proto.InsertSimpleDictionary.prototype.setTarget = function(value) {
+/** @param {proto.management_app.config.set.SimpleDictionaryUpdateTarget|undefined} value  */
+proto.management_app.config.set.InsertSimpleDictionary.prototype.setTarget = function(value) {
   jspb.Message.setWrapperField(this, 1, value);
 };
 
 
-proto.InsertSimpleDictionary.prototype.clearTarget = function() {
+proto.management_app.config.set.InsertSimpleDictionary.prototype.clearTarget = function() {
   this.setTarget(undefined);
 };
 
@@ -6662,28 +6662,28 @@ proto.InsertSimpleDictionary.prototype.clearTarget = function() {
  * Returns whether this field is set.
  * @return{!boolean}
  */
-proto.InsertSimpleDictionary.prototype.hasTarget = function() {
+proto.management_app.config.set.InsertSimpleDictionary.prototype.hasTarget = function() {
   return jspb.Message.getField(this, 1) != null;
 };
 
 
 /**
- * optional config.DictionaryEntryB value = 2;
- * @return {proto.config.DictionaryEntryB}
+ * optional management_app.config.common.DictionaryEntryB value = 2;
+ * @return {proto.management_app.config.common.DictionaryEntryB}
  */
-proto.InsertSimpleDictionary.prototype.getValue = function() {
-  return /** @type{proto.config.DictionaryEntryB} */ (
+proto.management_app.config.set.InsertSimpleDictionary.prototype.getValue = function() {
+  return /** @type{proto.management_app.config.common.DictionaryEntryB} */ (
     jspb.Message.getWrapperField(this, config_pb.DictionaryEntryB, 2));
 };
 
 
-/** @param {proto.config.DictionaryEntryB|undefined} value  */
-proto.InsertSimpleDictionary.prototype.setValue = function(value) {
+/** @param {proto.management_app.config.common.DictionaryEntryB|undefined} value  */
+proto.management_app.config.set.InsertSimpleDictionary.prototype.setValue = function(value) {
   jspb.Message.setWrapperField(this, 2, value);
 };
 
 
-proto.InsertSimpleDictionary.prototype.clearValue = function() {
+proto.management_app.config.set.InsertSimpleDictionary.prototype.clearValue = function() {
   this.setValue(undefined);
 };
 
@@ -6692,7 +6692,7 @@ proto.InsertSimpleDictionary.prototype.clearValue = function() {
  * Returns whether this field is set.
  * @return{!boolean}
  */
-proto.InsertSimpleDictionary.prototype.hasValue = function() {
+proto.management_app.config.set.InsertSimpleDictionary.prototype.hasValue = function() {
   return jspb.Message.getField(this, 2) != null;
 };
 
@@ -6708,12 +6708,12 @@ proto.InsertSimpleDictionary.prototype.hasValue = function() {
  * @extends {jspb.Message}
  * @constructor
  */
-proto.AddSimpleDictionary = function(opt_data) {
+proto.management_app.config.set.AddSimpleDictionary = function(opt_data) {
   jspb.Message.initialize(this, opt_data, 0, -1, null, null);
 };
-goog.inherits(proto.AddSimpleDictionary, jspb.Message);
+goog.inherits(proto.management_app.config.set.AddSimpleDictionary, jspb.Message);
 if (goog.DEBUG && !COMPILED) {
-  proto.AddSimpleDictionary.displayName = 'proto.AddSimpleDictionary';
+  proto.management_app.config.set.AddSimpleDictionary.displayName = 'proto.management_app.config.set.AddSimpleDictionary';
 }
 
 
@@ -6728,8 +6728,8 @@ if (jspb.Message.GENERATE_TO_OBJECT) {
  *     for transitional soy proto support: http://goto/soy-param-migration
  * @return {!Object}
  */
-proto.AddSimpleDictionary.prototype.toObject = function(opt_includeInstance) {
-  return proto.AddSimpleDictionary.toObject(opt_includeInstance, this);
+proto.management_app.config.set.AddSimpleDictionary.prototype.toObject = function(opt_includeInstance) {
+  return proto.management_app.config.set.AddSimpleDictionary.toObject(opt_includeInstance, this);
 };
 
 
@@ -6738,12 +6738,12 @@ proto.AddSimpleDictionary.prototype.toObject = function(opt_includeInstance) {
  * @param {boolean|undefined} includeInstance Whether to include the JSPB
  *     instance for transitional soy proto support:
  *     http://goto/soy-param-migration
- * @param {!proto.AddSimpleDictionary} msg The msg instance to transform.
+ * @param {!proto.management_app.config.set.AddSimpleDictionary} msg The msg instance to transform.
  * @return {!Object}
  */
-proto.AddSimpleDictionary.toObject = function(includeInstance, msg) {
+proto.management_app.config.set.AddSimpleDictionary.toObject = function(includeInstance, msg) {
   var f, obj = {
-    target: (f = msg.getTarget()) && proto.SimpleDictionaryUpdateTarget.toObject(includeInstance, f),
+    target: (f = msg.getTarget()) && proto.management_app.config.set.SimpleDictionaryUpdateTarget.toObject(includeInstance, f),
     from: msg.getFrom(),
     to: msg.getTo()
   };
@@ -6759,23 +6759,23 @@ proto.AddSimpleDictionary.toObject = function(includeInstance, msg) {
 /**
  * Deserializes binary data (in protobuf wire format).
  * @param {jspb.ByteSource} bytes The bytes to deserialize.
- * @return {!proto.AddSimpleDictionary}
+ * @return {!proto.management_app.config.set.AddSimpleDictionary}
  */
-proto.AddSimpleDictionary.deserializeBinary = function(bytes) {
+proto.management_app.config.set.AddSimpleDictionary.deserializeBinary = function(bytes) {
   var reader = new jspb.BinaryReader(bytes);
-  var msg = new proto.AddSimpleDictionary;
-  return proto.AddSimpleDictionary.deserializeBinaryFromReader(msg, reader);
+  var msg = new proto.management_app.config.set.AddSimpleDictionary;
+  return proto.management_app.config.set.AddSimpleDictionary.deserializeBinaryFromReader(msg, reader);
 };
 
 
 /**
  * Deserializes binary data (in protobuf wire format) from the
  * given reader into the given message object.
- * @param {!proto.AddSimpleDictionary} msg The message object to deserialize into.
+ * @param {!proto.management_app.config.set.AddSimpleDictionary} msg The message object to deserialize into.
  * @param {!jspb.BinaryReader} reader The BinaryReader to use.
- * @return {!proto.AddSimpleDictionary}
+ * @return {!proto.management_app.config.set.AddSimpleDictionary}
  */
-proto.AddSimpleDictionary.deserializeBinaryFromReader = function(msg, reader) {
+proto.management_app.config.set.AddSimpleDictionary.deserializeBinaryFromReader = function(msg, reader) {
   while (reader.nextField()) {
     if (reader.isEndGroup()) {
       break;
@@ -6783,8 +6783,8 @@ proto.AddSimpleDictionary.deserializeBinaryFromReader = function(msg, reader) {
     var field = reader.getFieldNumber();
     switch (field) {
     case 1:
-      var value = new proto.SimpleDictionaryUpdateTarget;
-      reader.readMessage(value,proto.SimpleDictionaryUpdateTarget.deserializeBinaryFromReader);
+      var value = new proto.management_app.config.set.SimpleDictionaryUpdateTarget;
+      reader.readMessage(value,proto.management_app.config.set.SimpleDictionaryUpdateTarget.deserializeBinaryFromReader);
       msg.setTarget(value);
       break;
     case 2:
@@ -6807,10 +6807,10 @@ proto.AddSimpleDictionary.deserializeBinaryFromReader = function(msg, reader) {
 /**
  * Class method variant: serializes the given message to binary data
  * (in protobuf wire format), writing to the given BinaryWriter.
- * @param {!proto.AddSimpleDictionary} message
+ * @param {!proto.management_app.config.set.AddSimpleDictionary} message
  * @param {!jspb.BinaryWriter} writer
  */
-proto.AddSimpleDictionary.serializeBinaryToWriter = function(message, writer) {
+proto.management_app.config.set.AddSimpleDictionary.serializeBinaryToWriter = function(message, writer) {
   message.serializeBinaryToWriter(writer);
 };
 
@@ -6819,7 +6819,7 @@ proto.AddSimpleDictionary.serializeBinaryToWriter = function(message, writer) {
  * Serializes the message to binary data (in protobuf wire format).
  * @return {!Uint8Array}
  */
-proto.AddSimpleDictionary.prototype.serializeBinary = function() {
+proto.management_app.config.set.AddSimpleDictionary.prototype.serializeBinary = function() {
   var writer = new jspb.BinaryWriter();
   this.serializeBinaryToWriter(writer);
   return writer.getResultBuffer();
@@ -6831,14 +6831,14 @@ proto.AddSimpleDictionary.prototype.serializeBinary = function() {
  * writing to the given BinaryWriter.
  * @param {!jspb.BinaryWriter} writer
  */
-proto.AddSimpleDictionary.prototype.serializeBinaryToWriter = function (writer) {
+proto.management_app.config.set.AddSimpleDictionary.prototype.serializeBinaryToWriter = function (writer) {
   var f = undefined;
   f = this.getTarget();
   if (f != null) {
     writer.writeMessage(
       1,
       f,
-      proto.SimpleDictionaryUpdateTarget.serializeBinaryToWriter
+      proto.management_app.config.set.SimpleDictionaryUpdateTarget.serializeBinaryToWriter
     );
   }
   f = this.getFrom();
@@ -6860,30 +6860,30 @@ proto.AddSimpleDictionary.prototype.serializeBinaryToWriter = function (writer) 
 
 /**
  * Creates a deep clone of this proto. No data is shared with the original.
- * @return {!proto.AddSimpleDictionary} The clone.
+ * @return {!proto.management_app.config.set.AddSimpleDictionary} The clone.
  */
-proto.AddSimpleDictionary.prototype.cloneMessage = function() {
-  return /** @type {!proto.AddSimpleDictionary} */ (jspb.Message.cloneMessage(this));
+proto.management_app.config.set.AddSimpleDictionary.prototype.cloneMessage = function() {
+  return /** @type {!proto.management_app.config.set.AddSimpleDictionary} */ (jspb.Message.cloneMessage(this));
 };
 
 
 /**
  * optional SimpleDictionaryUpdateTarget target = 1;
- * @return {proto.SimpleDictionaryUpdateTarget}
+ * @return {proto.management_app.config.set.SimpleDictionaryUpdateTarget}
  */
-proto.AddSimpleDictionary.prototype.getTarget = function() {
-  return /** @type{proto.SimpleDictionaryUpdateTarget} */ (
-    jspb.Message.getWrapperField(this, proto.SimpleDictionaryUpdateTarget, 1));
+proto.management_app.config.set.AddSimpleDictionary.prototype.getTarget = function() {
+  return /** @type{proto.management_app.config.set.SimpleDictionaryUpdateTarget} */ (
+    jspb.Message.getWrapperField(this, proto.management_app.config.set.SimpleDictionaryUpdateTarget, 1));
 };
 
 
-/** @param {proto.SimpleDictionaryUpdateTarget|undefined} value  */
-proto.AddSimpleDictionary.prototype.setTarget = function(value) {
+/** @param {proto.management_app.config.set.SimpleDictionaryUpdateTarget|undefined} value  */
+proto.management_app.config.set.AddSimpleDictionary.prototype.setTarget = function(value) {
   jspb.Message.setWrapperField(this, 1, value);
 };
 
 
-proto.AddSimpleDictionary.prototype.clearTarget = function() {
+proto.management_app.config.set.AddSimpleDictionary.prototype.clearTarget = function() {
   this.setTarget(undefined);
 };
 
@@ -6892,7 +6892,7 @@ proto.AddSimpleDictionary.prototype.clearTarget = function() {
  * Returns whether this field is set.
  * @return{!boolean}
  */
-proto.AddSimpleDictionary.prototype.hasTarget = function() {
+proto.management_app.config.set.AddSimpleDictionary.prototype.hasTarget = function() {
   return jspb.Message.getField(this, 1) != null;
 };
 
@@ -6901,13 +6901,13 @@ proto.AddSimpleDictionary.prototype.hasTarget = function() {
  * optional string from = 2;
  * @return {string}
  */
-proto.AddSimpleDictionary.prototype.getFrom = function() {
+proto.management_app.config.set.AddSimpleDictionary.prototype.getFrom = function() {
   return /** @type {string} */ (jspb.Message.getFieldProto3(this, 2, ""));
 };
 
 
 /** @param {string} value  */
-proto.AddSimpleDictionary.prototype.setFrom = function(value) {
+proto.management_app.config.set.AddSimpleDictionary.prototype.setFrom = function(value) {
   jspb.Message.setField(this, 2, value);
 };
 
@@ -6916,13 +6916,13 @@ proto.AddSimpleDictionary.prototype.setFrom = function(value) {
  * optional string to = 3;
  * @return {string}
  */
-proto.AddSimpleDictionary.prototype.getTo = function() {
+proto.management_app.config.set.AddSimpleDictionary.prototype.getTo = function() {
   return /** @type {string} */ (jspb.Message.getFieldProto3(this, 3, ""));
 };
 
 
 /** @param {string} value  */
-proto.AddSimpleDictionary.prototype.setTo = function(value) {
+proto.management_app.config.set.AddSimpleDictionary.prototype.setTo = function(value) {
   jspb.Message.setField(this, 3, value);
 };
 
@@ -6938,12 +6938,12 @@ proto.AddSimpleDictionary.prototype.setTo = function(value) {
  * @extends {jspb.Message}
  * @constructor
  */
-proto.RemoveSimpleDictionary = function(opt_data) {
+proto.management_app.config.set.RemoveSimpleDictionary = function(opt_data) {
   jspb.Message.initialize(this, opt_data, 0, -1, null, null);
 };
-goog.inherits(proto.RemoveSimpleDictionary, jspb.Message);
+goog.inherits(proto.management_app.config.set.RemoveSimpleDictionary, jspb.Message);
 if (goog.DEBUG && !COMPILED) {
-  proto.RemoveSimpleDictionary.displayName = 'proto.RemoveSimpleDictionary';
+  proto.management_app.config.set.RemoveSimpleDictionary.displayName = 'proto.management_app.config.set.RemoveSimpleDictionary';
 }
 
 
@@ -6958,8 +6958,8 @@ if (jspb.Message.GENERATE_TO_OBJECT) {
  *     for transitional soy proto support: http://goto/soy-param-migration
  * @return {!Object}
  */
-proto.RemoveSimpleDictionary.prototype.toObject = function(opt_includeInstance) {
-  return proto.RemoveSimpleDictionary.toObject(opt_includeInstance, this);
+proto.management_app.config.set.RemoveSimpleDictionary.prototype.toObject = function(opt_includeInstance) {
+  return proto.management_app.config.set.RemoveSimpleDictionary.toObject(opt_includeInstance, this);
 };
 
 
@@ -6968,12 +6968,12 @@ proto.RemoveSimpleDictionary.prototype.toObject = function(opt_includeInstance) 
  * @param {boolean|undefined} includeInstance Whether to include the JSPB
  *     instance for transitional soy proto support:
  *     http://goto/soy-param-migration
- * @param {!proto.RemoveSimpleDictionary} msg The msg instance to transform.
+ * @param {!proto.management_app.config.set.RemoveSimpleDictionary} msg The msg instance to transform.
  * @return {!Object}
  */
-proto.RemoveSimpleDictionary.toObject = function(includeInstance, msg) {
+proto.management_app.config.set.RemoveSimpleDictionary.toObject = function(includeInstance, msg) {
   var f, obj = {
-    target: (f = msg.getTarget()) && proto.SimpleDictionaryUpdateTarget.toObject(includeInstance, f),
+    target: (f = msg.getTarget()) && proto.management_app.config.set.SimpleDictionaryUpdateTarget.toObject(includeInstance, f),
     index: msg.getIndex()
   };
 
@@ -6988,23 +6988,23 @@ proto.RemoveSimpleDictionary.toObject = function(includeInstance, msg) {
 /**
  * Deserializes binary data (in protobuf wire format).
  * @param {jspb.ByteSource} bytes The bytes to deserialize.
- * @return {!proto.RemoveSimpleDictionary}
+ * @return {!proto.management_app.config.set.RemoveSimpleDictionary}
  */
-proto.RemoveSimpleDictionary.deserializeBinary = function(bytes) {
+proto.management_app.config.set.RemoveSimpleDictionary.deserializeBinary = function(bytes) {
   var reader = new jspb.BinaryReader(bytes);
-  var msg = new proto.RemoveSimpleDictionary;
-  return proto.RemoveSimpleDictionary.deserializeBinaryFromReader(msg, reader);
+  var msg = new proto.management_app.config.set.RemoveSimpleDictionary;
+  return proto.management_app.config.set.RemoveSimpleDictionary.deserializeBinaryFromReader(msg, reader);
 };
 
 
 /**
  * Deserializes binary data (in protobuf wire format) from the
  * given reader into the given message object.
- * @param {!proto.RemoveSimpleDictionary} msg The message object to deserialize into.
+ * @param {!proto.management_app.config.set.RemoveSimpleDictionary} msg The message object to deserialize into.
  * @param {!jspb.BinaryReader} reader The BinaryReader to use.
- * @return {!proto.RemoveSimpleDictionary}
+ * @return {!proto.management_app.config.set.RemoveSimpleDictionary}
  */
-proto.RemoveSimpleDictionary.deserializeBinaryFromReader = function(msg, reader) {
+proto.management_app.config.set.RemoveSimpleDictionary.deserializeBinaryFromReader = function(msg, reader) {
   while (reader.nextField()) {
     if (reader.isEndGroup()) {
       break;
@@ -7012,8 +7012,8 @@ proto.RemoveSimpleDictionary.deserializeBinaryFromReader = function(msg, reader)
     var field = reader.getFieldNumber();
     switch (field) {
     case 1:
-      var value = new proto.SimpleDictionaryUpdateTarget;
-      reader.readMessage(value,proto.SimpleDictionaryUpdateTarget.deserializeBinaryFromReader);
+      var value = new proto.management_app.config.set.SimpleDictionaryUpdateTarget;
+      reader.readMessage(value,proto.management_app.config.set.SimpleDictionaryUpdateTarget.deserializeBinaryFromReader);
       msg.setTarget(value);
       break;
     case 2:
@@ -7032,10 +7032,10 @@ proto.RemoveSimpleDictionary.deserializeBinaryFromReader = function(msg, reader)
 /**
  * Class method variant: serializes the given message to binary data
  * (in protobuf wire format), writing to the given BinaryWriter.
- * @param {!proto.RemoveSimpleDictionary} message
+ * @param {!proto.management_app.config.set.RemoveSimpleDictionary} message
  * @param {!jspb.BinaryWriter} writer
  */
-proto.RemoveSimpleDictionary.serializeBinaryToWriter = function(message, writer) {
+proto.management_app.config.set.RemoveSimpleDictionary.serializeBinaryToWriter = function(message, writer) {
   message.serializeBinaryToWriter(writer);
 };
 
@@ -7044,7 +7044,7 @@ proto.RemoveSimpleDictionary.serializeBinaryToWriter = function(message, writer)
  * Serializes the message to binary data (in protobuf wire format).
  * @return {!Uint8Array}
  */
-proto.RemoveSimpleDictionary.prototype.serializeBinary = function() {
+proto.management_app.config.set.RemoveSimpleDictionary.prototype.serializeBinary = function() {
   var writer = new jspb.BinaryWriter();
   this.serializeBinaryToWriter(writer);
   return writer.getResultBuffer();
@@ -7056,14 +7056,14 @@ proto.RemoveSimpleDictionary.prototype.serializeBinary = function() {
  * writing to the given BinaryWriter.
  * @param {!jspb.BinaryWriter} writer
  */
-proto.RemoveSimpleDictionary.prototype.serializeBinaryToWriter = function (writer) {
+proto.management_app.config.set.RemoveSimpleDictionary.prototype.serializeBinaryToWriter = function (writer) {
   var f = undefined;
   f = this.getTarget();
   if (f != null) {
     writer.writeMessage(
       1,
       f,
-      proto.SimpleDictionaryUpdateTarget.serializeBinaryToWriter
+      proto.management_app.config.set.SimpleDictionaryUpdateTarget.serializeBinaryToWriter
     );
   }
   f = this.getIndex();
@@ -7078,30 +7078,30 @@ proto.RemoveSimpleDictionary.prototype.serializeBinaryToWriter = function (write
 
 /**
  * Creates a deep clone of this proto. No data is shared with the original.
- * @return {!proto.RemoveSimpleDictionary} The clone.
+ * @return {!proto.management_app.config.set.RemoveSimpleDictionary} The clone.
  */
-proto.RemoveSimpleDictionary.prototype.cloneMessage = function() {
-  return /** @type {!proto.RemoveSimpleDictionary} */ (jspb.Message.cloneMessage(this));
+proto.management_app.config.set.RemoveSimpleDictionary.prototype.cloneMessage = function() {
+  return /** @type {!proto.management_app.config.set.RemoveSimpleDictionary} */ (jspb.Message.cloneMessage(this));
 };
 
 
 /**
  * optional SimpleDictionaryUpdateTarget target = 1;
- * @return {proto.SimpleDictionaryUpdateTarget}
+ * @return {proto.management_app.config.set.SimpleDictionaryUpdateTarget}
  */
-proto.RemoveSimpleDictionary.prototype.getTarget = function() {
-  return /** @type{proto.SimpleDictionaryUpdateTarget} */ (
-    jspb.Message.getWrapperField(this, proto.SimpleDictionaryUpdateTarget, 1));
+proto.management_app.config.set.RemoveSimpleDictionary.prototype.getTarget = function() {
+  return /** @type{proto.management_app.config.set.SimpleDictionaryUpdateTarget} */ (
+    jspb.Message.getWrapperField(this, proto.management_app.config.set.SimpleDictionaryUpdateTarget, 1));
 };
 
 
-/** @param {proto.SimpleDictionaryUpdateTarget|undefined} value  */
-proto.RemoveSimpleDictionary.prototype.setTarget = function(value) {
+/** @param {proto.management_app.config.set.SimpleDictionaryUpdateTarget|undefined} value  */
+proto.management_app.config.set.RemoveSimpleDictionary.prototype.setTarget = function(value) {
   jspb.Message.setWrapperField(this, 1, value);
 };
 
 
-proto.RemoveSimpleDictionary.prototype.clearTarget = function() {
+proto.management_app.config.set.RemoveSimpleDictionary.prototype.clearTarget = function() {
   this.setTarget(undefined);
 };
 
@@ -7110,7 +7110,7 @@ proto.RemoveSimpleDictionary.prototype.clearTarget = function() {
  * Returns whether this field is set.
  * @return{!boolean}
  */
-proto.RemoveSimpleDictionary.prototype.hasTarget = function() {
+proto.management_app.config.set.RemoveSimpleDictionary.prototype.hasTarget = function() {
   return jspb.Message.getField(this, 1) != null;
 };
 
@@ -7119,13 +7119,13 @@ proto.RemoveSimpleDictionary.prototype.hasTarget = function() {
  * optional uint32 index = 2;
  * @return {number}
  */
-proto.RemoveSimpleDictionary.prototype.getIndex = function() {
+proto.management_app.config.set.RemoveSimpleDictionary.prototype.getIndex = function() {
   return /** @type {number} */ (jspb.Message.getFieldProto3(this, 2, 0));
 };
 
 
 /** @param {number} value  */
-proto.RemoveSimpleDictionary.prototype.setIndex = function(value) {
+proto.management_app.config.set.RemoveSimpleDictionary.prototype.setIndex = function(value) {
   jspb.Message.setField(this, 2, value);
 };
 
@@ -7141,12 +7141,12 @@ proto.RemoveSimpleDictionary.prototype.setIndex = function(value) {
  * @extends {jspb.Message}
  * @constructor
  */
-proto.UpdateResultDictionaryEntryBOk = function(opt_data) {
-  jspb.Message.initialize(this, opt_data, 0, -1, null, proto.UpdateResultDictionaryEntryBOk.oneofGroups_);
+proto.management_app.config.set.UpdateResultDictionaryEntryBOk = function(opt_data) {
+  jspb.Message.initialize(this, opt_data, 0, -1, null, proto.management_app.config.set.UpdateResultDictionaryEntryBOk.oneofGroups_);
 };
-goog.inherits(proto.UpdateResultDictionaryEntryBOk, jspb.Message);
+goog.inherits(proto.management_app.config.set.UpdateResultDictionaryEntryBOk, jspb.Message);
 if (goog.DEBUG && !COMPILED) {
-  proto.UpdateResultDictionaryEntryBOk.displayName = 'proto.UpdateResultDictionaryEntryBOk';
+  proto.management_app.config.set.UpdateResultDictionaryEntryBOk.displayName = 'proto.management_app.config.set.UpdateResultDictionaryEntryBOk';
 }
 /**
  * Oneof group definitions for this message. Each group defines the field
@@ -7156,36 +7156,36 @@ if (goog.DEBUG && !COMPILED) {
  * @private {!Array<!Array<number>>}
  * @const
  */
-proto.UpdateResultDictionaryEntryBOk.oneofGroups_ = [[1],[2]];
+proto.management_app.config.set.UpdateResultDictionaryEntryBOk.oneofGroups_ = [[1],[2]];
 
 /**
  * @enum {number}
  */
-proto.UpdateResultDictionaryEntryBOk.BeforeOptionalCase = {
+proto.management_app.config.set.UpdateResultDictionaryEntryBOk.BeforeOptionalCase = {
   BEFORE_OPTIONAL_NOT_SET: 0,
   BEFORE: 1
 };
 
 /**
- * @return {proto.UpdateResultDictionaryEntryBOk.BeforeOptionalCase}
+ * @return {proto.management_app.config.set.UpdateResultDictionaryEntryBOk.BeforeOptionalCase}
  */
-proto.UpdateResultDictionaryEntryBOk.prototype.getBeforeOptionalCase = function() {
-  return /** @type {proto.UpdateResultDictionaryEntryBOk.BeforeOptionalCase} */(jspb.Message.computeOneofCase(this, proto.UpdateResultDictionaryEntryBOk.oneofGroups_[0]));
+proto.management_app.config.set.UpdateResultDictionaryEntryBOk.prototype.getBeforeOptionalCase = function() {
+  return /** @type {proto.management_app.config.set.UpdateResultDictionaryEntryBOk.BeforeOptionalCase} */(jspb.Message.computeOneofCase(this, proto.management_app.config.set.UpdateResultDictionaryEntryBOk.oneofGroups_[0]));
 };
 
 /**
  * @enum {number}
  */
-proto.UpdateResultDictionaryEntryBOk.AfterOptionalCase = {
+proto.management_app.config.set.UpdateResultDictionaryEntryBOk.AfterOptionalCase = {
   AFTER_OPTIONAL_NOT_SET: 0,
   AFTER: 2
 };
 
 /**
- * @return {proto.UpdateResultDictionaryEntryBOk.AfterOptionalCase}
+ * @return {proto.management_app.config.set.UpdateResultDictionaryEntryBOk.AfterOptionalCase}
  */
-proto.UpdateResultDictionaryEntryBOk.prototype.getAfterOptionalCase = function() {
-  return /** @type {proto.UpdateResultDictionaryEntryBOk.AfterOptionalCase} */(jspb.Message.computeOneofCase(this, proto.UpdateResultDictionaryEntryBOk.oneofGroups_[1]));
+proto.management_app.config.set.UpdateResultDictionaryEntryBOk.prototype.getAfterOptionalCase = function() {
+  return /** @type {proto.management_app.config.set.UpdateResultDictionaryEntryBOk.AfterOptionalCase} */(jspb.Message.computeOneofCase(this, proto.management_app.config.set.UpdateResultDictionaryEntryBOk.oneofGroups_[1]));
 };
 
 
@@ -7201,8 +7201,8 @@ if (jspb.Message.GENERATE_TO_OBJECT) {
  *     for transitional soy proto support: http://goto/soy-param-migration
  * @return {!Object}
  */
-proto.UpdateResultDictionaryEntryBOk.prototype.toObject = function(opt_includeInstance) {
-  return proto.UpdateResultDictionaryEntryBOk.toObject(opt_includeInstance, this);
+proto.management_app.config.set.UpdateResultDictionaryEntryBOk.prototype.toObject = function(opt_includeInstance) {
+  return proto.management_app.config.set.UpdateResultDictionaryEntryBOk.toObject(opt_includeInstance, this);
 };
 
 
@@ -7211,10 +7211,10 @@ proto.UpdateResultDictionaryEntryBOk.prototype.toObject = function(opt_includeIn
  * @param {boolean|undefined} includeInstance Whether to include the JSPB
  *     instance for transitional soy proto support:
  *     http://goto/soy-param-migration
- * @param {!proto.UpdateResultDictionaryEntryBOk} msg The msg instance to transform.
+ * @param {!proto.management_app.config.set.UpdateResultDictionaryEntryBOk} msg The msg instance to transform.
  * @return {!Object}
  */
-proto.UpdateResultDictionaryEntryBOk.toObject = function(includeInstance, msg) {
+proto.management_app.config.set.UpdateResultDictionaryEntryBOk.toObject = function(includeInstance, msg) {
   var f, obj = {
     before: (f = msg.getBefore()) && config_pb.DictionaryEntryB.toObject(includeInstance, f),
     after: (f = msg.getAfter()) && config_pb.DictionaryEntryB.toObject(includeInstance, f)
@@ -7231,23 +7231,23 @@ proto.UpdateResultDictionaryEntryBOk.toObject = function(includeInstance, msg) {
 /**
  * Deserializes binary data (in protobuf wire format).
  * @param {jspb.ByteSource} bytes The bytes to deserialize.
- * @return {!proto.UpdateResultDictionaryEntryBOk}
+ * @return {!proto.management_app.config.set.UpdateResultDictionaryEntryBOk}
  */
-proto.UpdateResultDictionaryEntryBOk.deserializeBinary = function(bytes) {
+proto.management_app.config.set.UpdateResultDictionaryEntryBOk.deserializeBinary = function(bytes) {
   var reader = new jspb.BinaryReader(bytes);
-  var msg = new proto.UpdateResultDictionaryEntryBOk;
-  return proto.UpdateResultDictionaryEntryBOk.deserializeBinaryFromReader(msg, reader);
+  var msg = new proto.management_app.config.set.UpdateResultDictionaryEntryBOk;
+  return proto.management_app.config.set.UpdateResultDictionaryEntryBOk.deserializeBinaryFromReader(msg, reader);
 };
 
 
 /**
  * Deserializes binary data (in protobuf wire format) from the
  * given reader into the given message object.
- * @param {!proto.UpdateResultDictionaryEntryBOk} msg The message object to deserialize into.
+ * @param {!proto.management_app.config.set.UpdateResultDictionaryEntryBOk} msg The message object to deserialize into.
  * @param {!jspb.BinaryReader} reader The BinaryReader to use.
- * @return {!proto.UpdateResultDictionaryEntryBOk}
+ * @return {!proto.management_app.config.set.UpdateResultDictionaryEntryBOk}
  */
-proto.UpdateResultDictionaryEntryBOk.deserializeBinaryFromReader = function(msg, reader) {
+proto.management_app.config.set.UpdateResultDictionaryEntryBOk.deserializeBinaryFromReader = function(msg, reader) {
   while (reader.nextField()) {
     if (reader.isEndGroup()) {
       break;
@@ -7276,10 +7276,10 @@ proto.UpdateResultDictionaryEntryBOk.deserializeBinaryFromReader = function(msg,
 /**
  * Class method variant: serializes the given message to binary data
  * (in protobuf wire format), writing to the given BinaryWriter.
- * @param {!proto.UpdateResultDictionaryEntryBOk} message
+ * @param {!proto.management_app.config.set.UpdateResultDictionaryEntryBOk} message
  * @param {!jspb.BinaryWriter} writer
  */
-proto.UpdateResultDictionaryEntryBOk.serializeBinaryToWriter = function(message, writer) {
+proto.management_app.config.set.UpdateResultDictionaryEntryBOk.serializeBinaryToWriter = function(message, writer) {
   message.serializeBinaryToWriter(writer);
 };
 
@@ -7288,7 +7288,7 @@ proto.UpdateResultDictionaryEntryBOk.serializeBinaryToWriter = function(message,
  * Serializes the message to binary data (in protobuf wire format).
  * @return {!Uint8Array}
  */
-proto.UpdateResultDictionaryEntryBOk.prototype.serializeBinary = function() {
+proto.management_app.config.set.UpdateResultDictionaryEntryBOk.prototype.serializeBinary = function() {
   var writer = new jspb.BinaryWriter();
   this.serializeBinaryToWriter(writer);
   return writer.getResultBuffer();
@@ -7300,7 +7300,7 @@ proto.UpdateResultDictionaryEntryBOk.prototype.serializeBinary = function() {
  * writing to the given BinaryWriter.
  * @param {!jspb.BinaryWriter} writer
  */
-proto.UpdateResultDictionaryEntryBOk.prototype.serializeBinaryToWriter = function (writer) {
+proto.management_app.config.set.UpdateResultDictionaryEntryBOk.prototype.serializeBinaryToWriter = function (writer) {
   var f = undefined;
   f = this.getBefore();
   if (f != null) {
@@ -7323,30 +7323,30 @@ proto.UpdateResultDictionaryEntryBOk.prototype.serializeBinaryToWriter = functio
 
 /**
  * Creates a deep clone of this proto. No data is shared with the original.
- * @return {!proto.UpdateResultDictionaryEntryBOk} The clone.
+ * @return {!proto.management_app.config.set.UpdateResultDictionaryEntryBOk} The clone.
  */
-proto.UpdateResultDictionaryEntryBOk.prototype.cloneMessage = function() {
-  return /** @type {!proto.UpdateResultDictionaryEntryBOk} */ (jspb.Message.cloneMessage(this));
+proto.management_app.config.set.UpdateResultDictionaryEntryBOk.prototype.cloneMessage = function() {
+  return /** @type {!proto.management_app.config.set.UpdateResultDictionaryEntryBOk} */ (jspb.Message.cloneMessage(this));
 };
 
 
 /**
- * optional config.DictionaryEntryB before = 1;
- * @return {proto.config.DictionaryEntryB}
+ * optional management_app.config.common.DictionaryEntryB before = 1;
+ * @return {proto.management_app.config.common.DictionaryEntryB}
  */
-proto.UpdateResultDictionaryEntryBOk.prototype.getBefore = function() {
-  return /** @type{proto.config.DictionaryEntryB} */ (
+proto.management_app.config.set.UpdateResultDictionaryEntryBOk.prototype.getBefore = function() {
+  return /** @type{proto.management_app.config.common.DictionaryEntryB} */ (
     jspb.Message.getWrapperField(this, config_pb.DictionaryEntryB, 1));
 };
 
 
-/** @param {proto.config.DictionaryEntryB|undefined} value  */
-proto.UpdateResultDictionaryEntryBOk.prototype.setBefore = function(value) {
-  jspb.Message.setOneofWrapperField(this, 1, proto.UpdateResultDictionaryEntryBOk.oneofGroups_[0], value);
+/** @param {proto.management_app.config.common.DictionaryEntryB|undefined} value  */
+proto.management_app.config.set.UpdateResultDictionaryEntryBOk.prototype.setBefore = function(value) {
+  jspb.Message.setOneofWrapperField(this, 1, proto.management_app.config.set.UpdateResultDictionaryEntryBOk.oneofGroups_[0], value);
 };
 
 
-proto.UpdateResultDictionaryEntryBOk.prototype.clearBefore = function() {
+proto.management_app.config.set.UpdateResultDictionaryEntryBOk.prototype.clearBefore = function() {
   this.setBefore(undefined);
 };
 
@@ -7355,28 +7355,28 @@ proto.UpdateResultDictionaryEntryBOk.prototype.clearBefore = function() {
  * Returns whether this field is set.
  * @return{!boolean}
  */
-proto.UpdateResultDictionaryEntryBOk.prototype.hasBefore = function() {
+proto.management_app.config.set.UpdateResultDictionaryEntryBOk.prototype.hasBefore = function() {
   return jspb.Message.getField(this, 1) != null;
 };
 
 
 /**
- * optional config.DictionaryEntryB after = 2;
- * @return {proto.config.DictionaryEntryB}
+ * optional management_app.config.common.DictionaryEntryB after = 2;
+ * @return {proto.management_app.config.common.DictionaryEntryB}
  */
-proto.UpdateResultDictionaryEntryBOk.prototype.getAfter = function() {
-  return /** @type{proto.config.DictionaryEntryB} */ (
+proto.management_app.config.set.UpdateResultDictionaryEntryBOk.prototype.getAfter = function() {
+  return /** @type{proto.management_app.config.common.DictionaryEntryB} */ (
     jspb.Message.getWrapperField(this, config_pb.DictionaryEntryB, 2));
 };
 
 
-/** @param {proto.config.DictionaryEntryB|undefined} value  */
-proto.UpdateResultDictionaryEntryBOk.prototype.setAfter = function(value) {
-  jspb.Message.setOneofWrapperField(this, 2, proto.UpdateResultDictionaryEntryBOk.oneofGroups_[1], value);
+/** @param {proto.management_app.config.common.DictionaryEntryB|undefined} value  */
+proto.management_app.config.set.UpdateResultDictionaryEntryBOk.prototype.setAfter = function(value) {
+  jspb.Message.setOneofWrapperField(this, 2, proto.management_app.config.set.UpdateResultDictionaryEntryBOk.oneofGroups_[1], value);
 };
 
 
-proto.UpdateResultDictionaryEntryBOk.prototype.clearAfter = function() {
+proto.management_app.config.set.UpdateResultDictionaryEntryBOk.prototype.clearAfter = function() {
   this.setAfter(undefined);
 };
 
@@ -7385,7 +7385,7 @@ proto.UpdateResultDictionaryEntryBOk.prototype.clearAfter = function() {
  * Returns whether this field is set.
  * @return{!boolean}
  */
-proto.UpdateResultDictionaryEntryBOk.prototype.hasAfter = function() {
+proto.management_app.config.set.UpdateResultDictionaryEntryBOk.prototype.hasAfter = function() {
   return jspb.Message.getField(this, 2) != null;
 };
 
@@ -7401,12 +7401,12 @@ proto.UpdateResultDictionaryEntryBOk.prototype.hasAfter = function() {
  * @extends {jspb.Message}
  * @constructor
  */
-proto.UpdateResultDictionaryEntryBSame = function(opt_data) {
-  jspb.Message.initialize(this, opt_data, 0, -1, null, proto.UpdateResultDictionaryEntryBSame.oneofGroups_);
+proto.management_app.config.set.UpdateResultDictionaryEntryBSame = function(opt_data) {
+  jspb.Message.initialize(this, opt_data, 0, -1, null, proto.management_app.config.set.UpdateResultDictionaryEntryBSame.oneofGroups_);
 };
-goog.inherits(proto.UpdateResultDictionaryEntryBSame, jspb.Message);
+goog.inherits(proto.management_app.config.set.UpdateResultDictionaryEntryBSame, jspb.Message);
 if (goog.DEBUG && !COMPILED) {
-  proto.UpdateResultDictionaryEntryBSame.displayName = 'proto.UpdateResultDictionaryEntryBSame';
+  proto.management_app.config.set.UpdateResultDictionaryEntryBSame.displayName = 'proto.management_app.config.set.UpdateResultDictionaryEntryBSame';
 }
 /**
  * Oneof group definitions for this message. Each group defines the field
@@ -7416,21 +7416,21 @@ if (goog.DEBUG && !COMPILED) {
  * @private {!Array<!Array<number>>}
  * @const
  */
-proto.UpdateResultDictionaryEntryBSame.oneofGroups_ = [[1]];
+proto.management_app.config.set.UpdateResultDictionaryEntryBSame.oneofGroups_ = [[1]];
 
 /**
  * @enum {number}
  */
-proto.UpdateResultDictionaryEntryBSame.ValueOptionalCase = {
+proto.management_app.config.set.UpdateResultDictionaryEntryBSame.ValueOptionalCase = {
   VALUE_OPTIONAL_NOT_SET: 0,
   VALUE: 1
 };
 
 /**
- * @return {proto.UpdateResultDictionaryEntryBSame.ValueOptionalCase}
+ * @return {proto.management_app.config.set.UpdateResultDictionaryEntryBSame.ValueOptionalCase}
  */
-proto.UpdateResultDictionaryEntryBSame.prototype.getValueOptionalCase = function() {
-  return /** @type {proto.UpdateResultDictionaryEntryBSame.ValueOptionalCase} */(jspb.Message.computeOneofCase(this, proto.UpdateResultDictionaryEntryBSame.oneofGroups_[0]));
+proto.management_app.config.set.UpdateResultDictionaryEntryBSame.prototype.getValueOptionalCase = function() {
+  return /** @type {proto.management_app.config.set.UpdateResultDictionaryEntryBSame.ValueOptionalCase} */(jspb.Message.computeOneofCase(this, proto.management_app.config.set.UpdateResultDictionaryEntryBSame.oneofGroups_[0]));
 };
 
 
@@ -7446,8 +7446,8 @@ if (jspb.Message.GENERATE_TO_OBJECT) {
  *     for transitional soy proto support: http://goto/soy-param-migration
  * @return {!Object}
  */
-proto.UpdateResultDictionaryEntryBSame.prototype.toObject = function(opt_includeInstance) {
-  return proto.UpdateResultDictionaryEntryBSame.toObject(opt_includeInstance, this);
+proto.management_app.config.set.UpdateResultDictionaryEntryBSame.prototype.toObject = function(opt_includeInstance) {
+  return proto.management_app.config.set.UpdateResultDictionaryEntryBSame.toObject(opt_includeInstance, this);
 };
 
 
@@ -7456,10 +7456,10 @@ proto.UpdateResultDictionaryEntryBSame.prototype.toObject = function(opt_include
  * @param {boolean|undefined} includeInstance Whether to include the JSPB
  *     instance for transitional soy proto support:
  *     http://goto/soy-param-migration
- * @param {!proto.UpdateResultDictionaryEntryBSame} msg The msg instance to transform.
+ * @param {!proto.management_app.config.set.UpdateResultDictionaryEntryBSame} msg The msg instance to transform.
  * @return {!Object}
  */
-proto.UpdateResultDictionaryEntryBSame.toObject = function(includeInstance, msg) {
+proto.management_app.config.set.UpdateResultDictionaryEntryBSame.toObject = function(includeInstance, msg) {
   var f, obj = {
     value: (f = msg.getValue()) && config_pb.DictionaryEntryB.toObject(includeInstance, f)
   };
@@ -7475,23 +7475,23 @@ proto.UpdateResultDictionaryEntryBSame.toObject = function(includeInstance, msg)
 /**
  * Deserializes binary data (in protobuf wire format).
  * @param {jspb.ByteSource} bytes The bytes to deserialize.
- * @return {!proto.UpdateResultDictionaryEntryBSame}
+ * @return {!proto.management_app.config.set.UpdateResultDictionaryEntryBSame}
  */
-proto.UpdateResultDictionaryEntryBSame.deserializeBinary = function(bytes) {
+proto.management_app.config.set.UpdateResultDictionaryEntryBSame.deserializeBinary = function(bytes) {
   var reader = new jspb.BinaryReader(bytes);
-  var msg = new proto.UpdateResultDictionaryEntryBSame;
-  return proto.UpdateResultDictionaryEntryBSame.deserializeBinaryFromReader(msg, reader);
+  var msg = new proto.management_app.config.set.UpdateResultDictionaryEntryBSame;
+  return proto.management_app.config.set.UpdateResultDictionaryEntryBSame.deserializeBinaryFromReader(msg, reader);
 };
 
 
 /**
  * Deserializes binary data (in protobuf wire format) from the
  * given reader into the given message object.
- * @param {!proto.UpdateResultDictionaryEntryBSame} msg The message object to deserialize into.
+ * @param {!proto.management_app.config.set.UpdateResultDictionaryEntryBSame} msg The message object to deserialize into.
  * @param {!jspb.BinaryReader} reader The BinaryReader to use.
- * @return {!proto.UpdateResultDictionaryEntryBSame}
+ * @return {!proto.management_app.config.set.UpdateResultDictionaryEntryBSame}
  */
-proto.UpdateResultDictionaryEntryBSame.deserializeBinaryFromReader = function(msg, reader) {
+proto.management_app.config.set.UpdateResultDictionaryEntryBSame.deserializeBinaryFromReader = function(msg, reader) {
   while (reader.nextField()) {
     if (reader.isEndGroup()) {
       break;
@@ -7515,10 +7515,10 @@ proto.UpdateResultDictionaryEntryBSame.deserializeBinaryFromReader = function(ms
 /**
  * Class method variant: serializes the given message to binary data
  * (in protobuf wire format), writing to the given BinaryWriter.
- * @param {!proto.UpdateResultDictionaryEntryBSame} message
+ * @param {!proto.management_app.config.set.UpdateResultDictionaryEntryBSame} message
  * @param {!jspb.BinaryWriter} writer
  */
-proto.UpdateResultDictionaryEntryBSame.serializeBinaryToWriter = function(message, writer) {
+proto.management_app.config.set.UpdateResultDictionaryEntryBSame.serializeBinaryToWriter = function(message, writer) {
   message.serializeBinaryToWriter(writer);
 };
 
@@ -7527,7 +7527,7 @@ proto.UpdateResultDictionaryEntryBSame.serializeBinaryToWriter = function(messag
  * Serializes the message to binary data (in protobuf wire format).
  * @return {!Uint8Array}
  */
-proto.UpdateResultDictionaryEntryBSame.prototype.serializeBinary = function() {
+proto.management_app.config.set.UpdateResultDictionaryEntryBSame.prototype.serializeBinary = function() {
   var writer = new jspb.BinaryWriter();
   this.serializeBinaryToWriter(writer);
   return writer.getResultBuffer();
@@ -7539,7 +7539,7 @@ proto.UpdateResultDictionaryEntryBSame.prototype.serializeBinary = function() {
  * writing to the given BinaryWriter.
  * @param {!jspb.BinaryWriter} writer
  */
-proto.UpdateResultDictionaryEntryBSame.prototype.serializeBinaryToWriter = function (writer) {
+proto.management_app.config.set.UpdateResultDictionaryEntryBSame.prototype.serializeBinaryToWriter = function (writer) {
   var f = undefined;
   f = this.getValue();
   if (f != null) {
@@ -7554,30 +7554,30 @@ proto.UpdateResultDictionaryEntryBSame.prototype.serializeBinaryToWriter = funct
 
 /**
  * Creates a deep clone of this proto. No data is shared with the original.
- * @return {!proto.UpdateResultDictionaryEntryBSame} The clone.
+ * @return {!proto.management_app.config.set.UpdateResultDictionaryEntryBSame} The clone.
  */
-proto.UpdateResultDictionaryEntryBSame.prototype.cloneMessage = function() {
-  return /** @type {!proto.UpdateResultDictionaryEntryBSame} */ (jspb.Message.cloneMessage(this));
+proto.management_app.config.set.UpdateResultDictionaryEntryBSame.prototype.cloneMessage = function() {
+  return /** @type {!proto.management_app.config.set.UpdateResultDictionaryEntryBSame} */ (jspb.Message.cloneMessage(this));
 };
 
 
 /**
- * optional config.DictionaryEntryB value = 1;
- * @return {proto.config.DictionaryEntryB}
+ * optional management_app.config.common.DictionaryEntryB value = 1;
+ * @return {proto.management_app.config.common.DictionaryEntryB}
  */
-proto.UpdateResultDictionaryEntryBSame.prototype.getValue = function() {
-  return /** @type{proto.config.DictionaryEntryB} */ (
+proto.management_app.config.set.UpdateResultDictionaryEntryBSame.prototype.getValue = function() {
+  return /** @type{proto.management_app.config.common.DictionaryEntryB} */ (
     jspb.Message.getWrapperField(this, config_pb.DictionaryEntryB, 1));
 };
 
 
-/** @param {proto.config.DictionaryEntryB|undefined} value  */
-proto.UpdateResultDictionaryEntryBSame.prototype.setValue = function(value) {
-  jspb.Message.setOneofWrapperField(this, 1, proto.UpdateResultDictionaryEntryBSame.oneofGroups_[0], value);
+/** @param {proto.management_app.config.common.DictionaryEntryB|undefined} value  */
+proto.management_app.config.set.UpdateResultDictionaryEntryBSame.prototype.setValue = function(value) {
+  jspb.Message.setOneofWrapperField(this, 1, proto.management_app.config.set.UpdateResultDictionaryEntryBSame.oneofGroups_[0], value);
 };
 
 
-proto.UpdateResultDictionaryEntryBSame.prototype.clearValue = function() {
+proto.management_app.config.set.UpdateResultDictionaryEntryBSame.prototype.clearValue = function() {
   this.setValue(undefined);
 };
 
@@ -7586,7 +7586,7 @@ proto.UpdateResultDictionaryEntryBSame.prototype.clearValue = function() {
  * Returns whether this field is set.
  * @return{!boolean}
  */
-proto.UpdateResultDictionaryEntryBSame.prototype.hasValue = function() {
+proto.management_app.config.set.UpdateResultDictionaryEntryBSame.prototype.hasValue = function() {
   return jspb.Message.getField(this, 1) != null;
 };
 
@@ -7602,12 +7602,12 @@ proto.UpdateResultDictionaryEntryBSame.prototype.hasValue = function() {
  * @extends {jspb.Message}
  * @constructor
  */
-proto.UpdateResultDictionaryEntryB = function(opt_data) {
-  jspb.Message.initialize(this, opt_data, 0, -1, null, proto.UpdateResultDictionaryEntryB.oneofGroups_);
+proto.management_app.config.set.UpdateResultDictionaryEntryB = function(opt_data) {
+  jspb.Message.initialize(this, opt_data, 0, -1, null, proto.management_app.config.set.UpdateResultDictionaryEntryB.oneofGroups_);
 };
-goog.inherits(proto.UpdateResultDictionaryEntryB, jspb.Message);
+goog.inherits(proto.management_app.config.set.UpdateResultDictionaryEntryB, jspb.Message);
 if (goog.DEBUG && !COMPILED) {
-  proto.UpdateResultDictionaryEntryB.displayName = 'proto.UpdateResultDictionaryEntryB';
+  proto.management_app.config.set.UpdateResultDictionaryEntryB.displayName = 'proto.management_app.config.set.UpdateResultDictionaryEntryB';
 }
 /**
  * Oneof group definitions for this message. Each group defines the field
@@ -7617,12 +7617,12 @@ if (goog.DEBUG && !COMPILED) {
  * @private {!Array<!Array<number>>}
  * @const
  */
-proto.UpdateResultDictionaryEntryB.oneofGroups_ = [[1,2,3]];
+proto.management_app.config.set.UpdateResultDictionaryEntryB.oneofGroups_ = [[1,2,3]];
 
 /**
  * @enum {number}
  */
-proto.UpdateResultDictionaryEntryB.UpdateresultCase = {
+proto.management_app.config.set.UpdateResultDictionaryEntryB.UpdateresultCase = {
   UPDATERESULT_NOT_SET: 0,
   RESULTOK: 1,
   RESULTSAME: 2,
@@ -7630,10 +7630,10 @@ proto.UpdateResultDictionaryEntryB.UpdateresultCase = {
 };
 
 /**
- * @return {proto.UpdateResultDictionaryEntryB.UpdateresultCase}
+ * @return {proto.management_app.config.set.UpdateResultDictionaryEntryB.UpdateresultCase}
  */
-proto.UpdateResultDictionaryEntryB.prototype.getUpdateresultCase = function() {
-  return /** @type {proto.UpdateResultDictionaryEntryB.UpdateresultCase} */(jspb.Message.computeOneofCase(this, proto.UpdateResultDictionaryEntryB.oneofGroups_[0]));
+proto.management_app.config.set.UpdateResultDictionaryEntryB.prototype.getUpdateresultCase = function() {
+  return /** @type {proto.management_app.config.set.UpdateResultDictionaryEntryB.UpdateresultCase} */(jspb.Message.computeOneofCase(this, proto.management_app.config.set.UpdateResultDictionaryEntryB.oneofGroups_[0]));
 };
 
 
@@ -7649,8 +7649,8 @@ if (jspb.Message.GENERATE_TO_OBJECT) {
  *     for transitional soy proto support: http://goto/soy-param-migration
  * @return {!Object}
  */
-proto.UpdateResultDictionaryEntryB.prototype.toObject = function(opt_includeInstance) {
-  return proto.UpdateResultDictionaryEntryB.toObject(opt_includeInstance, this);
+proto.management_app.config.set.UpdateResultDictionaryEntryB.prototype.toObject = function(opt_includeInstance) {
+  return proto.management_app.config.set.UpdateResultDictionaryEntryB.toObject(opt_includeInstance, this);
 };
 
 
@@ -7659,14 +7659,14 @@ proto.UpdateResultDictionaryEntryB.prototype.toObject = function(opt_includeInst
  * @param {boolean|undefined} includeInstance Whether to include the JSPB
  *     instance for transitional soy proto support:
  *     http://goto/soy-param-migration
- * @param {!proto.UpdateResultDictionaryEntryB} msg The msg instance to transform.
+ * @param {!proto.management_app.config.set.UpdateResultDictionaryEntryB} msg The msg instance to transform.
  * @return {!Object}
  */
-proto.UpdateResultDictionaryEntryB.toObject = function(includeInstance, msg) {
+proto.management_app.config.set.UpdateResultDictionaryEntryB.toObject = function(includeInstance, msg) {
   var f, obj = {
-    resultok: (f = msg.getResultok()) && proto.UpdateResultDictionaryEntryBOk.toObject(includeInstance, f),
-    resultsame: (f = msg.getResultsame()) && proto.UpdateResultDictionaryEntryBSame.toObject(includeInstance, f),
-    error: (f = msg.getError()) && proto.UpdateResultError.toObject(includeInstance, f)
+    resultok: (f = msg.getResultok()) && proto.management_app.config.set.UpdateResultDictionaryEntryBOk.toObject(includeInstance, f),
+    resultsame: (f = msg.getResultsame()) && proto.management_app.config.set.UpdateResultDictionaryEntryBSame.toObject(includeInstance, f),
+    error: (f = msg.getError()) && proto.management_app.config.set.UpdateResultError.toObject(includeInstance, f)
   };
 
   if (includeInstance) {
@@ -7680,23 +7680,23 @@ proto.UpdateResultDictionaryEntryB.toObject = function(includeInstance, msg) {
 /**
  * Deserializes binary data (in protobuf wire format).
  * @param {jspb.ByteSource} bytes The bytes to deserialize.
- * @return {!proto.UpdateResultDictionaryEntryB}
+ * @return {!proto.management_app.config.set.UpdateResultDictionaryEntryB}
  */
-proto.UpdateResultDictionaryEntryB.deserializeBinary = function(bytes) {
+proto.management_app.config.set.UpdateResultDictionaryEntryB.deserializeBinary = function(bytes) {
   var reader = new jspb.BinaryReader(bytes);
-  var msg = new proto.UpdateResultDictionaryEntryB;
-  return proto.UpdateResultDictionaryEntryB.deserializeBinaryFromReader(msg, reader);
+  var msg = new proto.management_app.config.set.UpdateResultDictionaryEntryB;
+  return proto.management_app.config.set.UpdateResultDictionaryEntryB.deserializeBinaryFromReader(msg, reader);
 };
 
 
 /**
  * Deserializes binary data (in protobuf wire format) from the
  * given reader into the given message object.
- * @param {!proto.UpdateResultDictionaryEntryB} msg The message object to deserialize into.
+ * @param {!proto.management_app.config.set.UpdateResultDictionaryEntryB} msg The message object to deserialize into.
  * @param {!jspb.BinaryReader} reader The BinaryReader to use.
- * @return {!proto.UpdateResultDictionaryEntryB}
+ * @return {!proto.management_app.config.set.UpdateResultDictionaryEntryB}
  */
-proto.UpdateResultDictionaryEntryB.deserializeBinaryFromReader = function(msg, reader) {
+proto.management_app.config.set.UpdateResultDictionaryEntryB.deserializeBinaryFromReader = function(msg, reader) {
   while (reader.nextField()) {
     if (reader.isEndGroup()) {
       break;
@@ -7704,18 +7704,18 @@ proto.UpdateResultDictionaryEntryB.deserializeBinaryFromReader = function(msg, r
     var field = reader.getFieldNumber();
     switch (field) {
     case 1:
-      var value = new proto.UpdateResultDictionaryEntryBOk;
-      reader.readMessage(value,proto.UpdateResultDictionaryEntryBOk.deserializeBinaryFromReader);
+      var value = new proto.management_app.config.set.UpdateResultDictionaryEntryBOk;
+      reader.readMessage(value,proto.management_app.config.set.UpdateResultDictionaryEntryBOk.deserializeBinaryFromReader);
       msg.setResultok(value);
       break;
     case 2:
-      var value = new proto.UpdateResultDictionaryEntryBSame;
-      reader.readMessage(value,proto.UpdateResultDictionaryEntryBSame.deserializeBinaryFromReader);
+      var value = new proto.management_app.config.set.UpdateResultDictionaryEntryBSame;
+      reader.readMessage(value,proto.management_app.config.set.UpdateResultDictionaryEntryBSame.deserializeBinaryFromReader);
       msg.setResultsame(value);
       break;
     case 3:
-      var value = new proto.UpdateResultError;
-      reader.readMessage(value,proto.UpdateResultError.deserializeBinaryFromReader);
+      var value = new proto.management_app.config.set.UpdateResultError;
+      reader.readMessage(value,proto.management_app.config.set.UpdateResultError.deserializeBinaryFromReader);
       msg.setError(value);
       break;
     default:
@@ -7730,10 +7730,10 @@ proto.UpdateResultDictionaryEntryB.deserializeBinaryFromReader = function(msg, r
 /**
  * Class method variant: serializes the given message to binary data
  * (in protobuf wire format), writing to the given BinaryWriter.
- * @param {!proto.UpdateResultDictionaryEntryB} message
+ * @param {!proto.management_app.config.set.UpdateResultDictionaryEntryB} message
  * @param {!jspb.BinaryWriter} writer
  */
-proto.UpdateResultDictionaryEntryB.serializeBinaryToWriter = function(message, writer) {
+proto.management_app.config.set.UpdateResultDictionaryEntryB.serializeBinaryToWriter = function(message, writer) {
   message.serializeBinaryToWriter(writer);
 };
 
@@ -7742,7 +7742,7 @@ proto.UpdateResultDictionaryEntryB.serializeBinaryToWriter = function(message, w
  * Serializes the message to binary data (in protobuf wire format).
  * @return {!Uint8Array}
  */
-proto.UpdateResultDictionaryEntryB.prototype.serializeBinary = function() {
+proto.management_app.config.set.UpdateResultDictionaryEntryB.prototype.serializeBinary = function() {
   var writer = new jspb.BinaryWriter();
   this.serializeBinaryToWriter(writer);
   return writer.getResultBuffer();
@@ -7754,14 +7754,14 @@ proto.UpdateResultDictionaryEntryB.prototype.serializeBinary = function() {
  * writing to the given BinaryWriter.
  * @param {!jspb.BinaryWriter} writer
  */
-proto.UpdateResultDictionaryEntryB.prototype.serializeBinaryToWriter = function (writer) {
+proto.management_app.config.set.UpdateResultDictionaryEntryB.prototype.serializeBinaryToWriter = function (writer) {
   var f = undefined;
   f = this.getResultok();
   if (f != null) {
     writer.writeMessage(
       1,
       f,
-      proto.UpdateResultDictionaryEntryBOk.serializeBinaryToWriter
+      proto.management_app.config.set.UpdateResultDictionaryEntryBOk.serializeBinaryToWriter
     );
   }
   f = this.getResultsame();
@@ -7769,7 +7769,7 @@ proto.UpdateResultDictionaryEntryB.prototype.serializeBinaryToWriter = function 
     writer.writeMessage(
       2,
       f,
-      proto.UpdateResultDictionaryEntryBSame.serializeBinaryToWriter
+      proto.management_app.config.set.UpdateResultDictionaryEntryBSame.serializeBinaryToWriter
     );
   }
   f = this.getError();
@@ -7777,7 +7777,7 @@ proto.UpdateResultDictionaryEntryB.prototype.serializeBinaryToWriter = function 
     writer.writeMessage(
       3,
       f,
-      proto.UpdateResultError.serializeBinaryToWriter
+      proto.management_app.config.set.UpdateResultError.serializeBinaryToWriter
     );
   }
 };
@@ -7785,30 +7785,30 @@ proto.UpdateResultDictionaryEntryB.prototype.serializeBinaryToWriter = function 
 
 /**
  * Creates a deep clone of this proto. No data is shared with the original.
- * @return {!proto.UpdateResultDictionaryEntryB} The clone.
+ * @return {!proto.management_app.config.set.UpdateResultDictionaryEntryB} The clone.
  */
-proto.UpdateResultDictionaryEntryB.prototype.cloneMessage = function() {
-  return /** @type {!proto.UpdateResultDictionaryEntryB} */ (jspb.Message.cloneMessage(this));
+proto.management_app.config.set.UpdateResultDictionaryEntryB.prototype.cloneMessage = function() {
+  return /** @type {!proto.management_app.config.set.UpdateResultDictionaryEntryB} */ (jspb.Message.cloneMessage(this));
 };
 
 
 /**
  * optional UpdateResultDictionaryEntryBOk resultOk = 1;
- * @return {proto.UpdateResultDictionaryEntryBOk}
+ * @return {proto.management_app.config.set.UpdateResultDictionaryEntryBOk}
  */
-proto.UpdateResultDictionaryEntryB.prototype.getResultok = function() {
-  return /** @type{proto.UpdateResultDictionaryEntryBOk} */ (
-    jspb.Message.getWrapperField(this, proto.UpdateResultDictionaryEntryBOk, 1));
+proto.management_app.config.set.UpdateResultDictionaryEntryB.prototype.getResultok = function() {
+  return /** @type{proto.management_app.config.set.UpdateResultDictionaryEntryBOk} */ (
+    jspb.Message.getWrapperField(this, proto.management_app.config.set.UpdateResultDictionaryEntryBOk, 1));
 };
 
 
-/** @param {proto.UpdateResultDictionaryEntryBOk|undefined} value  */
-proto.UpdateResultDictionaryEntryB.prototype.setResultok = function(value) {
-  jspb.Message.setOneofWrapperField(this, 1, proto.UpdateResultDictionaryEntryB.oneofGroups_[0], value);
+/** @param {proto.management_app.config.set.UpdateResultDictionaryEntryBOk|undefined} value  */
+proto.management_app.config.set.UpdateResultDictionaryEntryB.prototype.setResultok = function(value) {
+  jspb.Message.setOneofWrapperField(this, 1, proto.management_app.config.set.UpdateResultDictionaryEntryB.oneofGroups_[0], value);
 };
 
 
-proto.UpdateResultDictionaryEntryB.prototype.clearResultok = function() {
+proto.management_app.config.set.UpdateResultDictionaryEntryB.prototype.clearResultok = function() {
   this.setResultok(undefined);
 };
 
@@ -7817,28 +7817,28 @@ proto.UpdateResultDictionaryEntryB.prototype.clearResultok = function() {
  * Returns whether this field is set.
  * @return{!boolean}
  */
-proto.UpdateResultDictionaryEntryB.prototype.hasResultok = function() {
+proto.management_app.config.set.UpdateResultDictionaryEntryB.prototype.hasResultok = function() {
   return jspb.Message.getField(this, 1) != null;
 };
 
 
 /**
  * optional UpdateResultDictionaryEntryBSame resultSame = 2;
- * @return {proto.UpdateResultDictionaryEntryBSame}
+ * @return {proto.management_app.config.set.UpdateResultDictionaryEntryBSame}
  */
-proto.UpdateResultDictionaryEntryB.prototype.getResultsame = function() {
-  return /** @type{proto.UpdateResultDictionaryEntryBSame} */ (
-    jspb.Message.getWrapperField(this, proto.UpdateResultDictionaryEntryBSame, 2));
+proto.management_app.config.set.UpdateResultDictionaryEntryB.prototype.getResultsame = function() {
+  return /** @type{proto.management_app.config.set.UpdateResultDictionaryEntryBSame} */ (
+    jspb.Message.getWrapperField(this, proto.management_app.config.set.UpdateResultDictionaryEntryBSame, 2));
 };
 
 
-/** @param {proto.UpdateResultDictionaryEntryBSame|undefined} value  */
-proto.UpdateResultDictionaryEntryB.prototype.setResultsame = function(value) {
-  jspb.Message.setOneofWrapperField(this, 2, proto.UpdateResultDictionaryEntryB.oneofGroups_[0], value);
+/** @param {proto.management_app.config.set.UpdateResultDictionaryEntryBSame|undefined} value  */
+proto.management_app.config.set.UpdateResultDictionaryEntryB.prototype.setResultsame = function(value) {
+  jspb.Message.setOneofWrapperField(this, 2, proto.management_app.config.set.UpdateResultDictionaryEntryB.oneofGroups_[0], value);
 };
 
 
-proto.UpdateResultDictionaryEntryB.prototype.clearResultsame = function() {
+proto.management_app.config.set.UpdateResultDictionaryEntryB.prototype.clearResultsame = function() {
   this.setResultsame(undefined);
 };
 
@@ -7847,28 +7847,28 @@ proto.UpdateResultDictionaryEntryB.prototype.clearResultsame = function() {
  * Returns whether this field is set.
  * @return{!boolean}
  */
-proto.UpdateResultDictionaryEntryB.prototype.hasResultsame = function() {
+proto.management_app.config.set.UpdateResultDictionaryEntryB.prototype.hasResultsame = function() {
   return jspb.Message.getField(this, 2) != null;
 };
 
 
 /**
  * optional UpdateResultError error = 3;
- * @return {proto.UpdateResultError}
+ * @return {proto.management_app.config.set.UpdateResultError}
  */
-proto.UpdateResultDictionaryEntryB.prototype.getError = function() {
-  return /** @type{proto.UpdateResultError} */ (
-    jspb.Message.getWrapperField(this, proto.UpdateResultError, 3));
+proto.management_app.config.set.UpdateResultDictionaryEntryB.prototype.getError = function() {
+  return /** @type{proto.management_app.config.set.UpdateResultError} */ (
+    jspb.Message.getWrapperField(this, proto.management_app.config.set.UpdateResultError, 3));
 };
 
 
-/** @param {proto.UpdateResultError|undefined} value  */
-proto.UpdateResultDictionaryEntryB.prototype.setError = function(value) {
-  jspb.Message.setOneofWrapperField(this, 3, proto.UpdateResultDictionaryEntryB.oneofGroups_[0], value);
+/** @param {proto.management_app.config.set.UpdateResultError|undefined} value  */
+proto.management_app.config.set.UpdateResultDictionaryEntryB.prototype.setError = function(value) {
+  jspb.Message.setOneofWrapperField(this, 3, proto.management_app.config.set.UpdateResultDictionaryEntryB.oneofGroups_[0], value);
 };
 
 
-proto.UpdateResultDictionaryEntryB.prototype.clearError = function() {
+proto.management_app.config.set.UpdateResultDictionaryEntryB.prototype.clearError = function() {
   this.setError(undefined);
 };
 
@@ -7877,7 +7877,7 @@ proto.UpdateResultDictionaryEntryB.prototype.clearError = function() {
  * Returns whether this field is set.
  * @return{!boolean}
  */
-proto.UpdateResultDictionaryEntryB.prototype.hasError = function() {
+proto.management_app.config.set.UpdateResultDictionaryEntryB.prototype.hasError = function() {
   return jspb.Message.getField(this, 3) != null;
 };
 
@@ -7893,12 +7893,12 @@ proto.UpdateResultDictionaryEntryB.prototype.hasError = function() {
  * @extends {jspb.Message}
  * @constructor
  */
-proto.MoveSimpleDictionary = function(opt_data) {
+proto.management_app.config.set.MoveSimpleDictionary = function(opt_data) {
   jspb.Message.initialize(this, opt_data, 0, -1, null, null);
 };
-goog.inherits(proto.MoveSimpleDictionary, jspb.Message);
+goog.inherits(proto.management_app.config.set.MoveSimpleDictionary, jspb.Message);
 if (goog.DEBUG && !COMPILED) {
-  proto.MoveSimpleDictionary.displayName = 'proto.MoveSimpleDictionary';
+  proto.management_app.config.set.MoveSimpleDictionary.displayName = 'proto.management_app.config.set.MoveSimpleDictionary';
 }
 
 
@@ -7913,8 +7913,8 @@ if (jspb.Message.GENERATE_TO_OBJECT) {
  *     for transitional soy proto support: http://goto/soy-param-migration
  * @return {!Object}
  */
-proto.MoveSimpleDictionary.prototype.toObject = function(opt_includeInstance) {
-  return proto.MoveSimpleDictionary.toObject(opt_includeInstance, this);
+proto.management_app.config.set.MoveSimpleDictionary.prototype.toObject = function(opt_includeInstance) {
+  return proto.management_app.config.set.MoveSimpleDictionary.toObject(opt_includeInstance, this);
 };
 
 
@@ -7923,12 +7923,12 @@ proto.MoveSimpleDictionary.prototype.toObject = function(opt_includeInstance) {
  * @param {boolean|undefined} includeInstance Whether to include the JSPB
  *     instance for transitional soy proto support:
  *     http://goto/soy-param-migration
- * @param {!proto.MoveSimpleDictionary} msg The msg instance to transform.
+ * @param {!proto.management_app.config.set.MoveSimpleDictionary} msg The msg instance to transform.
  * @return {!Object}
  */
-proto.MoveSimpleDictionary.toObject = function(includeInstance, msg) {
+proto.management_app.config.set.MoveSimpleDictionary.toObject = function(includeInstance, msg) {
   var f, obj = {
-    target: (f = msg.getTarget()) && proto.SimpleDictionaryUpdateTarget.toObject(includeInstance, f),
+    target: (f = msg.getTarget()) && proto.management_app.config.set.SimpleDictionaryUpdateTarget.toObject(includeInstance, f),
     from: msg.getFrom(),
     to: msg.getTo()
   };
@@ -7944,23 +7944,23 @@ proto.MoveSimpleDictionary.toObject = function(includeInstance, msg) {
 /**
  * Deserializes binary data (in protobuf wire format).
  * @param {jspb.ByteSource} bytes The bytes to deserialize.
- * @return {!proto.MoveSimpleDictionary}
+ * @return {!proto.management_app.config.set.MoveSimpleDictionary}
  */
-proto.MoveSimpleDictionary.deserializeBinary = function(bytes) {
+proto.management_app.config.set.MoveSimpleDictionary.deserializeBinary = function(bytes) {
   var reader = new jspb.BinaryReader(bytes);
-  var msg = new proto.MoveSimpleDictionary;
-  return proto.MoveSimpleDictionary.deserializeBinaryFromReader(msg, reader);
+  var msg = new proto.management_app.config.set.MoveSimpleDictionary;
+  return proto.management_app.config.set.MoveSimpleDictionary.deserializeBinaryFromReader(msg, reader);
 };
 
 
 /**
  * Deserializes binary data (in protobuf wire format) from the
  * given reader into the given message object.
- * @param {!proto.MoveSimpleDictionary} msg The message object to deserialize into.
+ * @param {!proto.management_app.config.set.MoveSimpleDictionary} msg The message object to deserialize into.
  * @param {!jspb.BinaryReader} reader The BinaryReader to use.
- * @return {!proto.MoveSimpleDictionary}
+ * @return {!proto.management_app.config.set.MoveSimpleDictionary}
  */
-proto.MoveSimpleDictionary.deserializeBinaryFromReader = function(msg, reader) {
+proto.management_app.config.set.MoveSimpleDictionary.deserializeBinaryFromReader = function(msg, reader) {
   while (reader.nextField()) {
     if (reader.isEndGroup()) {
       break;
@@ -7968,8 +7968,8 @@ proto.MoveSimpleDictionary.deserializeBinaryFromReader = function(msg, reader) {
     var field = reader.getFieldNumber();
     switch (field) {
     case 1:
-      var value = new proto.SimpleDictionaryUpdateTarget;
-      reader.readMessage(value,proto.SimpleDictionaryUpdateTarget.deserializeBinaryFromReader);
+      var value = new proto.management_app.config.set.SimpleDictionaryUpdateTarget;
+      reader.readMessage(value,proto.management_app.config.set.SimpleDictionaryUpdateTarget.deserializeBinaryFromReader);
       msg.setTarget(value);
       break;
     case 2:
@@ -7992,10 +7992,10 @@ proto.MoveSimpleDictionary.deserializeBinaryFromReader = function(msg, reader) {
 /**
  * Class method variant: serializes the given message to binary data
  * (in protobuf wire format), writing to the given BinaryWriter.
- * @param {!proto.MoveSimpleDictionary} message
+ * @param {!proto.management_app.config.set.MoveSimpleDictionary} message
  * @param {!jspb.BinaryWriter} writer
  */
-proto.MoveSimpleDictionary.serializeBinaryToWriter = function(message, writer) {
+proto.management_app.config.set.MoveSimpleDictionary.serializeBinaryToWriter = function(message, writer) {
   message.serializeBinaryToWriter(writer);
 };
 
@@ -8004,7 +8004,7 @@ proto.MoveSimpleDictionary.serializeBinaryToWriter = function(message, writer) {
  * Serializes the message to binary data (in protobuf wire format).
  * @return {!Uint8Array}
  */
-proto.MoveSimpleDictionary.prototype.serializeBinary = function() {
+proto.management_app.config.set.MoveSimpleDictionary.prototype.serializeBinary = function() {
   var writer = new jspb.BinaryWriter();
   this.serializeBinaryToWriter(writer);
   return writer.getResultBuffer();
@@ -8016,14 +8016,14 @@ proto.MoveSimpleDictionary.prototype.serializeBinary = function() {
  * writing to the given BinaryWriter.
  * @param {!jspb.BinaryWriter} writer
  */
-proto.MoveSimpleDictionary.prototype.serializeBinaryToWriter = function (writer) {
+proto.management_app.config.set.MoveSimpleDictionary.prototype.serializeBinaryToWriter = function (writer) {
   var f = undefined;
   f = this.getTarget();
   if (f != null) {
     writer.writeMessage(
       1,
       f,
-      proto.SimpleDictionaryUpdateTarget.serializeBinaryToWriter
+      proto.management_app.config.set.SimpleDictionaryUpdateTarget.serializeBinaryToWriter
     );
   }
   f = this.getFrom();
@@ -8045,30 +8045,30 @@ proto.MoveSimpleDictionary.prototype.serializeBinaryToWriter = function (writer)
 
 /**
  * Creates a deep clone of this proto. No data is shared with the original.
- * @return {!proto.MoveSimpleDictionary} The clone.
+ * @return {!proto.management_app.config.set.MoveSimpleDictionary} The clone.
  */
-proto.MoveSimpleDictionary.prototype.cloneMessage = function() {
-  return /** @type {!proto.MoveSimpleDictionary} */ (jspb.Message.cloneMessage(this));
+proto.management_app.config.set.MoveSimpleDictionary.prototype.cloneMessage = function() {
+  return /** @type {!proto.management_app.config.set.MoveSimpleDictionary} */ (jspb.Message.cloneMessage(this));
 };
 
 
 /**
  * optional SimpleDictionaryUpdateTarget target = 1;
- * @return {proto.SimpleDictionaryUpdateTarget}
+ * @return {proto.management_app.config.set.SimpleDictionaryUpdateTarget}
  */
-proto.MoveSimpleDictionary.prototype.getTarget = function() {
-  return /** @type{proto.SimpleDictionaryUpdateTarget} */ (
-    jspb.Message.getWrapperField(this, proto.SimpleDictionaryUpdateTarget, 1));
+proto.management_app.config.set.MoveSimpleDictionary.prototype.getTarget = function() {
+  return /** @type{proto.management_app.config.set.SimpleDictionaryUpdateTarget} */ (
+    jspb.Message.getWrapperField(this, proto.management_app.config.set.SimpleDictionaryUpdateTarget, 1));
 };
 
 
-/** @param {proto.SimpleDictionaryUpdateTarget|undefined} value  */
-proto.MoveSimpleDictionary.prototype.setTarget = function(value) {
+/** @param {proto.management_app.config.set.SimpleDictionaryUpdateTarget|undefined} value  */
+proto.management_app.config.set.MoveSimpleDictionary.prototype.setTarget = function(value) {
   jspb.Message.setWrapperField(this, 1, value);
 };
 
 
-proto.MoveSimpleDictionary.prototype.clearTarget = function() {
+proto.management_app.config.set.MoveSimpleDictionary.prototype.clearTarget = function() {
   this.setTarget(undefined);
 };
 
@@ -8077,7 +8077,7 @@ proto.MoveSimpleDictionary.prototype.clearTarget = function() {
  * Returns whether this field is set.
  * @return{!boolean}
  */
-proto.MoveSimpleDictionary.prototype.hasTarget = function() {
+proto.management_app.config.set.MoveSimpleDictionary.prototype.hasTarget = function() {
   return jspb.Message.getField(this, 1) != null;
 };
 
@@ -8086,13 +8086,13 @@ proto.MoveSimpleDictionary.prototype.hasTarget = function() {
  * optional uint32 from = 2;
  * @return {number}
  */
-proto.MoveSimpleDictionary.prototype.getFrom = function() {
+proto.management_app.config.set.MoveSimpleDictionary.prototype.getFrom = function() {
   return /** @type {number} */ (jspb.Message.getFieldProto3(this, 2, 0));
 };
 
 
 /** @param {number} value  */
-proto.MoveSimpleDictionary.prototype.setFrom = function(value) {
+proto.management_app.config.set.MoveSimpleDictionary.prototype.setFrom = function(value) {
   jspb.Message.setField(this, 2, value);
 };
 
@@ -8101,13 +8101,13 @@ proto.MoveSimpleDictionary.prototype.setFrom = function(value) {
  * optional uint32 to = 3;
  * @return {number}
  */
-proto.MoveSimpleDictionary.prototype.getTo = function() {
+proto.management_app.config.set.MoveSimpleDictionary.prototype.getTo = function() {
   return /** @type {number} */ (jspb.Message.getFieldProto3(this, 3, 0));
 };
 
 
 /** @param {number} value  */
-proto.MoveSimpleDictionary.prototype.setTo = function(value) {
+proto.management_app.config.set.MoveSimpleDictionary.prototype.setTo = function(value) {
   jspb.Message.setField(this, 3, value);
 };
 
@@ -8123,12 +8123,12 @@ proto.MoveSimpleDictionary.prototype.setTo = function(value) {
  * @extends {jspb.Message}
  * @constructor
  */
-proto.MoveSimpleDictionaryResultOk = function(opt_data) {
+proto.management_app.config.set.MoveSimpleDictionaryResultOk = function(opt_data) {
   jspb.Message.initialize(this, opt_data, 0, -1, null, null);
 };
-goog.inherits(proto.MoveSimpleDictionaryResultOk, jspb.Message);
+goog.inherits(proto.management_app.config.set.MoveSimpleDictionaryResultOk, jspb.Message);
 if (goog.DEBUG && !COMPILED) {
-  proto.MoveSimpleDictionaryResultOk.displayName = 'proto.MoveSimpleDictionaryResultOk';
+  proto.management_app.config.set.MoveSimpleDictionaryResultOk.displayName = 'proto.management_app.config.set.MoveSimpleDictionaryResultOk';
 }
 
 
@@ -8143,8 +8143,8 @@ if (jspb.Message.GENERATE_TO_OBJECT) {
  *     for transitional soy proto support: http://goto/soy-param-migration
  * @return {!Object}
  */
-proto.MoveSimpleDictionaryResultOk.prototype.toObject = function(opt_includeInstance) {
-  return proto.MoveSimpleDictionaryResultOk.toObject(opt_includeInstance, this);
+proto.management_app.config.set.MoveSimpleDictionaryResultOk.prototype.toObject = function(opt_includeInstance) {
+  return proto.management_app.config.set.MoveSimpleDictionaryResultOk.toObject(opt_includeInstance, this);
 };
 
 
@@ -8153,10 +8153,10 @@ proto.MoveSimpleDictionaryResultOk.prototype.toObject = function(opt_includeInst
  * @param {boolean|undefined} includeInstance Whether to include the JSPB
  *     instance for transitional soy proto support:
  *     http://goto/soy-param-migration
- * @param {!proto.MoveSimpleDictionaryResultOk} msg The msg instance to transform.
+ * @param {!proto.management_app.config.set.MoveSimpleDictionaryResultOk} msg The msg instance to transform.
  * @return {!Object}
  */
-proto.MoveSimpleDictionaryResultOk.toObject = function(includeInstance, msg) {
+proto.management_app.config.set.MoveSimpleDictionaryResultOk.toObject = function(includeInstance, msg) {
   var f, obj = {
 
   };
@@ -8172,23 +8172,23 @@ proto.MoveSimpleDictionaryResultOk.toObject = function(includeInstance, msg) {
 /**
  * Deserializes binary data (in protobuf wire format).
  * @param {jspb.ByteSource} bytes The bytes to deserialize.
- * @return {!proto.MoveSimpleDictionaryResultOk}
+ * @return {!proto.management_app.config.set.MoveSimpleDictionaryResultOk}
  */
-proto.MoveSimpleDictionaryResultOk.deserializeBinary = function(bytes) {
+proto.management_app.config.set.MoveSimpleDictionaryResultOk.deserializeBinary = function(bytes) {
   var reader = new jspb.BinaryReader(bytes);
-  var msg = new proto.MoveSimpleDictionaryResultOk;
-  return proto.MoveSimpleDictionaryResultOk.deserializeBinaryFromReader(msg, reader);
+  var msg = new proto.management_app.config.set.MoveSimpleDictionaryResultOk;
+  return proto.management_app.config.set.MoveSimpleDictionaryResultOk.deserializeBinaryFromReader(msg, reader);
 };
 
 
 /**
  * Deserializes binary data (in protobuf wire format) from the
  * given reader into the given message object.
- * @param {!proto.MoveSimpleDictionaryResultOk} msg The message object to deserialize into.
+ * @param {!proto.management_app.config.set.MoveSimpleDictionaryResultOk} msg The message object to deserialize into.
  * @param {!jspb.BinaryReader} reader The BinaryReader to use.
- * @return {!proto.MoveSimpleDictionaryResultOk}
+ * @return {!proto.management_app.config.set.MoveSimpleDictionaryResultOk}
  */
-proto.MoveSimpleDictionaryResultOk.deserializeBinaryFromReader = function(msg, reader) {
+proto.management_app.config.set.MoveSimpleDictionaryResultOk.deserializeBinaryFromReader = function(msg, reader) {
   while (reader.nextField()) {
     if (reader.isEndGroup()) {
       break;
@@ -8207,10 +8207,10 @@ proto.MoveSimpleDictionaryResultOk.deserializeBinaryFromReader = function(msg, r
 /**
  * Class method variant: serializes the given message to binary data
  * (in protobuf wire format), writing to the given BinaryWriter.
- * @param {!proto.MoveSimpleDictionaryResultOk} message
+ * @param {!proto.management_app.config.set.MoveSimpleDictionaryResultOk} message
  * @param {!jspb.BinaryWriter} writer
  */
-proto.MoveSimpleDictionaryResultOk.serializeBinaryToWriter = function(message, writer) {
+proto.management_app.config.set.MoveSimpleDictionaryResultOk.serializeBinaryToWriter = function(message, writer) {
   message.serializeBinaryToWriter(writer);
 };
 
@@ -8219,7 +8219,7 @@ proto.MoveSimpleDictionaryResultOk.serializeBinaryToWriter = function(message, w
  * Serializes the message to binary data (in protobuf wire format).
  * @return {!Uint8Array}
  */
-proto.MoveSimpleDictionaryResultOk.prototype.serializeBinary = function() {
+proto.management_app.config.set.MoveSimpleDictionaryResultOk.prototype.serializeBinary = function() {
   var writer = new jspb.BinaryWriter();
   this.serializeBinaryToWriter(writer);
   return writer.getResultBuffer();
@@ -8231,17 +8231,17 @@ proto.MoveSimpleDictionaryResultOk.prototype.serializeBinary = function() {
  * writing to the given BinaryWriter.
  * @param {!jspb.BinaryWriter} writer
  */
-proto.MoveSimpleDictionaryResultOk.prototype.serializeBinaryToWriter = function (writer) {
+proto.management_app.config.set.MoveSimpleDictionaryResultOk.prototype.serializeBinaryToWriter = function (writer) {
   var f = undefined;
 };
 
 
 /**
  * Creates a deep clone of this proto. No data is shared with the original.
- * @return {!proto.MoveSimpleDictionaryResultOk} The clone.
+ * @return {!proto.management_app.config.set.MoveSimpleDictionaryResultOk} The clone.
  */
-proto.MoveSimpleDictionaryResultOk.prototype.cloneMessage = function() {
-  return /** @type {!proto.MoveSimpleDictionaryResultOk} */ (jspb.Message.cloneMessage(this));
+proto.management_app.config.set.MoveSimpleDictionaryResultOk.prototype.cloneMessage = function() {
+  return /** @type {!proto.management_app.config.set.MoveSimpleDictionaryResultOk} */ (jspb.Message.cloneMessage(this));
 };
 
 
@@ -8256,12 +8256,12 @@ proto.MoveSimpleDictionaryResultOk.prototype.cloneMessage = function() {
  * @extends {jspb.Message}
  * @constructor
  */
-proto.MoveSimpleDictionaryResult = function(opt_data) {
-  jspb.Message.initialize(this, opt_data, 0, -1, null, proto.MoveSimpleDictionaryResult.oneofGroups_);
+proto.management_app.config.set.MoveSimpleDictionaryResult = function(opt_data) {
+  jspb.Message.initialize(this, opt_data, 0, -1, null, proto.management_app.config.set.MoveSimpleDictionaryResult.oneofGroups_);
 };
-goog.inherits(proto.MoveSimpleDictionaryResult, jspb.Message);
+goog.inherits(proto.management_app.config.set.MoveSimpleDictionaryResult, jspb.Message);
 if (goog.DEBUG && !COMPILED) {
-  proto.MoveSimpleDictionaryResult.displayName = 'proto.MoveSimpleDictionaryResult';
+  proto.management_app.config.set.MoveSimpleDictionaryResult.displayName = 'proto.management_app.config.set.MoveSimpleDictionaryResult';
 }
 /**
  * Oneof group definitions for this message. Each group defines the field
@@ -8271,22 +8271,22 @@ if (goog.DEBUG && !COMPILED) {
  * @private {!Array<!Array<number>>}
  * @const
  */
-proto.MoveSimpleDictionaryResult.oneofGroups_ = [[1,2]];
+proto.management_app.config.set.MoveSimpleDictionaryResult.oneofGroups_ = [[1,2]];
 
 /**
  * @enum {number}
  */
-proto.MoveSimpleDictionaryResult.ResultCase = {
+proto.management_app.config.set.MoveSimpleDictionaryResult.ResultCase = {
   RESULT_NOT_SET: 0,
   RESULTOK: 1,
   ERROR: 2
 };
 
 /**
- * @return {proto.MoveSimpleDictionaryResult.ResultCase}
+ * @return {proto.management_app.config.set.MoveSimpleDictionaryResult.ResultCase}
  */
-proto.MoveSimpleDictionaryResult.prototype.getResultCase = function() {
-  return /** @type {proto.MoveSimpleDictionaryResult.ResultCase} */(jspb.Message.computeOneofCase(this, proto.MoveSimpleDictionaryResult.oneofGroups_[0]));
+proto.management_app.config.set.MoveSimpleDictionaryResult.prototype.getResultCase = function() {
+  return /** @type {proto.management_app.config.set.MoveSimpleDictionaryResult.ResultCase} */(jspb.Message.computeOneofCase(this, proto.management_app.config.set.MoveSimpleDictionaryResult.oneofGroups_[0]));
 };
 
 
@@ -8302,8 +8302,8 @@ if (jspb.Message.GENERATE_TO_OBJECT) {
  *     for transitional soy proto support: http://goto/soy-param-migration
  * @return {!Object}
  */
-proto.MoveSimpleDictionaryResult.prototype.toObject = function(opt_includeInstance) {
-  return proto.MoveSimpleDictionaryResult.toObject(opt_includeInstance, this);
+proto.management_app.config.set.MoveSimpleDictionaryResult.prototype.toObject = function(opt_includeInstance) {
+  return proto.management_app.config.set.MoveSimpleDictionaryResult.toObject(opt_includeInstance, this);
 };
 
 
@@ -8312,13 +8312,13 @@ proto.MoveSimpleDictionaryResult.prototype.toObject = function(opt_includeInstan
  * @param {boolean|undefined} includeInstance Whether to include the JSPB
  *     instance for transitional soy proto support:
  *     http://goto/soy-param-migration
- * @param {!proto.MoveSimpleDictionaryResult} msg The msg instance to transform.
+ * @param {!proto.management_app.config.set.MoveSimpleDictionaryResult} msg The msg instance to transform.
  * @return {!Object}
  */
-proto.MoveSimpleDictionaryResult.toObject = function(includeInstance, msg) {
+proto.management_app.config.set.MoveSimpleDictionaryResult.toObject = function(includeInstance, msg) {
   var f, obj = {
-    resultok: (f = msg.getResultok()) && proto.MoveSimpleDictionaryResultOk.toObject(includeInstance, f),
-    error: (f = msg.getError()) && proto.UpdateResultError.toObject(includeInstance, f)
+    resultok: (f = msg.getResultok()) && proto.management_app.config.set.MoveSimpleDictionaryResultOk.toObject(includeInstance, f),
+    error: (f = msg.getError()) && proto.management_app.config.set.UpdateResultError.toObject(includeInstance, f)
   };
 
   if (includeInstance) {
@@ -8332,23 +8332,23 @@ proto.MoveSimpleDictionaryResult.toObject = function(includeInstance, msg) {
 /**
  * Deserializes binary data (in protobuf wire format).
  * @param {jspb.ByteSource} bytes The bytes to deserialize.
- * @return {!proto.MoveSimpleDictionaryResult}
+ * @return {!proto.management_app.config.set.MoveSimpleDictionaryResult}
  */
-proto.MoveSimpleDictionaryResult.deserializeBinary = function(bytes) {
+proto.management_app.config.set.MoveSimpleDictionaryResult.deserializeBinary = function(bytes) {
   var reader = new jspb.BinaryReader(bytes);
-  var msg = new proto.MoveSimpleDictionaryResult;
-  return proto.MoveSimpleDictionaryResult.deserializeBinaryFromReader(msg, reader);
+  var msg = new proto.management_app.config.set.MoveSimpleDictionaryResult;
+  return proto.management_app.config.set.MoveSimpleDictionaryResult.deserializeBinaryFromReader(msg, reader);
 };
 
 
 /**
  * Deserializes binary data (in protobuf wire format) from the
  * given reader into the given message object.
- * @param {!proto.MoveSimpleDictionaryResult} msg The message object to deserialize into.
+ * @param {!proto.management_app.config.set.MoveSimpleDictionaryResult} msg The message object to deserialize into.
  * @param {!jspb.BinaryReader} reader The BinaryReader to use.
- * @return {!proto.MoveSimpleDictionaryResult}
+ * @return {!proto.management_app.config.set.MoveSimpleDictionaryResult}
  */
-proto.MoveSimpleDictionaryResult.deserializeBinaryFromReader = function(msg, reader) {
+proto.management_app.config.set.MoveSimpleDictionaryResult.deserializeBinaryFromReader = function(msg, reader) {
   while (reader.nextField()) {
     if (reader.isEndGroup()) {
       break;
@@ -8356,13 +8356,13 @@ proto.MoveSimpleDictionaryResult.deserializeBinaryFromReader = function(msg, rea
     var field = reader.getFieldNumber();
     switch (field) {
     case 1:
-      var value = new proto.MoveSimpleDictionaryResultOk;
-      reader.readMessage(value,proto.MoveSimpleDictionaryResultOk.deserializeBinaryFromReader);
+      var value = new proto.management_app.config.set.MoveSimpleDictionaryResultOk;
+      reader.readMessage(value,proto.management_app.config.set.MoveSimpleDictionaryResultOk.deserializeBinaryFromReader);
       msg.setResultok(value);
       break;
     case 2:
-      var value = new proto.UpdateResultError;
-      reader.readMessage(value,proto.UpdateResultError.deserializeBinaryFromReader);
+      var value = new proto.management_app.config.set.UpdateResultError;
+      reader.readMessage(value,proto.management_app.config.set.UpdateResultError.deserializeBinaryFromReader);
       msg.setError(value);
       break;
     default:
@@ -8377,10 +8377,10 @@ proto.MoveSimpleDictionaryResult.deserializeBinaryFromReader = function(msg, rea
 /**
  * Class method variant: serializes the given message to binary data
  * (in protobuf wire format), writing to the given BinaryWriter.
- * @param {!proto.MoveSimpleDictionaryResult} message
+ * @param {!proto.management_app.config.set.MoveSimpleDictionaryResult} message
  * @param {!jspb.BinaryWriter} writer
  */
-proto.MoveSimpleDictionaryResult.serializeBinaryToWriter = function(message, writer) {
+proto.management_app.config.set.MoveSimpleDictionaryResult.serializeBinaryToWriter = function(message, writer) {
   message.serializeBinaryToWriter(writer);
 };
 
@@ -8389,7 +8389,7 @@ proto.MoveSimpleDictionaryResult.serializeBinaryToWriter = function(message, wri
  * Serializes the message to binary data (in protobuf wire format).
  * @return {!Uint8Array}
  */
-proto.MoveSimpleDictionaryResult.prototype.serializeBinary = function() {
+proto.management_app.config.set.MoveSimpleDictionaryResult.prototype.serializeBinary = function() {
   var writer = new jspb.BinaryWriter();
   this.serializeBinaryToWriter(writer);
   return writer.getResultBuffer();
@@ -8401,14 +8401,14 @@ proto.MoveSimpleDictionaryResult.prototype.serializeBinary = function() {
  * writing to the given BinaryWriter.
  * @param {!jspb.BinaryWriter} writer
  */
-proto.MoveSimpleDictionaryResult.prototype.serializeBinaryToWriter = function (writer) {
+proto.management_app.config.set.MoveSimpleDictionaryResult.prototype.serializeBinaryToWriter = function (writer) {
   var f = undefined;
   f = this.getResultok();
   if (f != null) {
     writer.writeMessage(
       1,
       f,
-      proto.MoveSimpleDictionaryResultOk.serializeBinaryToWriter
+      proto.management_app.config.set.MoveSimpleDictionaryResultOk.serializeBinaryToWriter
     );
   }
   f = this.getError();
@@ -8416,7 +8416,7 @@ proto.MoveSimpleDictionaryResult.prototype.serializeBinaryToWriter = function (w
     writer.writeMessage(
       2,
       f,
-      proto.UpdateResultError.serializeBinaryToWriter
+      proto.management_app.config.set.UpdateResultError.serializeBinaryToWriter
     );
   }
 };
@@ -8424,30 +8424,30 @@ proto.MoveSimpleDictionaryResult.prototype.serializeBinaryToWriter = function (w
 
 /**
  * Creates a deep clone of this proto. No data is shared with the original.
- * @return {!proto.MoveSimpleDictionaryResult} The clone.
+ * @return {!proto.management_app.config.set.MoveSimpleDictionaryResult} The clone.
  */
-proto.MoveSimpleDictionaryResult.prototype.cloneMessage = function() {
-  return /** @type {!proto.MoveSimpleDictionaryResult} */ (jspb.Message.cloneMessage(this));
+proto.management_app.config.set.MoveSimpleDictionaryResult.prototype.cloneMessage = function() {
+  return /** @type {!proto.management_app.config.set.MoveSimpleDictionaryResult} */ (jspb.Message.cloneMessage(this));
 };
 
 
 /**
  * optional MoveSimpleDictionaryResultOk resultOk = 1;
- * @return {proto.MoveSimpleDictionaryResultOk}
+ * @return {proto.management_app.config.set.MoveSimpleDictionaryResultOk}
  */
-proto.MoveSimpleDictionaryResult.prototype.getResultok = function() {
-  return /** @type{proto.MoveSimpleDictionaryResultOk} */ (
-    jspb.Message.getWrapperField(this, proto.MoveSimpleDictionaryResultOk, 1));
+proto.management_app.config.set.MoveSimpleDictionaryResult.prototype.getResultok = function() {
+  return /** @type{proto.management_app.config.set.MoveSimpleDictionaryResultOk} */ (
+    jspb.Message.getWrapperField(this, proto.management_app.config.set.MoveSimpleDictionaryResultOk, 1));
 };
 
 
-/** @param {proto.MoveSimpleDictionaryResultOk|undefined} value  */
-proto.MoveSimpleDictionaryResult.prototype.setResultok = function(value) {
-  jspb.Message.setOneofWrapperField(this, 1, proto.MoveSimpleDictionaryResult.oneofGroups_[0], value);
+/** @param {proto.management_app.config.set.MoveSimpleDictionaryResultOk|undefined} value  */
+proto.management_app.config.set.MoveSimpleDictionaryResult.prototype.setResultok = function(value) {
+  jspb.Message.setOneofWrapperField(this, 1, proto.management_app.config.set.MoveSimpleDictionaryResult.oneofGroups_[0], value);
 };
 
 
-proto.MoveSimpleDictionaryResult.prototype.clearResultok = function() {
+proto.management_app.config.set.MoveSimpleDictionaryResult.prototype.clearResultok = function() {
   this.setResultok(undefined);
 };
 
@@ -8456,28 +8456,28 @@ proto.MoveSimpleDictionaryResult.prototype.clearResultok = function() {
  * Returns whether this field is set.
  * @return{!boolean}
  */
-proto.MoveSimpleDictionaryResult.prototype.hasResultok = function() {
+proto.management_app.config.set.MoveSimpleDictionaryResult.prototype.hasResultok = function() {
   return jspb.Message.getField(this, 1) != null;
 };
 
 
 /**
  * optional UpdateResultError error = 2;
- * @return {proto.UpdateResultError}
+ * @return {proto.management_app.config.set.UpdateResultError}
  */
-proto.MoveSimpleDictionaryResult.prototype.getError = function() {
-  return /** @type{proto.UpdateResultError} */ (
-    jspb.Message.getWrapperField(this, proto.UpdateResultError, 2));
+proto.management_app.config.set.MoveSimpleDictionaryResult.prototype.getError = function() {
+  return /** @type{proto.management_app.config.set.UpdateResultError} */ (
+    jspb.Message.getWrapperField(this, proto.management_app.config.set.UpdateResultError, 2));
 };
 
 
-/** @param {proto.UpdateResultError|undefined} value  */
-proto.MoveSimpleDictionaryResult.prototype.setError = function(value) {
-  jspb.Message.setOneofWrapperField(this, 2, proto.MoveSimpleDictionaryResult.oneofGroups_[0], value);
+/** @param {proto.management_app.config.set.UpdateResultError|undefined} value  */
+proto.management_app.config.set.MoveSimpleDictionaryResult.prototype.setError = function(value) {
+  jspb.Message.setOneofWrapperField(this, 2, proto.management_app.config.set.MoveSimpleDictionaryResult.oneofGroups_[0], value);
 };
 
 
-proto.MoveSimpleDictionaryResult.prototype.clearError = function() {
+proto.management_app.config.set.MoveSimpleDictionaryResult.prototype.clearError = function() {
   this.setError(undefined);
 };
 
@@ -8486,9 +8486,9 @@ proto.MoveSimpleDictionaryResult.prototype.clearError = function() {
  * Returns whether this field is set.
  * @return{!boolean}
  */
-proto.MoveSimpleDictionaryResult.prototype.hasError = function() {
+proto.management_app.config.set.MoveSimpleDictionaryResult.prototype.hasError = function() {
   return jspb.Message.getField(this, 2) != null;
 };
 
 
-goog.object.extend(exports, proto);
+goog.object.extend(exports, proto.management_app.config.set);

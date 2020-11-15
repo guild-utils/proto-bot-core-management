@@ -1,4 +1,4 @@
-// package: 
+// package: management_app.config.get
 // file: get-config.proto
 
 /* tslint:disable */
@@ -16,7 +16,7 @@ interface IConfigGetterService extends grpc.ServiceDefinition<grpc.UntypedServic
 }
 
 interface IConfigGetterService_IguildVoiceConfig extends grpc.MethodDefinition<get_config_pb.GuildVoiceConfigRequest, get_config_pb.GuildVoiceConfig> {
-    path: "/ConfigGetter/guildVoiceConfig";
+    path: "/management_app.config.get.ConfigGetter/guildVoiceConfig";
     requestStream: false;
     responseStream: false;
     requestSerialize: grpc.serialize<get_config_pb.GuildVoiceConfigRequest>;
@@ -25,7 +25,7 @@ interface IConfigGetterService_IguildVoiceConfig extends grpc.MethodDefinition<g
     responseDeserialize: grpc.deserialize<get_config_pb.GuildVoiceConfig>;
 }
 interface IConfigGetterService_IlayeredVoiceConfig extends grpc.MethodDefinition<get_config_pb.LayeredVoiceConfigRequest, get_config_pb.LayeredVoiceConfig> {
-    path: "/ConfigGetter/layeredVoiceConfig";
+    path: "/management_app.config.get.ConfigGetter/layeredVoiceConfig";
     requestStream: false;
     responseStream: false;
     requestSerialize: grpc.serialize<get_config_pb.LayeredVoiceConfigRequest>;
@@ -34,7 +34,7 @@ interface IConfigGetterService_IlayeredVoiceConfig extends grpc.MethodDefinition
     responseDeserialize: grpc.deserialize<get_config_pb.LayeredVoiceConfig>;
 }
 interface IConfigGetterService_IreadName extends grpc.MethodDefinition<get_config_pb.ReadNameRequest, get_config_pb.ReadName> {
-    path: "/ConfigGetter/readName";
+    path: "/management_app.config.get.ConfigGetter/readName";
     requestStream: false;
     responseStream: false;
     requestSerialize: grpc.serialize<get_config_pb.ReadNameRequest>;
@@ -43,7 +43,7 @@ interface IConfigGetterService_IreadName extends grpc.MethodDefinition<get_confi
     responseDeserialize: grpc.deserialize<get_config_pb.ReadName>;
 }
 interface IConfigGetterService_IupdateStream extends grpc.MethodDefinition<get_config_pb.VoiceConfigUpdateStreamRequest, get_config_pb.VoiceConfigUpdateInfo> {
-    path: "/ConfigGetter/updateStream";
+    path: "/management_app.config.get.ConfigGetter/updateStream";
     requestStream: false;
     responseStream: true;
     requestSerialize: grpc.serialize<get_config_pb.VoiceConfigUpdateStreamRequest>;

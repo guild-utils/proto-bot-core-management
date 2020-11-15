@@ -1,4 +1,4 @@
-defmodule Config.DictionaryEntryA do
+defmodule ManagementApp.Config.Common.DictionaryEntryA do
   @moduledoc false
   use Protobuf, syntax: :proto3
 
@@ -21,7 +21,7 @@ defmodule Config.DictionaryEntryA do
   field :p3, 6, type: :string
 end
 
-defmodule Config.DictionaryEntryB do
+defmodule ManagementApp.Config.Common.DictionaryEntryB do
   @moduledoc false
   use Protobuf, syntax: :proto3
 
@@ -38,19 +38,19 @@ defmodule Config.DictionaryEntryB do
   field :index, 3, type: :uint32
 end
 
-defmodule Config.Dictionary do
+defmodule ManagementApp.Config.Common.Dictionary do
   @moduledoc false
   use Protobuf, syntax: :proto3
 
   @type t :: %__MODULE__{
-          before: [Config.DictionaryEntryB.t()],
-          entrys: [Config.DictionaryEntryA.t()],
-          after: [Config.DictionaryEntryB.t()]
+          before: [ManagementApp.Config.Common.DictionaryEntryB.t()],
+          entrys: [ManagementApp.Config.Common.DictionaryEntryA.t()],
+          after: [ManagementApp.Config.Common.DictionaryEntryB.t()]
         }
 
   defstruct [:before, :entrys, :after]
 
-  field :before, 2, repeated: true, type: Config.DictionaryEntryB
-  field :entrys, 1, repeated: true, type: Config.DictionaryEntryA
-  field :after, 3, repeated: true, type: Config.DictionaryEntryB
+  field :before, 2, repeated: true, type: ManagementApp.Config.Common.DictionaryEntryB
+  field :entrys, 1, repeated: true, type: ManagementApp.Config.Common.DictionaryEntryA
+  field :after, 3, repeated: true, type: ManagementApp.Config.Common.DictionaryEntryB
 end

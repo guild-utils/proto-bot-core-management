@@ -5,403 +5,403 @@ var grpc = require('grpc');
 var set$config_pb = require('./set-config_pb.js');
 var config_pb = require('./config_pb.js');
 
-function serialize_AddSimpleDictionary(arg) {
+function serialize_management_app_config_set_AddSimpleDictionary(arg) {
   if (!(arg instanceof set$config_pb.AddSimpleDictionary)) {
-    throw new Error('Expected argument of type AddSimpleDictionary');
+    throw new Error('Expected argument of type management_app.config.set.AddSimpleDictionary');
   }
   return Buffer.from(arg.serializeBinary());
 }
 
-function deserialize_AddSimpleDictionary(buffer_arg) {
+function deserialize_management_app_config_set_AddSimpleDictionary(buffer_arg) {
   return set$config_pb.AddSimpleDictionary.deserializeBinary(new Uint8Array(buffer_arg));
 }
 
-function serialize_InsertSimpleDictionary(arg) {
+function serialize_management_app_config_set_InsertSimpleDictionary(arg) {
   if (!(arg instanceof set$config_pb.InsertSimpleDictionary)) {
-    throw new Error('Expected argument of type InsertSimpleDictionary');
+    throw new Error('Expected argument of type management_app.config.set.InsertSimpleDictionary');
   }
   return Buffer.from(arg.serializeBinary());
 }
 
-function deserialize_InsertSimpleDictionary(buffer_arg) {
+function deserialize_management_app_config_set_InsertSimpleDictionary(buffer_arg) {
   return set$config_pb.InsertSimpleDictionary.deserializeBinary(new Uint8Array(buffer_arg));
 }
 
-function serialize_MoveSimpleDictionary(arg) {
+function serialize_management_app_config_set_MoveSimpleDictionary(arg) {
   if (!(arg instanceof set$config_pb.MoveSimpleDictionary)) {
-    throw new Error('Expected argument of type MoveSimpleDictionary');
+    throw new Error('Expected argument of type management_app.config.set.MoveSimpleDictionary');
   }
   return Buffer.from(arg.serializeBinary());
 }
 
-function deserialize_MoveSimpleDictionary(buffer_arg) {
+function deserialize_management_app_config_set_MoveSimpleDictionary(buffer_arg) {
   return set$config_pb.MoveSimpleDictionary.deserializeBinary(new Uint8Array(buffer_arg));
 }
 
-function serialize_MoveSimpleDictionaryResult(arg) {
+function serialize_management_app_config_set_MoveSimpleDictionaryResult(arg) {
   if (!(arg instanceof set$config_pb.MoveSimpleDictionaryResult)) {
-    throw new Error('Expected argument of type MoveSimpleDictionaryResult');
+    throw new Error('Expected argument of type management_app.config.set.MoveSimpleDictionaryResult');
   }
   return Buffer.from(arg.serializeBinary());
 }
 
-function deserialize_MoveSimpleDictionaryResult(buffer_arg) {
+function deserialize_management_app_config_set_MoveSimpleDictionaryResult(buffer_arg) {
   return set$config_pb.MoveSimpleDictionaryResult.deserializeBinary(new Uint8Array(buffer_arg));
 }
 
-function serialize_RemoveFromMainDictionary(arg) {
+function serialize_management_app_config_set_RemoveFromMainDictionary(arg) {
   if (!(arg instanceof set$config_pb.RemoveFromMainDictionary)) {
-    throw new Error('Expected argument of type RemoveFromMainDictionary');
+    throw new Error('Expected argument of type management_app.config.set.RemoveFromMainDictionary');
   }
   return Buffer.from(arg.serializeBinary());
 }
 
-function deserialize_RemoveFromMainDictionary(buffer_arg) {
+function deserialize_management_app_config_set_RemoveFromMainDictionary(buffer_arg) {
   return set$config_pb.RemoveFromMainDictionary.deserializeBinary(new Uint8Array(buffer_arg));
 }
 
-function serialize_RemoveSimpleDictionary(arg) {
+function serialize_management_app_config_set_RemoveSimpleDictionary(arg) {
   if (!(arg instanceof set$config_pb.RemoveSimpleDictionary)) {
-    throw new Error('Expected argument of type RemoveSimpleDictionary');
+    throw new Error('Expected argument of type management_app.config.set.RemoveSimpleDictionary');
   }
   return Buffer.from(arg.serializeBinary());
 }
 
-function deserialize_RemoveSimpleDictionary(buffer_arg) {
+function deserialize_management_app_config_set_RemoveSimpleDictionary(buffer_arg) {
   return set$config_pb.RemoveSimpleDictionary.deserializeBinary(new Uint8Array(buffer_arg));
 }
 
-function serialize_UpdateFloat(arg) {
+function serialize_management_app_config_set_UpdateFloat(arg) {
   if (!(arg instanceof set$config_pb.UpdateFloat)) {
-    throw new Error('Expected argument of type UpdateFloat');
+    throw new Error('Expected argument of type management_app.config.set.UpdateFloat');
   }
   return Buffer.from(arg.serializeBinary());
 }
 
-function deserialize_UpdateFloat(buffer_arg) {
+function deserialize_management_app_config_set_UpdateFloat(buffer_arg) {
   return set$config_pb.UpdateFloat.deserializeBinary(new Uint8Array(buffer_arg));
 }
 
-function serialize_UpdateOrInsertMainDictionary(arg) {
+function serialize_management_app_config_set_UpdateOrInsertMainDictionary(arg) {
   if (!(arg instanceof set$config_pb.UpdateOrInsertMainDictionary)) {
-    throw new Error('Expected argument of type UpdateOrInsertMainDictionary');
+    throw new Error('Expected argument of type management_app.config.set.UpdateOrInsertMainDictionary');
   }
   return Buffer.from(arg.serializeBinary());
 }
 
-function deserialize_UpdateOrInsertMainDictionary(buffer_arg) {
+function deserialize_management_app_config_set_UpdateOrInsertMainDictionary(buffer_arg) {
   return set$config_pb.UpdateOrInsertMainDictionary.deserializeBinary(new Uint8Array(buffer_arg));
 }
 
-function serialize_UpdateReadName(arg) {
+function serialize_management_app_config_set_UpdateReadName(arg) {
   if (!(arg instanceof set$config_pb.UpdateReadName)) {
-    throw new Error('Expected argument of type UpdateReadName');
+    throw new Error('Expected argument of type management_app.config.set.UpdateReadName');
   }
   return Buffer.from(arg.serializeBinary());
 }
 
-function deserialize_UpdateReadName(buffer_arg) {
+function deserialize_management_app_config_set_UpdateReadName(buffer_arg) {
   return set$config_pb.UpdateReadName.deserializeBinary(new Uint8Array(buffer_arg));
 }
 
-function serialize_UpdateResultDictionaryEntryA(arg) {
+function serialize_management_app_config_set_UpdateResultDictionaryEntryA(arg) {
   if (!(arg instanceof set$config_pb.UpdateResultDictionaryEntryA)) {
-    throw new Error('Expected argument of type UpdateResultDictionaryEntryA');
+    throw new Error('Expected argument of type management_app.config.set.UpdateResultDictionaryEntryA');
   }
   return Buffer.from(arg.serializeBinary());
 }
 
-function deserialize_UpdateResultDictionaryEntryA(buffer_arg) {
+function deserialize_management_app_config_set_UpdateResultDictionaryEntryA(buffer_arg) {
   return set$config_pb.UpdateResultDictionaryEntryA.deserializeBinary(new Uint8Array(buffer_arg));
 }
 
-function serialize_UpdateResultDictionaryEntryB(arg) {
+function serialize_management_app_config_set_UpdateResultDictionaryEntryB(arg) {
   if (!(arg instanceof set$config_pb.UpdateResultDictionaryEntryB)) {
-    throw new Error('Expected argument of type UpdateResultDictionaryEntryB');
+    throw new Error('Expected argument of type management_app.config.set.UpdateResultDictionaryEntryB');
   }
   return Buffer.from(arg.serializeBinary());
 }
 
-function deserialize_UpdateResultDictionaryEntryB(buffer_arg) {
+function deserialize_management_app_config_set_UpdateResultDictionaryEntryB(buffer_arg) {
   return set$config_pb.UpdateResultDictionaryEntryB.deserializeBinary(new Uint8Array(buffer_arg));
 }
 
-function serialize_UpdateResultFloat(arg) {
+function serialize_management_app_config_set_UpdateResultFloat(arg) {
   if (!(arg instanceof set$config_pb.UpdateResultFloat)) {
-    throw new Error('Expected argument of type UpdateResultFloat');
+    throw new Error('Expected argument of type management_app.config.set.UpdateResultFloat');
   }
   return Buffer.from(arg.serializeBinary());
 }
 
-function deserialize_UpdateResultFloat(buffer_arg) {
+function deserialize_management_app_config_set_UpdateResultFloat(buffer_arg) {
   return set$config_pb.UpdateResultFloat.deserializeBinary(new Uint8Array(buffer_arg));
 }
 
-function serialize_UpdateResultReadName(arg) {
+function serialize_management_app_config_set_UpdateResultReadName(arg) {
   if (!(arg instanceof set$config_pb.UpdateResultReadName)) {
-    throw new Error('Expected argument of type UpdateResultReadName');
+    throw new Error('Expected argument of type management_app.config.set.UpdateResultReadName');
   }
   return Buffer.from(arg.serializeBinary());
 }
 
-function deserialize_UpdateResultReadName(buffer_arg) {
+function deserialize_management_app_config_set_UpdateResultReadName(buffer_arg) {
   return set$config_pb.UpdateResultReadName.deserializeBinary(new Uint8Array(buffer_arg));
 }
 
-function serialize_UpdateResultString(arg) {
+function serialize_management_app_config_set_UpdateResultString(arg) {
   if (!(arg instanceof set$config_pb.UpdateResultString)) {
-    throw new Error('Expected argument of type UpdateResultString');
+    throw new Error('Expected argument of type management_app.config.set.UpdateResultString');
   }
   return Buffer.from(arg.serializeBinary());
 }
 
-function deserialize_UpdateResultString(buffer_arg) {
+function deserialize_management_app_config_set_UpdateResultString(buffer_arg) {
   return set$config_pb.UpdateResultString.deserializeBinary(new Uint8Array(buffer_arg));
 }
 
-function serialize_UpdateResultUint32(arg) {
+function serialize_management_app_config_set_UpdateResultUint32(arg) {
   if (!(arg instanceof set$config_pb.UpdateResultUint32)) {
-    throw new Error('Expected argument of type UpdateResultUint32');
+    throw new Error('Expected argument of type management_app.config.set.UpdateResultUint32');
   }
   return Buffer.from(arg.serializeBinary());
 }
 
-function deserialize_UpdateResultUint32(buffer_arg) {
+function deserialize_management_app_config_set_UpdateResultUint32(buffer_arg) {
   return set$config_pb.UpdateResultUint32.deserializeBinary(new Uint8Array(buffer_arg));
 }
 
-function serialize_UpdateSimpleDictionary(arg) {
+function serialize_management_app_config_set_UpdateSimpleDictionary(arg) {
   if (!(arg instanceof set$config_pb.UpdateSimpleDictionary)) {
-    throw new Error('Expected argument of type UpdateSimpleDictionary');
+    throw new Error('Expected argument of type management_app.config.set.UpdateSimpleDictionary');
   }
   return Buffer.from(arg.serializeBinary());
 }
 
-function deserialize_UpdateSimpleDictionary(buffer_arg) {
+function deserialize_management_app_config_set_UpdateSimpleDictionary(buffer_arg) {
   return set$config_pb.UpdateSimpleDictionary.deserializeBinary(new Uint8Array(buffer_arg));
 }
 
-function serialize_UpdateString(arg) {
+function serialize_management_app_config_set_UpdateString(arg) {
   if (!(arg instanceof set$config_pb.UpdateString)) {
-    throw new Error('Expected argument of type UpdateString');
+    throw new Error('Expected argument of type management_app.config.set.UpdateString');
   }
   return Buffer.from(arg.serializeBinary());
 }
 
-function deserialize_UpdateString(buffer_arg) {
+function deserialize_management_app_config_set_UpdateString(buffer_arg) {
   return set$config_pb.UpdateString.deserializeBinary(new Uint8Array(buffer_arg));
 }
 
-function serialize_UpdateUint32(arg) {
+function serialize_management_app_config_set_UpdateUint32(arg) {
   if (!(arg instanceof set$config_pb.UpdateUint32)) {
-    throw new Error('Expected argument of type UpdateUint32');
+    throw new Error('Expected argument of type management_app.config.set.UpdateUint32');
   }
   return Buffer.from(arg.serializeBinary());
 }
 
-function deserialize_UpdateUint32(buffer_arg) {
+function deserialize_management_app_config_set_UpdateUint32(buffer_arg) {
   return set$config_pb.UpdateUint32.deserializeBinary(new Uint8Array(buffer_arg));
 }
 
 
 var ConfigSetterService = exports.ConfigSetterService = {
   updateKind: {
-    path: '/ConfigSetter/updateKind',
+    path: '/management_app.config.set.ConfigSetter/updateKind',
     requestStream: false,
     responseStream: false,
     requestType: set$config_pb.UpdateString,
     responseType: set$config_pb.UpdateResultString,
-    requestSerialize: serialize_UpdateString,
-    requestDeserialize: deserialize_UpdateString,
-    responseSerialize: serialize_UpdateResultString,
-    responseDeserialize: deserialize_UpdateResultString,
+    requestSerialize: serialize_management_app_config_set_UpdateString,
+    requestDeserialize: deserialize_management_app_config_set_UpdateString,
+    responseSerialize: serialize_management_app_config_set_UpdateResultString,
+    responseDeserialize: deserialize_management_app_config_set_UpdateResultString,
   },
   updateReadName: {
-    path: '/ConfigSetter/updateReadName',
+    path: '/management_app.config.set.ConfigSetter/updateReadName',
     requestStream: false,
     responseStream: false,
     requestType: set$config_pb.UpdateReadName,
     responseType: set$config_pb.UpdateResultReadName,
-    requestSerialize: serialize_UpdateReadName,
-    requestDeserialize: deserialize_UpdateReadName,
-    responseSerialize: serialize_UpdateResultReadName,
-    responseDeserialize: deserialize_UpdateResultReadName,
+    requestSerialize: serialize_management_app_config_set_UpdateReadName,
+    requestDeserialize: deserialize_management_app_config_set_UpdateReadName,
+    responseSerialize: serialize_management_app_config_set_UpdateResultReadName,
+    responseDeserialize: deserialize_management_app_config_set_UpdateResultReadName,
   },
   updateSpeed: {
-    path: '/ConfigSetter/updateSpeed',
+    path: '/management_app.config.set.ConfigSetter/updateSpeed',
     requestStream: false,
     responseStream: false,
     requestType: set$config_pb.UpdateFloat,
     responseType: set$config_pb.UpdateResultFloat,
-    requestSerialize: serialize_UpdateFloat,
-    requestDeserialize: deserialize_UpdateFloat,
-    responseSerialize: serialize_UpdateResultFloat,
-    responseDeserialize: deserialize_UpdateResultFloat,
+    requestSerialize: serialize_management_app_config_set_UpdateFloat,
+    requestDeserialize: deserialize_management_app_config_set_UpdateFloat,
+    responseSerialize: serialize_management_app_config_set_UpdateResultFloat,
+    responseDeserialize: deserialize_management_app_config_set_UpdateResultFloat,
   },
   updateTone: {
-    path: '/ConfigSetter/updateTone',
+    path: '/management_app.config.set.ConfigSetter/updateTone',
     requestStream: false,
     responseStream: false,
     requestType: set$config_pb.UpdateFloat,
     responseType: set$config_pb.UpdateResultFloat,
-    requestSerialize: serialize_UpdateFloat,
-    requestDeserialize: deserialize_UpdateFloat,
-    responseSerialize: serialize_UpdateResultFloat,
-    responseDeserialize: deserialize_UpdateResultFloat,
+    requestSerialize: serialize_management_app_config_set_UpdateFloat,
+    requestDeserialize: deserialize_management_app_config_set_UpdateFloat,
+    responseSerialize: serialize_management_app_config_set_UpdateResultFloat,
+    responseDeserialize: deserialize_management_app_config_set_UpdateResultFloat,
   },
   updateVolume: {
-    path: '/ConfigSetter/updateVolume',
+    path: '/management_app.config.set.ConfigSetter/updateVolume',
     requestStream: false,
     responseStream: false,
     requestType: set$config_pb.UpdateFloat,
     responseType: set$config_pb.UpdateResultFloat,
-    requestSerialize: serialize_UpdateFloat,
-    requestDeserialize: deserialize_UpdateFloat,
-    responseSerialize: serialize_UpdateResultFloat,
-    responseDeserialize: deserialize_UpdateResultFloat,
+    requestSerialize: serialize_management_app_config_set_UpdateFloat,
+    requestDeserialize: deserialize_management_app_config_set_UpdateFloat,
+    responseSerialize: serialize_management_app_config_set_UpdateResultFloat,
+    responseDeserialize: deserialize_management_app_config_set_UpdateResultFloat,
   },
   updateAllpass: {
-    path: '/ConfigSetter/updateAllpass',
+    path: '/management_app.config.set.ConfigSetter/updateAllpass',
     requestStream: false,
     responseStream: false,
     requestType: set$config_pb.UpdateFloat,
     responseType: set$config_pb.UpdateResultFloat,
-    requestSerialize: serialize_UpdateFloat,
-    requestDeserialize: deserialize_UpdateFloat,
-    responseSerialize: serialize_UpdateResultFloat,
-    responseDeserialize: deserialize_UpdateResultFloat,
+    requestSerialize: serialize_management_app_config_set_UpdateFloat,
+    requestDeserialize: deserialize_management_app_config_set_UpdateFloat,
+    responseSerialize: serialize_management_app_config_set_UpdateResultFloat,
+    responseDeserialize: deserialize_management_app_config_set_UpdateResultFloat,
   },
   updateIntone: {
-    path: '/ConfigSetter/updateIntone',
+    path: '/management_app.config.set.ConfigSetter/updateIntone',
     requestStream: false,
     responseStream: false,
     requestType: set$config_pb.UpdateFloat,
     responseType: set$config_pb.UpdateResultFloat,
-    requestSerialize: serialize_UpdateFloat,
-    requestDeserialize: deserialize_UpdateFloat,
-    responseSerialize: serialize_UpdateResultFloat,
-    responseDeserialize: deserialize_UpdateResultFloat,
+    requestSerialize: serialize_management_app_config_set_UpdateFloat,
+    requestDeserialize: deserialize_management_app_config_set_UpdateFloat,
+    responseSerialize: serialize_management_app_config_set_UpdateResultFloat,
+    responseDeserialize: deserialize_management_app_config_set_UpdateResultFloat,
   },
   updateThreshold: {
-    path: '/ConfigSetter/updateThreshold',
+    path: '/management_app.config.set.ConfigSetter/updateThreshold',
     requestStream: false,
     responseStream: false,
     requestType: set$config_pb.UpdateFloat,
     responseType: set$config_pb.UpdateResultFloat,
-    requestSerialize: serialize_UpdateFloat,
-    requestDeserialize: deserialize_UpdateFloat,
-    responseSerialize: serialize_UpdateResultFloat,
-    responseDeserialize: deserialize_UpdateResultFloat,
+    requestSerialize: serialize_management_app_config_set_UpdateFloat,
+    requestDeserialize: deserialize_management_app_config_set_UpdateFloat,
+    responseSerialize: serialize_management_app_config_set_UpdateResultFloat,
+    responseDeserialize: deserialize_management_app_config_set_UpdateResultFloat,
   },
   updateRandomizer: {
-    path: '/ConfigSetter/updateRandomizer',
+    path: '/management_app.config.set.ConfigSetter/updateRandomizer',
     requestStream: false,
     responseStream: false,
     requestType: set$config_pb.UpdateString,
     responseType: set$config_pb.UpdateResultFloat,
-    requestSerialize: serialize_UpdateString,
-    requestDeserialize: deserialize_UpdateString,
-    responseSerialize: serialize_UpdateResultFloat,
-    responseDeserialize: deserialize_UpdateResultFloat,
+    requestSerialize: serialize_management_app_config_set_UpdateString,
+    requestDeserialize: deserialize_management_app_config_set_UpdateString,
+    responseSerialize: serialize_management_app_config_set_UpdateResultFloat,
+    responseDeserialize: deserialize_management_app_config_set_UpdateResultFloat,
   },
   updateMaxReadLimit: {
-    path: '/ConfigSetter/updateMaxReadLimit',
+    path: '/management_app.config.set.ConfigSetter/updateMaxReadLimit',
     requestStream: false,
     responseStream: false,
     requestType: set$config_pb.UpdateUint32,
     responseType: set$config_pb.UpdateResultUint32,
-    requestSerialize: serialize_UpdateUint32,
-    requestDeserialize: deserialize_UpdateUint32,
-    responseSerialize: serialize_UpdateResultUint32,
-    responseDeserialize: deserialize_UpdateResultUint32,
+    requestSerialize: serialize_management_app_config_set_UpdateUint32,
+    requestDeserialize: deserialize_management_app_config_set_UpdateUint32,
+    responseSerialize: serialize_management_app_config_set_UpdateResultUint32,
+    responseDeserialize: deserialize_management_app_config_set_UpdateResultUint32,
   },
   updateMaxVolume: {
-    path: '/ConfigSetter/updateMaxVolume',
+    path: '/management_app.config.set.ConfigSetter/updateMaxVolume',
     requestStream: false,
     responseStream: false,
     requestType: set$config_pb.UpdateUint32,
     responseType: set$config_pb.UpdateResultUint32,
-    requestSerialize: serialize_UpdateUint32,
-    requestDeserialize: deserialize_UpdateUint32,
-    responseSerialize: serialize_UpdateResultUint32,
-    responseDeserialize: deserialize_UpdateResultUint32,
+    requestSerialize: serialize_management_app_config_set_UpdateUint32,
+    requestDeserialize: deserialize_management_app_config_set_UpdateUint32,
+    responseSerialize: serialize_management_app_config_set_UpdateResultUint32,
+    responseDeserialize: deserialize_management_app_config_set_UpdateResultUint32,
   },
   updateOrInsertMainDictionary: {
-    path: '/ConfigSetter/updateOrInsertMainDictionary',
+    path: '/management_app.config.set.ConfigSetter/updateOrInsertMainDictionary',
     requestStream: false,
     responseStream: false,
     requestType: set$config_pb.UpdateOrInsertMainDictionary,
     responseType: set$config_pb.UpdateResultDictionaryEntryA,
-    requestSerialize: serialize_UpdateOrInsertMainDictionary,
-    requestDeserialize: deserialize_UpdateOrInsertMainDictionary,
-    responseSerialize: serialize_UpdateResultDictionaryEntryA,
-    responseDeserialize: deserialize_UpdateResultDictionaryEntryA,
+    requestSerialize: serialize_management_app_config_set_UpdateOrInsertMainDictionary,
+    requestDeserialize: deserialize_management_app_config_set_UpdateOrInsertMainDictionary,
+    responseSerialize: serialize_management_app_config_set_UpdateResultDictionaryEntryA,
+    responseDeserialize: deserialize_management_app_config_set_UpdateResultDictionaryEntryA,
   },
   removeMainDictionary: {
-    path: '/ConfigSetter/removeMainDictionary',
+    path: '/management_app.config.set.ConfigSetter/removeMainDictionary',
     requestStream: false,
     responseStream: false,
     requestType: set$config_pb.RemoveFromMainDictionary,
     responseType: set$config_pb.UpdateResultDictionaryEntryA,
-    requestSerialize: serialize_RemoveFromMainDictionary,
-    requestDeserialize: deserialize_RemoveFromMainDictionary,
-    responseSerialize: serialize_UpdateResultDictionaryEntryA,
-    responseDeserialize: deserialize_UpdateResultDictionaryEntryA,
+    requestSerialize: serialize_management_app_config_set_RemoveFromMainDictionary,
+    requestDeserialize: deserialize_management_app_config_set_RemoveFromMainDictionary,
+    responseSerialize: serialize_management_app_config_set_UpdateResultDictionaryEntryA,
+    responseDeserialize: deserialize_management_app_config_set_UpdateResultDictionaryEntryA,
   },
   updateSimpleDictionary: {
-    path: '/ConfigSetter/updateSimpleDictionary',
+    path: '/management_app.config.set.ConfigSetter/updateSimpleDictionary',
     requestStream: false,
     responseStream: false,
     requestType: set$config_pb.UpdateSimpleDictionary,
     responseType: set$config_pb.UpdateResultDictionaryEntryB,
-    requestSerialize: serialize_UpdateSimpleDictionary,
-    requestDeserialize: deserialize_UpdateSimpleDictionary,
-    responseSerialize: serialize_UpdateResultDictionaryEntryB,
-    responseDeserialize: deserialize_UpdateResultDictionaryEntryB,
+    requestSerialize: serialize_management_app_config_set_UpdateSimpleDictionary,
+    requestDeserialize: deserialize_management_app_config_set_UpdateSimpleDictionary,
+    responseSerialize: serialize_management_app_config_set_UpdateResultDictionaryEntryB,
+    responseDeserialize: deserialize_management_app_config_set_UpdateResultDictionaryEntryB,
   },
   insertSimpleDictionary: {
-    path: '/ConfigSetter/insertSimpleDictionary',
+    path: '/management_app.config.set.ConfigSetter/insertSimpleDictionary',
     requestStream: false,
     responseStream: false,
     requestType: set$config_pb.InsertSimpleDictionary,
     responseType: set$config_pb.UpdateResultDictionaryEntryB,
-    requestSerialize: serialize_InsertSimpleDictionary,
-    requestDeserialize: deserialize_InsertSimpleDictionary,
-    responseSerialize: serialize_UpdateResultDictionaryEntryB,
-    responseDeserialize: deserialize_UpdateResultDictionaryEntryB,
+    requestSerialize: serialize_management_app_config_set_InsertSimpleDictionary,
+    requestDeserialize: deserialize_management_app_config_set_InsertSimpleDictionary,
+    responseSerialize: serialize_management_app_config_set_UpdateResultDictionaryEntryB,
+    responseDeserialize: deserialize_management_app_config_set_UpdateResultDictionaryEntryB,
   },
   addSimpleDictionary: {
-    path: '/ConfigSetter/addSimpleDictionary',
+    path: '/management_app.config.set.ConfigSetter/addSimpleDictionary',
     requestStream: false,
     responseStream: false,
     requestType: set$config_pb.AddSimpleDictionary,
     responseType: set$config_pb.UpdateResultDictionaryEntryB,
-    requestSerialize: serialize_AddSimpleDictionary,
-    requestDeserialize: deserialize_AddSimpleDictionary,
-    responseSerialize: serialize_UpdateResultDictionaryEntryB,
-    responseDeserialize: deserialize_UpdateResultDictionaryEntryB,
+    requestSerialize: serialize_management_app_config_set_AddSimpleDictionary,
+    requestDeserialize: deserialize_management_app_config_set_AddSimpleDictionary,
+    responseSerialize: serialize_management_app_config_set_UpdateResultDictionaryEntryB,
+    responseDeserialize: deserialize_management_app_config_set_UpdateResultDictionaryEntryB,
   },
   removeSimpleDictionary: {
-    path: '/ConfigSetter/removeSimpleDictionary',
+    path: '/management_app.config.set.ConfigSetter/removeSimpleDictionary',
     requestStream: false,
     responseStream: false,
     requestType: set$config_pb.RemoveSimpleDictionary,
     responseType: set$config_pb.UpdateResultDictionaryEntryB,
-    requestSerialize: serialize_RemoveSimpleDictionary,
-    requestDeserialize: deserialize_RemoveSimpleDictionary,
-    responseSerialize: serialize_UpdateResultDictionaryEntryB,
-    responseDeserialize: deserialize_UpdateResultDictionaryEntryB,
+    requestSerialize: serialize_management_app_config_set_RemoveSimpleDictionary,
+    requestDeserialize: deserialize_management_app_config_set_RemoveSimpleDictionary,
+    responseSerialize: serialize_management_app_config_set_UpdateResultDictionaryEntryB,
+    responseDeserialize: deserialize_management_app_config_set_UpdateResultDictionaryEntryB,
   },
   moveSimpleDictionary: {
-    path: '/ConfigSetter/moveSimpleDictionary',
+    path: '/management_app.config.set.ConfigSetter/moveSimpleDictionary',
     requestStream: false,
     responseStream: false,
     requestType: set$config_pb.MoveSimpleDictionary,
     responseType: set$config_pb.MoveSimpleDictionaryResult,
-    requestSerialize: serialize_MoveSimpleDictionary,
-    requestDeserialize: deserialize_MoveSimpleDictionary,
-    responseSerialize: serialize_MoveSimpleDictionaryResult,
-    responseDeserialize: deserialize_MoveSimpleDictionaryResult,
+    requestSerialize: serialize_management_app_config_set_MoveSimpleDictionary,
+    requestDeserialize: deserialize_management_app_config_set_MoveSimpleDictionary,
+    responseSerialize: serialize_management_app_config_set_MoveSimpleDictionaryResult,
+    responseDeserialize: deserialize_management_app_config_set_MoveSimpleDictionaryResult,
   },
 };
 

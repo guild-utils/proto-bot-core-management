@@ -1,4 +1,5 @@
 syntax = "proto3";
+package management_app.config.set;
 import "config.proto";
 
 message Target {
@@ -120,15 +121,15 @@ message RemoveFromMainDictionary{
 }
 message UpdateResultDictionaryEntryAOk{
   oneof before_optional{
-    config.DictionaryEntryA before=1;
+    management_app.config.common.DictionaryEntryA before=1;
   }
   oneof after_optional{
-    config.DictionaryEntryA after=2;
+    management_app.config.common.DictionaryEntryA after=2;
   }
 }
 message UpdateResultDictionaryEntryASame{
   oneof value_optional{
-    config.DictionaryEntryA value=1;
+    management_app.config.common.DictionaryEntryA value=1;
   }
 }
 message UpdateResultDictionaryEntryA{
@@ -140,7 +141,7 @@ message UpdateResultDictionaryEntryA{
 }
 message UpdateOrInsertMainDictionary{
   string guild=1;
-  config.DictionaryEntryA value=2;
+  management_app.config.common.DictionaryEntryA value=2;
 }
 
 message SimpleDictionaryUpdateTargetGuild{
@@ -158,11 +159,11 @@ message SimpleDictionaryUpdateTarget{
 }
 message UpdateSimpleDictionary{
   SimpleDictionaryUpdateTarget target=1;
-  config.DictionaryEntryB value=2;
+  management_app.config.common.DictionaryEntryB value=2;
 }
 message InsertSimpleDictionary{
   SimpleDictionaryUpdateTarget target=1;
-  config.DictionaryEntryB value=2;
+  management_app.config.common.DictionaryEntryB value=2;
 }
 message AddSimpleDictionary{
   SimpleDictionaryUpdateTarget target=1;
@@ -175,15 +176,15 @@ message RemoveSimpleDictionary{
 }
 message UpdateResultDictionaryEntryBOk{
   oneof before_optional{
-    config.DictionaryEntryB before=1;
+    management_app.config.common.DictionaryEntryB before=1;
   }
   oneof after_optional{
-    config.DictionaryEntryB after=2;
+    management_app.config.common.DictionaryEntryB after=2;
   }
 }
 message UpdateResultDictionaryEntryBSame{
   oneof value_optional{
-    config.DictionaryEntryB value=1;
+    management_app.config.common.DictionaryEntryB value=1;
   }
 }
 message UpdateResultDictionaryEntryB{

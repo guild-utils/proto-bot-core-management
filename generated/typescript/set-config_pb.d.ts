@@ -1,4 +1,4 @@
-// package: 
+// package: management_app.config.set
 // file: set-config.proto
 
 /* tslint:disable */

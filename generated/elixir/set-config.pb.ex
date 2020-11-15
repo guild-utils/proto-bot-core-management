@@ -1,4 +1,4 @@
-defmodule Target do
+defmodule ManagementApp.Config.Set.Target do
   @moduledoc false
   use Protobuf, syntax: :proto3
 
@@ -13,7 +13,7 @@ defmodule Target do
   field :user, 2, type: :string
 end
 
-defmodule UpdateResultError do
+defmodule ManagementApp.Config.Set.UpdateResultError do
   @moduledoc false
   use Protobuf, syntax: :proto3
 
@@ -26,23 +26,23 @@ defmodule UpdateResultError do
   field :message, 1, type: :string
 end
 
-defmodule UpdateString do
+defmodule ManagementApp.Config.Set.UpdateString do
   @moduledoc false
   use Protobuf, syntax: :proto3
 
   @type t :: %__MODULE__{
           value_optional: {atom, any},
-          target: Target.t() | nil
+          target: ManagementApp.Config.Set.Target.t() | nil
         }
 
   defstruct [:value_optional, :target]
 
   oneof :value_optional, 0
-  field :target, 1, type: Target
+  field :target, 1, type: ManagementApp.Config.Set.Target
   field :value, 2, type: :string, oneof: 0
 end
 
-defmodule UpdateResultStringOk do
+defmodule ManagementApp.Config.Set.UpdateResultStringOk do
   @moduledoc false
   use Protobuf, syntax: :proto3
 
@@ -59,7 +59,7 @@ defmodule UpdateResultStringOk do
   field :after, 2, type: :string, oneof: 1
 end
 
-defmodule UpdateResultStringSame do
+defmodule ManagementApp.Config.Set.UpdateResultStringSame do
   @moduledoc false
   use Protobuf, syntax: :proto3
 
@@ -73,7 +73,7 @@ defmodule UpdateResultStringSame do
   field :value, 1, type: :string, oneof: 0
 end
 
-defmodule UpdateResultString do
+defmodule ManagementApp.Config.Set.UpdateResultString do
   @moduledoc false
   use Protobuf, syntax: :proto3
 
@@ -84,28 +84,28 @@ defmodule UpdateResultString do
   defstruct [:updateResult]
 
   oneof :updateResult, 0
-  field :resultOk, 1, type: UpdateResultStringOk, oneof: 0
-  field :resultSame, 2, type: UpdateResultStringSame, oneof: 0
-  field :error, 3, type: UpdateResultError, oneof: 0
+  field :resultOk, 1, type: ManagementApp.Config.Set.UpdateResultStringOk, oneof: 0
+  field :resultSame, 2, type: ManagementApp.Config.Set.UpdateResultStringSame, oneof: 0
+  field :error, 3, type: ManagementApp.Config.Set.UpdateResultError, oneof: 0
 end
 
-defmodule UpdateFloat do
+defmodule ManagementApp.Config.Set.UpdateFloat do
   @moduledoc false
   use Protobuf, syntax: :proto3
 
   @type t :: %__MODULE__{
           value_optional: {atom, any},
-          target: Target.t() | nil
+          target: ManagementApp.Config.Set.Target.t() | nil
         }
 
   defstruct [:value_optional, :target]
 
   oneof :value_optional, 0
-  field :target, 1, type: Target
+  field :target, 1, type: ManagementApp.Config.Set.Target
   field :value, 2, type: :float, oneof: 0
 end
 
-defmodule UpdateResultFloatOk do
+defmodule ManagementApp.Config.Set.UpdateResultFloatOk do
   @moduledoc false
   use Protobuf, syntax: :proto3
 
@@ -122,7 +122,7 @@ defmodule UpdateResultFloatOk do
   field :after, 2, type: :float, oneof: 1
 end
 
-defmodule UpdateResultFloatSame do
+defmodule ManagementApp.Config.Set.UpdateResultFloatSame do
   @moduledoc false
   use Protobuf, syntax: :proto3
 
@@ -136,7 +136,7 @@ defmodule UpdateResultFloatSame do
   field :value, 1, type: :float, oneof: 0
 end
 
-defmodule UpdateResultFloat do
+defmodule ManagementApp.Config.Set.UpdateResultFloat do
   @moduledoc false
   use Protobuf, syntax: :proto3
 
@@ -147,29 +147,29 @@ defmodule UpdateResultFloat do
   defstruct [:updateResult]
 
   oneof :updateResult, 0
-  field :resultOk, 1, type: UpdateResultFloatOk, oneof: 0
-  field :resultSame, 2, type: UpdateResultFloatSame, oneof: 0
-  field :error, 3, type: UpdateResultError, oneof: 0
+  field :resultOk, 1, type: ManagementApp.Config.Set.UpdateResultFloatOk, oneof: 0
+  field :resultSame, 2, type: ManagementApp.Config.Set.UpdateResultFloatSame, oneof: 0
+  field :error, 3, type: ManagementApp.Config.Set.UpdateResultError, oneof: 0
 end
 
-defmodule UpdateReadName do
+defmodule ManagementApp.Config.Set.UpdateReadName do
   @moduledoc false
   use Protobuf, syntax: :proto3
 
   @type t :: %__MODULE__{
           value_optional: {atom, any},
-          target: Target.t() | nil
+          target: ManagementApp.Config.Set.Target.t() | nil
         }
 
   defstruct [:value_optional, :target]
 
   oneof :value_optional, 0
-  field :target, 1, type: Target
+  field :target, 1, type: ManagementApp.Config.Set.Target
   field :value_string, 2, type: :string, oneof: 0
   field :value_bool, 3, type: :bool, oneof: 0
 end
 
-defmodule UpdateReadNameOk do
+defmodule ManagementApp.Config.Set.UpdateReadNameOk do
   @moduledoc false
   use Protobuf, syntax: :proto3
 
@@ -188,7 +188,7 @@ defmodule UpdateReadNameOk do
   field :after_bool, 4, type: :bool, oneof: 1
 end
 
-defmodule UpdateResultReadNameSame do
+defmodule ManagementApp.Config.Set.UpdateResultReadNameSame do
   @moduledoc false
   use Protobuf, syntax: :proto3
 
@@ -203,7 +203,7 @@ defmodule UpdateResultReadNameSame do
   field :value_bool, 2, type: :bool, oneof: 0
 end
 
-defmodule UpdateResultReadName do
+defmodule ManagementApp.Config.Set.UpdateResultReadName do
   @moduledoc false
   use Protobuf, syntax: :proto3
 
@@ -214,28 +214,28 @@ defmodule UpdateResultReadName do
   defstruct [:updateResult]
 
   oneof :updateResult, 0
-  field :resultOk, 1, type: UpdateReadNameOk, oneof: 0
-  field :resultSame, 2, type: UpdateResultReadNameSame, oneof: 0
-  field :error, 3, type: UpdateResultError, oneof: 0
+  field :resultOk, 1, type: ManagementApp.Config.Set.UpdateReadNameOk, oneof: 0
+  field :resultSame, 2, type: ManagementApp.Config.Set.UpdateResultReadNameSame, oneof: 0
+  field :error, 3, type: ManagementApp.Config.Set.UpdateResultError, oneof: 0
 end
 
-defmodule UpdateUint32 do
+defmodule ManagementApp.Config.Set.UpdateUint32 do
   @moduledoc false
   use Protobuf, syntax: :proto3
 
   @type t :: %__MODULE__{
           value_optional: {atom, any},
-          target: Target.t() | nil
+          target: ManagementApp.Config.Set.Target.t() | nil
         }
 
   defstruct [:value_optional, :target]
 
   oneof :value_optional, 0
-  field :target, 1, type: Target
+  field :target, 1, type: ManagementApp.Config.Set.Target
   field :value, 2, type: :uint32, oneof: 0
 end
 
-defmodule UpdateResultUint32Ok do
+defmodule ManagementApp.Config.Set.UpdateResultUint32Ok do
   @moduledoc false
   use Protobuf, syntax: :proto3
 
@@ -252,7 +252,7 @@ defmodule UpdateResultUint32Ok do
   field :after, 2, type: :uint32, oneof: 1
 end
 
-defmodule UpdateResultUint32Same do
+defmodule ManagementApp.Config.Set.UpdateResultUint32Same do
   @moduledoc false
   use Protobuf, syntax: :proto3
 
@@ -266,7 +266,7 @@ defmodule UpdateResultUint32Same do
   field :value, 1, type: :uint32, oneof: 0
 end
 
-defmodule UpdateResultUint32 do
+defmodule ManagementApp.Config.Set.UpdateResultUint32 do
   @moduledoc false
   use Protobuf, syntax: :proto3
 
@@ -277,12 +277,12 @@ defmodule UpdateResultUint32 do
   defstruct [:updateResult]
 
   oneof :updateResult, 0
-  field :resultOk, 1, type: UpdateResultUint32Ok, oneof: 0
-  field :resultSame, 2, type: UpdateResultUint32Same, oneof: 0
-  field :error, 3, type: UpdateResultError, oneof: 0
+  field :resultOk, 1, type: ManagementApp.Config.Set.UpdateResultUint32Ok, oneof: 0
+  field :resultSame, 2, type: ManagementApp.Config.Set.UpdateResultUint32Same, oneof: 0
+  field :error, 3, type: ManagementApp.Config.Set.UpdateResultError, oneof: 0
 end
 
-defmodule RemoveFromMainDictionary do
+defmodule ManagementApp.Config.Set.RemoveFromMainDictionary do
   @moduledoc false
   use Protobuf, syntax: :proto3
 
@@ -297,7 +297,7 @@ defmodule RemoveFromMainDictionary do
   field :key, 2, type: :string
 end
 
-defmodule UpdateResultDictionaryEntryAOk do
+defmodule ManagementApp.Config.Set.UpdateResultDictionaryEntryAOk do
   @moduledoc false
   use Protobuf, syntax: :proto3
 
@@ -310,11 +310,11 @@ defmodule UpdateResultDictionaryEntryAOk do
 
   oneof :before_optional, 0
   oneof :after_optional, 1
-  field :before, 1, type: Config.DictionaryEntryA, oneof: 0
-  field :after, 2, type: Config.DictionaryEntryA, oneof: 1
+  field :before, 1, type: ManagementApp.Config.Common.DictionaryEntryA, oneof: 0
+  field :after, 2, type: ManagementApp.Config.Common.DictionaryEntryA, oneof: 1
 end
 
-defmodule UpdateResultDictionaryEntryASame do
+defmodule ManagementApp.Config.Set.UpdateResultDictionaryEntryASame do
   @moduledoc false
   use Protobuf, syntax: :proto3
 
@@ -325,10 +325,10 @@ defmodule UpdateResultDictionaryEntryASame do
   defstruct [:value_optional]
 
   oneof :value_optional, 0
-  field :value, 1, type: Config.DictionaryEntryA, oneof: 0
+  field :value, 1, type: ManagementApp.Config.Common.DictionaryEntryA, oneof: 0
 end
 
-defmodule UpdateResultDictionaryEntryA do
+defmodule ManagementApp.Config.Set.UpdateResultDictionaryEntryA do
   @moduledoc false
   use Protobuf, syntax: :proto3
 
@@ -339,27 +339,27 @@ defmodule UpdateResultDictionaryEntryA do
   defstruct [:updateResult]
 
   oneof :updateResult, 0
-  field :resultOk, 1, type: UpdateResultDictionaryEntryAOk, oneof: 0
-  field :resultSame, 2, type: UpdateResultDictionaryEntryASame, oneof: 0
-  field :error, 3, type: UpdateResultError, oneof: 0
+  field :resultOk, 1, type: ManagementApp.Config.Set.UpdateResultDictionaryEntryAOk, oneof: 0
+  field :resultSame, 2, type: ManagementApp.Config.Set.UpdateResultDictionaryEntryASame, oneof: 0
+  field :error, 3, type: ManagementApp.Config.Set.UpdateResultError, oneof: 0
 end
 
-defmodule UpdateOrInsertMainDictionary do
+defmodule ManagementApp.Config.Set.UpdateOrInsertMainDictionary do
   @moduledoc false
   use Protobuf, syntax: :proto3
 
   @type t :: %__MODULE__{
           guild: String.t(),
-          value: Config.DictionaryEntryA.t() | nil
+          value: ManagementApp.Config.Common.DictionaryEntryA.t() | nil
         }
 
   defstruct [:guild, :value]
 
   field :guild, 1, type: :string
-  field :value, 2, type: Config.DictionaryEntryA
+  field :value, 2, type: ManagementApp.Config.Common.DictionaryEntryA
 end
 
-defmodule SimpleDictionaryUpdateTargetGuild do
+defmodule ManagementApp.Config.Set.SimpleDictionaryUpdateTargetGuild do
   @moduledoc false
   use Protobuf, syntax: :proto3
 
@@ -372,7 +372,7 @@ defmodule SimpleDictionaryUpdateTargetGuild do
   field :guild, 1, type: :string
 end
 
-defmodule SimpleDictionaryUpdateTargetSharedDictionary do
+defmodule ManagementApp.Config.Set.SimpleDictionaryUpdateTargetSharedDictionary do
   @moduledoc false
   use Protobuf, syntax: :proto3
 
@@ -385,7 +385,7 @@ defmodule SimpleDictionaryUpdateTargetSharedDictionary do
   field :id, 1, type: :string
 end
 
-defmodule SimpleDictionaryUpdateTarget do
+defmodule ManagementApp.Config.Set.SimpleDictionaryUpdateTarget do
   @moduledoc false
   use Protobuf, syntax: :proto3
 
@@ -396,74 +396,77 @@ defmodule SimpleDictionaryUpdateTarget do
   defstruct [:target]
 
   oneof :target, 0
-  field :before, 1, type: SimpleDictionaryUpdateTargetGuild, oneof: 0
-  field :after, 2, type: SimpleDictionaryUpdateTargetGuild, oneof: 0
-  field :shared, 3, type: SimpleDictionaryUpdateTargetSharedDictionary, oneof: 0
+  field :before, 1, type: ManagementApp.Config.Set.SimpleDictionaryUpdateTargetGuild, oneof: 0
+  field :after, 2, type: ManagementApp.Config.Set.SimpleDictionaryUpdateTargetGuild, oneof: 0
+
+  field :shared, 3,
+    type: ManagementApp.Config.Set.SimpleDictionaryUpdateTargetSharedDictionary,
+    oneof: 0
 end
 
-defmodule UpdateSimpleDictionary do
+defmodule ManagementApp.Config.Set.UpdateSimpleDictionary do
   @moduledoc false
   use Protobuf, syntax: :proto3
 
   @type t :: %__MODULE__{
-          target: SimpleDictionaryUpdateTarget.t() | nil,
-          value: Config.DictionaryEntryB.t() | nil
+          target: ManagementApp.Config.Set.SimpleDictionaryUpdateTarget.t() | nil,
+          value: ManagementApp.Config.Common.DictionaryEntryB.t() | nil
         }
 
   defstruct [:target, :value]
 
-  field :target, 1, type: SimpleDictionaryUpdateTarget
-  field :value, 2, type: Config.DictionaryEntryB
+  field :target, 1, type: ManagementApp.Config.Set.SimpleDictionaryUpdateTarget
+  field :value, 2, type: ManagementApp.Config.Common.DictionaryEntryB
 end
 
-defmodule InsertSimpleDictionary do
+defmodule ManagementApp.Config.Set.InsertSimpleDictionary do
   @moduledoc false
   use Protobuf, syntax: :proto3
 
   @type t :: %__MODULE__{
-          target: SimpleDictionaryUpdateTarget.t() | nil,
-          value: Config.DictionaryEntryB.t() | nil
+          target: ManagementApp.Config.Set.SimpleDictionaryUpdateTarget.t() | nil,
+          value: ManagementApp.Config.Common.DictionaryEntryB.t() | nil
         }
 
   defstruct [:target, :value]
 
-  field :target, 1, type: SimpleDictionaryUpdateTarget
-  field :value, 2, type: Config.DictionaryEntryB
+  field :target, 1, type: ManagementApp.Config.Set.SimpleDictionaryUpdateTarget
+  field :value, 2, type: ManagementApp.Config.Common.DictionaryEntryB
 end
 
-defmodule AddSimpleDictionary do
+defmodule ManagementApp.Config.Set.AddSimpleDictionary do
   @moduledoc false
   use Protobuf, syntax: :proto3
 
   @type t :: %__MODULE__{
-          target: SimpleDictionaryUpdateTarget.t() | nil,
+          target: ManagementApp.Config.Set.SimpleDictionaryUpdateTarget.t() | nil,
           from: String.t(),
           to: String.t()
         }
 
   defstruct [:target, :from, :to]
 
-  field :target, 1, type: SimpleDictionaryUpdateTarget
+  field :target, 1, type: ManagementApp.Config.Set.SimpleDictionaryUpdateTarget
   field :from, 2, type: :string
   field :to, 3, type: :string
 end
 
-defmodule RemoveSimpleDictionary do
+defmodule ManagementApp.Config.Set.RemoveSimpleDictionary do
   @moduledoc false
   use Protobuf, syntax: :proto3
 
   @type t :: %__MODULE__{
-          target: SimpleDictionaryUpdateTarget.t() | nil,
+          target: ManagementApp.Config.Set.SimpleDictionaryUpdateTarget.t() | nil,
           index: non_neg_integer
         }
 
   defstruct [:target, :index]
 
-  field :target, 1, type: SimpleDictionaryUpdateTarget
+  field :target, 1, type: ManagementApp.Config.Set.SimpleDictionaryUpdateTarget
   field :index, 2, type: :uint32
 end
 
-defmodule UpdateResultDictionaryEntryBOk do
+defmodule ManagementApp.Config.Set.UpdateResultDictionaryEntryBOk do
   @moduledoc false
   use Protobuf, syntax: :proto3
 
@@ -476,11 +479,11 @@ defmodule UpdateResultDictionaryEntryBOk do
 
   oneof :before_optional, 0
   oneof :after_optional, 1
-  field :before, 1, type: Config.DictionaryEntryB, oneof: 0
-  field :after, 2, type: Config.DictionaryEntryB, oneof: 1
+  field :before, 1, type: ManagementApp.Config.Common.DictionaryEntryB, oneof: 0
+  field :after, 2, type: ManagementApp.Config.Common.DictionaryEntryB, oneof: 1
 end
 
-defmodule UpdateResultDictionaryEntryBSame do
+defmodule ManagementApp.Config.Set.UpdateResultDictionaryEntryBSame do
   @moduledoc false
   use Protobuf, syntax: :proto3
 
@@ -491,10 +494,10 @@ defmodule UpdateResultDictionaryEntryBSame do
   defstruct [:value_optional]
 
   oneof :value_optional, 0
-  field :value, 1, type: Config.DictionaryEntryB, oneof: 0
+  field :value, 1, type: ManagementApp.Config.Common.DictionaryEntryB, oneof: 0
 end
 
-defmodule UpdateResultDictionaryEntryB do
+defmodule ManagementApp.Config.Set.UpdateResultDictionaryEntryB do
   @moduledoc false
   use Protobuf, syntax: :proto3
 
@@ -505,29 +508,29 @@ defmodule UpdateResultDictionaryEntryB do
   defstruct [:updateResult]
 
   oneof :updateResult, 0
-  field :resultOk, 1, type: UpdateResultDictionaryEntryBOk, oneof: 0
-  field :resultSame, 2, type: UpdateResultDictionaryEntryBSame, oneof: 0
-  field :error, 3, type: UpdateResultError, oneof: 0
+  field :resultOk, 1, type: ManagementApp.Config.Set.UpdateResultDictionaryEntryBOk, oneof: 0
+  field :resultSame, 2, type: ManagementApp.Config.Set.UpdateResultDictionaryEntryBSame, oneof: 0
+  field :error, 3, type: ManagementApp.Config.Set.UpdateResultError, oneof: 0
 end
 
-defmodule MoveSimpleDictionary do
+defmodule ManagementApp.Config.Set.MoveSimpleDictionary do
   @moduledoc false
   use Protobuf, syntax: :proto3
 
   @type t :: %__MODULE__{
-          target: SimpleDictionaryUpdateTarget.t() | nil,
+          target: ManagementApp.Config.Set.SimpleDictionaryUpdateTarget.t() | nil,
           from: non_neg_integer,
           to: non_neg_integer
         }
 
   defstruct [:target, :from, :to]
 
-  field :target, 1, type: SimpleDictionaryUpdateTarget
+  field :target, 1, type: ManagementApp.Config.Set.SimpleDictionaryUpdateTarget
   field :from, 2, type: :uint32
   field :to, 3, type: :uint32
 end
 
-defmodule MoveSimpleDictionaryResultOk do
+defmodule ManagementApp.Config.Set.MoveSimpleDictionaryResultOk do
   @moduledoc false
   use Protobuf, syntax: :proto3
   @type t :: %__MODULE__{}
@@ -535,7 +538,7 @@ defmodule MoveSimpleDictionaryResultOk do
   defstruct []
 end
 
-defmodule MoveSimpleDictionaryResult do
+defmodule ManagementApp.Config.Set.MoveSimpleDictionaryResult do
   @moduledoc false
   use Protobuf, syntax: :proto3
 
@@ -546,52 +549,88 @@ defmodule MoveSimpleDictionaryResult do
   defstruct [:result]
 
   oneof :result, 0
-  field :resultOk, 1, type: MoveSimpleDictionaryResultOk, oneof: 0
-  field :error, 2, type: UpdateResultError, oneof: 0
+  field :resultOk, 1, type: ManagementApp.Config.Set.MoveSimpleDictionaryResultOk, oneof: 0
+  field :error, 2, type: ManagementApp.Config.Set.UpdateResultError, oneof: 0
 end
 
-defmodule ConfigSetter.Service do
+defmodule ManagementApp.Config.Set.ConfigSetter.Service do
   @moduledoc false
-  use GRPC.Service, name: "ConfigSetter"
+  use GRPC.Service, name: "management_app.config.set.ConfigSetter"
 
-  rpc :updateKind, UpdateString, UpdateResultString
+  rpc :updateKind,
+      ManagementApp.Config.Set.UpdateString,
+      ManagementApp.Config.Set.UpdateResultString
 
-  rpc :updateReadName, UpdateReadName, UpdateResultReadName
+  rpc :updateReadName,
+      ManagementApp.Config.Set.UpdateReadName,
+      ManagementApp.Config.Set.UpdateResultReadName
 
-  rpc :updateSpeed, UpdateFloat, UpdateResultFloat
+  rpc :updateSpeed,
+      ManagementApp.Config.Set.UpdateFloat,
+      ManagementApp.Config.Set.UpdateResultFloat
 
-  rpc :updateTone, UpdateFloat, UpdateResultFloat
+  rpc :updateTone,
+      ManagementApp.Config.Set.UpdateFloat,
+      ManagementApp.Config.Set.UpdateResultFloat
 
-  rpc :updateVolume, UpdateFloat, UpdateResultFloat
+  rpc :updateVolume,
+      ManagementApp.Config.Set.UpdateFloat,
+      ManagementApp.Config.Set.UpdateResultFloat
 
-  rpc :updateAllpass, UpdateFloat, UpdateResultFloat
+  rpc :updateAllpass,
+      ManagementApp.Config.Set.UpdateFloat,
+      ManagementApp.Config.Set.UpdateResultFloat
 
-  rpc :updateIntone, UpdateFloat, UpdateResultFloat
+  rpc :updateIntone,
+      ManagementApp.Config.Set.UpdateFloat,
+      ManagementApp.Config.Set.UpdateResultFloat
 
-  rpc :updateThreshold, UpdateFloat, UpdateResultFloat
+  rpc :updateThreshold,
+      ManagementApp.Config.Set.UpdateFloat,
+      ManagementApp.Config.Set.UpdateResultFloat
 
-  rpc :updateRandomizer, UpdateString, UpdateResultFloat
+  rpc :updateRandomizer,
+      ManagementApp.Config.Set.UpdateString,
+      ManagementApp.Config.Set.UpdateResultFloat
 
-  rpc :updateMaxReadLimit, UpdateUint32, UpdateResultUint32
+  rpc :updateMaxReadLimit,
+      ManagementApp.Config.Set.UpdateUint32,
+      ManagementApp.Config.Set.UpdateResultUint32
 
-  rpc :updateMaxVolume, UpdateUint32, UpdateResultUint32
+  rpc :updateMaxVolume,
+      ManagementApp.Config.Set.UpdateUint32,
+      ManagementApp.Config.Set.UpdateResultUint32
 
-  rpc :updateOrInsertMainDictionary, UpdateOrInsertMainDictionary, UpdateResultDictionaryEntryA
+  rpc :updateOrInsertMainDictionary,
+      ManagementApp.Config.Set.UpdateOrInsertMainDictionary,
+      ManagementApp.Config.Set.UpdateResultDictionaryEntryA
 
-  rpc :removeMainDictionary, RemoveFromMainDictionary, UpdateResultDictionaryEntryA
+  rpc :removeMainDictionary,
+      ManagementApp.Config.Set.RemoveFromMainDictionary,
+      ManagementApp.Config.Set.UpdateResultDictionaryEntryA
 
-  rpc :updateSimpleDictionary, UpdateSimpleDictionary, UpdateResultDictionaryEntryB
+  rpc :updateSimpleDictionary,
+      ManagementApp.Config.Set.UpdateSimpleDictionary,
+      ManagementApp.Config.Set.UpdateResultDictionaryEntryB
 
-  rpc :insertSimpleDictionary, InsertSimpleDictionary, UpdateResultDictionaryEntryB
+  rpc :insertSimpleDictionary,
+      ManagementApp.Config.Set.InsertSimpleDictionary,
+      ManagementApp.Config.Set.UpdateResultDictionaryEntryB
 
-  rpc :addSimpleDictionary, AddSimpleDictionary, UpdateResultDictionaryEntryB
+  rpc :addSimpleDictionary,
+      ManagementApp.Config.Set.AddSimpleDictionary,
+      ManagementApp.Config.Set.UpdateResultDictionaryEntryB
 
-  rpc :removeSimpleDictionary, RemoveSimpleDictionary, UpdateResultDictionaryEntryB
+  rpc :removeSimpleDictionary,
+      ManagementApp.Config.Set.RemoveSimpleDictionary,
+      ManagementApp.Config.Set.UpdateResultDictionaryEntryB
 
-  rpc :moveSimpleDictionary, MoveSimpleDictionary, MoveSimpleDictionaryResult
+  rpc :moveSimpleDictionary,
+      ManagementApp.Config.Set.MoveSimpleDictionary,
+      ManagementApp.Config.Set.MoveSimpleDictionaryResult
 end
 
-defmodule ConfigSetter.Stub do
+defmodule ManagementApp.Config.Set.ConfigSetter.Stub do
   @moduledoc false
-  use GRPC.Stub, service: ConfigSetter.Service
+  use GRPC.Stub, service: ManagementApp.Config.Set.ConfigSetter.Service
 end

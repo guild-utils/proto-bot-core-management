@@ -1,4 +1,4 @@
-// package: 
+// package: management_app.config.set
 // file: set-config.proto
 
 /* tslint:disable */
@@ -30,7 +30,7 @@ interface IConfigSetterService extends grpc.ServiceDefinition<grpc.UntypedServic
 }
 
 interface IConfigSetterService_IupdateKind extends grpc.MethodDefinition<set_config_pb.UpdateString, set_config_pb.UpdateResultString> {
-    path: "/ConfigSetter/updateKind";
+    path: "/management_app.config.set.ConfigSetter/updateKind";
     requestStream: false;
     responseStream: false;
     requestSerialize: grpc.serialize<set_config_pb.UpdateString>;
@@ -39,7 +39,7 @@ interface IConfigSetterService_IupdateKind extends grpc.MethodDefinition<set_con
     responseDeserialize: grpc.deserialize<set_config_pb.UpdateResultString>;
 }
 interface IConfigSetterService_IupdateReadName extends grpc.MethodDefinition<set_config_pb.UpdateReadName, set_config_pb.UpdateResultReadName> {
-    path: "/ConfigSetter/updateReadName";
+    path: "/management_app.config.set.ConfigSetter/updateReadName";
     requestStream: false;
     responseStream: false;
     requestSerialize: grpc.serialize<set_config_pb.UpdateReadName>;
@@ -48,7 +48,7 @@ interface IConfigSetterService_IupdateReadName extends grpc.MethodDefinition<set
     responseDeserialize: grpc.deserialize<set_config_pb.UpdateResultReadName>;
 }
 interface IConfigSetterService_IupdateSpeed extends grpc.MethodDefinition<set_config_pb.UpdateFloat, set_config_pb.UpdateResultFloat> {
-    path: "/ConfigSetter/updateSpeed";
+    path: "/management_app.config.set.ConfigSetter/updateSpeed";
     requestStream: false;
     responseStream: false;
     requestSerialize: grpc.serialize<set_config_pb.UpdateFloat>;
@@ -57,7 +57,7 @@ interface IConfigSetterService_IupdateSpeed extends grpc.MethodDefinition<set_co
     responseDeserialize: grpc.deserialize<set_config_pb.UpdateResultFloat>;
 }
 interface IConfigSetterService_IupdateTone extends grpc.MethodDefinition<set_config_pb.UpdateFloat, set_config_pb.UpdateResultFloat> {
-    path: "/ConfigSetter/updateTone";
+    path: "/management_app.config.set.ConfigSetter/updateTone";
     requestStream: false;
     responseStream: false;
     requestSerialize: grpc.serialize<set_config_pb.UpdateFloat>;
@@ -66,7 +66,7 @@ interface IConfigSetterService_IupdateTone extends grpc.MethodDefinition<set_con
     responseDeserialize: grpc.deserialize<set_config_pb.UpdateResultFloat>;
 }
 interface IConfigSetterService_IupdateVolume extends grpc.MethodDefinition<set_config_pb.UpdateFloat, set_config_pb.UpdateResultFloat> {
-    path: "/ConfigSetter/updateVolume";
+    path: "/management_app.config.set.ConfigSetter/updateVolume";
     requestStream: false;
     responseStream: false;
     requestSerialize: grpc.serialize<set_config_pb.UpdateFloat>;
@@ -75,7 +75,7 @@ interface IConfigSetterService_IupdateVolume extends grpc.MethodDefinition<set_c
     responseDeserialize: grpc.deserialize<set_config_pb.UpdateResultFloat>;
 }
 interface IConfigSetterService_IupdateAllpass extends grpc.MethodDefinition<set_config_pb.UpdateFloat, set_config_pb.UpdateResultFloat> {
-    path: "/ConfigSetter/updateAllpass";
+    path: "/management_app.config.set.ConfigSetter/updateAllpass";
     requestStream: false;
     responseStream: false;
     requestSerialize: grpc.serialize<set_config_pb.UpdateFloat>;
@@ -84,7 +84,7 @@ interface IConfigSetterService_IupdateAllpass extends grpc.MethodDefinition<set_
     responseDeserialize: grpc.deserialize<set_config_pb.UpdateResultFloat>;
 }
 interface IConfigSetterService_IupdateIntone extends grpc.MethodDefinition<set_config_pb.UpdateFloat, set_config_pb.UpdateResultFloat> {
-    path: "/ConfigSetter/updateIntone";
+    path: "/management_app.config.set.ConfigSetter/updateIntone";
     requestStream: false;
     responseStream: false;
     requestSerialize: grpc.serialize<set_config_pb.UpdateFloat>;
@@ -93,7 +93,7 @@ interface IConfigSetterService_IupdateIntone extends grpc.MethodDefinition<set_c
     responseDeserialize: grpc.deserialize<set_config_pb.UpdateResultFloat>;
 }
 interface IConfigSetterService_IupdateThreshold extends grpc.MethodDefinition<set_config_pb.UpdateFloat, set_config_pb.UpdateResultFloat> {
-    path: "/ConfigSetter/updateThreshold";
+    path: "/management_app.config.set.ConfigSetter/updateThreshold";
     requestStream: false;
     responseStream: false;
     requestSerialize: grpc.serialize<set_config_pb.UpdateFloat>;
@@ -102,7 +102,7 @@ interface IConfigSetterService_IupdateThreshold extends grpc.MethodDefinition<se
     responseDeserialize: grpc.deserialize<set_config_pb.UpdateResultFloat>;
 }
 interface IConfigSetterService_IupdateRandomizer extends grpc.MethodDefinition<set_config_pb.UpdateString, set_config_pb.UpdateResultFloat> {
-    path: "/ConfigSetter/updateRandomizer";
+    path: "/management_app.config.set.ConfigSetter/updateRandomizer";
     requestStream: false;
     responseStream: false;
     requestSerialize: grpc.serialize<set_config_pb.UpdateString>;
@@ -111,7 +111,7 @@ interface IConfigSetterService_IupdateRandomizer extends grpc.MethodDefinition<s
     responseDeserialize: grpc.deserialize<set_config_pb.UpdateResultFloat>;
 }
 interface IConfigSetterService_IupdateMaxReadLimit extends grpc.MethodDefinition<set_config_pb.UpdateUint32, set_config_pb.UpdateResultUint32> {
-    path: "/ConfigSetter/updateMaxReadLimit";
+    path: "/management_app.config.set.ConfigSetter/updateMaxReadLimit";
     requestStream: false;
     responseStream: false;
     requestSerialize: grpc.serialize<set_config_pb.UpdateUint32>;
@@ -120,7 +120,7 @@ interface IConfigSetterService_IupdateMaxReadLimit extends grpc.MethodDefinition
     responseDeserialize: grpc.deserialize<set_config_pb.UpdateResultUint32>;
 }
 interface IConfigSetterService_IupdateMaxVolume extends grpc.MethodDefinition<set_config_pb.UpdateUint32, set_config_pb.UpdateResultUint32> {
-    path: "/ConfigSetter/updateMaxVolume";
+    path: "/management_app.config.set.ConfigSetter/updateMaxVolume";
     requestStream: false;
     responseStream: false;
     requestSerialize: grpc.serialize<set_config_pb.UpdateUint32>;
@@ -129,7 +129,7 @@ interface IConfigSetterService_IupdateMaxVolume extends grpc.MethodDefinition<se
     responseDeserialize: grpc.deserialize<set_config_pb.UpdateResultUint32>;
 }
 interface IConfigSetterService_IupdateOrInsertMainDictionary extends grpc.MethodDefinition<set_config_pb.UpdateOrInsertMainDictionary, set_config_pb.UpdateResultDictionaryEntryA> {
-    path: "/ConfigSetter/updateOrInsertMainDictionary";
+    path: "/management_app.config.set.ConfigSetter/updateOrInsertMainDictionary";
     requestStream: false;
     responseStream: false;
     requestSerialize: grpc.serialize<set_config_pb.UpdateOrInsertMainDictionary>;
@@ -138,7 +138,7 @@ interface IConfigSetterService_IupdateOrInsertMainDictionary extends grpc.Method
     responseDeserialize: grpc.deserialize<set_config_pb.UpdateResultDictionaryEntryA>;
 }
 interface IConfigSetterService_IremoveMainDictionary extends grpc.MethodDefinition<set_config_pb.RemoveFromMainDictionary, set_config_pb.UpdateResultDictionaryEntryA> {
-    path: "/ConfigSetter/removeMainDictionary";
+    path: "/management_app.config.set.ConfigSetter/removeMainDictionary";
     requestStream: false;
     responseStream: false;
     requestSerialize: grpc.serialize<set_config_pb.RemoveFromMainDictionary>;
@@ -147,7 +147,7 @@ interface IConfigSetterService_IremoveMainDictionary extends grpc.MethodDefiniti
     responseDeserialize: grpc.deserialize<set_config_pb.UpdateResultDictionaryEntryA>;
 }
 interface IConfigSetterService_IupdateSimpleDictionary extends grpc.MethodDefinition<set_config_pb.UpdateSimpleDictionary, set_config_pb.UpdateResultDictionaryEntryB> {
-    path: "/ConfigSetter/updateSimpleDictionary";
+    path: "/management_app.config.set.ConfigSetter/updateSimpleDictionary";
     requestStream: false;
     responseStream: false;
     requestSerialize: grpc.serialize<set_config_pb.UpdateSimpleDictionary>;
@@ -156,7 +156,7 @@ interface IConfigSetterService_IupdateSimpleDictionary extends grpc.MethodDefini
     responseDeserialize: grpc.deserialize<set_config_pb.UpdateResultDictionaryEntryB>;
 }
 interface IConfigSetterService_IinsertSimpleDictionary extends grpc.MethodDefinition<set_config_pb.InsertSimpleDictionary, set_config_pb.UpdateResultDictionaryEntryB> {
-    path: "/ConfigSetter/insertSimpleDictionary";
+    path: "/management_app.config.set.ConfigSetter/insertSimpleDictionary";
     requestStream: false;
     responseStream: false;
     requestSerialize: grpc.serialize<set_config_pb.InsertSimpleDictionary>;
@@ -165,7 +165,7 @@ interface IConfigSetterService_IinsertSimpleDictionary extends grpc.MethodDefini
     responseDeserialize: grpc.deserialize<set_config_pb.UpdateResultDictionaryEntryB>;
 }
 interface IConfigSetterService_IaddSimpleDictionary extends grpc.MethodDefinition<set_config_pb.AddSimpleDictionary, set_config_pb.UpdateResultDictionaryEntryB> {
-    path: "/ConfigSetter/addSimpleDictionary";
+    path: "/management_app.config.set.ConfigSetter/addSimpleDictionary";
     requestStream: false;
     responseStream: false;
     requestSerialize: grpc.serialize<set_config_pb.AddSimpleDictionary>;
@@ -174,7 +174,7 @@ interface IConfigSetterService_IaddSimpleDictionary extends grpc.MethodDefinitio
     responseDeserialize: grpc.deserialize<set_config_pb.UpdateResultDictionaryEntryB>;
 }
 interface IConfigSetterService_IremoveSimpleDictionary extends grpc.MethodDefinition<set_config_pb.RemoveSimpleDictionary, set_config_pb.UpdateResultDictionaryEntryB> {
-    path: "/ConfigSetter/removeSimpleDictionary";
+    path: "/management_app.config.set.ConfigSetter/removeSimpleDictionary";
     requestStream: false;
     responseStream: false;
     requestSerialize: grpc.serialize<set_config_pb.RemoveSimpleDictionary>;
@@ -183,7 +183,7 @@ interface IConfigSetterService_IremoveSimpleDictionary extends grpc.MethodDefini
     responseDeserialize: grpc.deserialize<set_config_pb.UpdateResultDictionaryEntryB>;
 }
 interface IConfigSetterService_ImoveSimpleDictionary extends grpc.MethodDefinition<set_config_pb.MoveSimpleDictionary, set_config_pb.MoveSimpleDictionaryResult> {
-    path: "/ConfigSetter/moveSimpleDictionary";
+    path: "/management_app.config.set.ConfigSetter/moveSimpleDictionary";
     requestStream: false;
     responseStream: false;
     requestSerialize: grpc.serialize<set_config_pb.MoveSimpleDictionary>;

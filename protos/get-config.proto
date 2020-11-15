@@ -1,7 +1,6 @@
 syntax = "proto3";
+package management_app.config.get;
 import "config.proto";
-
-
 message LayeredVoiceConfig{
   oneof kind_optional{
     string kind=1;
@@ -44,7 +43,7 @@ message GuildVoiceConfig{
   oneof randomizer_optional{
     string randomizer=4;
   }
-  config.Dictionary dictionary = 5;
+  management_app.config.common.Dictionary dictionary = 5;
 }
 
 message LayeredVoiceConfigRequest{

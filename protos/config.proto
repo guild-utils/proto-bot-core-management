@@ -1,6 +1,6 @@
 syntax = "proto3";
+package management_app.config.common;
 
-package config;
 message DictionaryEntryA{
   string from=1;
   string to=2;
