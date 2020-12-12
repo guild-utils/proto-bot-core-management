@@ -115,11 +115,11 @@ message UpdateResultUint32{
     UpdateResultError error=3;
   }
 }
-message AnalysysDictionaryUpdateTarget{
+message AnalysisDictionaryUpdateTarget{
   string id=1;
 }
-message RemoveFromAnalysysDictionary{
-  AnalysysDictionaryUpdateTarget target=1;
+message RemoveFromAnalysisDictionary{
+  AnalysisDictionaryUpdateTarget target=1;
   string key=2;
 }
 message UpdateResultDictionaryEntryAOk{
@@ -142,8 +142,8 @@ message UpdateResultDictionaryEntryA{
     UpdateResultError error=3;
   }
 }
-message UpdateOrInsertAnalysysDictionary{
-  AnalysysDictionaryUpdateTarget id=1;
+message UpdateOrInsertAnalysisDictionary{
+  AnalysisDictionaryUpdateTarget id=1;
   management_app.config.common.DictionaryEntryA value=2;
 }
 
@@ -212,8 +212,8 @@ service ConfigSetter {
   rpc updateRandomizer(UpdateString) returns (UpdateResultString){}
   rpc updateMaxReadLimit(UpdateUint32) returns (UpdateResultUint32){}
   rpc updateMaxVolume(UpdateUint32) returns (UpdateResultUint32){}
-  rpc updateOrInsertAnalysysDictionary(UpdateOrInsertAnalysysDictionary) returns (UpdateResultDictionaryEntryA){}
-  rpc removeAnalysysDictionary(RemoveFromAnalysysDictionary) returns (UpdateResultDictionaryEntryA){}
+  rpc updateOrInsertAnalysisDictionary(UpdateOrInsertAnalysisDictionary) returns (UpdateResultDictionaryEntryA){}
+  rpc removeAnalysisDictionary(RemoveFromAnalysisDictionary) returns (UpdateResultDictionaryEntryA){}
   rpc updateSimpleDictionary(UpdateSimpleDictionary)returns (UpdateResultDictionaryEntryB){}
   rpc insertSimpleDictionary(InsertSimpleDictionary)returns (UpdateResultDictionaryEntryB){}
   rpc addSimpleDictionary(AddSimpleDictionary)returns (UpdateResultDictionaryEntryB){}

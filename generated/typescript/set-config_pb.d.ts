@@ -793,51 +793,51 @@ export namespace UpdateResultUint32 {
 
 }
 
-export class AnalysysDictionaryUpdateTarget extends jspb.Message { 
+export class AnalysisDictionaryUpdateTarget extends jspb.Message { 
     getId(): string;
-    setId(value: string): AnalysysDictionaryUpdateTarget;
+    setId(value: string): AnalysisDictionaryUpdateTarget;
 
 
     serializeBinary(): Uint8Array;
-    toObject(includeInstance?: boolean): AnalysysDictionaryUpdateTarget.AsObject;
-    static toObject(includeInstance: boolean, msg: AnalysysDictionaryUpdateTarget): AnalysysDictionaryUpdateTarget.AsObject;
+    toObject(includeInstance?: boolean): AnalysisDictionaryUpdateTarget.AsObject;
+    static toObject(includeInstance: boolean, msg: AnalysisDictionaryUpdateTarget): AnalysisDictionaryUpdateTarget.AsObject;
     static extensions: {[key: number]: jspb.ExtensionFieldInfo<jspb.Message>};
     static extensionsBinary: {[key: number]: jspb.ExtensionFieldBinaryInfo<jspb.Message>};
-    static serializeBinaryToWriter(message: AnalysysDictionaryUpdateTarget, writer: jspb.BinaryWriter): void;
-    static deserializeBinary(bytes: Uint8Array): AnalysysDictionaryUpdateTarget;
-    static deserializeBinaryFromReader(message: AnalysysDictionaryUpdateTarget, reader: jspb.BinaryReader): AnalysysDictionaryUpdateTarget;
+    static serializeBinaryToWriter(message: AnalysisDictionaryUpdateTarget, writer: jspb.BinaryWriter): void;
+    static deserializeBinary(bytes: Uint8Array): AnalysisDictionaryUpdateTarget;
+    static deserializeBinaryFromReader(message: AnalysisDictionaryUpdateTarget, reader: jspb.BinaryReader): AnalysisDictionaryUpdateTarget;
 }
 
-export namespace AnalysysDictionaryUpdateTarget {
+export namespace AnalysisDictionaryUpdateTarget {
     export type AsObject = {
         id: string,
     }
 }
 
-export class RemoveFromAnalysysDictionary extends jspb.Message { 
+export class RemoveFromAnalysisDictionary extends jspb.Message { 
 
     hasTarget(): boolean;
     clearTarget(): void;
-    getTarget(): AnalysysDictionaryUpdateTarget | undefined;
-    setTarget(value?: AnalysysDictionaryUpdateTarget): RemoveFromAnalysysDictionary;
+    getTarget(): AnalysisDictionaryUpdateTarget | undefined;
+    setTarget(value?: AnalysisDictionaryUpdateTarget): RemoveFromAnalysisDictionary;
 
     getKey(): string;
-    setKey(value: string): RemoveFromAnalysysDictionary;
+    setKey(value: string): RemoveFromAnalysisDictionary;
 
 
     serializeBinary(): Uint8Array;
-    toObject(includeInstance?: boolean): RemoveFromAnalysysDictionary.AsObject;
-    static toObject(includeInstance: boolean, msg: RemoveFromAnalysysDictionary): RemoveFromAnalysysDictionary.AsObject;
+    toObject(includeInstance?: boolean): RemoveFromAnalysisDictionary.AsObject;
+    static toObject(includeInstance: boolean, msg: RemoveFromAnalysisDictionary): RemoveFromAnalysisDictionary.AsObject;
     static extensions: {[key: number]: jspb.ExtensionFieldInfo<jspb.Message>};
     static extensionsBinary: {[key: number]: jspb.ExtensionFieldBinaryInfo<jspb.Message>};
-    static serializeBinaryToWriter(message: RemoveFromAnalysysDictionary, writer: jspb.BinaryWriter): void;
-    static deserializeBinary(bytes: Uint8Array): RemoveFromAnalysysDictionary;
-    static deserializeBinaryFromReader(message: RemoveFromAnalysysDictionary, reader: jspb.BinaryReader): RemoveFromAnalysysDictionary;
+    static serializeBinaryToWriter(message: RemoveFromAnalysisDictionary, writer: jspb.BinaryWriter): void;
+    static deserializeBinary(bytes: Uint8Array): RemoveFromAnalysisDictionary;
+    static deserializeBinaryFromReader(message: RemoveFromAnalysisDictionary, reader: jspb.BinaryReader): RemoveFromAnalysisDictionary;
 }
 
-export namespace RemoveFromAnalysysDictionary {
+export namespace RemoveFromAnalysisDictionary {
     export type AsObject = {
-        target?: AnalysysDictionaryUpdateTarget.AsObject,
+        target?: AnalysisDictionaryUpdateTarget.AsObject,
         key: string,
     }
 }
@@ -977,33 +977,33 @@ export namespace UpdateResultDictionaryEntryA {
 
 }
 
-export class UpdateOrInsertAnalysysDictionary extends jspb.Message { 
+export class UpdateOrInsertAnalysisDictionary extends jspb.Message { 
 
     hasId(): boolean;
     clearId(): void;
-    getId(): AnalysysDictionaryUpdateTarget | undefined;
-    setId(value?: AnalysysDictionaryUpdateTarget): UpdateOrInsertAnalysysDictionary;
+    getId(): AnalysisDictionaryUpdateTarget | undefined;
+    setId(value?: AnalysisDictionaryUpdateTarget): UpdateOrInsertAnalysisDictionary;
 
 
     hasValue(): boolean;
     clearValue(): void;
     getValue(): config_pb.DictionaryEntryA | undefined;
-    setValue(value?: config_pb.DictionaryEntryA): UpdateOrInsertAnalysysDictionary;
+    setValue(value?: config_pb.DictionaryEntryA): UpdateOrInsertAnalysisDictionary;
 
 
     serializeBinary(): Uint8Array;
-    toObject(includeInstance?: boolean): UpdateOrInsertAnalysysDictionary.AsObject;
-    static toObject(includeInstance: boolean, msg: UpdateOrInsertAnalysysDictionary): UpdateOrInsertAnalysysDictionary.AsObject;
+    toObject(includeInstance?: boolean): UpdateOrInsertAnalysisDictionary.AsObject;
+    static toObject(includeInstance: boolean, msg: UpdateOrInsertAnalysisDictionary): UpdateOrInsertAnalysisDictionary.AsObject;
     static extensions: {[key: number]: jspb.ExtensionFieldInfo<jspb.Message>};
     static extensionsBinary: {[key: number]: jspb.ExtensionFieldBinaryInfo<jspb.Message>};
-    static serializeBinaryToWriter(message: UpdateOrInsertAnalysysDictionary, writer: jspb.BinaryWriter): void;
-    static deserializeBinary(bytes: Uint8Array): UpdateOrInsertAnalysysDictionary;
-    static deserializeBinaryFromReader(message: UpdateOrInsertAnalysysDictionary, reader: jspb.BinaryReader): UpdateOrInsertAnalysysDictionary;
+    static serializeBinaryToWriter(message: UpdateOrInsertAnalysisDictionary, writer: jspb.BinaryWriter): void;
+    static deserializeBinary(bytes: Uint8Array): UpdateOrInsertAnalysisDictionary;
+    static deserializeBinaryFromReader(message: UpdateOrInsertAnalysisDictionary, reader: jspb.BinaryReader): UpdateOrInsertAnalysisDictionary;
 }
 
-export namespace UpdateOrInsertAnalysysDictionary {
+export namespace UpdateOrInsertAnalysisDictionary {
     export type AsObject = {
-        id?: AnalysysDictionaryUpdateTarget.AsObject,
+        id?: AnalysisDictionaryUpdateTarget.AsObject,
         value?: config_pb.DictionaryEntryA.AsObject,
     }
 }
