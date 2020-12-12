@@ -216,7 +216,7 @@ service ConfigSetter {
   rpc updateAllpass(UpdateFloat) returns (UpdateResultFloat){}
   rpc updateIntone(UpdateFloat) returns (UpdateResultFloat){}
   rpc updateThreshold(UpdateFloat) returns (UpdateResultFloat){}
-  rpc updateRandomizer(UpdateString) returns (UpdateResultFloat){}
+  rpc updateRandomizer(UpdateString) returns (UpdateResultString){}
   rpc updateMaxReadLimit(UpdateUint32) returns (UpdateResultUint32){}
   rpc updateMaxVolume(UpdateUint32) returns (UpdateResultUint32){}
   rpc updateOrInsertMainDictionary(UpdateOrInsertMainDictionary) returns (UpdateResultDictionaryEntryA){}

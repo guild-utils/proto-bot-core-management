@@ -591,7 +591,7 @@ defmodule ManagementApp.Config.Set.ConfigSetter.Service do
 
   rpc :updateRandomizer,
       ManagementApp.Config.Set.UpdateString,
-      ManagementApp.Config.Set.UpdateResultFloat
+      ManagementApp.Config.Set.UpdateResultString
 
   rpc :updateMaxReadLimit,
       ManagementApp.Config.Set.UpdateUint32,
