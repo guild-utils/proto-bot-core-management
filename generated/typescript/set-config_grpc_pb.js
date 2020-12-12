@@ -1,7 +1,7 @@
 // GENERATED CODE -- DO NOT EDIT!
 
 'use strict';
-var grpc = require('grpc');
+var grpc = require('@grpc/grpc-js');
 var set$config_pb = require('./set-config_pb.js');
 var config_pb = require('./config_pb.js');
 
@@ -298,11 +298,11 @@ var ConfigSetterService = exports.ConfigSetterService = {
     requestStream: false,
     responseStream: false,
     requestType: set$config_pb.UpdateString,
-    responseType: set$config_pb.UpdateResultFloat,
+    responseType: set$config_pb.UpdateResultString,
     requestSerialize: serialize_management_app_config_set_UpdateString,
     requestDeserialize: deserialize_management_app_config_set_UpdateString,
-    responseSerialize: serialize_management_app_config_set_UpdateResultFloat,
-    responseDeserialize: deserialize_management_app_config_set_UpdateResultFloat,
+    responseSerialize: serialize_management_app_config_set_UpdateResultString,
+    responseDeserialize: deserialize_management_app_config_set_UpdateResultString,
   },
   updateMaxReadLimit: {
     path: '/management_app.config.set.ConfigSetter/updateMaxReadLimit',

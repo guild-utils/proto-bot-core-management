@@ -101,14 +101,14 @@ interface IConfigSetterService_IupdateThreshold extends grpc.MethodDefinition<se
     responseSerialize: grpc.serialize<set_config_pb.UpdateResultFloat>;
     responseDeserialize: grpc.deserialize<set_config_pb.UpdateResultFloat>;
 }
-interface IConfigSetterService_IupdateRandomizer extends grpc.MethodDefinition<set_config_pb.UpdateString, set_config_pb.UpdateResultFloat> {
+interface IConfigSetterService_IupdateRandomizer extends grpc.MethodDefinition<set_config_pb.UpdateString, set_config_pb.UpdateResultString> {
     path: "/management_app.config.set.ConfigSetter/updateRandomizer";
     requestStream: false;
     responseStream: false;
     requestSerialize: grpc.serialize<set_config_pb.UpdateString>;
     requestDeserialize: grpc.deserialize<set_config_pb.UpdateString>;
-    responseSerialize: grpc.serialize<set_config_pb.UpdateResultFloat>;
-    responseDeserialize: grpc.deserialize<set_config_pb.UpdateResultFloat>;
+    responseSerialize: grpc.serialize<set_config_pb.UpdateResultString>;
+    responseDeserialize: grpc.deserialize<set_config_pb.UpdateResultString>;
 }
 interface IConfigSetterService_IupdateMaxReadLimit extends grpc.MethodDefinition<set_config_pb.UpdateUint32, set_config_pb.UpdateResultUint32> {
     path: "/management_app.config.set.ConfigSetter/updateMaxReadLimit";
@@ -203,7 +203,7 @@ export interface IConfigSetterServer {
     updateAllpass: grpc.handleUnaryCall<set_config_pb.UpdateFloat, set_config_pb.UpdateResultFloat>;
     updateIntone: grpc.handleUnaryCall<set_config_pb.UpdateFloat, set_config_pb.UpdateResultFloat>;
     updateThreshold: grpc.handleUnaryCall<set_config_pb.UpdateFloat, set_config_pb.UpdateResultFloat>;
-    updateRandomizer: grpc.handleUnaryCall<set_config_pb.UpdateString, set_config_pb.UpdateResultFloat>;
+    updateRandomizer: grpc.handleUnaryCall<set_config_pb.UpdateString, set_config_pb.UpdateResultString>;
     updateMaxReadLimit: grpc.handleUnaryCall<set_config_pb.UpdateUint32, set_config_pb.UpdateResultUint32>;
     updateMaxVolume: grpc.handleUnaryCall<set_config_pb.UpdateUint32, set_config_pb.UpdateResultUint32>;
     updateOrInsertMainDictionary: grpc.handleUnaryCall<set_config_pb.UpdateOrInsertMainDictionary, set_config_pb.UpdateResultDictionaryEntryA>;
@@ -240,9 +240,9 @@ export interface IConfigSetterClient {
     updateThreshold(request: set_config_pb.UpdateFloat, callback: (error: grpc.ServiceError | null, response: set_config_pb.UpdateResultFloat) => void): grpc.ClientUnaryCall;
     updateThreshold(request: set_config_pb.UpdateFloat, metadata: grpc.Metadata, callback: (error: grpc.ServiceError | null, response: set_config_pb.UpdateResultFloat) => void): grpc.ClientUnaryCall;
     updateThreshold(request: set_config_pb.UpdateFloat, metadata: grpc.Metadata, options: Partial<grpc.CallOptions>, callback: (error: grpc.ServiceError | null, response: set_config_pb.UpdateResultFloat) => void): grpc.ClientUnaryCall;
-    updateRandomizer(request: set_config_pb.UpdateString, callback: (error: grpc.ServiceError | null, response: set_config_pb.UpdateResultFloat) => void): grpc.ClientUnaryCall;
-    updateRandomizer(request: set_config_pb.UpdateString, metadata: grpc.Metadata, callback: (error: grpc.ServiceError | null, response: set_config_pb.UpdateResultFloat) => void): grpc.ClientUnaryCall;
-    updateRandomizer(request: set_config_pb.UpdateString, metadata: grpc.Metadata, options: Partial<grpc.CallOptions>, callback: (error: grpc.ServiceError | null, response: set_config_pb.UpdateResultFloat) => void): grpc.ClientUnaryCall;
+    updateRandomizer(request: set_config_pb.UpdateString, callback: (error: grpc.ServiceError | null, response: set_config_pb.UpdateResultString) => void): grpc.ClientUnaryCall;
+    updateRandomizer(request: set_config_pb.UpdateString, metadata: grpc.Metadata, callback: (error: grpc.ServiceError | null, response: set_config_pb.UpdateResultString) => void): grpc.ClientUnaryCall;
+    updateRandomizer(request: set_config_pb.UpdateString, metadata: grpc.Metadata, options: Partial<grpc.CallOptions>, callback: (error: grpc.ServiceError | null, response: set_config_pb.UpdateResultString) => void): grpc.ClientUnaryCall;
     updateMaxReadLimit(request: set_config_pb.UpdateUint32, callback: (error: grpc.ServiceError | null, response: set_config_pb.UpdateResultUint32) => void): grpc.ClientUnaryCall;
     updateMaxReadLimit(request: set_config_pb.UpdateUint32, metadata: grpc.Metadata, callback: (error: grpc.ServiceError | null, response: set_config_pb.UpdateResultUint32) => void): grpc.ClientUnaryCall;
     updateMaxReadLimit(request: set_config_pb.UpdateUint32, metadata: grpc.Metadata, options: Partial<grpc.CallOptions>, callback: (error: grpc.ServiceError | null, response: set_config_pb.UpdateResultUint32) => void): grpc.ClientUnaryCall;
@@ -298,9 +298,9 @@ export class ConfigSetterClient extends grpc.Client implements IConfigSetterClie
     public updateThreshold(request: set_config_pb.UpdateFloat, callback: (error: grpc.ServiceError | null, response: set_config_pb.UpdateResultFloat) => void): grpc.ClientUnaryCall;
     public updateThreshold(request: set_config_pb.UpdateFloat, metadata: grpc.Metadata, callback: (error: grpc.ServiceError | null, response: set_config_pb.UpdateResultFloat) => void): grpc.ClientUnaryCall;
     public updateThreshold(request: set_config_pb.UpdateFloat, metadata: grpc.Metadata, options: Partial<grpc.CallOptions>, callback: (error: grpc.ServiceError | null, response: set_config_pb.UpdateResultFloat) => void): grpc.ClientUnaryCall;
-    public updateRandomizer(request: set_config_pb.UpdateString, callback: (error: grpc.ServiceError | null, response: set_config_pb.UpdateResultFloat) => void): grpc.ClientUnaryCall;
-    public updateRandomizer(request: set_config_pb.UpdateString, metadata: grpc.Metadata, callback: (error: grpc.ServiceError | null, response: set_config_pb.UpdateResultFloat) => void): grpc.ClientUnaryCall;
-    public updateRandomizer(request: set_config_pb.UpdateString, metadata: grpc.Metadata, options: Partial<grpc.CallOptions>, callback: (error: grpc.ServiceError | null, response: set_config_pb.UpdateResultFloat) => void): grpc.ClientUnaryCall;
+    public updateRandomizer(request: set_config_pb.UpdateString, callback: (error: grpc.ServiceError | null, response: set_config_pb.UpdateResultString) => void): grpc.ClientUnaryCall;
+    public updateRandomizer(request: set_config_pb.UpdateString, metadata: grpc.Metadata, callback: (error: grpc.ServiceError | null, response: set_config_pb.UpdateResultString) => void): grpc.ClientUnaryCall;
+    public updateRandomizer(request: set_config_pb.UpdateString, metadata: grpc.Metadata, options: Partial<grpc.CallOptions>, callback: (error: grpc.ServiceError | null, response: set_config_pb.UpdateResultString) => void): grpc.ClientUnaryCall;
     public updateMaxReadLimit(request: set_config_pb.UpdateUint32, callback: (error: grpc.ServiceError | null, response: set_config_pb.UpdateResultUint32) => void): grpc.ClientUnaryCall;
     public updateMaxReadLimit(request: set_config_pb.UpdateUint32, metadata: grpc.Metadata, callback: (error: grpc.ServiceError | null, response: set_config_pb.UpdateResultUint32) => void): grpc.ClientUnaryCall;
     public updateMaxReadLimit(request: set_config_pb.UpdateUint32, metadata: grpc.Metadata, options: Partial<grpc.CallOptions>, callback: (error: grpc.ServiceError | null, response: set_config_pb.UpdateResultUint32) => void): grpc.ClientUnaryCall;

@@ -1,7 +1,7 @@
 // GENERATED CODE -- DO NOT EDIT!
 
 'use strict';
-var grpc = require('grpc');
+var grpc = require('@grpc/grpc-js');
 var get$config_pb = require('./get-config_pb.js');
 var config_pb = require('./config_pb.js');
 
