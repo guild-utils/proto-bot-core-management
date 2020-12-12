@@ -282,18 +282,31 @@ defmodule ManagementApp.Config.Set.UpdateResultUint32 do
   field :error, 3, type: ManagementApp.Config.Set.UpdateResultError, oneof: 0
 end
 
-defmodule ManagementApp.Config.Set.RemoveFromMainDictionary do
+defmodule ManagementApp.Config.Set.AnalysysDictionaryUpdateTarget do
   @moduledoc false
   use Protobuf, syntax: :proto3
 
   @type t :: %__MODULE__{
-          guild: String.t(),
+          id: String.t()
+        }
+
+  defstruct [:id]
+
+  field :id, 1, type: :string
+end
+
+defmodule ManagementApp.Config.Set.RemoveFromAnalysysDictionary do
+  @moduledoc false
+  use Protobuf, syntax: :proto3
+
+  @type t :: %__MODULE__{
+          target: ManagementApp.Config.Set.AnalysysDictionaryUpdateTarget.t() | nil,
           key: String.t()
         }
 
-  defstruct [:guild, :key]
+  defstruct [:target, :key]
 
-  field :guild, 1, type: :string
+  field :target, 1, type: ManagementApp.Config.Set.AnalysysDictionaryUpdateTarget
   field :key, 2, type: :string
 end
 
@@ -344,35 +357,22 @@ defmodule ManagementApp.Config.Set.UpdateResultDictionaryEntryA do
   field :error, 3, type: ManagementApp.Config.Set.UpdateResultError, oneof: 0
 end
 
-defmodule ManagementApp.Config.Set.UpdateOrInsertMainDictionary do
+defmodule ManagementApp.Config.Set.UpdateOrInsertAnalysysDictionary do
   @moduledoc false
   use Protobuf, syntax: :proto3
 
   @type t :: %__MODULE__{
-          guild: String.t(),
+          id: ManagementApp.Config.Set.AnalysysDictionaryUpdateTarget.t() | nil,
           value: ManagementApp.Config.Common.DictionaryEntryA.t() | nil
         }
 
-  defstruct [:guild, :value]
+  defstruct [:id, :value]
 
-  field :guild, 1, type: :string
+  field :id, 1, type: ManagementApp.Config.Set.AnalysysDictionaryUpdateTarget
   field :value, 2, type: ManagementApp.Config.Common.DictionaryEntryA
 end
 
-defmodule ManagementApp.Config.Set.SimpleDictionaryUpdateTargetGuild do
-  @moduledoc false
-  use Protobuf, syntax: :proto3
-
-  @type t :: %__MODULE__{
-          guild: String.t()
-        }
-
-  defstruct [:guild]
-
-  field :guild, 1, type: :string
-end
-
-defmodule ManagementApp.Config.Set.SimpleDictionaryUpdateTargetSharedDictionary do
+defmodule ManagementApp.Config.Set.SimpleDictionaryUpdateTarget do
   @moduledoc false
   use Protobuf, syntax: :proto3
 
@@ -383,25 +383,6 @@ defmodule ManagementApp.Config.Set.SimpleDictionaryUpdateTargetSharedDictionary 
   defstruct [:id]
 
   field :id, 1, type: :string
-end
-
-defmodule ManagementApp.Config.Set.SimpleDictionaryUpdateTarget do
-  @moduledoc false
-  use Protobuf, syntax: :proto3
-
-  @type t :: %__MODULE__{
-          target: {atom, any}
-        }
-
-  defstruct [:target]
-
-  oneof :target, 0
-  field :before, 1, type: ManagementApp.Config.Set.SimpleDictionaryUpdateTargetGuild, oneof: 0
-  field :after, 2, type: ManagementApp.Config.Set.SimpleDictionaryUpdateTargetGuild, oneof: 0
-
-  field :shared, 3,
-    type: ManagementApp.Config.Set.SimpleDictionaryUpdateTargetSharedDictionary,
-    oneof: 0
 end
 
 defmodule ManagementApp.Config.Set.UpdateSimpleDictionary do
@@ -601,12 +582,12 @@ defmodule ManagementApp.Config.Set.ConfigSetter.Service do
       ManagementApp.Config.Set.UpdateUint32,
       ManagementApp.Config.Set.UpdateResultUint32
 
-  rpc :updateOrInsertMainDictionary,
-      ManagementApp.Config.Set.UpdateOrInsertMainDictionary,
+  rpc :updateOrInsertAnalysysDictionary,
+      ManagementApp.Config.Set.UpdateOrInsertAnalysysDictionary,
       ManagementApp.Config.Set.UpdateResultDictionaryEntryA
 
-  rpc :removeMainDictionary,
-      ManagementApp.Config.Set.RemoveFromMainDictionary,
+  rpc :removeAnalysysDictionary,
+      ManagementApp.Config.Set.RemoveFromAnalysysDictionary,
       ManagementApp.Config.Set.UpdateResultDictionaryEntryA
 
   rpc :updateSimpleDictionary,

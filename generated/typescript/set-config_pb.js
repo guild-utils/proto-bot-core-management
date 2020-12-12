@@ -11,18 +11,17 @@ var global = Function('return this')();
 
 var config_pb = require('./config_pb.js');
 goog.exportSymbol('proto.management_app.config.set.AddSimpleDictionary', null, global);
+goog.exportSymbol('proto.management_app.config.set.AnalysysDictionaryUpdateTarget', null, global);
 goog.exportSymbol('proto.management_app.config.set.InsertSimpleDictionary', null, global);
 goog.exportSymbol('proto.management_app.config.set.MoveSimpleDictionary', null, global);
 goog.exportSymbol('proto.management_app.config.set.MoveSimpleDictionaryResult', null, global);
 goog.exportSymbol('proto.management_app.config.set.MoveSimpleDictionaryResultOk', null, global);
-goog.exportSymbol('proto.management_app.config.set.RemoveFromMainDictionary', null, global);
+goog.exportSymbol('proto.management_app.config.set.RemoveFromAnalysysDictionary', null, global);
 goog.exportSymbol('proto.management_app.config.set.RemoveSimpleDictionary', null, global);
 goog.exportSymbol('proto.management_app.config.set.SimpleDictionaryUpdateTarget', null, global);
-goog.exportSymbol('proto.management_app.config.set.SimpleDictionaryUpdateTargetGuild', null, global);
-goog.exportSymbol('proto.management_app.config.set.SimpleDictionaryUpdateTargetSharedDictionary', null, global);
 goog.exportSymbol('proto.management_app.config.set.Target', null, global);
 goog.exportSymbol('proto.management_app.config.set.UpdateFloat', null, global);
-goog.exportSymbol('proto.management_app.config.set.UpdateOrInsertMainDictionary', null, global);
+goog.exportSymbol('proto.management_app.config.set.UpdateOrInsertAnalysysDictionary', null, global);
 goog.exportSymbol('proto.management_app.config.set.UpdateReadName', null, global);
 goog.exportSymbol('proto.management_app.config.set.UpdateReadNameOk', null, global);
 goog.exportSymbol('proto.management_app.config.set.UpdateResultDictionaryEntryA', null, global);
@@ -4518,12 +4517,12 @@ proto.management_app.config.set.UpdateResultUint32.prototype.hasError = function
  * @extends {jspb.Message}
  * @constructor
  */
-proto.management_app.config.set.RemoveFromMainDictionary = function(opt_data) {
+proto.management_app.config.set.AnalysysDictionaryUpdateTarget = function(opt_data) {
   jspb.Message.initialize(this, opt_data, 0, -1, null, null);
 };
-goog.inherits(proto.management_app.config.set.RemoveFromMainDictionary, jspb.Message);
+goog.inherits(proto.management_app.config.set.AnalysysDictionaryUpdateTarget, jspb.Message);
 if (goog.DEBUG && !COMPILED) {
-  proto.management_app.config.set.RemoveFromMainDictionary.displayName = 'proto.management_app.config.set.RemoveFromMainDictionary';
+  proto.management_app.config.set.AnalysysDictionaryUpdateTarget.displayName = 'proto.management_app.config.set.AnalysysDictionaryUpdateTarget';
 }
 
 
@@ -4538,8 +4537,8 @@ if (jspb.Message.GENERATE_TO_OBJECT) {
  *     for transitional soy proto support: http://goto/soy-param-migration
  * @return {!Object}
  */
-proto.management_app.config.set.RemoveFromMainDictionary.prototype.toObject = function(opt_includeInstance) {
-  return proto.management_app.config.set.RemoveFromMainDictionary.toObject(opt_includeInstance, this);
+proto.management_app.config.set.AnalysysDictionaryUpdateTarget.prototype.toObject = function(opt_includeInstance) {
+  return proto.management_app.config.set.AnalysysDictionaryUpdateTarget.toObject(opt_includeInstance, this);
 };
 
 
@@ -4548,12 +4547,171 @@ proto.management_app.config.set.RemoveFromMainDictionary.prototype.toObject = fu
  * @param {boolean|undefined} includeInstance Whether to include the JSPB
  *     instance for transitional soy proto support:
  *     http://goto/soy-param-migration
- * @param {!proto.management_app.config.set.RemoveFromMainDictionary} msg The msg instance to transform.
+ * @param {!proto.management_app.config.set.AnalysysDictionaryUpdateTarget} msg The msg instance to transform.
  * @return {!Object}
  */
-proto.management_app.config.set.RemoveFromMainDictionary.toObject = function(includeInstance, msg) {
+proto.management_app.config.set.AnalysysDictionaryUpdateTarget.toObject = function(includeInstance, msg) {
   var f, obj = {
-    guild: msg.getGuild(),
+    id: msg.getId()
+  };
+
+  if (includeInstance) {
+    obj.$jspbMessageInstance = msg;
+  }
+  return obj;
+};
+}
+
+
+/**
+ * Deserializes binary data (in protobuf wire format).
+ * @param {jspb.ByteSource} bytes The bytes to deserialize.
+ * @return {!proto.management_app.config.set.AnalysysDictionaryUpdateTarget}
+ */
+proto.management_app.config.set.AnalysysDictionaryUpdateTarget.deserializeBinary = function(bytes) {
+  var reader = new jspb.BinaryReader(bytes);
+  var msg = new proto.management_app.config.set.AnalysysDictionaryUpdateTarget;
+  return proto.management_app.config.set.AnalysysDictionaryUpdateTarget.deserializeBinaryFromReader(msg, reader);
+};
+
+
+/**
+ * Deserializes binary data (in protobuf wire format) from the
+ * given reader into the given message object.
+ * @param {!proto.management_app.config.set.AnalysysDictionaryUpdateTarget} msg The message object to deserialize into.
+ * @param {!jspb.BinaryReader} reader The BinaryReader to use.
+ * @return {!proto.management_app.config.set.AnalysysDictionaryUpdateTarget}
+ */
+proto.management_app.config.set.AnalysysDictionaryUpdateTarget.deserializeBinaryFromReader = function(msg, reader) {
+  while (reader.nextField()) {
+    if (reader.isEndGroup()) {
+      break;
+    }
+    var field = reader.getFieldNumber();
+    switch (field) {
+    case 1:
+      var value = /** @type {string} */ (reader.readString());
+      msg.setId(value);
+      break;
+    default:
+      reader.skipField();
+      break;
+    }
+  }
+  return msg;
+};
+
+
+/**
+ * Class method variant: serializes the given message to binary data
+ * (in protobuf wire format), writing to the given BinaryWriter.
+ * @param {!proto.management_app.config.set.AnalysysDictionaryUpdateTarget} message
+ * @param {!jspb.BinaryWriter} writer
+ */
+proto.management_app.config.set.AnalysysDictionaryUpdateTarget.serializeBinaryToWriter = function(message, writer) {
+  message.serializeBinaryToWriter(writer);
+};
+
+
+/**
+ * Serializes the message to binary data (in protobuf wire format).
+ * @return {!Uint8Array}
+ */
+proto.management_app.config.set.AnalysysDictionaryUpdateTarget.prototype.serializeBinary = function() {
+  var writer = new jspb.BinaryWriter();
+  this.serializeBinaryToWriter(writer);
+  return writer.getResultBuffer();
+};
+
+
+/**
+ * Serializes the message to binary data (in protobuf wire format),
+ * writing to the given BinaryWriter.
+ * @param {!jspb.BinaryWriter} writer
+ */
+proto.management_app.config.set.AnalysysDictionaryUpdateTarget.prototype.serializeBinaryToWriter = function (writer) {
+  var f = undefined;
+  f = this.getId();
+  if (f.length > 0) {
+    writer.writeString(
+      1,
+      f
+    );
+  }
+};
+
+
+/**
+ * Creates a deep clone of this proto. No data is shared with the original.
+ * @return {!proto.management_app.config.set.AnalysysDictionaryUpdateTarget} The clone.
+ */
+proto.management_app.config.set.AnalysysDictionaryUpdateTarget.prototype.cloneMessage = function() {
+  return /** @type {!proto.management_app.config.set.AnalysysDictionaryUpdateTarget} */ (jspb.Message.cloneMessage(this));
+};
+
+
+/**
+ * optional string id = 1;
+ * @return {string}
+ */
+proto.management_app.config.set.AnalysysDictionaryUpdateTarget.prototype.getId = function() {
+  return /** @type {string} */ (jspb.Message.getFieldProto3(this, 1, ""));
+};
+
+
+/** @param {string} value  */
+proto.management_app.config.set.AnalysysDictionaryUpdateTarget.prototype.setId = function(value) {
+  jspb.Message.setField(this, 1, value);
+};
+
+
+
+/**
+ * Generated by JsPbCodeGenerator.
+ * @param {Array=} opt_data Optional initial data array, typically from a
+ * server response, or constructed directly in Javascript. The array is used
+ * in place and becomes part of the constructed object. It is not cloned.
+ * If no data is provided, the constructed object will be empty, but still
+ * valid.
+ * @extends {jspb.Message}
+ * @constructor
+ */
+proto.management_app.config.set.RemoveFromAnalysysDictionary = function(opt_data) {
+  jspb.Message.initialize(this, opt_data, 0, -1, null, null);
+};
+goog.inherits(proto.management_app.config.set.RemoveFromAnalysysDictionary, jspb.Message);
+if (goog.DEBUG && !COMPILED) {
+  proto.management_app.config.set.RemoveFromAnalysysDictionary.displayName = 'proto.management_app.config.set.RemoveFromAnalysysDictionary';
+}
+
+
+if (jspb.Message.GENERATE_TO_OBJECT) {
+/**
+ * Creates an object representation of this proto suitable for use in Soy templates.
+ * Field names that are reserved in JavaScript and will be renamed to pb_name.
+ * To access a reserved field use, foo.pb_<name>, eg, foo.pb_default.
+ * For the list of reserved names please see:
+ *     com.google.apps.jspb.JsClassTemplate.JS_RESERVED_WORDS.
+ * @param {boolean=} opt_includeInstance Whether to include the JSPB instance
+ *     for transitional soy proto support: http://goto/soy-param-migration
+ * @return {!Object}
+ */
+proto.management_app.config.set.RemoveFromAnalysysDictionary.prototype.toObject = function(opt_includeInstance) {
+  return proto.management_app.config.set.RemoveFromAnalysysDictionary.toObject(opt_includeInstance, this);
+};
+
+
+/**
+ * Static version of the {@see toObject} method.
+ * @param {boolean|undefined} includeInstance Whether to include the JSPB
+ *     instance for transitional soy proto support:
+ *     http://goto/soy-param-migration
+ * @param {!proto.management_app.config.set.RemoveFromAnalysysDictionary} msg The msg instance to transform.
+ * @return {!Object}
+ */
+proto.management_app.config.set.RemoveFromAnalysysDictionary.toObject = function(includeInstance, msg) {
+  var f, obj = {
+    target: (f = msg.getTarget()) && proto.management_app.config.set.AnalysysDictionaryUpdateTarget.toObject(includeInstance, f),
     key: msg.getKey()
   };
 
@@ -4568,23 +4726,23 @@ proto.management_app.config.set.RemoveFromMainDictionary.toObject = function(inc
 /**
  * Deserializes binary data (in protobuf wire format).
  * @param {jspb.ByteSource} bytes The bytes to deserialize.
- * @return {!proto.management_app.config.set.RemoveFromMainDictionary}
+ * @return {!proto.management_app.config.set.RemoveFromAnalysysDictionary}
  */
-proto.management_app.config.set.RemoveFromMainDictionary.deserializeBinary = function(bytes) {
+proto.management_app.config.set.RemoveFromAnalysysDictionary.deserializeBinary = function(bytes) {
   var reader = new jspb.BinaryReader(bytes);
-  var msg = new proto.management_app.config.set.RemoveFromMainDictionary;
-  return proto.management_app.config.set.RemoveFromMainDictionary.deserializeBinaryFromReader(msg, reader);
+  var msg = new proto.management_app.config.set.RemoveFromAnalysysDictionary;
+  return proto.management_app.config.set.RemoveFromAnalysysDictionary.deserializeBinaryFromReader(msg, reader);
 };
 
 
 /**
  * Deserializes binary data (in protobuf wire format) from the
  * given reader into the given message object.
- * @param {!proto.management_app.config.set.RemoveFromMainDictionary} msg The message object to deserialize into.
+ * @param {!proto.management_app.config.set.RemoveFromAnalysysDictionary} msg The message object to deserialize into.
  * @param {!jspb.BinaryReader} reader The BinaryReader to use.
- * @return {!proto.management_app.config.set.RemoveFromMainDictionary}
+ * @return {!proto.management_app.config.set.RemoveFromAnalysysDictionary}
  */
-proto.management_app.config.set.RemoveFromMainDictionary.deserializeBinaryFromReader = function(msg, reader) {
+proto.management_app.config.set.RemoveFromAnalysysDictionary.deserializeBinaryFromReader = function(msg, reader) {
   while (reader.nextField()) {
     if (reader.isEndGroup()) {
       break;
@@ -4592,8 +4750,9 @@ proto.management_app.config.set.RemoveFromMainDictionary.deserializeBinaryFromRe
     var field = reader.getFieldNumber();
     switch (field) {
     case 1:
-      var value = /** @type {string} */ (reader.readString());
-      msg.setGuild(value);
+      var value = new proto.management_app.config.set.AnalysysDictionaryUpdateTarget;
+      reader.readMessage(value,proto.management_app.config.set.AnalysysDictionaryUpdateTarget.deserializeBinaryFromReader);
+      msg.setTarget(value);
       break;
     case 2:
       var value = /** @type {string} */ (reader.readString());
@@ -4611,10 +4770,10 @@ proto.management_app.config.set.RemoveFromMainDictionary.deserializeBinaryFromRe
 /**
  * Class method variant: serializes the given message to binary data
  * (in protobuf wire format), writing to the given BinaryWriter.
- * @param {!proto.management_app.config.set.RemoveFromMainDictionary} message
+ * @param {!proto.management_app.config.set.RemoveFromAnalysysDictionary} message
  * @param {!jspb.BinaryWriter} writer
  */
-proto.management_app.config.set.RemoveFromMainDictionary.serializeBinaryToWriter = function(message, writer) {
+proto.management_app.config.set.RemoveFromAnalysysDictionary.serializeBinaryToWriter = function(message, writer) {
   message.serializeBinaryToWriter(writer);
 };
 
@@ -4623,7 +4782,7 @@ proto.management_app.config.set.RemoveFromMainDictionary.serializeBinaryToWriter
  * Serializes the message to binary data (in protobuf wire format).
  * @return {!Uint8Array}
  */
-proto.management_app.config.set.RemoveFromMainDictionary.prototype.serializeBinary = function() {
+proto.management_app.config.set.RemoveFromAnalysysDictionary.prototype.serializeBinary = function() {
   var writer = new jspb.BinaryWriter();
   this.serializeBinaryToWriter(writer);
   return writer.getResultBuffer();
@@ -4635,13 +4794,14 @@ proto.management_app.config.set.RemoveFromMainDictionary.prototype.serializeBina
  * writing to the given BinaryWriter.
  * @param {!jspb.BinaryWriter} writer
  */
-proto.management_app.config.set.RemoveFromMainDictionary.prototype.serializeBinaryToWriter = function (writer) {
+proto.management_app.config.set.RemoveFromAnalysysDictionary.prototype.serializeBinaryToWriter = function (writer) {
   var f = undefined;
-  f = this.getGuild();
-  if (f.length > 0) {
-    writer.writeString(
+  f = this.getTarget();
+  if (f != null) {
+    writer.writeMessage(
       1,
-      f
+      f,
+      proto.management_app.config.set.AnalysysDictionaryUpdateTarget.serializeBinaryToWriter
     );
   }
   f = this.getKey();
@@ -4656,25 +4816,40 @@ proto.management_app.config.set.RemoveFromMainDictionary.prototype.serializeBina
 
 /**
  * Creates a deep clone of this proto. No data is shared with the original.
- * @return {!proto.management_app.config.set.RemoveFromMainDictionary} The clone.
+ * @return {!proto.management_app.config.set.RemoveFromAnalysysDictionary} The clone.
  */
-proto.management_app.config.set.RemoveFromMainDictionary.prototype.cloneMessage = function() {
-  return /** @type {!proto.management_app.config.set.RemoveFromMainDictionary} */ (jspb.Message.cloneMessage(this));
+proto.management_app.config.set.RemoveFromAnalysysDictionary.prototype.cloneMessage = function() {
+  return /** @type {!proto.management_app.config.set.RemoveFromAnalysysDictionary} */ (jspb.Message.cloneMessage(this));
 };
 
 
 /**
- * optional string guild = 1;
- * @return {string}
+ * optional AnalysysDictionaryUpdateTarget target = 1;
+ * @return {proto.management_app.config.set.AnalysysDictionaryUpdateTarget}
  */
-proto.management_app.config.set.RemoveFromMainDictionary.prototype.getGuild = function() {
-  return /** @type {string} */ (jspb.Message.getFieldProto3(this, 1, ""));
+proto.management_app.config.set.RemoveFromAnalysysDictionary.prototype.getTarget = function() {
+  return /** @type{proto.management_app.config.set.AnalysysDictionaryUpdateTarget} */ (
+    jspb.Message.getWrapperField(this, proto.management_app.config.set.AnalysysDictionaryUpdateTarget, 1));
 };
 
 
-/** @param {string} value  */
-proto.management_app.config.set.RemoveFromMainDictionary.prototype.setGuild = function(value) {
-  jspb.Message.setField(this, 1, value);
+/** @param {proto.management_app.config.set.AnalysysDictionaryUpdateTarget|undefined} value  */
+proto.management_app.config.set.RemoveFromAnalysysDictionary.prototype.setTarget = function(value) {
+  jspb.Message.setWrapperField(this, 1, value);
+};
+
+
+proto.management_app.config.set.RemoveFromAnalysysDictionary.prototype.clearTarget = function() {
+  this.setTarget(undefined);
+};
+
+
+/**
+ * Returns whether this field is set.
+ * @return{!boolean}
+ */
+proto.management_app.config.set.RemoveFromAnalysysDictionary.prototype.hasTarget = function() {
+  return jspb.Message.getField(this, 1) != null;
 };
 
 
@@ -4682,13 +4857,13 @@ proto.management_app.config.set.RemoveFromMainDictionary.prototype.setGuild = fu
  * optional string key = 2;
  * @return {string}
  */
-proto.management_app.config.set.RemoveFromMainDictionary.prototype.getKey = function() {
+proto.management_app.config.set.RemoveFromAnalysysDictionary.prototype.getKey = function() {
   return /** @type {string} */ (jspb.Message.getFieldProto3(this, 2, ""));
 };
 
 
 /** @param {string} value  */
-proto.management_app.config.set.RemoveFromMainDictionary.prototype.setKey = function(value) {
+proto.management_app.config.set.RemoveFromAnalysysDictionary.prototype.setKey = function(value) {
   jspb.Message.setField(this, 2, value);
 };
 
@@ -5456,12 +5631,12 @@ proto.management_app.config.set.UpdateResultDictionaryEntryA.prototype.hasError 
  * @extends {jspb.Message}
  * @constructor
  */
-proto.management_app.config.set.UpdateOrInsertMainDictionary = function(opt_data) {
+proto.management_app.config.set.UpdateOrInsertAnalysysDictionary = function(opt_data) {
   jspb.Message.initialize(this, opt_data, 0, -1, null, null);
 };
-goog.inherits(proto.management_app.config.set.UpdateOrInsertMainDictionary, jspb.Message);
+goog.inherits(proto.management_app.config.set.UpdateOrInsertAnalysysDictionary, jspb.Message);
 if (goog.DEBUG && !COMPILED) {
-  proto.management_app.config.set.UpdateOrInsertMainDictionary.displayName = 'proto.management_app.config.set.UpdateOrInsertMainDictionary';
+  proto.management_app.config.set.UpdateOrInsertAnalysysDictionary.displayName = 'proto.management_app.config.set.UpdateOrInsertAnalysysDictionary';
 }
 
 
@@ -5476,8 +5651,8 @@ if (jspb.Message.GENERATE_TO_OBJECT) {
  *     for transitional soy proto support: http://goto/soy-param-migration
  * @return {!Object}
  */
-proto.management_app.config.set.UpdateOrInsertMainDictionary.prototype.toObject = function(opt_includeInstance) {
-  return proto.management_app.config.set.UpdateOrInsertMainDictionary.toObject(opt_includeInstance, this);
+proto.management_app.config.set.UpdateOrInsertAnalysysDictionary.prototype.toObject = function(opt_includeInstance) {
+  return proto.management_app.config.set.UpdateOrInsertAnalysysDictionary.toObject(opt_includeInstance, this);
 };
 
 
@@ -5486,12 +5661,12 @@ proto.management_app.config.set.UpdateOrInsertMainDictionary.prototype.toObject 
  * @param {boolean|undefined} includeInstance Whether to include the JSPB
  *     instance for transitional soy proto support:
  *     http://goto/soy-param-migration
- * @param {!proto.management_app.config.set.UpdateOrInsertMainDictionary} msg The msg instance to transform.
+ * @param {!proto.management_app.config.set.UpdateOrInsertAnalysysDictionary} msg The msg instance to transform.
  * @return {!Object}
  */
-proto.management_app.config.set.UpdateOrInsertMainDictionary.toObject = function(includeInstance, msg) {
+proto.management_app.config.set.UpdateOrInsertAnalysysDictionary.toObject = function(includeInstance, msg) {
   var f, obj = {
-    guild: msg.getGuild(),
+    id: (f = msg.getId()) && proto.management_app.config.set.AnalysysDictionaryUpdateTarget.toObject(includeInstance, f),
     value: (f = msg.getValue()) && config_pb.DictionaryEntryA.toObject(includeInstance, f)
   };
 
@@ -5506,23 +5681,23 @@ proto.management_app.config.set.UpdateOrInsertMainDictionary.toObject = function
 /**
  * Deserializes binary data (in protobuf wire format).
  * @param {jspb.ByteSource} bytes The bytes to deserialize.
- * @return {!proto.management_app.config.set.UpdateOrInsertMainDictionary}
+ * @return {!proto.management_app.config.set.UpdateOrInsertAnalysysDictionary}
  */
-proto.management_app.config.set.UpdateOrInsertMainDictionary.deserializeBinary = function(bytes) {
+proto.management_app.config.set.UpdateOrInsertAnalysysDictionary.deserializeBinary = function(bytes) {
   var reader = new jspb.BinaryReader(bytes);
-  var msg = new proto.management_app.config.set.UpdateOrInsertMainDictionary;
-  return proto.management_app.config.set.UpdateOrInsertMainDictionary.deserializeBinaryFromReader(msg, reader);
+  var msg = new proto.management_app.config.set.UpdateOrInsertAnalysysDictionary;
+  return proto.management_app.config.set.UpdateOrInsertAnalysysDictionary.deserializeBinaryFromReader(msg, reader);
 };
 
 
 /**
  * Deserializes binary data (in protobuf wire format) from the
  * given reader into the given message object.
- * @param {!proto.management_app.config.set.UpdateOrInsertMainDictionary} msg The message object to deserialize into.
+ * @param {!proto.management_app.config.set.UpdateOrInsertAnalysysDictionary} msg The message object to deserialize into.
  * @param {!jspb.BinaryReader} reader The BinaryReader to use.
- * @return {!proto.management_app.config.set.UpdateOrInsertMainDictionary}
+ * @return {!proto.management_app.config.set.UpdateOrInsertAnalysysDictionary}
  */
-proto.management_app.config.set.UpdateOrInsertMainDictionary.deserializeBinaryFromReader = function(msg, reader) {
+proto.management_app.config.set.UpdateOrInsertAnalysysDictionary.deserializeBinaryFromReader = function(msg, reader) {
   while (reader.nextField()) {
     if (reader.isEndGroup()) {
       break;
@@ -5530,8 +5705,9 @@ proto.management_app.config.set.UpdateOrInsertMainDictionary.deserializeBinaryFr
     var field = reader.getFieldNumber();
     switch (field) {
     case 1:
-      var value = /** @type {string} */ (reader.readString());
-      msg.setGuild(value);
+      var value = new proto.management_app.config.set.AnalysysDictionaryUpdateTarget;
+      reader.readMessage(value,proto.management_app.config.set.AnalysysDictionaryUpdateTarget.deserializeBinaryFromReader);
+      msg.setId(value);
       break;
     case 2:
       var value = new config_pb.DictionaryEntryA;
@@ -5550,10 +5726,10 @@ proto.management_app.config.set.UpdateOrInsertMainDictionary.deserializeBinaryFr
 /**
  * Class method variant: serializes the given message to binary data
  * (in protobuf wire format), writing to the given BinaryWriter.
- * @param {!proto.management_app.config.set.UpdateOrInsertMainDictionary} message
+ * @param {!proto.management_app.config.set.UpdateOrInsertAnalysysDictionary} message
  * @param {!jspb.BinaryWriter} writer
  */
-proto.management_app.config.set.UpdateOrInsertMainDictionary.serializeBinaryToWriter = function(message, writer) {
+proto.management_app.config.set.UpdateOrInsertAnalysysDictionary.serializeBinaryToWriter = function(message, writer) {
   message.serializeBinaryToWriter(writer);
 };
 
@@ -5562,7 +5738,7 @@ proto.management_app.config.set.UpdateOrInsertMainDictionary.serializeBinaryToWr
  * Serializes the message to binary data (in protobuf wire format).
  * @return {!Uint8Array}
  */
-proto.management_app.config.set.UpdateOrInsertMainDictionary.prototype.serializeBinary = function() {
+proto.management_app.config.set.UpdateOrInsertAnalysysDictionary.prototype.serializeBinary = function() {
   var writer = new jspb.BinaryWriter();
   this.serializeBinaryToWriter(writer);
   return writer.getResultBuffer();
@@ -5574,13 +5750,14 @@ proto.management_app.config.set.UpdateOrInsertMainDictionary.prototype.serialize
  * writing to the given BinaryWriter.
  * @param {!jspb.BinaryWriter} writer
  */
-proto.management_app.config.set.UpdateOrInsertMainDictionary.prototype.serializeBinaryToWriter = function (writer) {
+proto.management_app.config.set.UpdateOrInsertAnalysysDictionary.prototype.serializeBinaryToWriter = function (writer) {
   var f = undefined;
-  f = this.getGuild();
-  if (f.length > 0) {
-    writer.writeString(
+  f = this.getId();
+  if (f != null) {
+    writer.writeMessage(
       1,
-      f
+      f,
+      proto.management_app.config.set.AnalysysDictionaryUpdateTarget.serializeBinaryToWriter
     );
   }
   f = this.getValue();
@@ -5596,25 +5773,40 @@ proto.management_app.config.set.UpdateOrInsertMainDictionary.prototype.serialize
 
 /**
  * Creates a deep clone of this proto. No data is shared with the original.
- * @return {!proto.management_app.config.set.UpdateOrInsertMainDictionary} The clone.
+ * @return {!proto.management_app.config.set.UpdateOrInsertAnalysysDictionary} The clone.
  */
-proto.management_app.config.set.UpdateOrInsertMainDictionary.prototype.cloneMessage = function() {
-  return /** @type {!proto.management_app.config.set.UpdateOrInsertMainDictionary} */ (jspb.Message.cloneMessage(this));
+proto.management_app.config.set.UpdateOrInsertAnalysysDictionary.prototype.cloneMessage = function() {
+  return /** @type {!proto.management_app.config.set.UpdateOrInsertAnalysysDictionary} */ (jspb.Message.cloneMessage(this));
 };
 
 
 /**
- * optional string guild = 1;
- * @return {string}
+ * optional AnalysysDictionaryUpdateTarget id = 1;
+ * @return {proto.management_app.config.set.AnalysysDictionaryUpdateTarget}
  */
-proto.management_app.config.set.UpdateOrInsertMainDictionary.prototype.getGuild = function() {
-  return /** @type {string} */ (jspb.Message.getFieldProto3(this, 1, ""));
+proto.management_app.config.set.UpdateOrInsertAnalysysDictionary.prototype.getId = function() {
+  return /** @type{proto.management_app.config.set.AnalysysDictionaryUpdateTarget} */ (
+    jspb.Message.getWrapperField(this, proto.management_app.config.set.AnalysysDictionaryUpdateTarget, 1));
 };
 
 
-/** @param {string} value  */
-proto.management_app.config.set.UpdateOrInsertMainDictionary.prototype.setGuild = function(value) {
-  jspb.Message.setField(this, 1, value);
+/** @param {proto.management_app.config.set.AnalysysDictionaryUpdateTarget|undefined} value  */
+proto.management_app.config.set.UpdateOrInsertAnalysysDictionary.prototype.setId = function(value) {
+  jspb.Message.setWrapperField(this, 1, value);
+};
+
+
+proto.management_app.config.set.UpdateOrInsertAnalysysDictionary.prototype.clearId = function() {
+  this.setId(undefined);
+};
+
+
+/**
+ * Returns whether this field is set.
+ * @return{!boolean}
+ */
+proto.management_app.config.set.UpdateOrInsertAnalysysDictionary.prototype.hasId = function() {
+  return jspb.Message.getField(this, 1) != null;
 };
 
 
@@ -5622,19 +5814,19 @@ proto.management_app.config.set.UpdateOrInsertMainDictionary.prototype.setGuild 
  * optional management_app.config.common.DictionaryEntryA value = 2;
  * @return {proto.management_app.config.common.DictionaryEntryA}
  */
-proto.management_app.config.set.UpdateOrInsertMainDictionary.prototype.getValue = function() {
+proto.management_app.config.set.UpdateOrInsertAnalysysDictionary.prototype.getValue = function() {
   return /** @type{proto.management_app.config.common.DictionaryEntryA} */ (
     jspb.Message.getWrapperField(this, config_pb.DictionaryEntryA, 2));
 };
 
 
 /** @param {proto.management_app.config.common.DictionaryEntryA|undefined} value  */
-proto.management_app.config.set.UpdateOrInsertMainDictionary.prototype.setValue = function(value) {
+proto.management_app.config.set.UpdateOrInsertAnalysysDictionary.prototype.setValue = function(value) {
   jspb.Message.setWrapperField(this, 2, value);
 };
 
 
-proto.management_app.config.set.UpdateOrInsertMainDictionary.prototype.clearValue = function() {
+proto.management_app.config.set.UpdateOrInsertAnalysysDictionary.prototype.clearValue = function() {
   this.setValue(undefined);
 };
 
@@ -5643,7 +5835,7 @@ proto.management_app.config.set.UpdateOrInsertMainDictionary.prototype.clearValu
  * Returns whether this field is set.
  * @return{!boolean}
  */
-proto.management_app.config.set.UpdateOrInsertMainDictionary.prototype.hasValue = function() {
+proto.management_app.config.set.UpdateOrInsertAnalysysDictionary.prototype.hasValue = function() {
   return jspb.Message.getField(this, 2) != null;
 };
 
@@ -5659,358 +5851,13 @@ proto.management_app.config.set.UpdateOrInsertMainDictionary.prototype.hasValue 
  * @extends {jspb.Message}
  * @constructor
  */
-proto.management_app.config.set.SimpleDictionaryUpdateTargetGuild = function(opt_data) {
-  jspb.Message.initialize(this, opt_data, 0, -1, null, null);
-};
-goog.inherits(proto.management_app.config.set.SimpleDictionaryUpdateTargetGuild, jspb.Message);
-if (goog.DEBUG && !COMPILED) {
-  proto.management_app.config.set.SimpleDictionaryUpdateTargetGuild.displayName = 'proto.management_app.config.set.SimpleDictionaryUpdateTargetGuild';
-}
-
-
-if (jspb.Message.GENERATE_TO_OBJECT) {
-/**
- * Creates an object representation of this proto suitable for use in Soy templates.
- * Field names that are reserved in JavaScript and will be renamed to pb_name.
- * To access a reserved field use, foo.pb_<name>, eg, foo.pb_default.
- * For the list of reserved names please see:
- *     com.google.apps.jspb.JsClassTemplate.JS_RESERVED_WORDS.
- * @param {boolean=} opt_includeInstance Whether to include the JSPB instance
- *     for transitional soy proto support: http://goto/soy-param-migration
- * @return {!Object}
- */
-proto.management_app.config.set.SimpleDictionaryUpdateTargetGuild.prototype.toObject = function(opt_includeInstance) {
-  return proto.management_app.config.set.SimpleDictionaryUpdateTargetGuild.toObject(opt_includeInstance, this);
-};
-
-
-/**
- * Static version of the {@see toObject} method.
- * @param {boolean|undefined} includeInstance Whether to include the JSPB
- *     instance for transitional soy proto support:
- *     http://goto/soy-param-migration
- * @param {!proto.management_app.config.set.SimpleDictionaryUpdateTargetGuild} msg The msg instance to transform.
- * @return {!Object}
- */
-proto.management_app.config.set.SimpleDictionaryUpdateTargetGuild.toObject = function(includeInstance, msg) {
-  var f, obj = {
-    guild: msg.getGuild()
-  };
-
-  if (includeInstance) {
-    obj.$jspbMessageInstance = msg;
-  }
-  return obj;
-};
-}
-
-
-/**
- * Deserializes binary data (in protobuf wire format).
- * @param {jspb.ByteSource} bytes The bytes to deserialize.
- * @return {!proto.management_app.config.set.SimpleDictionaryUpdateTargetGuild}
- */
-proto.management_app.config.set.SimpleDictionaryUpdateTargetGuild.deserializeBinary = function(bytes) {
-  var reader = new jspb.BinaryReader(bytes);
-  var msg = new proto.management_app.config.set.SimpleDictionaryUpdateTargetGuild;
-  return proto.management_app.config.set.SimpleDictionaryUpdateTargetGuild.deserializeBinaryFromReader(msg, reader);
-};
-
-
-/**
- * Deserializes binary data (in protobuf wire format) from the
- * given reader into the given message object.
- * @param {!proto.management_app.config.set.SimpleDictionaryUpdateTargetGuild} msg The message object to deserialize into.
- * @param {!jspb.BinaryReader} reader The BinaryReader to use.
- * @return {!proto.management_app.config.set.SimpleDictionaryUpdateTargetGuild}
- */
-proto.management_app.config.set.SimpleDictionaryUpdateTargetGuild.deserializeBinaryFromReader = function(msg, reader) {
-  while (reader.nextField()) {
-    if (reader.isEndGroup()) {
-      break;
-    }
-    var field = reader.getFieldNumber();
-    switch (field) {
-    case 1:
-      var value = /** @type {string} */ (reader.readString());
-      msg.setGuild(value);
-      break;
-    default:
-      reader.skipField();
-      break;
-    }
-  }
-  return msg;
-};
-
-
-/**
- * Class method variant: serializes the given message to binary data
- * (in protobuf wire format), writing to the given BinaryWriter.
- * @param {!proto.management_app.config.set.SimpleDictionaryUpdateTargetGuild} message
- * @param {!jspb.BinaryWriter} writer
- */
-proto.management_app.config.set.SimpleDictionaryUpdateTargetGuild.serializeBinaryToWriter = function(message, writer) {
-  message.serializeBinaryToWriter(writer);
-};
-
-
-/**
- * Serializes the message to binary data (in protobuf wire format).
- * @return {!Uint8Array}
- */
-proto.management_app.config.set.SimpleDictionaryUpdateTargetGuild.prototype.serializeBinary = function() {
-  var writer = new jspb.BinaryWriter();
-  this.serializeBinaryToWriter(writer);
-  return writer.getResultBuffer();
-};
-
-
-/**
- * Serializes the message to binary data (in protobuf wire format),
- * writing to the given BinaryWriter.
- * @param {!jspb.BinaryWriter} writer
- */
-proto.management_app.config.set.SimpleDictionaryUpdateTargetGuild.prototype.serializeBinaryToWriter = function (writer) {
-  var f = undefined;
-  f = this.getGuild();
-  if (f.length > 0) {
-    writer.writeString(
-      1,
-      f
-    );
-  }
-};
-
-
-/**
- * Creates a deep clone of this proto. No data is shared with the original.
- * @return {!proto.management_app.config.set.SimpleDictionaryUpdateTargetGuild} The clone.
- */
-proto.management_app.config.set.SimpleDictionaryUpdateTargetGuild.prototype.cloneMessage = function() {
-  return /** @type {!proto.management_app.config.set.SimpleDictionaryUpdateTargetGuild} */ (jspb.Message.cloneMessage(this));
-};
-
-
-/**
- * optional string guild = 1;
- * @return {string}
- */
-proto.management_app.config.set.SimpleDictionaryUpdateTargetGuild.prototype.getGuild = function() {
-  return /** @type {string} */ (jspb.Message.getFieldProto3(this, 1, ""));
-};
-
-
-/** @param {string} value  */
-proto.management_app.config.set.SimpleDictionaryUpdateTargetGuild.prototype.setGuild = function(value) {
-  jspb.Message.setField(this, 1, value);
-};
-
-
-
-/**
- * Generated by JsPbCodeGenerator.
- * @param {Array=} opt_data Optional initial data array, typically from a
- * server response, or constructed directly in Javascript. The array is used
- * in place and becomes part of the constructed object. It is not cloned.
- * If no data is provided, the constructed object will be empty, but still
- * valid.
- * @extends {jspb.Message}
- * @constructor
- */
-proto.management_app.config.set.SimpleDictionaryUpdateTargetSharedDictionary = function(opt_data) {
-  jspb.Message.initialize(this, opt_data, 0, -1, null, null);
-};
-goog.inherits(proto.management_app.config.set.SimpleDictionaryUpdateTargetSharedDictionary, jspb.Message);
-if (goog.DEBUG && !COMPILED) {
-  proto.management_app.config.set.SimpleDictionaryUpdateTargetSharedDictionary.displayName = 'proto.management_app.config.set.SimpleDictionaryUpdateTargetSharedDictionary';
-}
-
-
-if (jspb.Message.GENERATE_TO_OBJECT) {
-/**
- * Creates an object representation of this proto suitable for use in Soy templates.
- * Field names that are reserved in JavaScript and will be renamed to pb_name.
- * To access a reserved field use, foo.pb_<name>, eg, foo.pb_default.
- * For the list of reserved names please see:
- *     com.google.apps.jspb.JsClassTemplate.JS_RESERVED_WORDS.
- * @param {boolean=} opt_includeInstance Whether to include the JSPB instance
- *     for transitional soy proto support: http://goto/soy-param-migration
- * @return {!Object}
- */
-proto.management_app.config.set.SimpleDictionaryUpdateTargetSharedDictionary.prototype.toObject = function(opt_includeInstance) {
-  return proto.management_app.config.set.SimpleDictionaryUpdateTargetSharedDictionary.toObject(opt_includeInstance, this);
-};
-
-
-/**
- * Static version of the {@see toObject} method.
- * @param {boolean|undefined} includeInstance Whether to include the JSPB
- *     instance for transitional soy proto support:
- *     http://goto/soy-param-migration
- * @param {!proto.management_app.config.set.SimpleDictionaryUpdateTargetSharedDictionary} msg The msg instance to transform.
- * @return {!Object}
- */
-proto.management_app.config.set.SimpleDictionaryUpdateTargetSharedDictionary.toObject = function(includeInstance, msg) {
-  var f, obj = {
-    id: msg.getId()
-  };
-
-  if (includeInstance) {
-    obj.$jspbMessageInstance = msg;
-  }
-  return obj;
-};
-}
-
-
-/**
- * Deserializes binary data (in protobuf wire format).
- * @param {jspb.ByteSource} bytes The bytes to deserialize.
- * @return {!proto.management_app.config.set.SimpleDictionaryUpdateTargetSharedDictionary}
- */
-proto.management_app.config.set.SimpleDictionaryUpdateTargetSharedDictionary.deserializeBinary = function(bytes) {
-  var reader = new jspb.BinaryReader(bytes);
-  var msg = new proto.management_app.config.set.SimpleDictionaryUpdateTargetSharedDictionary;
-  return proto.management_app.config.set.SimpleDictionaryUpdateTargetSharedDictionary.deserializeBinaryFromReader(msg, reader);
-};
-
-
-/**
- * Deserializes binary data (in protobuf wire format) from the
- * given reader into the given message object.
- * @param {!proto.management_app.config.set.SimpleDictionaryUpdateTargetSharedDictionary} msg The message object to deserialize into.
- * @param {!jspb.BinaryReader} reader The BinaryReader to use.
- * @return {!proto.management_app.config.set.SimpleDictionaryUpdateTargetSharedDictionary}
- */
-proto.management_app.config.set.SimpleDictionaryUpdateTargetSharedDictionary.deserializeBinaryFromReader = function(msg, reader) {
-  while (reader.nextField()) {
-    if (reader.isEndGroup()) {
-      break;
-    }
-    var field = reader.getFieldNumber();
-    switch (field) {
-    case 1:
-      var value = /** @type {string} */ (reader.readString());
-      msg.setId(value);
-      break;
-    default:
-      reader.skipField();
-      break;
-    }
-  }
-  return msg;
-};
-
-
-/**
- * Class method variant: serializes the given message to binary data
- * (in protobuf wire format), writing to the given BinaryWriter.
- * @param {!proto.management_app.config.set.SimpleDictionaryUpdateTargetSharedDictionary} message
- * @param {!jspb.BinaryWriter} writer
- */
-proto.management_app.config.set.SimpleDictionaryUpdateTargetSharedDictionary.serializeBinaryToWriter = function(message, writer) {
-  message.serializeBinaryToWriter(writer);
-};
-
-
-/**
- * Serializes the message to binary data (in protobuf wire format).
- * @return {!Uint8Array}
- */
-proto.management_app.config.set.SimpleDictionaryUpdateTargetSharedDictionary.prototype.serializeBinary = function() {
-  var writer = new jspb.BinaryWriter();
-  this.serializeBinaryToWriter(writer);
-  return writer.getResultBuffer();
-};
-
-
-/**
- * Serializes the message to binary data (in protobuf wire format),
- * writing to the given BinaryWriter.
- * @param {!jspb.BinaryWriter} writer
- */
-proto.management_app.config.set.SimpleDictionaryUpdateTargetSharedDictionary.prototype.serializeBinaryToWriter = function (writer) {
-  var f = undefined;
-  f = this.getId();
-  if (f.length > 0) {
-    writer.writeString(
-      1,
-      f
-    );
-  }
-};
-
-
-/**
- * Creates a deep clone of this proto. No data is shared with the original.
- * @return {!proto.management_app.config.set.SimpleDictionaryUpdateTargetSharedDictionary} The clone.
- */
-proto.management_app.config.set.SimpleDictionaryUpdateTargetSharedDictionary.prototype.cloneMessage = function() {
-  return /** @type {!proto.management_app.config.set.SimpleDictionaryUpdateTargetSharedDictionary} */ (jspb.Message.cloneMessage(this));
-};
-
-
-/**
- * optional string id = 1;
- * @return {string}
- */
-proto.management_app.config.set.SimpleDictionaryUpdateTargetSharedDictionary.prototype.getId = function() {
-  return /** @type {string} */ (jspb.Message.getFieldProto3(this, 1, ""));
-};
-
-
-/** @param {string} value  */
-proto.management_app.config.set.SimpleDictionaryUpdateTargetSharedDictionary.prototype.setId = function(value) {
-  jspb.Message.setField(this, 1, value);
-};
-
-
-
-/**
- * Generated by JsPbCodeGenerator.
- * @param {Array=} opt_data Optional initial data array, typically from a
- * server response, or constructed directly in Javascript. The array is used
- * in place and becomes part of the constructed object. It is not cloned.
- * If no data is provided, the constructed object will be empty, but still
- * valid.
- * @extends {jspb.Message}
- * @constructor
- */
 proto.management_app.config.set.SimpleDictionaryUpdateTarget = function(opt_data) {
-  jspb.Message.initialize(this, opt_data, 0, -1, null, proto.management_app.config.set.SimpleDictionaryUpdateTarget.oneofGroups_);
+  jspb.Message.initialize(this, opt_data, 0, -1, null, null);
 };
 goog.inherits(proto.management_app.config.set.SimpleDictionaryUpdateTarget, jspb.Message);
 if (goog.DEBUG && !COMPILED) {
   proto.management_app.config.set.SimpleDictionaryUpdateTarget.displayName = 'proto.management_app.config.set.SimpleDictionaryUpdateTarget';
 }
-/**
- * Oneof group definitions for this message. Each group defines the field
- * numbers belonging to that group. When of these fields' value is set, all
- * other fields in the group are cleared. During deserialization, if multiple
- * fields are encountered for a group, only the last value seen will be kept.
- * @private {!Array<!Array<number>>}
- * @const
- */
-proto.management_app.config.set.SimpleDictionaryUpdateTarget.oneofGroups_ = [[1,2,3]];
-
-/**
- * @enum {number}
- */
-proto.management_app.config.set.SimpleDictionaryUpdateTarget.TargetCase = {
-  TARGET_NOT_SET: 0,
-  BEFORE: 1,
-  AFTER: 2,
-  SHARED: 3
-};
-
-/**
- * @return {proto.management_app.config.set.SimpleDictionaryUpdateTarget.TargetCase}
- */
-proto.management_app.config.set.SimpleDictionaryUpdateTarget.prototype.getTargetCase = function() {
-  return /** @type {proto.management_app.config.set.SimpleDictionaryUpdateTarget.TargetCase} */(jspb.Message.computeOneofCase(this, proto.management_app.config.set.SimpleDictionaryUpdateTarget.oneofGroups_[0]));
-};
-
 
 
 if (jspb.Message.GENERATE_TO_OBJECT) {
@@ -6039,9 +5886,7 @@ proto.management_app.config.set.SimpleDictionaryUpdateTarget.prototype.toObject 
  */
 proto.management_app.config.set.SimpleDictionaryUpdateTarget.toObject = function(includeInstance, msg) {
   var f, obj = {
-    before: (f = msg.getBefore()) && proto.management_app.config.set.SimpleDictionaryUpdateTargetGuild.toObject(includeInstance, f),
-    after: (f = msg.getAfter()) && proto.management_app.config.set.SimpleDictionaryUpdateTargetGuild.toObject(includeInstance, f),
-    shared: (f = msg.getShared()) && proto.management_app.config.set.SimpleDictionaryUpdateTargetSharedDictionary.toObject(includeInstance, f)
+    id: msg.getId()
   };
 
   if (includeInstance) {
@@ -6079,19 +5924,8 @@ proto.management_app.config.set.SimpleDictionaryUpdateTarget.deserializeBinaryFr
     var field = reader.getFieldNumber();
     switch (field) {
     case 1:
-      var value = new proto.management_app.config.set.SimpleDictionaryUpdateTargetGuild;
-      reader.readMessage(value,proto.management_app.config.set.SimpleDictionaryUpdateTargetGuild.deserializeBinaryFromReader);
-      msg.setBefore(value);
-      break;
-    case 2:
-      var value = new proto.management_app.config.set.SimpleDictionaryUpdateTargetGuild;
-      reader.readMessage(value,proto.management_app.config.set.SimpleDictionaryUpdateTargetGuild.deserializeBinaryFromReader);
-      msg.setAfter(value);
-      break;
-    case 3:
-      var value = new proto.management_app.config.set.SimpleDictionaryUpdateTargetSharedDictionary;
-      reader.readMessage(value,proto.management_app.config.set.SimpleDictionaryUpdateTargetSharedDictionary.deserializeBinaryFromReader);
-      msg.setShared(value);
+      var value = /** @type {string} */ (reader.readString());
+      msg.setId(value);
       break;
     default:
       reader.skipField();
@@ -6131,28 +5965,11 @@ proto.management_app.config.set.SimpleDictionaryUpdateTarget.prototype.serialize
  */
 proto.management_app.config.set.SimpleDictionaryUpdateTarget.prototype.serializeBinaryToWriter = function (writer) {
   var f = undefined;
-  f = this.getBefore();
-  if (f != null) {
-    writer.writeMessage(
+  f = this.getId();
+  if (f.length > 0) {
+    writer.writeString(
       1,
-      f,
-      proto.management_app.config.set.SimpleDictionaryUpdateTargetGuild.serializeBinaryToWriter
-    );
-  }
-  f = this.getAfter();
-  if (f != null) {
-    writer.writeMessage(
-      2,
-      f,
-      proto.management_app.config.set.SimpleDictionaryUpdateTargetGuild.serializeBinaryToWriter
-    );
-  }
-  f = this.getShared();
-  if (f != null) {
-    writer.writeMessage(
-      3,
-      f,
-      proto.management_app.config.set.SimpleDictionaryUpdateTargetSharedDictionary.serializeBinaryToWriter
+      f
     );
   }
 };
@@ -6168,92 +5985,17 @@ proto.management_app.config.set.SimpleDictionaryUpdateTarget.prototype.cloneMess
 
 
 /**
- * optional SimpleDictionaryUpdateTargetGuild before = 1;
- * @return {proto.management_app.config.set.SimpleDictionaryUpdateTargetGuild}
+ * optional string id = 1;
+ * @return {string}
  */
-proto.management_app.config.set.SimpleDictionaryUpdateTarget.prototype.getBefore = function() {
-  return /** @type{proto.management_app.config.set.SimpleDictionaryUpdateTargetGuild} */ (
-    jspb.Message.getWrapperField(this, proto.management_app.config.set.SimpleDictionaryUpdateTargetGuild, 1));
+proto.management_app.config.set.SimpleDictionaryUpdateTarget.prototype.getId = function() {
+  return /** @type {string} */ (jspb.Message.getFieldProto3(this, 1, ""));
 };
 
 
-/** @param {proto.management_app.config.set.SimpleDictionaryUpdateTargetGuild|undefined} value  */
-proto.management_app.config.set.SimpleDictionaryUpdateTarget.prototype.setBefore = function(value) {
-  jspb.Message.setOneofWrapperField(this, 1, proto.management_app.config.set.SimpleDictionaryUpdateTarget.oneofGroups_[0], value);
-};
-
-
-proto.management_app.config.set.SimpleDictionaryUpdateTarget.prototype.clearBefore = function() {
-  this.setBefore(undefined);
-};
-
-
-/**
- * Returns whether this field is set.
- * @return{!boolean}
- */
-proto.management_app.config.set.SimpleDictionaryUpdateTarget.prototype.hasBefore = function() {
-  return jspb.Message.getField(this, 1) != null;
-};
-
-
-/**
- * optional SimpleDictionaryUpdateTargetGuild after = 2;
- * @return {proto.management_app.config.set.SimpleDictionaryUpdateTargetGuild}
- */
-proto.management_app.config.set.SimpleDictionaryUpdateTarget.prototype.getAfter = function() {
-  return /** @type{proto.management_app.config.set.SimpleDictionaryUpdateTargetGuild} */ (
-    jspb.Message.getWrapperField(this, proto.management_app.config.set.SimpleDictionaryUpdateTargetGuild, 2));
-};
-
-
-/** @param {proto.management_app.config.set.SimpleDictionaryUpdateTargetGuild|undefined} value  */
-proto.management_app.config.set.SimpleDictionaryUpdateTarget.prototype.setAfter = function(value) {
-  jspb.Message.setOneofWrapperField(this, 2, proto.management_app.config.set.SimpleDictionaryUpdateTarget.oneofGroups_[0], value);
-};
-
-
-proto.management_app.config.set.SimpleDictionaryUpdateTarget.prototype.clearAfter = function() {
-  this.setAfter(undefined);
-};
-
-
-/**
- * Returns whether this field is set.
- * @return{!boolean}
- */
-proto.management_app.config.set.SimpleDictionaryUpdateTarget.prototype.hasAfter = function() {
-  return jspb.Message.getField(this, 2) != null;
-};
-
-
-/**
- * optional SimpleDictionaryUpdateTargetSharedDictionary shared = 3;
- * @return {proto.management_app.config.set.SimpleDictionaryUpdateTargetSharedDictionary}
- */
-proto.management_app.config.set.SimpleDictionaryUpdateTarget.prototype.getShared = function() {
-  return /** @type{proto.management_app.config.set.SimpleDictionaryUpdateTargetSharedDictionary} */ (
-    jspb.Message.getWrapperField(this, proto.management_app.config.set.SimpleDictionaryUpdateTargetSharedDictionary, 3));
-};
-
-
-/** @param {proto.management_app.config.set.SimpleDictionaryUpdateTargetSharedDictionary|undefined} value  */
-proto.management_app.config.set.SimpleDictionaryUpdateTarget.prototype.setShared = function(value) {
-  jspb.Message.setOneofWrapperField(this, 3, proto.management_app.config.set.SimpleDictionaryUpdateTarget.oneofGroups_[0], value);
-};
-
-
-proto.management_app.config.set.SimpleDictionaryUpdateTarget.prototype.clearShared = function() {
-  this.setShared(undefined);
-};
-
-
-/**
- * Returns whether this field is set.
- * @return{!boolean}
- */
-proto.management_app.config.set.SimpleDictionaryUpdateTarget.prototype.hasShared = function() {
-  return jspb.Message.getField(this, 3) != null;
+/** @param {string} value  */
+proto.management_app.config.set.SimpleDictionaryUpdateTarget.prototype.setId = function(value) {
+  jspb.Message.setField(this, 1, value);
 };
 
 

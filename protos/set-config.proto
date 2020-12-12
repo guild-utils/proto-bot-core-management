@@ -115,8 +115,11 @@ message UpdateResultUint32{
     UpdateResultError error=3;
   }
 }
-message RemoveFromMainDictionary{
-  string guild=1;
+message AnalysysDictionaryUpdateTarget{
+  string id=1;
+}
+message RemoveFromAnalysysDictionary{
+  AnalysysDictionaryUpdateTarget target=1;
   string key=2;
 }
 message UpdateResultDictionaryEntryAOk{
@@ -139,23 +142,13 @@ message UpdateResultDictionaryEntryA{
     UpdateResultError error=3;
   }
 }
-message UpdateOrInsertMainDictionary{
-  string guild=1;
+message UpdateOrInsertAnalysysDictionary{
+  AnalysysDictionaryUpdateTarget id=1;
   management_app.config.common.DictionaryEntryA value=2;
 }
 
-message SimpleDictionaryUpdateTargetGuild{
-  string guild=1;
-}
-message SimpleDictionaryUpdateTargetSharedDictionary{
-  string id=1;
-}
 message SimpleDictionaryUpdateTarget{
-  oneof target{
-    SimpleDictionaryUpdateTargetGuild before=1;
-    SimpleDictionaryUpdateTargetGuild after=2;
-    SimpleDictionaryUpdateTargetSharedDictionary shared=3;
-  }
+  string id=1;
 }
 message UpdateSimpleDictionary{
   SimpleDictionaryUpdateTarget target=1;
@@ -219,8 +212,8 @@ service ConfigSetter {
   rpc updateRandomizer(UpdateString) returns (UpdateResultString){}
   rpc updateMaxReadLimit(UpdateUint32) returns (UpdateResultUint32){}
   rpc updateMaxVolume(UpdateUint32) returns (UpdateResultUint32){}
-  rpc updateOrInsertMainDictionary(UpdateOrInsertMainDictionary) returns (UpdateResultDictionaryEntryA){}
-  rpc removeMainDictionary(RemoveFromMainDictionary) returns (UpdateResultDictionaryEntryA){}
+  rpc updateOrInsertAnalysysDictionary(UpdateOrInsertAnalysysDictionary) returns (UpdateResultDictionaryEntryA){}
+  rpc removeAnalysysDictionary(RemoveFromAnalysysDictionary) returns (UpdateResultDictionaryEntryA){}
   rpc updateSimpleDictionary(UpdateSimpleDictionary)returns (UpdateResultDictionaryEntryB){}
   rpc insertSimpleDictionary(InsertSimpleDictionary)returns (UpdateResultDictionaryEntryB){}
   rpc addSimpleDictionary(AddSimpleDictionary)returns (UpdateResultDictionaryEntryB){}

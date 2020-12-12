@@ -793,27 +793,51 @@ export namespace UpdateResultUint32 {
 
 }
 
-export class RemoveFromMainDictionary extends jspb.Message { 
-    getGuild(): string;
-    setGuild(value: string): RemoveFromMainDictionary;
-
-    getKey(): string;
-    setKey(value: string): RemoveFromMainDictionary;
+export class AnalysysDictionaryUpdateTarget extends jspb.Message { 
+    getId(): string;
+    setId(value: string): AnalysysDictionaryUpdateTarget;
 
 
     serializeBinary(): Uint8Array;
-    toObject(includeInstance?: boolean): RemoveFromMainDictionary.AsObject;
-    static toObject(includeInstance: boolean, msg: RemoveFromMainDictionary): RemoveFromMainDictionary.AsObject;
+    toObject(includeInstance?: boolean): AnalysysDictionaryUpdateTarget.AsObject;
+    static toObject(includeInstance: boolean, msg: AnalysysDictionaryUpdateTarget): AnalysysDictionaryUpdateTarget.AsObject;
     static extensions: {[key: number]: jspb.ExtensionFieldInfo<jspb.Message>};
     static extensionsBinary: {[key: number]: jspb.ExtensionFieldBinaryInfo<jspb.Message>};
-    static serializeBinaryToWriter(message: RemoveFromMainDictionary, writer: jspb.BinaryWriter): void;
-    static deserializeBinary(bytes: Uint8Array): RemoveFromMainDictionary;
-    static deserializeBinaryFromReader(message: RemoveFromMainDictionary, reader: jspb.BinaryReader): RemoveFromMainDictionary;
+    static serializeBinaryToWriter(message: AnalysysDictionaryUpdateTarget, writer: jspb.BinaryWriter): void;
+    static deserializeBinary(bytes: Uint8Array): AnalysysDictionaryUpdateTarget;
+    static deserializeBinaryFromReader(message: AnalysysDictionaryUpdateTarget, reader: jspb.BinaryReader): AnalysysDictionaryUpdateTarget;
 }
 
-export namespace RemoveFromMainDictionary {
+export namespace AnalysysDictionaryUpdateTarget {
     export type AsObject = {
-        guild: string,
+        id: string,
+    }
+}
+
+export class RemoveFromAnalysysDictionary extends jspb.Message { 
+
+    hasTarget(): boolean;
+    clearTarget(): void;
+    getTarget(): AnalysysDictionaryUpdateTarget | undefined;
+    setTarget(value?: AnalysysDictionaryUpdateTarget): RemoveFromAnalysysDictionary;
+
+    getKey(): string;
+    setKey(value: string): RemoveFromAnalysysDictionary;
+
+
+    serializeBinary(): Uint8Array;
+    toObject(includeInstance?: boolean): RemoveFromAnalysysDictionary.AsObject;
+    static toObject(includeInstance: boolean, msg: RemoveFromAnalysysDictionary): RemoveFromAnalysysDictionary.AsObject;
+    static extensions: {[key: number]: jspb.ExtensionFieldInfo<jspb.Message>};
+    static extensionsBinary: {[key: number]: jspb.ExtensionFieldBinaryInfo<jspb.Message>};
+    static serializeBinaryToWriter(message: RemoveFromAnalysysDictionary, writer: jspb.BinaryWriter): void;
+    static deserializeBinary(bytes: Uint8Array): RemoveFromAnalysysDictionary;
+    static deserializeBinaryFromReader(message: RemoveFromAnalysysDictionary, reader: jspb.BinaryReader): RemoveFromAnalysysDictionary;
+}
+
+export namespace RemoveFromAnalysysDictionary {
+    export type AsObject = {
+        target?: AnalysysDictionaryUpdateTarget.AsObject,
         key: string,
     }
 }
@@ -953,97 +977,41 @@ export namespace UpdateResultDictionaryEntryA {
 
 }
 
-export class UpdateOrInsertMainDictionary extends jspb.Message { 
-    getGuild(): string;
-    setGuild(value: string): UpdateOrInsertMainDictionary;
+export class UpdateOrInsertAnalysysDictionary extends jspb.Message { 
+
+    hasId(): boolean;
+    clearId(): void;
+    getId(): AnalysysDictionaryUpdateTarget | undefined;
+    setId(value?: AnalysysDictionaryUpdateTarget): UpdateOrInsertAnalysysDictionary;
 
 
     hasValue(): boolean;
     clearValue(): void;
     getValue(): config_pb.DictionaryEntryA | undefined;
-    setValue(value?: config_pb.DictionaryEntryA): UpdateOrInsertMainDictionary;
+    setValue(value?: config_pb.DictionaryEntryA): UpdateOrInsertAnalysysDictionary;
 
 
     serializeBinary(): Uint8Array;
-    toObject(includeInstance?: boolean): UpdateOrInsertMainDictionary.AsObject;
-    static toObject(includeInstance: boolean, msg: UpdateOrInsertMainDictionary): UpdateOrInsertMainDictionary.AsObject;
+    toObject(includeInstance?: boolean): UpdateOrInsertAnalysysDictionary.AsObject;
+    static toObject(includeInstance: boolean, msg: UpdateOrInsertAnalysysDictionary): UpdateOrInsertAnalysysDictionary.AsObject;
     static extensions: {[key: number]: jspb.ExtensionFieldInfo<jspb.Message>};
     static extensionsBinary: {[key: number]: jspb.ExtensionFieldBinaryInfo<jspb.Message>};
-    static serializeBinaryToWriter(message: UpdateOrInsertMainDictionary, writer: jspb.BinaryWriter): void;
-    static deserializeBinary(bytes: Uint8Array): UpdateOrInsertMainDictionary;
-    static deserializeBinaryFromReader(message: UpdateOrInsertMainDictionary, reader: jspb.BinaryReader): UpdateOrInsertMainDictionary;
+    static serializeBinaryToWriter(message: UpdateOrInsertAnalysysDictionary, writer: jspb.BinaryWriter): void;
+    static deserializeBinary(bytes: Uint8Array): UpdateOrInsertAnalysysDictionary;
+    static deserializeBinaryFromReader(message: UpdateOrInsertAnalysysDictionary, reader: jspb.BinaryReader): UpdateOrInsertAnalysysDictionary;
 }
 
-export namespace UpdateOrInsertMainDictionary {
+export namespace UpdateOrInsertAnalysysDictionary {
     export type AsObject = {
-        guild: string,
+        id?: AnalysysDictionaryUpdateTarget.AsObject,
         value?: config_pb.DictionaryEntryA.AsObject,
     }
 }
 
-export class SimpleDictionaryUpdateTargetGuild extends jspb.Message { 
-    getGuild(): string;
-    setGuild(value: string): SimpleDictionaryUpdateTargetGuild;
-
-
-    serializeBinary(): Uint8Array;
-    toObject(includeInstance?: boolean): SimpleDictionaryUpdateTargetGuild.AsObject;
-    static toObject(includeInstance: boolean, msg: SimpleDictionaryUpdateTargetGuild): SimpleDictionaryUpdateTargetGuild.AsObject;
-    static extensions: {[key: number]: jspb.ExtensionFieldInfo<jspb.Message>};
-    static extensionsBinary: {[key: number]: jspb.ExtensionFieldBinaryInfo<jspb.Message>};
-    static serializeBinaryToWriter(message: SimpleDictionaryUpdateTargetGuild, writer: jspb.BinaryWriter): void;
-    static deserializeBinary(bytes: Uint8Array): SimpleDictionaryUpdateTargetGuild;
-    static deserializeBinaryFromReader(message: SimpleDictionaryUpdateTargetGuild, reader: jspb.BinaryReader): SimpleDictionaryUpdateTargetGuild;
-}
-
-export namespace SimpleDictionaryUpdateTargetGuild {
-    export type AsObject = {
-        guild: string,
-    }
-}
-
-export class SimpleDictionaryUpdateTargetSharedDictionary extends jspb.Message { 
-    getId(): string;
-    setId(value: string): SimpleDictionaryUpdateTargetSharedDictionary;
-
-
-    serializeBinary(): Uint8Array;
-    toObject(includeInstance?: boolean): SimpleDictionaryUpdateTargetSharedDictionary.AsObject;
-    static toObject(includeInstance: boolean, msg: SimpleDictionaryUpdateTargetSharedDictionary): SimpleDictionaryUpdateTargetSharedDictionary.AsObject;
-    static extensions: {[key: number]: jspb.ExtensionFieldInfo<jspb.Message>};
-    static extensionsBinary: {[key: number]: jspb.ExtensionFieldBinaryInfo<jspb.Message>};
-    static serializeBinaryToWriter(message: SimpleDictionaryUpdateTargetSharedDictionary, writer: jspb.BinaryWriter): void;
-    static deserializeBinary(bytes: Uint8Array): SimpleDictionaryUpdateTargetSharedDictionary;
-    static deserializeBinaryFromReader(message: SimpleDictionaryUpdateTargetSharedDictionary, reader: jspb.BinaryReader): SimpleDictionaryUpdateTargetSharedDictionary;
-}
-
-export namespace SimpleDictionaryUpdateTargetSharedDictionary {
-    export type AsObject = {
-        id: string,
-    }
-}
-
 export class SimpleDictionaryUpdateTarget extends jspb.Message { 
+    getId(): string;
+    setId(value: string): SimpleDictionaryUpdateTarget;
 
-    hasBefore(): boolean;
-    clearBefore(): void;
-    getBefore(): SimpleDictionaryUpdateTargetGuild | undefined;
-    setBefore(value?: SimpleDictionaryUpdateTargetGuild): SimpleDictionaryUpdateTarget;
-
-
-    hasAfter(): boolean;
-    clearAfter(): void;
-    getAfter(): SimpleDictionaryUpdateTargetGuild | undefined;
-    setAfter(value?: SimpleDictionaryUpdateTargetGuild): SimpleDictionaryUpdateTarget;
-
-
-    hasShared(): boolean;
-    clearShared(): void;
-    getShared(): SimpleDictionaryUpdateTargetSharedDictionary | undefined;
-    setShared(value?: SimpleDictionaryUpdateTargetSharedDictionary): SimpleDictionaryUpdateTarget;
-
-
-    getTargetCase(): SimpleDictionaryUpdateTarget.TargetCase;
 
     serializeBinary(): Uint8Array;
     toObject(includeInstance?: boolean): SimpleDictionaryUpdateTarget.AsObject;
@@ -1057,22 +1025,8 @@ export class SimpleDictionaryUpdateTarget extends jspb.Message {
 
 export namespace SimpleDictionaryUpdateTarget {
     export type AsObject = {
-        before?: SimpleDictionaryUpdateTargetGuild.AsObject,
-        after?: SimpleDictionaryUpdateTargetGuild.AsObject,
-        shared?: SimpleDictionaryUpdateTargetSharedDictionary.AsObject,
+        id: string,
     }
-
-    export enum TargetCase {
-        TARGET_NOT_SET = 0,
-    
-    BEFORE = 1,
-
-    AFTER = 2,
-
-    SHARED = 3,
-
-    }
-
 }
 
 export class UpdateSimpleDictionary extends jspb.Message { 

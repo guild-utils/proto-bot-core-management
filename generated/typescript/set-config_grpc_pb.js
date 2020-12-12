@@ -49,15 +49,15 @@ function deserialize_management_app_config_set_MoveSimpleDictionaryResult(buffer
   return set$config_pb.MoveSimpleDictionaryResult.deserializeBinary(new Uint8Array(buffer_arg));
 }
 
-function serialize_management_app_config_set_RemoveFromMainDictionary(arg) {
-  if (!(arg instanceof set$config_pb.RemoveFromMainDictionary)) {
-    throw new Error('Expected argument of type management_app.config.set.RemoveFromMainDictionary');
+function serialize_management_app_config_set_RemoveFromAnalysysDictionary(arg) {
+  if (!(arg instanceof set$config_pb.RemoveFromAnalysysDictionary)) {
+    throw new Error('Expected argument of type management_app.config.set.RemoveFromAnalysysDictionary');
   }
   return Buffer.from(arg.serializeBinary());
 }
 
-function deserialize_management_app_config_set_RemoveFromMainDictionary(buffer_arg) {
-  return set$config_pb.RemoveFromMainDictionary.deserializeBinary(new Uint8Array(buffer_arg));
+function deserialize_management_app_config_set_RemoveFromAnalysysDictionary(buffer_arg) {
+  return set$config_pb.RemoveFromAnalysysDictionary.deserializeBinary(new Uint8Array(buffer_arg));
 }
 
 function serialize_management_app_config_set_RemoveSimpleDictionary(arg) {
@@ -82,15 +82,15 @@ function deserialize_management_app_config_set_UpdateFloat(buffer_arg) {
   return set$config_pb.UpdateFloat.deserializeBinary(new Uint8Array(buffer_arg));
 }
 
-function serialize_management_app_config_set_UpdateOrInsertMainDictionary(arg) {
-  if (!(arg instanceof set$config_pb.UpdateOrInsertMainDictionary)) {
-    throw new Error('Expected argument of type management_app.config.set.UpdateOrInsertMainDictionary');
+function serialize_management_app_config_set_UpdateOrInsertAnalysysDictionary(arg) {
+  if (!(arg instanceof set$config_pb.UpdateOrInsertAnalysysDictionary)) {
+    throw new Error('Expected argument of type management_app.config.set.UpdateOrInsertAnalysysDictionary');
   }
   return Buffer.from(arg.serializeBinary());
 }
 
-function deserialize_management_app_config_set_UpdateOrInsertMainDictionary(buffer_arg) {
-  return set$config_pb.UpdateOrInsertMainDictionary.deserializeBinary(new Uint8Array(buffer_arg));
+function deserialize_management_app_config_set_UpdateOrInsertAnalysysDictionary(buffer_arg) {
+  return set$config_pb.UpdateOrInsertAnalysysDictionary.deserializeBinary(new Uint8Array(buffer_arg));
 }
 
 function serialize_management_app_config_set_UpdateReadName(arg) {
@@ -326,25 +326,25 @@ var ConfigSetterService = exports.ConfigSetterService = {
     responseSerialize: serialize_management_app_config_set_UpdateResultUint32,
     responseDeserialize: deserialize_management_app_config_set_UpdateResultUint32,
   },
-  updateOrInsertMainDictionary: {
-    path: '/management_app.config.set.ConfigSetter/updateOrInsertMainDictionary',
+  updateOrInsertAnalysysDictionary: {
+    path: '/management_app.config.set.ConfigSetter/updateOrInsertAnalysysDictionary',
     requestStream: false,
     responseStream: false,
-    requestType: set$config_pb.UpdateOrInsertMainDictionary,
+    requestType: set$config_pb.UpdateOrInsertAnalysysDictionary,
     responseType: set$config_pb.UpdateResultDictionaryEntryA,
-    requestSerialize: serialize_management_app_config_set_UpdateOrInsertMainDictionary,
-    requestDeserialize: deserialize_management_app_config_set_UpdateOrInsertMainDictionary,
+    requestSerialize: serialize_management_app_config_set_UpdateOrInsertAnalysysDictionary,
+    requestDeserialize: deserialize_management_app_config_set_UpdateOrInsertAnalysysDictionary,
     responseSerialize: serialize_management_app_config_set_UpdateResultDictionaryEntryA,
     responseDeserialize: deserialize_management_app_config_set_UpdateResultDictionaryEntryA,
   },
-  removeMainDictionary: {
-    path: '/management_app.config.set.ConfigSetter/removeMainDictionary',
+  removeAnalysysDictionary: {
+    path: '/management_app.config.set.ConfigSetter/removeAnalysysDictionary',
     requestStream: false,
     responseStream: false,
-    requestType: set$config_pb.RemoveFromMainDictionary,
+    requestType: set$config_pb.RemoveFromAnalysysDictionary,
     responseType: set$config_pb.UpdateResultDictionaryEntryA,
-    requestSerialize: serialize_management_app_config_set_RemoveFromMainDictionary,
-    requestDeserialize: deserialize_management_app_config_set_RemoveFromMainDictionary,
+    requestSerialize: serialize_management_app_config_set_RemoveFromAnalysysDictionary,
+    requestDeserialize: deserialize_management_app_config_set_RemoveFromAnalysysDictionary,
     responseSerialize: serialize_management_app_config_set_UpdateResultDictionaryEntryA,
     responseDeserialize: deserialize_management_app_config_set_UpdateResultDictionaryEntryA,
   },

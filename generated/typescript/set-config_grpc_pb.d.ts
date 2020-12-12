@@ -20,8 +20,8 @@ interface IConfigSetterService extends grpc.ServiceDefinition<grpc.UntypedServic
     updateRandomizer: IConfigSetterService_IupdateRandomizer;
     updateMaxReadLimit: IConfigSetterService_IupdateMaxReadLimit;
     updateMaxVolume: IConfigSetterService_IupdateMaxVolume;
-    updateOrInsertMainDictionary: IConfigSetterService_IupdateOrInsertMainDictionary;
-    removeMainDictionary: IConfigSetterService_IremoveMainDictionary;
+    updateOrInsertAnalysysDictionary: IConfigSetterService_IupdateOrInsertAnalysysDictionary;
+    removeAnalysysDictionary: IConfigSetterService_IremoveAnalysysDictionary;
     updateSimpleDictionary: IConfigSetterService_IupdateSimpleDictionary;
     insertSimpleDictionary: IConfigSetterService_IinsertSimpleDictionary;
     addSimpleDictionary: IConfigSetterService_IaddSimpleDictionary;
@@ -128,21 +128,21 @@ interface IConfigSetterService_IupdateMaxVolume extends grpc.MethodDefinition<se
     responseSerialize: grpc.serialize<set_config_pb.UpdateResultUint32>;
     responseDeserialize: grpc.deserialize<set_config_pb.UpdateResultUint32>;
 }
-interface IConfigSetterService_IupdateOrInsertMainDictionary extends grpc.MethodDefinition<set_config_pb.UpdateOrInsertMainDictionary, set_config_pb.UpdateResultDictionaryEntryA> {
-    path: "/management_app.config.set.ConfigSetter/updateOrInsertMainDictionary";
+interface IConfigSetterService_IupdateOrInsertAnalysysDictionary extends grpc.MethodDefinition<set_config_pb.UpdateOrInsertAnalysysDictionary, set_config_pb.UpdateResultDictionaryEntryA> {
+    path: "/management_app.config.set.ConfigSetter/updateOrInsertAnalysysDictionary";
     requestStream: false;
     responseStream: false;
-    requestSerialize: grpc.serialize<set_config_pb.UpdateOrInsertMainDictionary>;
-    requestDeserialize: grpc.deserialize<set_config_pb.UpdateOrInsertMainDictionary>;
+    requestSerialize: grpc.serialize<set_config_pb.UpdateOrInsertAnalysysDictionary>;
+    requestDeserialize: grpc.deserialize<set_config_pb.UpdateOrInsertAnalysysDictionary>;
     responseSerialize: grpc.serialize<set_config_pb.UpdateResultDictionaryEntryA>;
     responseDeserialize: grpc.deserialize<set_config_pb.UpdateResultDictionaryEntryA>;
 }
-interface IConfigSetterService_IremoveMainDictionary extends grpc.MethodDefinition<set_config_pb.RemoveFromMainDictionary, set_config_pb.UpdateResultDictionaryEntryA> {
-    path: "/management_app.config.set.ConfigSetter/removeMainDictionary";
+interface IConfigSetterService_IremoveAnalysysDictionary extends grpc.MethodDefinition<set_config_pb.RemoveFromAnalysysDictionary, set_config_pb.UpdateResultDictionaryEntryA> {
+    path: "/management_app.config.set.ConfigSetter/removeAnalysysDictionary";
     requestStream: false;
     responseStream: false;
-    requestSerialize: grpc.serialize<set_config_pb.RemoveFromMainDictionary>;
-    requestDeserialize: grpc.deserialize<set_config_pb.RemoveFromMainDictionary>;
+    requestSerialize: grpc.serialize<set_config_pb.RemoveFromAnalysysDictionary>;
+    requestDeserialize: grpc.deserialize<set_config_pb.RemoveFromAnalysysDictionary>;
     responseSerialize: grpc.serialize<set_config_pb.UpdateResultDictionaryEntryA>;
     responseDeserialize: grpc.deserialize<set_config_pb.UpdateResultDictionaryEntryA>;
 }
@@ -206,8 +206,8 @@ export interface IConfigSetterServer {
     updateRandomizer: grpc.handleUnaryCall<set_config_pb.UpdateString, set_config_pb.UpdateResultString>;
     updateMaxReadLimit: grpc.handleUnaryCall<set_config_pb.UpdateUint32, set_config_pb.UpdateResultUint32>;
     updateMaxVolume: grpc.handleUnaryCall<set_config_pb.UpdateUint32, set_config_pb.UpdateResultUint32>;
-    updateOrInsertMainDictionary: grpc.handleUnaryCall<set_config_pb.UpdateOrInsertMainDictionary, set_config_pb.UpdateResultDictionaryEntryA>;
-    removeMainDictionary: grpc.handleUnaryCall<set_config_pb.RemoveFromMainDictionary, set_config_pb.UpdateResultDictionaryEntryA>;
+    updateOrInsertAnalysysDictionary: grpc.handleUnaryCall<set_config_pb.UpdateOrInsertAnalysysDictionary, set_config_pb.UpdateResultDictionaryEntryA>;
+    removeAnalysysDictionary: grpc.handleUnaryCall<set_config_pb.RemoveFromAnalysysDictionary, set_config_pb.UpdateResultDictionaryEntryA>;
     updateSimpleDictionary: grpc.handleUnaryCall<set_config_pb.UpdateSimpleDictionary, set_config_pb.UpdateResultDictionaryEntryB>;
     insertSimpleDictionary: grpc.handleUnaryCall<set_config_pb.InsertSimpleDictionary, set_config_pb.UpdateResultDictionaryEntryB>;
     addSimpleDictionary: grpc.handleUnaryCall<set_config_pb.AddSimpleDictionary, set_config_pb.UpdateResultDictionaryEntryB>;
@@ -249,12 +249,12 @@ export interface IConfigSetterClient {
     updateMaxVolume(request: set_config_pb.UpdateUint32, callback: (error: grpc.ServiceError | null, response: set_config_pb.UpdateResultUint32) => void): grpc.ClientUnaryCall;
     updateMaxVolume(request: set_config_pb.UpdateUint32, metadata: grpc.Metadata, callback: (error: grpc.ServiceError | null, response: set_config_pb.UpdateResultUint32) => void): grpc.ClientUnaryCall;
     updateMaxVolume(request: set_config_pb.UpdateUint32, metadata: grpc.Metadata, options: Partial<grpc.CallOptions>, callback: (error: grpc.ServiceError | null, response: set_config_pb.UpdateResultUint32) => void): grpc.ClientUnaryCall;
-    updateOrInsertMainDictionary(request: set_config_pb.UpdateOrInsertMainDictionary, callback: (error: grpc.ServiceError | null, response: set_config_pb.UpdateResultDictionaryEntryA) => void): grpc.ClientUnaryCall;
-    updateOrInsertMainDictionary(request: set_config_pb.UpdateOrInsertMainDictionary, metadata: grpc.Metadata, callback: (error: grpc.ServiceError | null, response: set_config_pb.UpdateResultDictionaryEntryA) => void): grpc.ClientUnaryCall;
-    updateOrInsertMainDictionary(request: set_config_pb.UpdateOrInsertMainDictionary, metadata: grpc.Metadata, options: Partial<grpc.CallOptions>, callback: (error: grpc.ServiceError | null, response: set_config_pb.UpdateResultDictionaryEntryA) => void): grpc.ClientUnaryCall;
-    removeMainDictionary(request: set_config_pb.RemoveFromMainDictionary, callback: (error: grpc.ServiceError | null, response: set_config_pb.UpdateResultDictionaryEntryA) => void): grpc.ClientUnaryCall;
-    removeMainDictionary(request: set_config_pb.RemoveFromMainDictionary, metadata: grpc.Metadata, callback: (error: grpc.ServiceError | null, response: set_config_pb.UpdateResultDictionaryEntryA) => void): grpc.ClientUnaryCall;
-    removeMainDictionary(request: set_config_pb.RemoveFromMainDictionary, metadata: grpc.Metadata, options: Partial<grpc.CallOptions>, callback: (error: grpc.ServiceError | null, response: set_config_pb.UpdateResultDictionaryEntryA) => void): grpc.ClientUnaryCall;
+    updateOrInsertAnalysysDictionary(request: set_config_pb.UpdateOrInsertAnalysysDictionary, callback: (error: grpc.ServiceError | null, response: set_config_pb.UpdateResultDictionaryEntryA) => void): grpc.ClientUnaryCall;
+    updateOrInsertAnalysysDictionary(request: set_config_pb.UpdateOrInsertAnalysysDictionary, metadata: grpc.Metadata, callback: (error: grpc.ServiceError | null, response: set_config_pb.UpdateResultDictionaryEntryA) => void): grpc.ClientUnaryCall;
+    updateOrInsertAnalysysDictionary(request: set_config_pb.UpdateOrInsertAnalysysDictionary, metadata: grpc.Metadata, options: Partial<grpc.CallOptions>, callback: (error: grpc.ServiceError | null, response: set_config_pb.UpdateResultDictionaryEntryA) => void): grpc.ClientUnaryCall;
+    removeAnalysysDictionary(request: set_config_pb.RemoveFromAnalysysDictionary, callback: (error: grpc.ServiceError | null, response: set_config_pb.UpdateResultDictionaryEntryA) => void): grpc.ClientUnaryCall;
+    removeAnalysysDictionary(request: set_config_pb.RemoveFromAnalysysDictionary, metadata: grpc.Metadata, callback: (error: grpc.ServiceError | null, response: set_config_pb.UpdateResultDictionaryEntryA) => void): grpc.ClientUnaryCall;
+    removeAnalysysDictionary(request: set_config_pb.RemoveFromAnalysysDictionary, metadata: grpc.Metadata, options: Partial<grpc.CallOptions>, callback: (error: grpc.ServiceError | null, response: set_config_pb.UpdateResultDictionaryEntryA) => void): grpc.ClientUnaryCall;
     updateSimpleDictionary(request: set_config_pb.UpdateSimpleDictionary, callback: (error: grpc.ServiceError | null, response: set_config_pb.UpdateResultDictionaryEntryB) => void): grpc.ClientUnaryCall;
     updateSimpleDictionary(request: set_config_pb.UpdateSimpleDictionary, metadata: grpc.Metadata, callback: (error: grpc.ServiceError | null, response: set_config_pb.UpdateResultDictionaryEntryB) => void): grpc.ClientUnaryCall;
     updateSimpleDictionary(request: set_config_pb.UpdateSimpleDictionary, metadata: grpc.Metadata, options: Partial<grpc.CallOptions>, callback: (error: grpc.ServiceError | null, response: set_config_pb.UpdateResultDictionaryEntryB) => void): grpc.ClientUnaryCall;
@@ -307,12 +307,12 @@ export class ConfigSetterClient extends grpc.Client implements IConfigSetterClie
     public updateMaxVolume(request: set_config_pb.UpdateUint32, callback: (error: grpc.ServiceError | null, response: set_config_pb.UpdateResultUint32) => void): grpc.ClientUnaryCall;
     public updateMaxVolume(request: set_config_pb.UpdateUint32, metadata: grpc.Metadata, callback: (error: grpc.ServiceError | null, response: set_config_pb.UpdateResultUint32) => void): grpc.ClientUnaryCall;
     public updateMaxVolume(request: set_config_pb.UpdateUint32, metadata: grpc.Metadata, options: Partial<grpc.CallOptions>, callback: (error: grpc.ServiceError | null, response: set_config_pb.UpdateResultUint32) => void): grpc.ClientUnaryCall;
-    public updateOrInsertMainDictionary(request: set_config_pb.UpdateOrInsertMainDictionary, callback: (error: grpc.ServiceError | null, response: set_config_pb.UpdateResultDictionaryEntryA) => void): grpc.ClientUnaryCall;
-    public updateOrInsertMainDictionary(request: set_config_pb.UpdateOrInsertMainDictionary, metadata: grpc.Metadata, callback: (error: grpc.ServiceError | null, response: set_config_pb.UpdateResultDictionaryEntryA) => void): grpc.ClientUnaryCall;
-    public updateOrInsertMainDictionary(request: set_config_pb.UpdateOrInsertMainDictionary, metadata: grpc.Metadata, options: Partial<grpc.CallOptions>, callback: (error: grpc.ServiceError | null, response: set_config_pb.UpdateResultDictionaryEntryA) => void): grpc.ClientUnaryCall;
-    public removeMainDictionary(request: set_config_pb.RemoveFromMainDictionary, callback: (error: grpc.ServiceError | null, response: set_config_pb.UpdateResultDictionaryEntryA) => void): grpc.ClientUnaryCall;
-    public removeMainDictionary(request: set_config_pb.RemoveFromMainDictionary, metadata: grpc.Metadata, callback: (error: grpc.ServiceError | null, response: set_config_pb.UpdateResultDictionaryEntryA) => void): grpc.ClientUnaryCall;
-    public removeMainDictionary(request: set_config_pb.RemoveFromMainDictionary, metadata: grpc.Metadata, options: Partial<grpc.CallOptions>, callback: (error: grpc.ServiceError | null, response: set_config_pb.UpdateResultDictionaryEntryA) => void): grpc.ClientUnaryCall;
+    public updateOrInsertAnalysysDictionary(request: set_config_pb.UpdateOrInsertAnalysysDictionary, callback: (error: grpc.ServiceError | null, response: set_config_pb.UpdateResultDictionaryEntryA) => void): grpc.ClientUnaryCall;
+    public updateOrInsertAnalysysDictionary(request: set_config_pb.UpdateOrInsertAnalysysDictionary, metadata: grpc.Metadata, callback: (error: grpc.ServiceError | null, response: set_config_pb.UpdateResultDictionaryEntryA) => void): grpc.ClientUnaryCall;
+    public updateOrInsertAnalysysDictionary(request: set_config_pb.UpdateOrInsertAnalysysDictionary, metadata: grpc.Metadata, options: Partial<grpc.CallOptions>, callback: (error: grpc.ServiceError | null, response: set_config_pb.UpdateResultDictionaryEntryA) => void): grpc.ClientUnaryCall;
+    public removeAnalysysDictionary(request: set_config_pb.RemoveFromAnalysysDictionary, callback: (error: grpc.ServiceError | null, response: set_config_pb.UpdateResultDictionaryEntryA) => void): grpc.ClientUnaryCall;
+    public removeAnalysysDictionary(request: set_config_pb.RemoveFromAnalysysDictionary, metadata: grpc.Metadata, callback: (error: grpc.ServiceError | null, response: set_config_pb.UpdateResultDictionaryEntryA) => void): grpc.ClientUnaryCall;
+    public removeAnalysysDictionary(request: set_config_pb.RemoveFromAnalysysDictionary, metadata: grpc.Metadata, options: Partial<grpc.CallOptions>, callback: (error: grpc.ServiceError | null, response: set_config_pb.UpdateResultDictionaryEntryA) => void): grpc.ClientUnaryCall;
     public updateSimpleDictionary(request: set_config_pb.UpdateSimpleDictionary, callback: (error: grpc.ServiceError | null, response: set_config_pb.UpdateResultDictionaryEntryB) => void): grpc.ClientUnaryCall;
     public updateSimpleDictionary(request: set_config_pb.UpdateSimpleDictionary, metadata: grpc.Metadata, callback: (error: grpc.ServiceError | null, response: set_config_pb.UpdateResultDictionaryEntryB) => void): grpc.ClientUnaryCall;
     public updateSimpleDictionary(request: set_config_pb.UpdateSimpleDictionary, metadata: grpc.Metadata, options: Partial<grpc.CallOptions>, callback: (error: grpc.ServiceError | null, response: set_config_pb.UpdateResultDictionaryEntryB) => void): grpc.ClientUnaryCall;
